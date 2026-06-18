@@ -1,0 +1,40 @@
+{
+  "nav": {
+    "home": "Home",
+    "destinations": "Destinations ▾",
+    "tourPackages": "Tour Packages",
+    "exploreIndia": "Explore India",
+    "destinationsLink": "Destinations",
+    "reviews": "Reviews",
+    "contactUs": "Contact Us",
+    "searchPlaceholder": "Search destinations, packages…"
+  },
+  "mega": {
+    "northIndia": "North India",
+    "westIndia": "West India",
+    "southIndia": "South India",
+    "eastIndia": "East India"
+  },
+  "header": {
+    "phone": "📞 +91 22 6666 6666",
+    "enquireNow": "Enquire Now",
+    "inbound": "INBOUND",
+    "forForeignNationals": "FOR FOREIGN NATIONALS"
+  },
+  "buttons": {
+    "viewTrip": "View Trip",
+    "enquire": "Enquire",
+    "loadMore": "Load More Packages",
+    "sendEnquiry": "Send Enquiry →",
+    "exploreWithUs": "Explore with Us",
+    "bookTheTrip": "Book the Trip",
+    "planYourTrip": "Plan Your Trip",
+    "viewTrips": "View Trips",
+    "bookYourTrip": "Book Your Trip",
+    "submitBooking": "Send Enquiry →"
+  },
+  "language": {
+    "en": "EN",
+    "es": "ES"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "destinations": "Destinos ▾",
+    "tourPackages": "Paquetes de Tour",
+    "exploreIndia": "Explorar India",
+    "destinationsLink": "Destinos",
+    "reviews": "Reseñas",
+    "contactUs": "Contáctanos",
+    "searchPlaceholder": "Buscar destinos, paquetes…"
+  },
+  "mega": {
+    "northIndia": "Norte de India",
+    "westIndia": "Oeste de India",
+    "southIndia": "Sur de India",
+    "eastIndia": "Este de India"
+  },
+  "header": {
+    "phone": "📞 +91 22 6666 6666",
+    "enquireNow": "Consultar Ahora",
+    "inbound": "INBOUND",
+    "forForeignNationals": "PARA EXTRANJEROS"
+  },
+  "buttons": {
+    "viewTrip": "Ver Viaje",
+    "enquire": "Consultar",
+    "loadMore": "Cargar Más Paquetes",
+    "sendEnquiry": "Enviar Consulta →",
+    "exploreWithUs": "Explorar con Nosotros",
+    "bookTheTrip": "Reservar el Viaje",
+    "planYourTrip": "Planifica tu Viaje",
+    "viewTrips": "Ver Viajes",
+    "bookYourTrip": "Reserva Tu Viaje",
+    "submitBooking": "Enviar Consulta →"
+  },
+  "language": {
+    "en": "EN",
+    "es": "ES"
+  }
+}

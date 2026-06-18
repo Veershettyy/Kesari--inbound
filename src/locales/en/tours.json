@@ -1,0 +1,54 @@
+{
+  "packages": {
+    "tag": "Your Seasonal Travel Planner",
+    "title": "All Tour Packages",
+    "subtitle": "65 handcrafted itineraries across India — filter by theme or search by destination.",
+    "searchPlaceholder": "Search packages, destinations...",
+    "noResults": "No packages found. Try a different filter or search term.",
+    "filters": {
+      "all": "All",
+      "nature": "Nature",
+      "historic": "Historic",
+      "luxuryTrain": "Luxury Train",
+      "ayurveda": "Ayurveda",
+      "firstTimers": "First Timers",
+      "spiritual": "Spiritual",
+      "adventure": "Adventure",
+      "luxury": "Luxury"
+    },
+    "daysNights": "{{days}}D / {{nights}}N",
+    "currency": {
+      "en": "Budget (USD per person)",
+      "esEs": "Presupuesto (EUR por persona)"
+    }
+  },
+  "modal": {
+    "title": "Book Your Trip",
+    "subtitle": "Our travel expert will call you within 24 hours",
+    "form": {
+      "fullName": "Full Name *",
+      "fullNamePlaceholder": "Your full name",
+      "email": "Email *",
+      "emailPlaceholder": "your@email.com",
+      "phone": "Phone *",
+      "phonePlaceholder": "+1 234 567 8900",
+      "nationality": "Nationality",
+      "nationalityPlaceholder": "e.g. American, British",
+      "travelDate": "Travel Date",
+      "travellers": "No. of Travellers",
+      "travellersDefault": "Select",
+      "duration": "Duration Preference",
+      "durationDefault": "Select",
+      "durationOptions": ["Up to 7 days","8–14 days","15–21 days","22+ days"],
+      "budget": "Budget (USD per person)",
+      "budgetDefault": "Select",
+      "budgetOptions": ["Under $1,000","$1,000 – $2,500","$2,500 – $5,000","$5,000+"],
+      "message": "Special Requests / Message",
+      "messagePlaceholder": "Tell us about your dream trip…"
+    },
+    "success": {
+      "title": "Enquiry Received!",
+      "message": "Thank you! Our travel expert will reach out to you within 24 hours to plan your perfect India trip."
+    }
+  }
+}

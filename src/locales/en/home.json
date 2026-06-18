@@ -1,0 +1,252 @@
+{
+  "hero": {
+    "slide1": {
+      "tag": "God's Own Country",
+      "title": "Explore Kerala, India",
+      "desc": "Kerala, often called \"God's Own Country,\" is a beautiful state in southern India known for its lush green landscapes, serene backwaters, picturesque hill stations, and rich cultural heritage."
+    },
+    "slide2": {
+      "tag": "Spiritual Capital of India",
+      "title": "Discover Varanasi",
+      "desc": "Varanasi, also known as Kashi or Benaras, is one of the oldest living cities in the world. A sacred pilgrimage site on the banks of the Ganges River — a mesmerizing blend of rituals, history, and culture."
+    },
+    "slide3": {
+      "tag": "Birthplace of Holi",
+      "title": "Mathura & Vrindavan",
+      "desc": "Mathura, located in Uttar Pradesh, is believed to be the birthplace of Lord Krishna — offering deep spiritual and cultural experiences through ancient temples, vibrant festivals, and holy ghats."
+    }
+  },
+  "stats": {
+    "years": "Years Of Legacy",
+    "team": "Skilled Team",
+    "guests": "Satisfied Guests",
+    "tours": "Tour Options",
+    "repeat": "Repeat Travellers"
+  },
+  "seasonal": {
+    "tag": "Your Seasonal Travel Planner",
+    "title": "Best Time to Visit India",
+    "subtitle": "Pick a month and discover the best destinations and packages for that time of year.",
+    "months": {
+      "Jan": "Jan", "Feb": "Feb", "Mar": "Mar", "Apr": "Apr",
+      "May": "May", "Jun": "Jun", "Jul": "Jul", "Aug": "Aug",
+      "Sep": "Sep", "Oct": "Oct", "Nov": "Nov", "Dec": "Dec"
+    }
+  },
+  "themes": {
+    "tag": "Adventure in India",
+    "title": "Explore by Theme",
+    "subtitle": "Discover India through lenses that match your travel style — from serene wellness retreats to historic odysseys.",
+    "items": {
+      "ayurveda": "Ayurveda & Wellness",
+      "spiritual": "Spiritual",
+      "historic": "Historic",
+      "luxuryTrain": "Luxury Train",
+      "nature": "Nature"
+    }
+  },
+  "whyIndia": {
+    "tag": "Why Choose India",
+    "title": "Incredible India Awaits",
+    "subtitle": "From ancient spiritual sites to breathtaking natural wonders — India offers a journey like no other.",
+    "cards": {
+      "ayurveda": {
+        "tag": "Wellness",
+        "title": "AYURVEDA & WELLNESS",
+        "desc": "A holistic approach from ancient India that balances body, mind, and spirit with natural therapies, herbal treatments, yoga, and meditation."
+      },
+      "luxury": {
+        "tag": "Luxury",
+        "title": "LUXURY TRAINS",
+        "desc": "Luxury train journeys offer an unparalleled way to explore India's vibrant heritage, diverse landscapes, and timeless splendor."
+      },
+      "spiritual": {
+        "tag": "Spiritual",
+        "title": "SPIRITUAL SITES",
+        "desc": "Visit the holy ghats of Varanasi, meditate in monasteries of Dharamshala, and explore the spiritual centers of Rishikesh and Haridwar."
+      },
+      "historic": {
+        "tag": "Historic",
+        "title": "HISTORIC SITES",
+        "desc": "Hawa Mahal & Amber Fort in Jaipur, Taj Mahal in Agra, the intricate carvings of Khajuraho, and the ancient city of Hampi."
+      },
+      "nature": {
+        "tag": "Nature",
+        "title": "NATURAL WONDERS",
+        "desc": "Lush tea plantations of Darjeeling, verdant hills of Munnar, wildlife forests of Jim Corbett, and coral reefs of the Andamans."
+      }
+    }
+  },
+  "destinations": {
+    "tag": "Explore Places",
+    "title": "India Must See",
+    "subtitle": "Handpicked destinations that capture the essence of Incredible India.",
+    "names": {
+      "rajasthan": "Rajasthan",
+      "uttarakhand": "Uttarakhand",
+      "gujarat": "Gujarat",
+      "karnataka": "Karnataka",
+      "kerala": "Kerala",
+      "meghalaya": "Meghalaya",
+      "pondicherry": "Pondicherry",
+      "northEast": "North East",
+      "lehLadakh": "Leh-Ladakh",
+      "jammuKashmir": "Jammu & Kashmir",
+      "delhi": "Delhi",
+      "madhyaPradesh": "Madhya Pradesh"
+    }
+  },
+  "reviews": {
+    "tag": "Traveller Stories",
+    "title": "What Our Guests Say",
+    "subtitle": "Real experiences from travellers who explored India with KESARi Inbound.",
+    "cards": [
+      {
+        "title": "Excellent Tour Package (Phu Quoc)",
+        "text": "\"We group from Singapore booked Phu Quoc Tour through Kesari World Class Travel Company Mumbai. Its an amazing trip with best services for sightseeing along with local guide, transports and Dinner at Classical Indian restaurant.\"",
+        "author": "Kannan Sathyamoorthy",
+        "location": "Singapore · June 2026"
+      },
+      {
+        "title": "Amazing tour of Golden Triangle",
+        "text": "\"My friends and I were very pleased with India Golden Triangle package tour. Appreciated the expertise, professionalism and patience in making changes. We will highly recommend Kesari to our friends.\"",
+        "author": "Rajni Agarwal",
+        "location": "USA · March 2026"
+      },
+      {
+        "title": "A Great Trip to Vaishnodevi",
+        "text": "\"Our Trip was excellent and we had a great time. Thanks to you Mithila and your amazing team. Our driver helped us a lot during the tour. Truly memorable experience!\"",
+        "author": "Chetan Gadkari",
+        "location": "USA · February 2026"
+      },
+      {
+        "title": "Excellent South India Trip",
+        "text": "\"Very satisfied with transport, professionalism and time to time communication. Driver and guide knowledge was very good. The booking process was smooth. Thanks to Mithila for coordination.\"",
+        "author": "Shalom Yehuda",
+        "location": "Israel · February 2026"
+      },
+      {
+        "title": "Memorable Delhi & Agra Tour",
+        "text": "\"Very good hotel and professional driver provided by Kesari made our trip memorable and worth it. We thoroughly enjoyed every moment of the journey.\"",
+        "author": "Satyajit Patki",
+        "location": "USA · 2026"
+      },
+      {
+        "title": "Flexible & Well-Organized Ladakh Journey",
+        "text": "\"We thoroughly enjoyed at Pangong lake. Our Driver Thinli was super helpful and guided us well. The whole Ladakh journey was organised perfectly by the Kesari team.\"",
+        "author": "Shekhar Kanade",
+        "location": "Australia · 2026"
+      },
+      {
+        "title": "Excellent experience - Rajasthan Tour",
+        "text": "\"Excellent services. Hotel, driver, guide all good. Already planning our next trip with Kesari. The personalized attention made all the difference throughout our Rajasthan tour.\"",
+        "author": "Sanjib Som",
+        "location": "USA · November 2025"
+      },
+      {
+        "title": "Excellent Gujarat Tour",
+        "text": "\"All services met our expectations. Excellent 10 on a scale of 1-10. Want to visit South India in our next trip with Kesari. The arrangements were seamless throughout.\"",
+        "author": "Bhupendra Patel",
+        "location": "USA · 2026"
+      },
+      {
+        "title": "Enjoyable Rajasthan Tour",
+        "text": "\"The tour was very satisfactory. We enjoyed Elephant ride at Amer Fort and camel ride at Pushkar. We would definitely recommend Kesari Inbound and plan another tour soon.\"",
+        "author": "KristleKwong Sen Aun",
+        "location": "Malaysia · 2026"
+      },
+      {
+        "title": "Unforgettable Dubai Experience!",
+        "text": "\"Kesari Tours made our New Year's trip to Dubai an unforgettable experience! Their meticulous planning and seamless execution ensured every detail was perfect.\"",
+        "author": "Sandeep Purandare",
+        "location": "USA · 2026"
+      }
+    ]
+  },
+  "workflow": {
+    "tag": "How It Works",
+    "title": "Our 9-Level Localization Workflow",
+    "subtitle": "From basic translation to full AI-powered multilingual delivery — every step is built for precision, speed, and a seamless experience for travellers worldwide.",
+    "levels": [
+      {
+        "badge": "Foundation",
+        "title": "Basic Translation",
+        "desc": "All page text — headings, body copy, buttons and labels — is automatically converted from English into the target language with a single click."
+      },
+      {
+        "badge": "Memory",
+        "title": "Translation Memory",
+        "desc": "Previously translated strings are cached and reused instantly. Repeated phrases across pages stay consistent and translation speed increases over time."
+      },
+      {
+        "badge": "Quality",
+        "title": "AI Quality Checker",
+        "desc": "An AI layer reviews every translated segment for accuracy, tone, cultural appropriateness, and brand voice before it is shown to the visitor."
+      },
+      {
+        "badge": "Automation",
+        "title": "Auto-Translate New Content",
+        "desc": "When new packages, destinations, or blog posts are published, they are detected and translated automatically — no manual trigger required."
+      },
+      {
+        "badge": "Visibility",
+        "title": "SEO Localization",
+        "desc": "Meta titles, descriptions, URL slugs, alt text, and structured data are all localized so the Spanish site ranks on Google in Spanish-speaking markets."
+      },
+      {
+        "badge": "Visual",
+        "title": "Image Translation",
+        "desc": "Text embedded within banners, infographics, and promotional images is detected and replaced with localized versions maintaining original design fidelity."
+      },
+      {
+        "badge": "Communication",
+        "title": "Email Localization",
+        "desc": "Booking confirmations, enquiry responses, and promotional newsletters are automatically sent in the traveller's language for a seamless end-to-end journey."
+      },
+      {
+        "badge": "Intelligence",
+        "title": "AI-Powered CMS",
+        "desc": "The content management system uses AI to flag untranslated strings, suggest improvements, and manage multilingual content versions from a single dashboard."
+      },
+      {
+        "badge": "Assurance",
+        "title": "Human in the Loop",
+        "desc": "Expert human translators and cultural consultants review AI outputs, approve final copy, and ensure the highest quality before publishing to live audiences."
+      }
+    ]
+  },
+  "enquiry": {
+    "tag": "Contact Us",
+    "title": "Describe Your",
+    "titleHighlight": "Dream Trip",
+    "desc1": "Let our travel experts craft a personalized itinerary just for you. Whether you have specific destinations in mind or just a vague idea, we'll turn it into an unforgettable journey.",
+    "callUs": "📞 Call us:",
+    "callPhone": "+91 22 6666 6666",
+    "email": "📧 Email:",
+    "emailAddr": "inbound@kesari.in",
+    "responseTime": "🕐 Response time:",
+    "responseValue": "Within 24 hours",
+    "confidential": "🔒 Your details are kept completely confidential",
+    "form": {
+      "fullName": "Full Name *",
+      "fullNamePlaceholder": "Your full name",
+      "contactNumber": "Contact Number *",
+      "contactPlaceholder": "+1 000 000 0000",
+      "emailAddress": "Email Address",
+      "emailPlaceholder": "your@email.com",
+      "country": "Country",
+      "countryPlaceholder": "Your country",
+      "destination": "Destination",
+      "destinationDefault": "Select destination",
+      "travelMonth": "Travel Month",
+      "monthDefault": "Select month",
+      "travellers": "No. of Travellers",
+      "duration": "Trip Duration",
+      "dreamTrip": "Describe Your Dream Trip",
+      "dreamTripPlaceholder": "Tell us about your travel interests, group type, special requirements, budget range...",
+      "months": ["January","February","March","April","May","June","July","August","September","October","November","December"],
+      "durations": ["3-5 days","6-8 days","9-12 days","13+ days"],
+      "travellersOptions": ["1","2","3-5","6-10","10+"]
+    }
+  }
+}
