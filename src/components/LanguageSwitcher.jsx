@@ -6,15 +6,25 @@ export default function LanguageSwitcher() {
   const location = useLocation();
   const { t } = useTranslation('common');
 
-  const isEs = location.pathname.startsWith('/es');
+  const { pathname } = location;
+  const isEs = pathname.startsWith('/INT/es') || pathname.startsWith('/es-es');
+  const isInt = pathname.startsWith('/INT');
 
   function switchTo(lang) {
     if (lang === 'es' && !isEs) {
-      const rest = location.pathname === '/' ? '' : location.pathname;
-      navigate('/es' + rest + location.search + location.hash);
+      if (isInt) {
+        // /INT/something → /INT/es/something
+        navigate(pathname.replace('/INT', '/INT/es') + location.search);
+      } else {
+        navigate('/INT/es');
+      }
     } else if (lang === 'en' && isEs) {
-      const rest = location.pathname.replace(/^\/es/, '') || '/';
-      navigate(rest + location.search + location.hash);
+      if (pathname.startsWith('/INT/es')) {
+        // /INT/es/something → /INT/something
+        navigate(pathname.replace('/INT/es', '/INT') + location.search);
+      } else {
+        navigate('/INT');
+      }
     }
   }
 

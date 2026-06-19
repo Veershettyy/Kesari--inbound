@@ -17,7 +17,7 @@ export default function PackageDetail() {
   const pkg = PACKAGES.find(p => p.code === code);
 
   function goBack() {
-    navigate(isEs ? '/es' : '/');
+    navigate(isEs ? '/INT/es' : '/INT');
   }
 
   function openEnquiry() {

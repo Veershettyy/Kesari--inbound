@@ -13,7 +13,8 @@ import esTours from './locales/es-es/tours.json';
 import esSeo from './locales/es-es/seo.json';
 import esFooter from './locales/es-es/footer.json';
 
-const lang = window.location.pathname.startsWith('/INT/es') ? 'es-ES' : 'en';
+const p = window.location.pathname;
+const lang = (p.startsWith('/INT/es') || p.startsWith('/es-es')) ? 'es-ES' : 'en';
 
 i18n.use(initReactI18next).init({
   resources: {

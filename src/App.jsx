@@ -28,10 +28,6 @@ function HomePage() {
     document.querySelector('#enquiry')?.scrollIntoView({ behavior: 'smooth' });
   }
 
-  function openBooking(name) {
-    setModalPkg(name);
-  }
-
   function handleNavSearch(q) {
     pkgRef.current?.setSearch(q);
     document.querySelector('#packages')?.scrollIntoView({ behavior: 'smooth' });
@@ -43,11 +39,11 @@ function HomePage() {
       <Navbar onEnquire={openEnquiry} onSearchNav={handleNavSearch} />
       <HeroSlider />
       <Stats />
-      <SeasonalPlanner onEnquire={openBooking} />
+      <SeasonalPlanner onEnquire={name => setModalPkg(name)} />
       <AdventureThemes />
       <WhyIndia />
       <Destinations />
-      <TourPackages ref={pkgRef} onEnquire={openBooking} />
+      <TourPackages ref={pkgRef} onEnquire={name => setModalPkg(name)} />
       <Reviews />
       <LocalizationWorkflow />
       <EnquiryForm />
@@ -62,26 +58,33 @@ export default function App() {
   return (
     <HelmetProvider>
       <Routes>
-        {/* Spanish package detail: /INT/es/explore/product-details/:code */}
-        <Route
-          path="/es/explore/product-details/:code"
-          element={<LocaleWrapper><PackageDetail /></LocaleWrapper>}
-        />
-        {/* English package detail: /INT/explore/product-details/:code */}
-        <Route
-          path="/explore/product-details/:code"
-          element={<LocaleWrapper><PackageDetail /></LocaleWrapper>}
-        />
-        {/* Spanish homepage: /INT/es/* */}
-        <Route
-          path="/es/*"
-          element={<LocaleWrapper><HomePage /></LocaleWrapper>}
-        />
-        {/* English homepage: /INT/* */}
-        <Route
-          path="/*"
-          element={<LocaleWrapper><HomePage /></LocaleWrapper>}
-        />
+        {/* Package detail — /INT/es/explore/product-details/:code */}
+        <Route path="/INT/es/explore/product-details/:code"
+          element={<LocaleWrapper><PackageDetail /></LocaleWrapper>} />
+
+        {/* Package detail — /INT/explore/product-details/:code */}
+        <Route path="/INT/explore/product-details/:code"
+          element={<LocaleWrapper><PackageDetail /></LocaleWrapper>} />
+
+        {/* Package detail — legacy /es-es/explore/product-details/:code */}
+        <Route path="/es-es/explore/product-details/:code"
+          element={<LocaleWrapper><PackageDetail /></LocaleWrapper>} />
+
+        {/* Spanish homepage — /INT/es/* */}
+        <Route path="/INT/es/*"
+          element={<LocaleWrapper><HomePage /></LocaleWrapper>} />
+
+        {/* English homepage — /INT/* */}
+        <Route path="/INT/*"
+          element={<LocaleWrapper><HomePage /></LocaleWrapper>} />
+
+        {/* Legacy Spanish — /es-es/* (kept until confirmed removable) */}
+        <Route path="/es-es/*"
+          element={<LocaleWrapper><HomePage /></LocaleWrapper>} />
+
+        {/* Root fallback */}
+        <Route path="/*"
+          element={<LocaleWrapper><HomePage /></LocaleWrapper>} />
       </Routes>
     </HelmetProvider>
   );

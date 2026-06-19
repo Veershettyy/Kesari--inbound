@@ -34,7 +34,7 @@ const TourPackages = forwardRef(function TourPackages({ onEnquire }, ref) {
   const shown = filtered.slice(0, visible);
 
   function goToPackage(code) {
-    navigate(isEs ? `/es/explore/product-details/${code}` : `/explore/product-details/${code}`);
+    navigate(isEs ? `/INT/es/explore/product-details/${code}` : `/INT/explore/product-details/${code}`);
   }
 
   return (
