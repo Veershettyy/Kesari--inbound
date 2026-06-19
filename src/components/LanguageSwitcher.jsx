@@ -6,16 +6,15 @@ export default function LanguageSwitcher() {
   const location = useLocation();
   const { t } = useTranslation('common');
 
-  const isEs = location.pathname.startsWith('/es-es');
+  const isEs = location.pathname.startsWith('/es');
 
   function switchTo(lang) {
-    if (lang === 'es-es' && !isEs) {
-      // Strip any existing locale prefix and prepend /es-es
-      const rest = location.pathname.replace(/^\/es-es/, '') || '/';
-      navigate('/es-es' + (rest === '/' ? '' : rest) + location.search + location.hash);
+    if (lang === 'es' && !isEs) {
+      const rest = location.pathname === '/' ? '' : location.pathname;
+      navigate('/es' + rest + location.search + location.hash);
     } else if (lang === 'en' && isEs) {
-      const rest = location.pathname.replace(/^\/es-es/, '') || '/';
-      navigate((rest || '/') + location.search + location.hash);
+      const rest = location.pathname.replace(/^\/es/, '') || '/';
+      navigate(rest + location.search + location.hash);
     }
   }
 
@@ -31,7 +30,7 @@ export default function LanguageSwitcher() {
       <button
         id="btn-es"
         className={isEs ? 'active' : ''}
-        onClick={() => switchTo('es-es')}
+        onClick={() => switchTo('es')}
       >
         {t('language.es')}
       </button>

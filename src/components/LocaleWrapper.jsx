@@ -7,7 +7,7 @@ export default function LocaleWrapper({ children }) {
   const { i18n } = useTranslation();
 
   useEffect(() => {
-    const lang = pathname.startsWith('/es-es') ? 'es-ES' : 'en';
+    const lang = pathname.startsWith('/es') ? 'es-ES' : 'en';
     i18n.changeLanguage(lang);
   }, [pathname, i18n]);
 

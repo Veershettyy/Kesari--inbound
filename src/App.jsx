@@ -1,7 +1,6 @@
 import { useRef, useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
-import { useTranslation } from 'react-i18next';
 
 import LocaleWrapper from './components/LocaleWrapper';
 import SeoHead from './components/SeoHead';
@@ -19,15 +18,7 @@ import EnquiryForm from './components/EnquiryForm';
 import Footer from './components/Footer';
 import BookingModal from './components/BookingModal';
 import LanguageSwitcher from './components/LanguageSwitcher';
-
-function DebugBanner() {
-  const { i18n } = useTranslation();
-  return (
-    <div style={{ position: 'fixed', bottom: 0, left: 0, right: 0, background: '#000', color: '#0f0', fontFamily: 'monospace', fontSize: 12, zIndex: 99999, padding: '4px 12px', textAlign: 'center' }}>
-      i18n.language = <strong>{i18n.language}</strong> | pathname = <strong>{window.location.pathname}</strong> | nav.home = <strong>{i18n.t('nav.home', { ns: 'common' })}</strong>
-    </div>
-  );
-}
+import PackageDetail from './pages/PackageDetail';
 
 function HomePage() {
   const [modalPkg, setModalPkg] = useState(null);
@@ -62,7 +53,6 @@ function HomePage() {
       <EnquiryForm />
       <Footer />
       <LanguageSwitcher />
-      <DebugBanner />
       {modalPkg && <BookingModal pkgName={modalPkg} onClose={() => setModalPkg(null)} />}
     </>
   );
@@ -72,21 +62,25 @@ export default function App() {
   return (
     <HelmetProvider>
       <Routes>
+        {/* Spanish package detail: /INT/es/explore/product-details/:code */}
         <Route
-          path="/es-es/*"
-          element={
-            <LocaleWrapper>
-              <HomePage />
-            </LocaleWrapper>
-          }
+          path="/es/explore/product-details/:code"
+          element={<LocaleWrapper><PackageDetail /></LocaleWrapper>}
         />
+        {/* English package detail: /INT/explore/product-details/:code */}
+        <Route
+          path="/explore/product-details/:code"
+          element={<LocaleWrapper><PackageDetail /></LocaleWrapper>}
+        />
+        {/* Spanish homepage: /INT/es/* */}
+        <Route
+          path="/es/*"
+          element={<LocaleWrapper><HomePage /></LocaleWrapper>}
+        />
+        {/* English homepage: /INT/* */}
         <Route
           path="/*"
-          element={
-            <LocaleWrapper>
-              <HomePage />
-            </LocaleWrapper>
-          }
+          element={<LocaleWrapper><HomePage /></LocaleWrapper>}
         />
       </Routes>
     </HelmetProvider>

@@ -1,9 +1,8 @@
 import { useState, forwardRef, useImperativeHandle } from 'react';
 import { useTranslation } from 'react-i18next';
+import { useNavigate } from 'react-router-dom';
 import { PACKAGES } from '../data/packages';
-import useLocalizedUrl from '../hooks/useLocalizedUrl';
 
-const BASE = 'https://inbound.kesariselect.com';
 const PAGE = 9;
 const FILTERS = ['all','nature','historic','luxuryTrain','ayurveda','firstTimers','spiritual','adventure','luxury'];
 const FILTER_VALS = {
@@ -14,11 +13,11 @@ const FILTER_VALS = {
 
 const TourPackages = forwardRef(function TourPackages({ onEnquire }, ref) {
   const { t, i18n } = useTranslation(['tours','common']);
+  const navigate = useNavigate();
   const [filter, setFilter] = useState('all');
   const [search, setSearch] = useState('');
   const [visible, setVisible] = useState(PAGE);
   const isEs = i18n.language === 'es-ES';
-  const localizeUrl = useLocalizedUrl();
 
   useImperativeHandle(ref, () => ({
     setSearch: (q) => { setSearch(q); setVisible(PAGE); }
@@ -34,11 +33,8 @@ const TourPackages = forwardRef(function TourPackages({ onEnquire }, ref) {
 
   const shown = filtered.slice(0, visible);
 
-  function formatPrice(amount) {
-    if (isEs) {
-      return new Intl.NumberFormat('es-ES', { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 }).format(amount);
-    }
-    return new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 }).format(amount);
+  function goToPackage(code) {
+    navigate(isEs ? `/es/explore/product-details/${code}` : `/explore/product-details/${code}`);
   }
 
   return (
@@ -73,7 +69,7 @@ const TourPackages = forwardRef(function TourPackages({ onEnquire }, ref) {
               key={p.code}
               className="pkg-card"
               style={{ cursor: 'pointer' }}
-              onClick={() => window.open(localizeUrl(`${BASE}/explore/product-details/${p.code}`), '_blank', 'noopener')}
+              onClick={() => goToPackage(p.code)}
             >
               <div className="pkg-img">
                 <img
@@ -97,7 +93,7 @@ const TourPackages = forwardRef(function TourPackages({ onEnquire }, ref) {
                 <div className="pkg-footer">
                   <button
                     className="btn-outline-sm"
-                    onClick={e => { e.stopPropagation(); window.open(localizeUrl(`${BASE}/explore/product-details/${p.code}`), '_blank', 'noopener'); }}
+                    onClick={e => { e.stopPropagation(); goToPackage(p.code); }}
                   >
                     {t('common:buttons.viewTrip')}
                   </button>
