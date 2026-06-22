@@ -1,15 +1,15 @@
+functionsDirectory = "/Users/veershetty/kesari-inbound/netlify/functions"
+functionsDirectoryOrigin = "config-v1"
+redirectsOrigin = "config"
 plugins = []
 headers = []
 
-[functions]
-
-[functions."*"]
-
 [build]
 publish = "/Users/veershetty/kesari-inbound/dist"
-publishOrigin = "ui"
-commandOrigin = "ui"
+publishOrigin = "config"
+commandOrigin = "config"
 command = "npm run build"
+functions = "/Users/veershetty/kesari-inbound/netlify/functions"
 
 [build.environment]
 
@@ -24,6 +24,10 @@ command = "npm run build"
 [build.processing.js]
 
 [build.services]
+
+[functions]
+
+[functions."*"]
 
 [[redirects]]
 from = "/*"
