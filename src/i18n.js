@@ -61,13 +61,31 @@ import arTours from './locales/ar/tours.json';
 import arSeo from './locales/ar/seo.json';
 import arFooter from './locales/ar/footer.json';
 
+import koCommon from './locales/ko/common.json';
+import koHome from './locales/ko/home.json';
+import koTours from './locales/ko/tours.json';
+import koSeo from './locales/ko/seo.json';
+import koFooter from './locales/ko/footer.json';
+
+import mlCommon from './locales/ml/common.json';
+import mlHome from './locales/ml/home.json';
+import mlTours from './locales/ml/tours.json';
+import mlSeo from './locales/ml/seo.json';
+import mlFooter from './locales/ml/footer.json';
+
+import plCommon from './locales/pl/common.json';
+import plHome from './locales/pl/home.json';
+import plTours from './locales/pl/tours.json';
+import plSeo from './locales/pl/seo.json';
+import plFooter from './locales/pl/footer.json';
+
 const p = window.location.pathname;
 const m = p.match(/^\/INT\/([^/]+)/);
 const seg = m ? m[1].toLowerCase() : '';
 const PATH_SEGS = new Set(['explore', 'destinations', 'packages', 'search', 'product-details']);
 const rawLang = (m && !PATH_SEGS.has(seg)) ? m[1].toLowerCase() : null;
 
-const langMap = { es: 'es-ES', 'es-es': 'es-ES', fr: 'fr', hi: 'hi', de: 'de', ja: 'ja', pt: 'pt', it: 'it', zh: 'zh', ar: 'ar' };
+const langMap = { es: 'es-ES', 'es-es': 'es-ES', fr: 'fr', hi: 'hi', de: 'de', ja: 'ja', pt: 'pt', it: 'it', zh: 'zh', ar: 'ar', ko: 'ko', ml: 'ml', pl: 'pl' };
 const initialLang = (p.startsWith('/INT/es') || p.startsWith('/es-es'))
   ? 'es-ES'
   : (rawLang && langMap[rawLang]) || 'en';
@@ -84,6 +102,9 @@ i18n.use(initReactI18next).init({
     it:      { common: itCommon, home: itHome, tours: itTours, seo: itSeo, footer: itFooter },
     zh:      { common: zhCommon, home: zhHome, tours: zhTours, seo: zhSeo, footer: zhFooter },
     ar:      { common: arCommon, home: arHome, tours: arTours, seo: arSeo, footer: arFooter },
+    ko:      { common: koCommon, home: koHome, tours: koTours, seo: koSeo, footer: koFooter },
+    ml:      { common: mlCommon, home: mlHome, tours: mlTours, seo: mlSeo, footer: mlFooter },
+    pl:      { common: plCommon, home: plHome, tours: plTours, seo: plSeo, footer: plFooter },
   },
   lng: initialLang,
   fallbackLng: 'en',

@@ -1,0 +1,56 @@
+{
+  "nav": {
+    "home": "홈",
+    "destinations": "목적지 ▾",
+    "tourPackages": "여행 패키지",
+    "exploreIndia": "인도 탐험",
+    "destinationsLink": "목적지",
+    "reviews": "리뷰",
+    "contactUs": "문의하기",
+    "searchPlaceholder": "목적지, 패키지 검색…"
+  },
+  "mega": {
+    "northIndia": "북인도",
+    "westIndia": "서인도",
+    "southIndia": "남인도",
+    "eastIndia": "동인도"
+  },
+  "header": {
+    "phone": "📞 +91 22 6666 6666",
+    "enquireNow": "지금 문의하기",
+    "inbound": "인바운드",
+    "forForeignNationals": "외국인 대상"
+  },
+  "buttons": {
+    "viewTrip": "여행 보기",
+    "enquire": "문의하기",
+    "loadMore": "패키지 더 보기",
+    "sendEnquiry": "문의 보내기 →",
+    "exploreWithUs": "함께 탐험하기",
+    "bookTheTrip": "여행 예약",
+    "planYourTrip": "여행 계획",
+    "viewTrips": "여행 보기",
+    "bookYourTrip": "여행 예약",
+    "submitBooking": "문의 보내기 →"
+  },
+  "language": {
+    "en": "EN",
+    "es": "ES"
+  },
+  "destinations": {
+    "names": {
+      "rajasthan": "Rajasthan",
+      "uttarakhand": "Uttarakhand",
+      "gujarat": "Gujarat",
+      "karnataka": "Karnataka",
+      "kerala": "Kerala",
+      "meghalaya": "Meghalaya",
+      "pondicherry": "Pondicherry",
+      "northEast": "North East India",
+      "lehLadakh": "Leh & Ladakh",
+      "jammuKashmir": "Jammu & Kashmir",
+      "delhi": "Delhi",
+      "madhyaPradesh": "Madhya Pradesh"
+    }
+  }
+}

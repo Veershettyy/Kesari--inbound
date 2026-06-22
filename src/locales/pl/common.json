@@ -1,0 +1,70 @@
+{
+  "nav": {
+    "home": "Strona główna",
+    "destinations": "Destynacje ▾",
+    "tourPackages": "Pakiety turystyczne",
+    "exploreIndia": "Poznaj Indie",
+    "destinationsLink": "Destynacje",
+    "reviews": "Recenzje",
+    "contactUs": "Kontakt",
+    "searchPlaceholder": "Wyszukaj destynacje, pakiety…"
+  },
+  "mega": {
+    "northIndia": "Północne Indie",
+    "westIndia": "Zachodnie Indie",
+    "southIndia": "Południowe Indie",
+    "eastIndia": "Wschodnie Indie"
+  },
+  "header": {
+    "phone": "📞 +91 22 6666 6666",
+    "enquireNow": "Zapytaj teraz",
+    "inbound": "INBOUND",
+    "forForeignNationals": "DLA CUDZOZIEMCÓW"
+  },
+  "buttons": {
+    "viewTrip": "Zobacz wycieczkę",
+    "enquire": "Zapytaj",
+    "loadMore": "Załaduj więcej pakietów",
+    "sendEnquiry": "Wyślij zapytanie →",
+    "exploreWithUs": "Poznaj z nami",
+    "bookTheTrip": "Zarezerwuj wycieczkę",
+    "planYourTrip": "Zaplanuj swoją podróż",
+    "viewTrips": "Zobacz wycieczki",
+    "bookYourTrip": "Zarezerwuj swoją podróż",
+    "submitBooking": "Wyślij zapytanie →"
+  },
+  "language": {
+    "en": "EN",
+    "es": "ES"
+  },
+  "destinations": {
+    "names": {
+      "rajasthan": "Rajasthan",
+      "uttarakhand": "Uttarakhand",
+      "gujarat": "Gujarat",
+      "karnataka": "Karnataka",
+      "kerala": "Kerala",
+      "meghalaya": "Meghalaya",
+      "pondicherry": "Pondicherry",
+      "northEast": "Północno-Wschodnie Indie",
+      "lehLadakh": "Leh & Ladakh",
+      "jammuKashmir": "Dżammu i Kaszmir",
+      "delhi": "Delhi",
+      "madhyaPradesh": "Madhya Pradesh",
+      "kesari": "KESARi",
+      "india": "Indie",
+      "maharashtra": "Maharashtra",
+      "goa": "Goa",
+      "sriLanka": "Sri Lanka",
+      "lakshadweep": "Lakszadiwy",
+      "andaman": "Andamany",
+      "nepal": "Nepal",
+      "bhutan": "Bhutan",
+      "ayurveda": "Ayurweda",
+      "panchakarma": "Panchakarma",
+      "cghEarth": "CGH Earth",
+      "palaceOnWheels": "Palace on Wheels",
+      "inboundCodes": "INBOUND codes"
+    }
+  }
+}

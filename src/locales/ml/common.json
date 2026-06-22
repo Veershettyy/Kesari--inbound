@@ -1,0 +1,56 @@
+{
+  "nav": {
+    "home": "ഹോം",
+    "destinations": "സഞ്ചാര സ്ഥലങ്ങൾ ▾",
+    "tourPackages": "ടൂർ പാക്കേജുകൾ",
+    "exploreIndia": "ഇന്ത്യ പര്യടനം",
+    "destinationsLink": "സഞ്ചാര സ്ഥലങ്ങൾ",
+    "reviews": "പരിചയങ്ങൾ",
+    "contactUs": "ഞങ്ങളെ ബന്ധപ്പെടുക",
+    "searchPlaceholder": "സഞ്ചാര സ്ഥലങ്ങൾ, പാക്കേജുകൾ തിരയുക…"
+  },
+  "mega": {
+    "northIndia": "വടക്കൻ ഇന്ത്യ",
+    "westIndia": "പടിഞ്ഞാറൻ ഇന്ത്യ",
+    "southIndia": "തെക്കൻ ഇന്ത്യ",
+    "eastIndia": "കിഴക്കൻ ഇന്ത്യ"
+  },
+  "header": {
+    "phone": "📞 +91 22 6666 6666",
+    "enquireNow": "ഇപ്പോൾ അന്വേഷിക്കുക",
+    "inbound": "ഇൻബൗണ്ട്",
+    "forForeignNationals": "വിദേശ നागरികർക്കായി"
+  },
+  "buttons": {
+    "viewTrip": "ട്രിപ്പ് കാണുക",
+    "enquire": "അന്വേഷിക്കുക",
+    "loadMore": "കൂടുതൽ പാക്കേജുകൾ ലോഡ് ചെയ്യുക",
+    "sendEnquiry": "അന്വേഷണം അയയ്ക്കുക →",
+    "exploreWithUs": "ഞങ്ങളോടൊപ്പം പര്യടനം",
+    "bookTheTrip": "ട്രിപ്പ് ബുക്ക് ചെയ്യുക",
+    "planYourTrip": "നിങ്ങളുടെ ട്രിപ്പ് പ്ലാൻ ചെയ്യുക",
+    "viewTrips": "ട്രിപ്പുകൾ കാണുക",
+    "bookYourTrip": "നിങ്ങളുടെ ട്രിപ്പ് ബുക്ക് ചെയ്യുക",
+    "submitBooking": "അന്വേഷണം അയയ്ക്കുക →"
+  },
+  "language": {
+    "en": "EN",
+    "es": "ES"
+  },
+  "destinations": {
+    "names": {
+      "rajasthan": "രാജസ്ഥാൻ",
+      "uttarakhand": "ഉത്തരാഖണ്ഡ്",
+      "gujarat": "ഗുജറാത്ത്",
+      "karnataka": "കർണാടക",
+      "kerala": "കേരളം",
+      "meghalaya": "മേഘാലയ",
+      "pondicherry": "പുതുച്ചേരി",
+      "northEast": "വടക്കുകിഴക്കൻ ഇന്ത്യ",
+      "lehLadakh": "ലേಹ് & ലഡാക്ക്",
+      "jammuKashmir": "ജമ്മു & കശ്മീർ",
+      "delhi": "ഡെൽഹി",
+      "madhyaPradesh": "മധ്യപ്രദേശ്"
+    }
+  }
+}
