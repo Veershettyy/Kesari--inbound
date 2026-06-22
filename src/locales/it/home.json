@@ -1,0 +1,503 @@
+{
+  "hero": {
+    "slide1": {
+      "tag": "La Terra degli Dei",
+      "title": "Esplora Kerala, India",
+      "desc": "Il Kerala, spesso chiamato \"La Terra degli Dei\", è uno stato meraviglioso nel sud dell'India noto per i suoi paesaggi lussureggianti, le tranquille backwaters, le pittoresche stazioni collinari e il ricco patrimonio culturale."
+    },
+    "slide2": {
+      "tag": "Capitale Spirituale dell'India",
+      "title": "Scopri Varanasi",
+      "desc": "Varanasi, conosciuta anche come Kashi o Benaras, è una delle città più antiche al mondo. Un sacro sito di pellegrinaggio sulle rive del fiume Gange — una mescolanza affascinante di rituali, storia e cultura."
+    },
+    "slide3": {
+      "tag": "Culla dell'Holi",
+      "title": "Mathura & Vrindavan",
+      "desc": "Mathura, situata nell'Uttar Pradesh, è considerata la culla del Signore Krishna — che offre profonde esperienze spirituali e culturali attraverso antichi templi, festival vivaci e ghat sacri."
+    }
+  },
+  "stats": {
+    "years": "Anni di Eredità",
+    "team": "Team Esperto",
+    "guests": "Ospiti Soddisfatti",
+    "tours": "Opzioni di Viaggio",
+    "repeat": "Viaggiatori Ricorrenti"
+  },
+  "seasonal": {
+    "tag": "Il Tuo Pianificatore di Viaggi Stagionali",
+    "title": "Miglior Periodo per Visitare l'India",
+    "subtitle": "Scegli un mese e scopri le migliori destinazioni e pacchetti per quel periodo dell'anno.",
+    "months": {
+      "Jan": "Gen",
+      "Feb": "Feb",
+      "Mar": "Mar",
+      "Apr": "Apr",
+      "May": "Mag",
+      "Jun": "Giu",
+      "Jul": "Lug",
+      "Aug": "Ago",
+      "Sep": "Set",
+      "Oct": "Ott",
+      "Nov": "Nov",
+      "Dec": "Dic"
+    },
+    "pkgs": {
+      "Jan": [
+        {
+          "title": "Tour Regale del Rajasthan",
+          "info": "Picco dell'inverno — perfetto per fortezze e palazzi"
+        },
+        {
+          "title": "Backwaters del Kerala",
+          "info": "Tempo gradevole nella Terra di Dio"
+        },
+        {
+          "title": "Vacanza in spiaggia a Goa",
+          "info": "Miglior stagione per spiagge e vita notturna"
+        },
+        {
+          "title": "Triangolo d'Oro",
+          "info": "Inverno secco ideale per Delhi-Agra-Jaipur"
+        }
+      ],
+      "Feb": [
+        {
+          "title": "Mathura – Festa di Holi",
+          "info": "Celebrazioni di Holi a Mathura e Vrindavan"
+        },
+        {
+          "title": "Festival del Deserto del Rajasthan",
+          "info": "Festival del Deserto di Jaisalmer in pieno svolgimento"
+        },
+        {
+          "title": "Pellegrinaggio ai templi dell'India meridionale",
+          "info": "Fresco e confortevole per i templi del Tamil Nadu"
+        },
+        {
+          "title": "Ayurveda e Benessere in Kerala",
+          "info": "Stagione perfetta per i ritiri benessere del Kerala"
+        }
+      ],
+      "Mar": [
+        {
+          "title": "Isole Andamane",
+          "info": "Acque cristalline, ideali per lo snorkeling"
+        },
+        {
+          "title": "Isole Lakshadweep",
+          "info": "Migliore visibilità per le barriere coralline"
+        },
+        {
+          "title": "Tour dei templi dell'Orissa",
+          "info": "Tempio del Sole e Konark al meglio"
+        },
+        {
+          "title": "Fascino costiero di Pondicherry",
+          "info": "Incantevole quartiere francese a marzo"
+        }
+      ],
+      "Apr": [
+        {
+          "title": "Valli dell'Uttarakhand",
+          "info": "Rododendri in fiore, ottimo per il trekking"
+        },
+        {
+          "title": "Himachal Pradesh",
+          "info": "La neve si scioglie, le valli diventano verdi"
+        },
+        {
+          "title": "Patrimonio del Gujarat",
+          "info": "Visita pre-estiva ad Ahmedabad e Bhuj"
+        },
+        {
+          "title": "Passi del Buddha",
+          "info": "Tempo ideale per il circuito buddista"
+        }
+      ],
+      "May": [
+        {
+          "title": "Leh e Ladakh",
+          "info": "Strade aperte, paesaggi mozzafiato in attesa"
+        },
+        {
+          "title": "Valle di Spiti, Himachal",
+          "info": "Il deserto di alta quota prende vita"
+        },
+        {
+          "title": "Kashmir – Paradiso",
+          "info": "Lago Dal e giardini di tulipani in fiore"
+        },
+        {
+          "title": "Miglior parte del Bhutan",
+          "info": "Cieli limpidi e viste Himalayane spettacolari"
+        }
+      ],
+      "Jun": [
+        {
+          "title": "Esplorando Leh e Ladakh",
+          "info": "Stagione di punta per Pangong e Valle di Nubra"
+        },
+        {
+          "title": "India Nord-Orientale",
+          "info": "Prima del monsone — paesaggi lussureggianti e verdi"
+        },
+        {
+          "title": "Miglior parte del Nepal",
+          "info": "Viste Himalayane pre-monsone"
+        },
+        {
+          "title": "Bhutan",
+          "info": "Cieli limpidi e viste montuose"
+        }
+      ],
+      "Jul": [
+        {
+          "title": "Meghalaya – Dimora delle Nuvole",
+          "info": "Il monsone trasforma magicamente il Meghalaya"
+        },
+        {
+          "title": "Ayurveda e Spa del Kerala",
+          "info": "Il monsone è il meglio per i trattamenti ayurvedici"
+        },
+        {
+          "title": "Carnoustie Wellness",
+          "info": "Stagione di punta del Panchakarma in Kerala"
+        },
+        {
+          "title": "Porta d'accesso al Nord-Est",
+          "info": "Kaziranga e Shillong al massimo del loro verde"
+        }
+      ],
+      "Aug": [
+        {
+          "title": "Meghalaya Scenico",
+          "info": "Cascate al loro massimo spettacolo"
+        },
+        {
+          "title": "Tour dell'India Nord-Orientale",
+          "info": "Gangtok e Kaziranga — verdi e lussureggianti"
+        },
+        {
+          "title": "Leh Ladakh",
+          "info": "Ultime settimane del miglior clima per Ladakh"
+        },
+        {
+          "title": "Valle del Kashmir",
+          "info": "Srinagar al suo massimo splendore"
+        }
+      ],
+      "Sep": [
+        {
+          "title": "Patrimonio del Rajasthan",
+          "info": "Verde post-monsone incontra il patrimonio regale"
+        },
+        {
+          "title": "Safari nel Wildlife",
+          "info": "Gli animali si radunano vicino all'acqua — miglior stagione per il wildlife"
+        },
+        {
+          "title": "Wildlife del Madhya Pradesh",
+          "info": "Riserve di Kanha e Bandhavgarh riaprono"
+        },
+        {
+          "title": "Karnataka Elevata",
+          "info": "Piantagioni di caffè di Coorg al loro meglio"
+        }
+      ],
+      "Oct": [
+        {
+          "title": "Triangolo d'Oro",
+          "info": "Tempo ideale per Delhi-Agra-Jaipur"
+        },
+        {
+          "title": "Palace on Wheels",
+          "info": "Inizia la stagione del treno di lusso a ottobre"
+        },
+        {
+          "title": "Varanasi e Uttar Pradesh",
+          "info": "Stagione di Diwali — ghat illuminati"
+        },
+        {
+          "title": "Isole Andamane",
+          "info": "Mare calmo, ideale per sport acquatici"
+        }
+      ],
+      "Nov": [
+        {
+          "title": "Maharaja's Express",
+          "info": "Stagione di punta del treno di lusso in tutto il Rajasthan"
+        },
+        {
+          "title": "Cuore dell'India – MP",
+          "info": "Tempo perfetto per Khajuraho e Orchha"
+        },
+        {
+          "title": "Fiera dei Cammelli di Pushkar",
+          "info": "La festa più iconica del Rajasthan"
+        },
+        {
+          "title": "Ritiro nella natura",
+          "info": "Ottimo momento per il wildlife dell'India centrale"
+        }
+      ],
+      "Dec": [
+        {
+          "title": "Forti Gloriosi del Rajasthan",
+          "info": "Picco invernale — miglior momento per il Rajasthan"
+        },
+        {
+          "title": "Kerala con CGH Earth",
+          "info": "Inverno perfetto nella Terra di Dio"
+        },
+        {
+          "title": "Goa in Festa",
+          "info": "Natale e Capodanno a Goa"
+        },
+        {
+          "title": "Miglior parte dello Sri Lanka",
+          "info": "Miglior momento per le spiagge dello Sri Lanka"
+        }
+      ]
+    }
+  },
+  "themes": {
+    "tag": "Avventura in India",
+    "title": "Esplora per Tema",
+    "subtitle": "Scopri l'India attraverso lenti che corrispondono al tuo stile di viaggio — dai ritiri benessere sereni alle odissee storiche.",
+    "items": {
+      "ayurveda": "Ayurveda e Benessere",
+      "spiritual": "Spirituale",
+      "historic": "Storico",
+      "luxuryTrain": "Treni di Lusso",
+      "nature": "Natura"
+    }
+  },
+  "whyIndia": {
+    "tag": "Perché Scegliere l'India",
+    "title": "L'Incredibile India Ti Aspetta",
+    "subtitle": "Dai siti spirituali antichi alle meraviglie naturali mozzafiato — l'India offre un viaggio come nessun altro.",
+    "cards": {
+      "ayurveda": {
+        "tag": "Benessere",
+        "title": "AYURVEDA E BENESSERE",
+        "desc": "Un approccio olistico dell'antica India che equilibra corpo, mente e spirito con terapie naturali, trattamenti erboristici, yoga e meditazione."
+      },
+      "luxury": {
+        "tag": "Lusso",
+        "title": "TRENI DI LUSSO",
+        "desc": "I viaggi in treno di lusso offrono un modo impareggiabile per esplorare il ricco patrimonio, i paesaggi diversificati e lo splendore senza tempo dell'India."
+      },
+      "spiritual": {
+        "tag": "Spirituale",
+        "title": "SITI SPIRITUALI",
+        "desc": "Visita i ghat sacri di Varanasi, medita nei monasteri di Dharamshala e esplora i centri spirituali di Rishikesh e Haridwar."
+      },
+      "historic": {
+        "tag": "Storico",
+        "title": "SITI STORICI",
+        "desc": "Hawa Mahal e Forte Amber a Jaipur, Taj Mahal ad Agra, le intricate sculture di Khajuraho e la città antica di Hampi."
+      },
+      "nature": {
+        "tag": "Natura",
+        "title": "MERAVIGLIE NATURALI",
+        "desc": "Piantagioni di tè rigogliose di Darjeeling, colline verdi di Munnar, foreste di fauna selvatica di Jim Corbett e barriere coralline delle Andamane."
+      }
+    }
+  },
+  "destinations": {
+    "tag": "Esplora i Luoghi",
+    "title": "India Imperdibile",
+    "subtitle": "Destinazioni selezionate che catturano l'essenza dell'Incredibile India.",
+    "names": {
+      "rajasthan": "Rajasthan",
+      "uttarakhand": "Uttarakhand",
+      "gujarat": "Gujarat",
+      "karnataka": "Karnataka",
+      "kerala": "Kerala",
+      "meghalaya": "Meghalaya",
+      "pondicherry": "Pondicherry",
+      "northEast": "Nord Est",
+      "lehLadakh": "Leh-Ladakh",
+      "jammuKashmir": "Jammu e Kashmir",
+      "delhi": "Delhi",
+      "madhyaPradesh": "Madhya Pradesh"
+    }
+  },
+  "reviews": {
+    "tag": "Storie dei Viaggiatori",
+    "title": "Cosa Dicono i Nostri Ospiti",
+    "subtitle": "Esperienze reali di viaggiatori che hanno esplorato l'India con KESARI Inbound.",
+    "cards": [
+      {
+        "title": "Pacchetto Turistico Eccellente (Phu Quoc)",
+        "text": "\"Un nostro gruppo di Singapore ha prenotato il tour di Phu Quoc tramite Kesari World Class Travel Company Mumbai. È stato un viaggio incredibile con i migliori servizi per le visite turistiche, accompagnato da una guida locale, trasporti e cena in un ristorante indiano classico.\"",
+        "author": "Kannan Sathyamoorthy",
+        "location": "Singapore · Giugno 2026"
+      },
+      {
+        "title": "Viaggio Straordinario del Triangolo d'Oro",
+        "text": "\"Io e i miei amici siamo stati molto soddisfatti del pacchetto turistico del Triangolo d'Oro in India. Abbiamo apprezzato l'expertise, la professionalità e la pazienza nel apportare modifiche. Consiglieremo sicuramente Kesari ai nostri amici.\"",
+        "author": "Rajni Agarwal",
+        "location": "USA · Marzo 2026"
+      },
+      {
+        "title": "Un Grande Viaggio a Vaishno Devi",
+        "text": "\"Il nostro viaggio è stato eccellente e ci siamo divertiti molto. Grazie a te, Mithila, e al tuo straordinario team. Il nostro autista ci ha aiutato molto durante il tour. Un'esperienza davvero memorabile!\"",
+        "author": "Chetan Gadkari",
+        "location": "USA · Febbraio 2026"
+      },
+      {
+        "title": "Viaggio Eccellente nell'India Meridionale",
+        "text": "\"Molto soddisfatti dei trasporti, della professionalità e della comunicazione tempestiva. La conoscenza dell'autista e della guida era molto buona. Il processo di prenotazione è stato fluido. Grazie a Mithila per la coordinazione.\"",
+        "author": "Shalom Yehuda",
+        "location": "Israele · Febbraio 2026"
+      },
+      {
+        "title": "Viaggio Memorabile a Delhi e Agra",
+        "text": "\"L'hotel molto buono e l'autista professionale forniti da Kesari hanno reso il nostro viaggio memorabile e degno di essere vissuto. Abbiamo apprezzato ogni momento del viaggio.\"",
+        "author": "Satyajit Patki",
+        "location": "USA · 2026"
+      },
+      {
+        "title": "Viaggio Flessibile e Ben Organizzato in Ladakh",
+        "text": "\"Abbiamo apprezzato molto il lago Pangong. Il nostro autista Thinli è stato molto disponibile e ci ha guidato bene. L'intero viaggio in Ladakh è stato organizzato perfettamente dal team di Kesari.\"",
+        "author": "Shekhar Kanade",
+        "location": "Australia · 2026"
+      },
+      {
+        "title": "Esperienza Eccellente - Tour del Rajasthan",
+        "text": "\"Servizi eccellenti. Hotel, autista, guida tutto ottimo. Stiamo già programmando il nostro prossimo viaggio con Kesari. L'attenzione personalizzata ha fatto la differenza durante il nostro tour del Rajasthan.\"",
+        "author": "Sanjib Som",
+        "location": "USA · Novembre 2025"
+      },
+      {
+        "title": "Tour Eccellente del Gujarat",
+        "text": "\"Tutti i servizi hanno soddisfatto le nostre aspettative. Eccellente 10 su una scala da 1 a 10. Vogliamo visitare l'India meridionale nel nostro prossimo viaggio con Kesari. Gli arrangiamenti sono stati impeccabili durante tutto il percorso.\"",
+        "author": "Bhupendra Patel",
+        "location": "USA · 2026"
+      },
+      {
+        "title": "Tour del Rajasthan Piacevole",
+        "text": "\"Il tour è stato molto soddisfacente. Abbiamo apprezzato la cavalcata di elefanti al Forte Amer e la cavalcata di cammelli a Pushkar. Consiglieremmo sicuramente Kesari Inbound e pianificheremmo presto un altro tour.\"",
+        "author": "KristleKwong Sen Aun",
+        "location": "Malesia · 2026"
+      },
+      {
+        "title": "Esperienza Indimenticabile a Dubai!",
+        "text": "\"Kesari Tours ha reso il nostro viaggio di Capodanno a Dubai un'esperienza indimenticabile! La loro pianificazione meticolosa e l'esecuzione impeccabile hanno garantito che ogni dettaglio fosse perfetto.\""
+      }
+    ],
+    "author": "Sandeep Purandare",
+    "location": "USA · 2026"
+  },
+  "workflow": {
+    "tag": "Come Funziona",
+    "title": "Il Nostro Flusso di Lavoro di Localizzazione a 9 Livelli",
+    "subtitle": "Dalla traduzione di base alla consegna multilingue completamente automatizzata con intelligenza artificiale — ogni passaggio è progettato per precisione, velocità e un'esperienza senza soluzione di continuità per i viaggiatori di tutto il mondo.",
+    "levels": [
+      {
+        "badge": "Fondazione",
+        "title": "Traduzione di Base",
+        "desc": "Tutti i testi della pagina — titoli, corpo del testo, pulsanti e etichette — vengono automaticamente convertiti dall'inglese nella lingua di destinazione con un solo clic."
+      },
+      {
+        "badge": "Memoria",
+        "title": "Memoria di Traduzione",
+        "desc": "Le stringhe tradotte in precedenza vengono memorizzate nella cache e riutilizzate istantaneamente. Le frasi ripetute in tutte le pagine rimangono coerenti e la velocità di traduzione aumenta nel tempo."
+      },
+      {
+        "badge": "Qualità",
+        "title": "Controllo di Qualità con IA",
+        "desc": "Un livello di intelligenza artificiale esamina ogni segmento tradotto per verificare l'accuratezza, il tono, l'appropriatezza culturale e la voce del marchio prima che venga mostrato al visitatore."
+      },
+      {
+        "badge": "Automazione",
+        "title": "Traduzione Automatica di Nuovi Contenuti",
+        "desc": "Quando vengono pubblicati nuovi pacchetti, destinazioni o post del blog, vengono rilevati e tradotti automaticamente — senza bisogno di un trigger manuale."
+      },
+      {
+        "badge": "Visibilità",
+        "title": "Localizzazione SEO",
+        "desc": "Titoli meta, descrizioni, slug URL, testo alternativo e dati strutturati vengono tutti localizzati in modo che il sito in spagnolo si posizioni su Google nei mercati di lingua spagnola."
+      },
+      {
+        "badge": "Visivo",
+        "title": "Traduzione delle Immagini",
+        "desc": "Il testo incorporato in banner, infografiche e immagini promozionali viene rilevato e sostituito con versioni localizzate mantenendo la fedeltà del design originale."
+      },
+      {
+        "badge": "Comunicazione",
+        "title": "Localizzazione delle Email",
+        "desc": "Le conferme di prenotazione, le risposte alle richieste e le newsletter promozionali vengono automaticamente inviate nella lingua del viaggiatore per un'esperienza end-to-end senza soluzione di continuità."
+      },
+      {
+        "badge": "Intelligenza",
+        "title": "CMS Potenziato dall'IA",
+        "desc": "Il sistema di gestione dei contenuti utilizza l'intelligenza artificiale per segnalare stringhe non tradotte, suggerire miglioramenti e gestire le versioni multilingue dei contenuti da un'unica dashboard."
+      },
+      {
+        "badge": "Garanzia",
+        "title": "Intervento Umano",
+        "desc": "Traduttori esperti e consulenti culturali esaminano i risultati dell'IA, approvano la copia finale e garantiscono la massima qualità prima della pubblicazione per il pubblico live."
+      }
+    ]
+  },
+  "enquiry": {
+    "tag": "Contattaci",
+    "title": "Descrivi il Tuo",
+    "titleHighlight": "Viaggio dei Sogni",
+    "desc1": "Lascia che i nostri esperti di viaggio creino un itinerario personalizzato solo per te. Che tu abbia destinazioni specifiche in mente o solo un'idea vaga, noi lo trasformeremo in un viaggio indimenticabile.",
+    "callUs": "📞 Chiamaci:",
+    "callPhone": "+91 22 6666 6666",
+    "email": "📧 Email:",
+    "emailAddr": "inbound@kesari.in",
+    "responseTime": "🕐 Tempo di risposta:",
+    "responseValue": "Entro 24 ore",
+    "confidential": "🔒 I tuoi dati sono completamente riservati",
+    "form": {
+      "fullName": "Nome Completo *",
+      "fullNamePlaceholder": "Il tuo nome completo",
+      "contactNumber": "Numero di Contatto *",
+      "contactPlaceholder": "+39 000 000 0000",
+      "emailAddress": "Indirizzo Email",
+      "emailPlaceholder": "tua@email.com",
+      "country": "Paese",
+      "countryPlaceholder": "Il tuo paese",
+      "destination": "Destinazione",
+      "destinationDefault": "Seleziona destinazione",
+      "travelMonth": "Mese di Viaggio",
+      "monthDefault": "Seleziona mese",
+      "travellers": "N. di Viaggiatori",
+      "duration": "Durata del Viaggio",
+      "dreamTrip": "Descrivi il Tuo Viaggio dei Sogni",
+      "dreamTripPlaceholder": "Raccontaci dei tuoi interessi di viaggio, tipo di gruppo, esigenze speciali, fascia di budget...",
+      "months": [
+        "Gennaio",
+        "Febbraio",
+        "Marzo",
+        "Aprile",
+        "Maggio",
+        "Giugno",
+        "Luglio",
+        "Agosto",
+        "Settembre",
+        "Ottobre",
+        "Novembre",
+        "Dicembre"
+      ],
+      "durations": [
+        "3-5 giorni",
+        "6-8 giorni",
+        "9-12 giorni",
+        "13+ giorni"
+      ],
+      "travellersOptions": [
+        "1",
+        "2",
+        "3-5",
+        "6-10",
+        "10+"
+      ]
+    }
+  }
+}

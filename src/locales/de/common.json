@@ -1,0 +1,56 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "destinations": "Ziele ▾",
+    "tourPackages": "Reiseangebote",
+    "exploreIndia": "Entdecken Sie Indien",
+    "destinationsLink": "Ziele",
+    "reviews": "Bewertungen",
+    "contactUs": "Kontaktieren Sie uns",
+    "searchPlaceholder": "Ziele, Pakete durchsuchen…"
+  },
+  "mega": {
+    "northIndia": "Nordindien",
+    "westIndia": "Westindien",
+    "southIndia": "Südindien",
+    "eastIndia": "Ostindien"
+  },
+  "header": {
+    "phone": "📞 +91 22 6666 6666",
+    "enquireNow": "Jetzt anfragen",
+    "inbound": "INBOUND",
+    "forForeignNationals": "FÜR AUSLÄNDISCHE STAATSANGEHÖRIGE"
+  },
+  "buttons": {
+    "viewTrip": "Reise ansehen",
+    "enquire": "Anfragen",
+    "loadMore": "Mehr Pakete laden",
+    "sendEnquiry": "Anfrage senden →",
+    "exploreWithUs": "Entdecken Sie mit uns",
+    "bookTheTrip": "Reise buchen",
+    "planYourTrip": "Planen Sie Ihre Reise",
+    "viewTrips": "Reisen ansehen",
+    "bookYourTrip": "Reise buchen",
+    "submitBooking": "Anfrage senden →"
+  },
+  "language": {
+    "en": "DE",
+    "es": "ES"
+  },
+  "destinations": {
+    "names": {
+      "rajasthan": "Rajasthan",
+      "uttarakhand": "Uttarakhand",
+      "gujarat": "Gujarat",
+      "karnataka": "Karnataka",
+      "kerala": "Kerala",
+      "meghalaya": "Meghalaya",
+      "pondicherry": "Pondicherry",
+      "northEast": "Nordostindien",
+      "lehLadakh": "Leh & Ladakh",
+      "jammuKashmir": "Jammu & Kashmir",
+      "delhi": "Delhi",
+      "madhyaPradesh": "Madhya Pradesh"
+    }
+  }
+}

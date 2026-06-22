@@ -1,0 +1,56 @@
+{
+  "nav": {
+    "home": "首页",
+    "destinations": "目的地 ▾",
+    "tourPackages": "旅游套餐",
+    "exploreIndia": "探索印度",
+    "destinationsLink": "目的地",
+    "reviews": "评价",
+    "contactUs": "联系我们",
+    "searchPlaceholder": "搜索目的地、套餐…"
+  },
+  "mega": {
+    "northIndia": "北印度",
+    "westIndia": "西印度",
+    "southIndia": "南印度",
+    "eastIndia": "东印度"
+  },
+  "header": {
+    "phone": "📞 +91 22 6666 6666",
+    "enquireNow": "立即咨询",
+    "inbound": "入境旅游",
+    "forForeignNationals": "外国人专用"
+  },
+  "buttons": {
+    "viewTrip": "查看行程",
+    "enquire": "咨询",
+    "loadMore": "加载更多套餐",
+    "sendEnquiry": "发送咨询 →",
+    "exploreWithUs": "与我们一起探索",
+    "bookTheTrip": "预订行程",
+    "planYourTrip": "规划行程",
+    "viewTrips": "查看行程",
+    "bookYourTrip": "预订行程",
+    "submitBooking": "发送咨询 →"
+  },
+  "language": {
+    "en": "EN",
+    "es": "ES"
+  },
+  "destinations": {
+    "names": {
+      "rajasthan": "拉贾斯坦",
+      "uttarakhand": "北阿坎德",
+      "gujarat": "古吉拉特",
+      "karnataka": "卡纳塔克",
+      "kerala": "喀拉拉",
+      "meghalaya": "梅加拉亚",
+      "pondicherry": "本地治里",
+      "northEast": "印度东北部",
+      "lehLadakh": "列城与拉达克",
+      "jammuKashmir": "查谟与克什米尔",
+      "delhi": "德里",
+      "madhyaPradesh": "中央邦"
+    }
+  }
+}

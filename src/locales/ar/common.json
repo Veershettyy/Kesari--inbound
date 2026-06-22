@@ -1,0 +1,56 @@
+{
+  "nav": {
+    "home": "الرئيسية",
+    "destinations": "الوجهات ▾",
+    "tourPackages": "حزم السفر",
+    "exploreIndia": "اكتشف الهند",
+    "destinationsLink": "الوجهات",
+    "reviews": "التقييمات",
+    "contactUs": "تواصل معنا",
+    "searchPlaceholder": "ابحث عن وجهات، حزم…"
+  },
+  "mega": {
+    "northIndia": "شمال الهند",
+    "westIndia": "غرب الهند",
+    "southIndia": "جنوب الهند",
+    "eastIndia": "شرق الهند"
+  },
+  "header": {
+    "phone": "📞 +91 22 6666 6666",
+    "enquireNow": "استفسر الآن",
+    "inbound": "الداخلية",
+    "forForeignNationals": "للأجانب"
+  },
+  "buttons": {
+    "viewTrip": "عرض الرحلة",
+    "enquire": "استفسار",
+    "loadMore": "تحميل المزيد من الحزم",
+    "sendEnquiry": "أرسل استفسارك →",
+    "exploreWithUs": "اكتشف معنا",
+    "bookTheTrip": "احجز الرحلة",
+    "planYourTrip": "خطط لرحلتك",
+    "viewTrips": "عرض الرحلات",
+    "bookYourTrip": "احجز رحلتك",
+    "submitBooking": "أرسل استفسارك →"
+  },
+  "language": {
+    "en": "EN",
+    "es": "ES"
+  },
+  "destinations": {
+    "names": {
+      "rajasthan": "راجاستان",
+      "uttarakhand": "أوتاراخند",
+      "gujarat": "گجرات",
+      "karnataka": "كارناتاكا",
+      "kerala": "كيرالا",
+      "meghalaya": "ميغالايا",
+      "pondicherry": "بونديشيري",
+      "northEast": "شمال شرق الهند",
+      "lehLadakh": "ليهار ولاداخ",
+      "jammuKashmir": "جامو وكشمير",
+      "delhi": "دلهي",
+      "madhyaPradesh": "مديا براديش"
+    }
+  }
+}

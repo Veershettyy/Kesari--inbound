@@ -1,17 +1,28 @@
 import { useTranslation } from 'react-i18next';
 
-const GT = 'https://translate.google.com/translate?sl=en&tl=es&u=';
+const GT_BASE = 'https://translate.google.com/translate?sl=en&tl=';
 
-export function localizeUrl(url, isEs) {
-  if (!isEs) return url;
-  // Don't double-wrap already-translated URLs
-  if (url.startsWith(GT)) return url;
-  return GT + encodeURIComponent(url);
+// Maps i18n language codes to Google Translate language codes
+const LANG_MAP = {
+  'es-ES': 'es',
+  'fr':    'fr',
+  'hi':    'hi',
+  'de':    'de',
+  'ja':    'ja',
+  'pt':    'pt',
+  'it':    'it',
+  'zh':    'zh-CN',
+  'ar':    'ar',
+};
+
+export function localizeUrl(url, lang) {
+  const tl = LANG_MAP[lang];
+  if (!tl) return url; // English — return as-is
+  if (url.includes('translate.google.com')) return url; // already wrapped
+  return `${GT_BASE}${tl}&u=${encodeURIComponent(url)}`;
 }
 
 export default function useLocalizedUrl() {
   const { i18n } = useTranslation();
-  const isEs = i18n.language === 'es-ES';
-
-  return (url) => localizeUrl(url, isEs);
+  return (url) => localizeUrl(url, i18n.language);
 }

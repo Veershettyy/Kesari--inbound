@@ -1,0 +1,39 @@
+{
+  "brand": {
+    "name": "KESARI",
+    "nameHighlight": "INBOUND",
+    "desc": "KESARI Inbound è un'azienda leader di viaggi inbound che offre pacchetti turistici personalizzati in tutta l'India. Con oltre 42 anni di esperienza e un team di oltre 700 membri qualificati, creiamo viaggi indimenticabili per viaggiatori internazionali e nazionali."
+  },
+  "destinations": {
+    "heading": "Destinazioni",
+    "links": [
+      "Rajasthan",
+      "Kerala",
+      "Himachal Pradesh",
+      "Goa",
+      "Leh & Ladakh",
+      "Nord Est"
+    ]
+  },
+  "themes": {
+    "heading": "Temi",
+    "links": [
+      "Tour Naturalistici",
+      "Tour del Patrimonio",
+      "Tour Spirituali",
+      "Treni di Lusso",
+      "Ayurveda & Benessere"
+    ]
+  },
+  "company": {
+    "heading": "Azienda",
+    "links": [
+      "Chi siamo",
+      "Contattaci",
+      "Politica sulla Privacy",
+      "Termini & Condizioni",
+      "KESARi Select"
+    ]
+  },
+  "copyright": "© 2026 KESARi Inbound — Servizi di Viaggi e Tour Personalizzati. Tutti i diritti riservati."
+}

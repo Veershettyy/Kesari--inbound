@@ -1,0 +1,39 @@
+{
+  "brand": {
+    "name": "KESARI",
+    "nameHighlight": "INBOUND",
+    "desc": "KESARi Inboundは、インド全土でカスタマイズされたツアーパッケージを提供する premier inbound travel company です。42年以上の歴史と700人以上の熟練スタッフを擁し、国内外の旅行者に忘れられない旅を提供しています。"
+  },
+  "destinations": {
+    "heading": "行先",
+    "links": [
+      "Rajasthan",
+      "Kerala",
+      "Himachal Pradesh",
+      "Goa",
+      "Leh & Ladakh",
+      "North East"
+    ]
+  },
+  "themes": {
+    "heading": "テーマ",
+    "links": [
+      "Wildlife Tours",
+      "Heritage Tours",
+      "Spiritual Tours",
+      "Luxury Trains",
+      "Ayurveda & Wellness"
+    ]
+  },
+  "company": {
+    "heading": "会社情報",
+    "links": [
+      "KESARiについて",
+      "お問い合わせ",
+      "プライバシーポリシー",
+      "利用規約",
+      "KESARi Select"
+    ]
+  },
+  "copyright": "© 2026 KESARi Inbound — Custom Tours & Travel Services. All rights reserved."
+}

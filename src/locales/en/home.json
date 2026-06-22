@@ -28,9 +28,236 @@
     "title": "Best Time to Visit India",
     "subtitle": "Pick a month and discover the best destinations and packages for that time of year.",
     "months": {
-      "Jan": "Jan", "Feb": "Feb", "Mar": "Mar", "Apr": "Apr",
-      "May": "May", "Jun": "Jun", "Jul": "Jul", "Aug": "Aug",
-      "Sep": "Sep", "Oct": "Oct", "Nov": "Nov", "Dec": "Dec"
+      "Jan": "Jan",
+      "Feb": "Feb",
+      "Mar": "Mar",
+      "Apr": "Apr",
+      "May": "May",
+      "Jun": "Jun",
+      "Jul": "Jul",
+      "Aug": "Aug",
+      "Sep": "Sep",
+      "Oct": "Oct",
+      "Nov": "Nov",
+      "Dec": "Dec"
+    },
+    "pkgs": {
+      "Jan": [
+        {
+          "title": "Rajasthan Royal Tour",
+          "info": "Peak winter — perfect for forts & palaces"
+        },
+        {
+          "title": "Kerala Backwaters",
+          "info": "Pleasant weather in God's Own Country"
+        },
+        {
+          "title": "Goa Beach Holiday",
+          "info": "Best season for beaches & nightlife"
+        },
+        {
+          "title": "Golden Triangle",
+          "info": "Crisp winter ideal for Delhi-Agra-Jaipur"
+        }
+      ],
+      "Feb": [
+        {
+          "title": "Mathura – Holi Festival",
+          "info": "Holi celebrations in Mathura & Vrindavan"
+        },
+        {
+          "title": "Rajasthan Desert Festival",
+          "info": "Jaisalmer Desert Festival in full swing"
+        },
+        {
+          "title": "South India Temple Trail",
+          "info": "Cool & comfortable for Tamil Nadu temples"
+        },
+        {
+          "title": "Ayurveda & Wellness Kerala",
+          "info": "Perfect season for Kerala wellness retreats"
+        }
+      ],
+      "Mar": [
+        {
+          "title": "Andaman Islands",
+          "info": "Crystal clear waters, ideal for snorkelling"
+        },
+        {
+          "title": "Lakshadweep Islands",
+          "info": "Best visibility for coral reefs"
+        },
+        {
+          "title": "Odisha Temple Tour",
+          "info": "Sun Temple & Konark at their best"
+        },
+        {
+          "title": "Pondicherry Coastal Charm",
+          "info": "Lovely French quarter in March"
+        }
+      ],
+      "Apr": [
+        {
+          "title": "Uttarakhand Valleys",
+          "info": "Rhododendrons bloom, great trekking"
+        },
+        {
+          "title": "Himachal Pradesh",
+          "info": "Snow melts, valleys turn green"
+        },
+        {
+          "title": "Gujarat Heritage",
+          "info": "Pre-summer visit to Ahmedabad & Bhuj"
+        },
+        {
+          "title": "Foot Steps of Buddha",
+          "info": "Ideal weather for the Buddhist circuit"
+        }
+      ],
+      "May": [
+        {
+          "title": "Leh & Ladakh",
+          "info": "Roads open, dramatic landscapes await"
+        },
+        {
+          "title": "Spiti Valley, Himachal",
+          "info": "High altitude desert comes alive"
+        },
+        {
+          "title": "Kashmir – Paradise",
+          "info": "Dal Lake and tulip gardens in bloom"
+        },
+        {
+          "title": "Best of Bhutan",
+          "info": "Clear skies and stunning Himalayan views"
+        }
+      ],
+      "Jun": [
+        {
+          "title": "Engaging Leh & Ladakh",
+          "info": "Peak season for Pangong & Nubra Valley"
+        },
+        {
+          "title": "North East India",
+          "info": "Before monsoon — lush green landscapes"
+        },
+        {
+          "title": "Best of Nepal",
+          "info": "Pre-monsoon Himalayan views"
+        },
+        {
+          "title": "Bhutan",
+          "info": "Clear skies and mountain views"
+        }
+      ],
+      "Jul": [
+        {
+          "title": "Meghalaya – Abode of Clouds",
+          "info": "Monsoon transforms Meghalaya magically"
+        },
+        {
+          "title": "Kerala Ayurveda & Spa",
+          "info": "Monsoon is best for Ayurvedic treatments"
+        },
+        {
+          "title": "Carnoustie Wellness",
+          "info": "Peak Panchakarma season in Kerala"
+        },
+        {
+          "title": "Gateway to North East",
+          "info": "Kaziranga & Shillong at their greenest"
+        }
+      ],
+      "Aug": [
+        {
+          "title": "Scenic Meghalaya",
+          "info": "Waterfalls at their most spectacular"
+        },
+        {
+          "title": "North East India Tour",
+          "info": "Gangtok & Kaziranga — green & lush"
+        },
+        {
+          "title": "Leh Ladakh",
+          "info": "Final weeks of best Ladakh weather"
+        },
+        {
+          "title": "Kashmir Valley",
+          "info": "Srinagar at its most beautiful"
+        }
+      ],
+      "Sep": [
+        {
+          "title": "Rajasthan Heritage",
+          "info": "Post-monsoon greenery meets royal heritage"
+        },
+        {
+          "title": "Wildlife Safaris",
+          "info": "Animals gather near water — best wildlife"
+        },
+        {
+          "title": "Madhya Pradesh Wildlife",
+          "info": "Kanha & Bandhavgarh reserves reopen"
+        },
+        {
+          "title": "Elevated Karnataka",
+          "info": "Coorg coffee plantations at their best"
+        }
+      ],
+      "Oct": [
+        {
+          "title": "Golden Triangle",
+          "info": "Ideal weather for Delhi-Agra-Jaipur"
+        },
+        {
+          "title": "Palace on Wheels",
+          "info": "Luxury train season begins in October"
+        },
+        {
+          "title": "Varanasi & Uttar Pradesh",
+          "info": "Diwali season — ghats illuminated"
+        },
+        {
+          "title": "Andaman Islands",
+          "info": "Sea is calm, ideal for water sports"
+        }
+      ],
+      "Nov": [
+        {
+          "title": "Maharaja's Express",
+          "info": "Peak luxury train season across Rajasthan"
+        },
+        {
+          "title": "Heart of India – MP",
+          "info": "Perfect weather for Khajuraho & Orchha"
+        },
+        {
+          "title": "Pushkar Camel Fair",
+          "info": "Rajasthan's most iconic festival"
+        },
+        {
+          "title": "Wild Retreat",
+          "info": "Great time for central India wildlife"
+        }
+      ],
+      "Dec": [
+        {
+          "title": "Glorious Forts of Rajasthan",
+          "info": "Winter peak — best time for Rajasthan"
+        },
+        {
+          "title": "Kerala with CGH Earth",
+          "info": "Perfect winter in God's Own Country"
+        },
+        {
+          "title": "Animating Goa",
+          "info": "Christmas & New Year in Goa"
+        },
+        {
+          "title": "Best of Sri Lanka",
+          "info": "Best time for Sri Lanka beaches"
+        }
+      ]
     }
   },
   "themes": {
@@ -244,9 +471,33 @@
       "duration": "Trip Duration",
       "dreamTrip": "Describe Your Dream Trip",
       "dreamTripPlaceholder": "Tell us about your travel interests, group type, special requirements, budget range...",
-      "months": ["January","February","March","April","May","June","July","August","September","October","November","December"],
-      "durations": ["3-5 days","6-8 days","9-12 days","13+ days"],
-      "travellersOptions": ["1","2","3-5","6-10","10+"]
+      "months": [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December"
+      ],
+      "durations": [
+        "3-5 days",
+        "6-8 days",
+        "9-12 days",
+        "13+ days"
+      ],
+      "travellersOptions": [
+        "1",
+        "2",
+        "3-5",
+        "6-10",
+        "10+"
+      ]
     }
   }
 }

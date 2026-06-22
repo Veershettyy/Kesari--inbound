@@ -9,67 +9,63 @@ import enTours  from '../locales/en/tours.json';
 import enSeo    from '../locales/en/seo.json';
 import enFooter from '../locales/en/footer.json';
 
-const EN_RESOURCES = {
-  common: enCommon,
-  home:   enHome,
-  tours:  enTours,
-  seo:    enSeo,
-  footer: enFooter,
-};
+const EN_RESOURCES = { common: enCommon, home: enHome, tours: enTours, seo: enSeo, footer: enFooter };
 const NAMESPACES = ['common', 'home', 'tours', 'seo', 'footer'];
 
-// Lang codes that are pre-bundled — no API call needed
-const BUNDLED = { en: 'en', es: 'es-ES', 'es-es': 'es-ES' };
+const BUNDLED = {
+  en: 'en',
+  es: 'es-ES', 'es-es': 'es-ES',
+  fr: 'fr', hi: 'hi', de: 'de', ja: 'ja',
+  pt: 'pt', it: 'it', zh: 'zh', ar: 'ar',
+};
 
-// Path segments that look like lang codes but are route parts — treat as English
 const PATH_SEGMENTS = new Set(['explore', 'destinations', 'packages', 'search', 'product-details']);
 
 function extractLang(pathname) {
-  // /INT/{lang}/... → extract lang
   const m = pathname.match(/^\/INT\/([^/]+)/);
   if (!m) return null;
   const seg = m[1].toLowerCase();
-  if (PATH_SEGMENTS.has(seg)) return null; // it's a route segment, not a lang code
-  return m[1]; // return original casing e.g. 'fr', 'de', 'ja', 'es'
+  if (PATH_SEGMENTS.has(seg)) return null;
+  return m[1];
+}
+
+function getTargetLang(pathname) {
+  if (pathname.startsWith('/es-es')) return 'es-ES';
+  const raw = extractLang(pathname);
+  if (!raw) return 'en';
+  const lower = raw.toLowerCase();
+  return BUNDLED[lower] || raw;
 }
 
 export default function LocaleWrapper({ children }) {
   const { pathname } = useLocation();
   const { i18n } = useTranslation();
+  // Start from i18n's ACTUAL current language, not the target —
+  // so setActiveLang always causes a key change and forces a remount
+  const [activeLang, setActiveLang] = useState(i18n.language);
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    const isLegacyEs = pathname.startsWith('/es-es');
     const rawLang = extractLang(pathname);
+    const lower = rawLang ? rawLang.toLowerCase() : null;
 
     async function applyLanguage() {
-      // Legacy /es-es
-      if (isLegacyEs) {
-        i18n.changeLanguage('es-ES');
+      // Bundled or simple language
+      if (!rawLang || pathname.startsWith('/es-es') || BUNDLED[lower]) {
+        const lang = getTargetLang(pathname);
+        await i18n.changeLanguage(lang);
+        setActiveLang(lang);
         return;
       }
 
-      // /INT with no lang code → English
-      if (!rawLang) {
-        i18n.changeLanguage('en');
-        return;
-      }
-
-      const lower = rawLang.toLowerCase();
-
-      // Pre-bundled language — switch instantly, no API call
-      if (BUNDLED[lower]) {
-        i18n.changeLanguage(BUNDLED[lower]);
-        return;
-      }
-
-      // Dynamic language already loaded into i18next
+      // Already loaded dynamic language
       if (i18n.hasResourceBundle(rawLang, 'common')) {
-        i18n.changeLanguage(rawLang);
+        await i18n.changeLanguage(rawLang);
+        setActiveLang(rawLang);
         return;
       }
 
-      // Fetch from Claude API via Netlify function (localStorage cache checked inside fetchTranslation)
+      // Fetch dynamic language via Netlify function
       setLoading(true);
       try {
         await Promise.all(
@@ -78,10 +74,11 @@ export default function LocaleWrapper({ children }) {
             i18n.addResourceBundle(rawLang, ns, translated, true, true);
           })
         );
-        i18n.changeLanguage(rawLang);
-      } catch (err) {
-        console.error('Dynamic translation failed — falling back to English:', err);
-        i18n.changeLanguage('en');
+        await i18n.changeLanguage(rawLang);
+        setActiveLang(rawLang);
+      } catch {
+        await i18n.changeLanguage('en');
+        setActiveLang('en');
       } finally {
         setLoading(false);
       }
@@ -112,5 +109,7 @@ export default function LocaleWrapper({ children }) {
     );
   }
 
-  return children;
+  // key=activeLang forces all children to remount when language changes,
+  // guaranteeing every useTranslation hook picks up the new language
+  return <span key={activeLang} style={{ display: 'contents' }}>{children}</span>;
 }

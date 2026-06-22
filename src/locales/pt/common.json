@@ -1,0 +1,56 @@
+{
+  "nav": {
+    "home": "Início",
+    "destinations": "Destinos ▾",
+    "tourPackages": "Pacotes Turísticos",
+    "exploreIndia": "Explore a Índia",
+    "destinationsLink": "Destinos",
+    "reviews": "Avaliações",
+    "contactUs": "Contate-nos",
+    "searchPlaceholder": "Buscar destinos, pacotes…"
+  },
+  "mega": {
+    "northIndia": "Norte da Índia",
+    "westIndia": "Oeste da Índia",
+    "southIndia": "Sul da Índia",
+    "eastIndia": "Leste da Índia"
+  },
+  "header": {
+    "phone": "📞 +91 22 6666 6666",
+    "enquireNow": "Solicitar Agora",
+    "inbound": "INBOUND",
+    "forForeignNationals": "PARA ESTRANGEIROS"
+  },
+  "buttons": {
+    "viewTrip": "Ver Viagem",
+    "enquire": "Solicitar",
+    "loadMore": "Carregar Mais Pacotes",
+    "sendEnquiry": "Enviar Solicitação →",
+    "exploreWithUs": "Explore conosco",
+    "bookTheTrip": "Reserve a Viagem",
+    "planYourTrip": "Planeje sua Viagem",
+    "viewTrips": "Ver Viagens",
+    "bookYourTrip": "Reserve sua Viagem",
+    "submitBooking": "Enviar Solicitação →"
+  },
+  "language": {
+    "en": "PT",
+    "es": "ES"
+  },
+  "destinations": {
+    "names": {
+      "rajasthan": "Rajastão",
+      "uttarakhand": "Uttarakhand",
+      "gujarat": "Gujarate",
+      "karnataka": "Karnataka",
+      "kerala": "Querala",
+      "meghalaya": "Meghalaya",
+      "pondicherry": "Pondicheri",
+      "northEast": "Nordeste da Índia",
+      "lehLadakh": "Leh & Ladakh",
+      "jammuKashmir": "Jammu e Caxemira",
+      "delhi": "Deli",
+      "madhyaPradesh": "Madia Pradexe"
+    }
+  }
+}

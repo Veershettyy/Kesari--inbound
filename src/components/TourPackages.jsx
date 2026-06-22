@@ -17,7 +17,11 @@ const TourPackages = forwardRef(function TourPackages({ onEnquire }, ref) {
   const [filter, setFilter] = useState('all');
   const [search, setSearch] = useState('');
   const [visible, setVisible] = useState(PAGE);
-  const isEs = i18n.language === 'es-ES';
+
+  // Build the correct base path for any language
+  const lang = i18n.language;
+  const langSlug = lang === 'en' ? '' : (lang === 'es-ES' ? 'es' : lang);
+  const basePath = langSlug ? `/INT/${langSlug}` : '/INT';
 
   useImperativeHandle(ref, () => ({
     setSearch: (q) => { setSearch(q); setVisible(PAGE); }
@@ -34,7 +38,7 @@ const TourPackages = forwardRef(function TourPackages({ onEnquire }, ref) {
   const shown = filtered.slice(0, visible);
 
   function goToPackage(code) {
-    navigate(isEs ? `/INT/es/explore/product-details/${code}` : `/INT/explore/product-details/${code}`);
+    navigate(`${basePath}/explore/product-details/${code}`);
   }
 
   return (

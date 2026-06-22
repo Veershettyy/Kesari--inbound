@@ -1,0 +1,56 @@
+{
+  "nav": {
+    "home": "ホーム",
+    "destinations": "行先 ▾",
+    "tourPackages": "ツアーパッケージ",
+    "exploreIndia": "インドを探索",
+    "destinationsLink": "行先",
+    "reviews": "レビュー",
+    "contactUs": "お問い合わせ",
+    "searchPlaceholder": "行先、パッケージを検索..."
+  },
+  "mega": {
+    "northIndia": "北インド",
+    "westIndia": "西インド",
+    "southIndia": "南インド",
+    "eastIndia": "東インド"
+  },
+  "header": {
+    "phone": "📞 +91 22 6666 6666",
+    "enquireNow": "今すぐお問い合わせ",
+    "inbound": "INBOUND",
+    "forForeignNationals": "外国人の方へ"
+  },
+  "buttons": {
+    "viewTrip": "旅程を表示",
+    "enquire": "お問い合わせ",
+    "loadMore": "さらにパッケージを表示",
+    "sendEnquiry": "お問い合わせを送信 →",
+    "exploreWithUs": "一緒に探索",
+    "bookTheTrip": "旅程を予約",
+    "planYourTrip": "旅程を計画",
+    "viewTrips": "旅程を表示",
+    "bookYourTrip": "旅程を予約",
+    "submitBooking": "お問い合わせを送信 →"
+  },
+  "language": {
+    "en": "EN",
+    "es": "ES"
+  },
+  "destinations": {
+    "names": {
+      "rajasthan": "ラージャスターン",
+      "uttarakhand": "ウッタラーカンド",
+      "gujarat": "グジャラート",
+      "karnataka": "カルナータカ",
+      "kerala": "ケーララ",
+      "meghalaya": "メーガーラヤ",
+      "pondicherry": "ポンディシェリ",
+      "northEast": "インド北東部",
+      "lehLadakh": "レーハ・ラダック",
+      "jammuKashmir": "ジャンムー・カシミール",
+      "delhi": "デリー",
+      "madhyaPradesh": "マディヤ・プラデーシュ"
+    }
+  }
+}

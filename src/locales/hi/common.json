@@ -1,0 +1,56 @@
+{
+  "nav": {
+    "home": "होम",
+    "destinations": "गंतव्य ▾",
+    "tourPackages": "टूर पैकेज",
+    "exploreIndia": "भारत का अन्वेषण करें",
+    "destinationsLink": "गंतव्य",
+    "reviews": "समीक्षाएं",
+    "contactUs": "संपर्क करें",
+    "searchPlaceholder": "गंतव्य, पैकेज खोजें…"
+  },
+  "mega": {
+    "northIndia": "उत्तर भारत",
+    "westIndia": "पश्चिम भारत",
+    "southIndia": "दक्षिण भारत",
+    "eastIndia": "पूर्व भारत"
+  },
+  "header": {
+    "phone": "📞 +91 22 6666 6666",
+    "enquireNow": "अभी पूछताछ करें",
+    "inbound": "INBOUND",
+    "forForeignNationals": "विदेशी नागरिकों के लिए"
+  },
+  "buttons": {
+    "viewTrip": "ट्रिप देखें",
+    "enquire": "पूछताछ करें",
+    "loadMore": "और पैकेज लोड करें",
+    "sendEnquiry": "पूछताछ भेजें →",
+    "exploreWithUs": "हमारे साथ अन्वेषण करें",
+    "bookTheTrip": "ट्रिप बुक करें",
+    "planYourTrip": "अपनी ट्रिप की योजना बनाएं",
+    "viewTrips": "ट्रिप देखें",
+    "bookYourTrip": "अपनी ट्रिप बुक करें",
+    "submitBooking": "पूछताछ भेजें →"
+  },
+  "language": {
+    "en": "EN",
+    "es": "ES"
+  },
+  "destinations": {
+    "names": {
+      "rajasthan": "राजस्थान",
+      "uttarakhand": "उत्तराखण्ड",
+      "gujarat": "गुजरात",
+      "karnataka": "कर्नाटक",
+      "kerala": "केरल",
+      "meghalaya": "मेघालय",
+      "pondicherry": "पुदुचेरी",
+      "northEast": "पूर्वोत्तर भारत",
+      "lehLadakh": "लेह एवं लद्दाख",
+      "jammuKashmir": "जम्मू एवं कश्मीर",
+      "delhi": "दिल्ली",
+      "madhyaPradesh": "मध्य प्रदेश"
+    }
+  }
+}

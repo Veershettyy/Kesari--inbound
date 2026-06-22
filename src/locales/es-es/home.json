@@ -28,82 +28,235 @@
     "title": "Mejor Época para Visitar India",
     "subtitle": "Elige un mes y descubre los mejores destinos y paquetes para esa época del año.",
     "months": {
-      "Jan": "Ene", "Feb": "Feb", "Mar": "Mar", "Apr": "Abr",
-      "May": "May", "Jun": "Jun", "Jul": "Jul", "Aug": "Ago",
-      "Sep": "Sep", "Oct": "Oct", "Nov": "Nov", "Dec": "Dic"
+      "Jan": "Ene",
+      "Feb": "Feb",
+      "Mar": "Mar",
+      "Apr": "Abr",
+      "May": "May",
+      "Jun": "Jun",
+      "Jul": "Jul",
+      "Aug": "Ago",
+      "Sep": "Sep",
+      "Oct": "Oct",
+      "Nov": "Nov",
+      "Dec": "Dic"
     },
     "pkgs": {
-      "Jan": [
-        {"title": "Tour Real de Rajastán",         "info": "Invierno máximo — perfecto para fuertes y palacios"},
-        {"title": "Remansos de Kerala",             "info": "Clima agradable en el País de Dios"},
-        {"title": "Vacaciones en la Playa de Goa", "info": "Mejor temporada para playas y vida nocturna"},
-        {"title": "Triángulo Dorado",              "info": "Invierno fresco ideal para Delhi-Agra-Jaipur"}
+      "Ene": [
+        {
+          "title": "Tour Real de Rajastán",
+          "info": "Invierno en su punto álgido — ideal para fuertes y palacios"
+        },
+        {
+          "title": "Backwaters de Kerala",
+          "info": "Clima agradable en la Tierra de Dios"
+        },
+        {
+          "title": "Vacaciones en las playas de Goa",
+          "info": "Mejor temporada para playas y vida nocturna"
+        },
+        {
+          "title": "Triángulo Dorado",
+          "info": "Invierno fresco ideal para Delhi-Agra-Jaipur"
+        }
       ],
       "Feb": [
-        {"title": "Mathura – Festival de Holi",          "info": "Celebraciones de Holi en Mathura y Vrindavan"},
-        {"title": "Festival del Desierto de Rajastán",   "info": "Festival del Desierto de Jaisalmer en pleno apogeo"},
-        {"title": "Ruta de Templos del Sur de India",    "info": "Fresco y cómodo para los templos de Tamil Nadu"},
-        {"title": "Ayurveda y Bienestar en Kerala",      "info": "Temporada perfecta para retiros de bienestar en Kerala"}
+        {
+          "title": "Mathura – Festival de Holi",
+          "info": "Celebraciones de Holi en Mathura y Vrindavan"
+        },
+        {
+          "title": "Festival del Desierto de Rajastán",
+          "info": "Festival del Desierto de Jaisalmer en pleno apogeo"
+        },
+        {
+          "title": "Ruta de Templos del Sur de India",
+          "info": "Clima fresco y cómodo para templos de Tamil Nadu"
+        },
+        {
+          "title": "Ayurveda y Bienestar en Kerala",
+          "info": "Temporada perfecta para retiros de bienestar en Kerala"
+        }
       ],
       "Mar": [
-        {"title": "Islas Andamán",                "info": "Aguas cristalinas, ideales para esnórquel"},
-        {"title": "Islas de Lakshadweep",         "info": "Mejor visibilidad para arrecifes de coral"},
-        {"title": "Tour de Templos de Odisha",    "info": "El Templo del Sol y Konark en su mejor momento"},
-        {"title": "Encanto Costero de Pondicherry","info": "Encantador barrio francés en marzo"}
+        {
+          "title": "Islas Andamán",
+          "info": "Aguas cristalinas, ideales para buceo con snorkel"
+        },
+        {
+          "title": "Islas Lakshadweep",
+          "info": "Mejor visibilidad para arrecifes de coral"
+        },
+        {
+          "title": "Tour de Templos de Odisha",
+          "info": "Templo del Sol y Konark en su mejor momento"
+        },
+        {
+          "title": "Encanto Costero de Pondicherry",
+          "info": "Encantador barrio francés en marzo"
+        }
       ],
-      "Apr": [
-        {"title": "Valles de Uttarakhand",     "info": "Los rododendros florecen, ideal para senderismo"},
-        {"title": "Himachal Pradesh",          "info": "La nieve se derrite, los valles se tornan verdes"},
-        {"title": "Patrimonio de Guyarat",     "info": "Visita preestival a Ahmedabad y Bhuj"},
-        {"title": "Los Pasos del Buda",        "info": "Clima ideal para el circuito budista"}
+      "Abr": [
+        {
+          "title": "Valles de Uttarakhand",
+          "info": "Florecen los rododendros, ideal para trekking"
+        },
+        {
+          "title": "Himachal Pradesh",
+          "info": "Se derrite la nieve, los valles se vuelven verdes"
+        },
+        {
+          "title": "Patrimonio de Gujarat",
+          "info": "Visita preestival a Ahmedabad y Bhuj"
+        },
+        {
+          "title": "Huellas de Buda",
+          "info": "Clima ideal para el circuito budista"
+        }
       ],
       "May": [
-        {"title": "Leh y Ladakh",                  "info": "Carreteras abiertas, paisajes espectaculares te esperan"},
-        {"title": "Valle de Spiti, Himachal",      "info": "El desierto de gran altitud cobra vida"},
-        {"title": "Cachemira – Paraíso",           "info": "El lago Dal y los jardines de tulipanes en flor"},
-        {"title": "Lo Mejor de Bután",             "info": "Cielos despejados y vistas impresionantes del Himalaya"}
+        {
+          "title": "Leh y Ladakh",
+          "info": "Se abren las carreteras, paisajes dramáticos te esperan"
+        },
+        {
+          "title": "Valle de Spiti, Himachal",
+          "info": "Desierto de alta montaña cobra vida"
+        },
+        {
+          "title": "Cachemira – Paraíso",
+          "info": "Lago Dal y jardines de tulipanes en flor"
+        },
+        {
+          "title": "Lo Mejor de Bután",
+          "info": "Cielos despejados y vistas espectaculares del Himalaya"
+        }
       ],
       "Jun": [
-        {"title": "Fascinante Leh y Ladakh", "info": "Temporada alta para Pangong y el valle de Nubra"},
-        {"title": "India del Noreste",       "info": "Antes del monzón — exuberantes paisajes verdes"},
-        {"title": "Lo Mejor de Nepal",       "info": "Vistas del Himalaya antes del monzón"},
-        {"title": "Bután",                   "info": "Cielos despejados y vistas a las montañas"}
+        {
+          "title": "Leh y Ladakh en Acción",
+          "info": "Temporada alta para Pangong y Valle de Nubra"
+        },
+        {
+          "title": "Norte de India Oriental",
+          "info": "Antes del monzón — paisajes verdes y exuberantes"
+        },
+        {
+          "title": "Lo Mejor de Nepal",
+          "info": "Vistas del Himalaya pre-monzónicas"
+        },
+        {
+          "title": "Bután",
+          "info": "Cielos despejados y vistas a las montañas"
+        }
       ],
       "Jul": [
-        {"title": "Megalaya – Morada de las Nubes",  "info": "El monzón transforma Megalaya mágicamente"},
-        {"title": "Ayurveda y Spa en Kerala",        "info": "El monzón es la mejor época para tratamientos ayurvédicos"},
-        {"title": "Bienestar Carnoustie",            "info": "Temporada máxima de Panchakarma en Kerala"},
-        {"title": "Puerta al Noreste",               "info": "Kaziranga y Shillong en su máximo verdor"}
+        {
+          "title": "Meghalaya – Hogar de las Nubes",
+          "info": "El monzón transforma Meghalaya de manera mágica"
+        },
+        {
+          "title": "Ayurveda y Spa en Kerala",
+          "info": "El monzón es la mejor época para tratamientos ayurvédicos"
+        },
+        {
+          "title": "Carnoustie Wellness",
+          "info": "Temporada alta de Panchakarma en Kerala"
+        },
+        {
+          "title": "Puerta al Noreste de India",
+          "info": "Kaziranga y Shillong en su máximo verdor"
+        }
       ],
-      "Aug": [
-        {"title": "Megalaya Escénica",              "info": "Las cascadas en su máximo esplendor"},
-        {"title": "Tour por el Noreste de India",   "info": "Gangtok y Kaziranga — verde y exuberante"},
-        {"title": "Leh Ladakh",                     "info": "Últimas semanas del mejor clima en Ladakh"},
-        {"title": "Valle de Cachemira",             "info": "Srinagar en su máximo esplendor"}
+      "Ago": [
+        {
+          "title": "Meghalaya Escénica",
+          "info": "Cascadas en su máximo esplendor"
+        },
+        {
+          "title": "Tour del Noreste de India",
+          "info": "Gangtok y Kaziranga — verdes y exuberantes"
+        },
+        {
+          "title": "Leh Ladakh",
+          "info": "Últimas semanas del mejor clima para Ladakh"
+        },
+        {
+          "title": "Valle de Cachemira",
+          "info": "Srinagar en su momento más hermoso"
+        }
       ],
       "Sep": [
-        {"title": "Patrimonio de Rajastán",       "info": "El verdor posmonzón se encuentra con el patrimonio real"},
-        {"title": "Safaris de Fauna Salvaje",     "info": "Los animales se reúnen cerca del agua — la mejor fauna"},
-        {"title": "Fauna de Madhya Pradesh",      "info": "Las reservas de Kanha y Bandhavgarh reabren"},
-        {"title": "Karnataka Elevado",            "info": "Las plantaciones de café de Coorg en su mejor momento"}
+        {
+          "title": "Patrimonio de Rajastán",
+          "info": "Verde post-monzón se une al patrimonio real"
+        },
+        {
+          "title": "Safaris de Vida Silvestre",
+          "info": "Los animales se acercan al agua — mejor temporada de vida salvaje"
+        },
+        {
+          "title": "Vida Silvestre de Madhya Pradesh",
+          "info": "Reservas de Kanha y Bandhavgarh reabren"
+        },
+        {
+          "title": "Karnataka Elevado",
+          "info": "Plantaciones de café de Coorg en su mejor momento"
+        }
       ],
       "Oct": [
-        {"title": "Triángulo Dorado",            "info": "Clima ideal para Delhi-Agra-Jaipur"},
-        {"title": "Palacio Sobre Ruedas",        "info": "La temporada de trenes de lujo comienza en octubre"},
-        {"title": "Varanasi y Uttar Pradesh",    "info": "Temporada de Diwali — ghats iluminados"},
-        {"title": "Islas Andamán",               "info": "El mar está en calma, ideal para deportes acuáticos"}
+        {
+          "title": "Triángulo Dorado",
+          "info": "Clima ideal para Delhi-Agra-Jaipur"
+        },
+        {
+          "title": "Palacio sobre Rieles",
+          "info": "Comienza la temporada del tren de lujo en octubre"
+        },
+        {
+          "title": "Varanasi y Uttar Pradesh",
+          "info": "Temporada de Diwali — ghats iluminados"
+        },
+        {
+          "title": "Islas Andamán",
+          "info": "Mar en calma, ideal para deportes acuáticos"
+        }
       ],
       "Nov": [
-        {"title": "El Expreso del Maharajá",         "info": "Temporada máxima del tren de lujo por Rajastán"},
-        {"title": "El Corazón de India – MP",        "info": "Clima perfecto para Khajuraho y Orchha"},
-        {"title": "Feria del Camello de Pushkar",    "info": "El festival más icónico de Rajastán"},
-        {"title": "Retiro Salvaje",                  "info": "Excelente época para la fauna del centro de India"}
+        {
+          "title": "Expreso del Maharajá",
+          "info": "Temporada alta del tren de lujo por Rajastán"
+        },
+        {
+          "title": "Corazón de India – MP",
+          "info": "Clima perfecto para Khajuraho y Orchha"
+        },
+        {
+          "title": "Feria de Camellos de Pushkar",
+          "info": "Festival más icónico de Rajastán"
+        },
+        {
+          "title": "Retiro Salvaje",
+          "info": "Excelente época para vida salvaje en el centro de India"
+        }
       ],
-      "Dec": [
-        {"title": "Los Gloriosos Fuertes de Rajastán", "info": "Pico invernal — mejor época para Rajastán"},
-        {"title": "Kerala con CGH Earth",              "info": "Invierno perfecto en el País de Dios"},
-        {"title": "El Animado Goa",                    "info": "Navidad y Año Nuevo en Goa"},
-        {"title": "Lo Mejor de Sri Lanka",             "info": "Mejor época para las playas de Sri Lanka"}
+      "Dic": [
+        {
+          "title": "Fortalezas Gloriosas de Rajastán",
+          "info": "Invierno en su punto álgido — mejor época para Rajastán"
+        },
+        {
+          "title": "Kerala con CGH Earth",
+          "info": "Invierno perfecto en la Tierra de Dios"
+        },
+        {
+          "title": "Goa Animado",
+          "info": "Navidad y Año Nuevo en Goa"
+        },
+        {
+          "title": "Lo Mejor de Sri Lanka",
+          "info": "Mejor época para playas de Sri Lanka"
+        }
       ]
     }
   },
@@ -318,9 +471,33 @@
       "duration": "Duración del Viaje",
       "dreamTrip": "Describe Tu Viaje Soñado",
       "dreamTripPlaceholder": "Cuéntenos sobre sus intereses de viaje, tipo de grupo, requisitos especiales, rango de presupuesto...",
-      "months": ["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"],
-      "durations": ["3-5 días","6-8 días","9-12 días","13+ días"],
-      "travellersOptions": ["1","2","3-5","6-10","10+"]
+      "months": [
+        "Enero",
+        "Febrero",
+        "Marzo",
+        "Abril",
+        "Mayo",
+        "Junio",
+        "Julio",
+        "Agosto",
+        "Septiembre",
+        "Octubre",
+        "Noviembre",
+        "Diciembre"
+      ],
+      "durations": [
+        "3-5 días",
+        "6-8 días",
+        "9-12 días",
+        "13+ días"
+      ],
+      "travellersOptions": [
+        "1",
+        "2",
+        "3-5",
+        "6-10",
+        "10+"
+      ]
     }
   }
 }

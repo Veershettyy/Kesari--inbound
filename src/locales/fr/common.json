@@ -1,0 +1,56 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "destinations": "Destinations ▾",
+    "tourPackages": "Forfaits touristiques",
+    "exploreIndia": "Découvrir l'Inde",
+    "destinationsLink": "Destinations",
+    "reviews": "Avis",
+    "contactUs": "Contactez-nous",
+    "searchPlaceholder": "Rechercher des destinations, forfaits…"
+  },
+  "mega": {
+    "northIndia": "Nord de l'Inde",
+    "westIndia": "Ouest de l'Inde",
+    "southIndia": "Sud de l'Inde",
+    "eastIndia": "Est de l'Inde"
+  },
+  "header": {
+    "phone": "📞 +91 22 6666 6666",
+    "enquireNow": "Demander maintenant",
+    "inbound": "INBOUND",
+    "forForeignNationals": "POUR LES ÉTRANGERS"
+  },
+  "buttons": {
+    "viewTrip": "Voir le voyage",
+    "enquire": "Demander",
+    "loadMore": "Voir plus de forfaits",
+    "sendEnquiry": "Envoyer une demande →",
+    "exploreWithUs": "Explorez avec nous",
+    "bookTheTrip": "Réserver le voyage",
+    "planYourTrip": "Planifiez votre voyage",
+    "viewTrips": "Voir les voyages",
+    "bookYourTrip": "Réservez votre voyage",
+    "submitBooking": "Envoyer une demande →"
+  },
+  "language": {
+    "en": "FR",
+    "es": "ES"
+  },
+  "destinations": {
+    "names": {
+      "rajasthan": "Rajasthan",
+      "uttarakhand": "Uttarakhand",
+      "gujarat": "Gujarat",
+      "karnataka": "Karnataka",
+      "kerala": "Kerala",
+      "meghalaya": "Meghalaya",
+      "pondicherry": "Pondichéry",
+      "northEast": "Nord-Est de l'Inde",
+      "lehLadakh": "Leh & Ladakh",
+      "jammuKashmir": "Jammu-et-Cachemire",
+      "delhi": "Delhi",
+      "madhyaPradesh": "Madhya Pradesh"
+    }
+  }
+}

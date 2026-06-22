@@ -36,5 +36,21 @@
   "language": {
     "en": "EN",
     "es": "ES"
+  },
+  "destinations": {
+    "names": {
+      "rajasthan": "Rajasthan",
+      "uttarakhand": "Uttarakhand",
+      "gujarat": "Gujarat",
+      "karnataka": "Karnataka",
+      "kerala": "Kerala",
+      "meghalaya": "Meghalaya",
+      "pondicherry": "Pondicherry",
+      "northEast": "Norte de India",
+      "lehLadakh": "Leh & Ladakh",
+      "jammuKashmir": "Jammu & Cachemira",
+      "delhi": "Delhi",
+      "madhyaPradesh": "Madhya Pradesh"
+    }
   }
 }
