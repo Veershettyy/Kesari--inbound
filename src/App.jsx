@@ -74,6 +74,14 @@ export default function App() {
         <Route path="/INT/es/*"
           element={<LocaleWrapper><HomePage /></LocaleWrapper>} />
 
+        {/* Dynamic language package detail — /INT/:lang/explore/product-details/:code */}
+        <Route path="/INT/:lang/explore/product-details/:code"
+          element={<LocaleWrapper><PackageDetail /></LocaleWrapper>} />
+
+        {/* Dynamic language homepage — /INT/:lang/* (e.g. /INT/fr, /INT/de, /INT/ja) */}
+        <Route path="/INT/:lang/*"
+          element={<LocaleWrapper><HomePage /></LocaleWrapper>} />
+
         {/* English homepage — /INT/* */}
         <Route path="/INT/*"
           element={<LocaleWrapper><HomePage /></LocaleWrapper>} />
