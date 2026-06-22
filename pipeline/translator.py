@@ -2,12 +2,7 @@
 translator.py
 ─────────────
 Translates HTML files from INT/ENG/ into every target language.
-Uses MyMemory API — completely free, no API key, no signup needed.
-
-MyMemory API:
-  URL: https://api.mymemory.translated.net/get?q={text}&langpair=en|{lang}
-  Limit: 5000 words/day free (enough for demo)
-  No key required for basic usage
+Uses Mistral API — free tier available at console.mistral.ai
 
 How giant companies handle translation:
   Google      — client-side DOM swap via widget (unprofessional, no SEO)
@@ -21,88 +16,76 @@ Our approach:
   Change detection ensures only changed pages are re-translated.
 """
 
-import os, json, time, glob
-import requests
+import os, json, glob
+from mistralai.client import Mistral
 from bs4 import BeautifulSoup, NavigableString, Comment
-from config import (
-    INT_DIR, ENG_DIR, LANGUAGES, SKIP_TAGS,
-    PRESERVE_WORDS, MYMEMORY_LANG_CODES,
-)
+from dotenv import load_dotenv
+from config import INT_DIR, ENG_DIR, LANGUAGES, SKIP_TAGS, PRESERVE_WORDS
 
-MYMEMORY_URL  = "https://api.mymemory.translated.net/get"
-MAX_CHARS     = 450    # MyMemory limit per request
-REQUEST_DELAY = 0.5    # seconds between API calls to avoid rate limit
+load_dotenv()
 
-
-# ── MyMemory translation ──────────────────────────────────────
-
-def translate_text(text: str, lang_code: str) -> str:
-    """Translate a single piece of text using MyMemory API."""
-    target = MYMEMORY_LANG_CODES.get(lang_code, lang_code)
-
-    try:
-        response = requests.get(
-            MYMEMORY_URL,
-            params={"q": text, "langpair": f"en|{target}"},
-            timeout=10,
-        )
-        data = response.json()
-
-        if data.get("responseStatus") == 200:
-            return data["responseData"]["translatedText"]
-        else:
-            return text  # fallback to English
-
-    except Exception as exc:
-        print(f"      ✗ API error: {exc} — keeping original")
-        return text
+client = Mistral(api_key=os.environ.get("MISTRAL_API_KEY", ""))
+MODEL  = "mistral-small-latest"   # free tier eligible
 
 
-def translate_chunks(text: str, lang_code: str) -> str:
-    """Split long text into chunks and translate each."""
-    if len(text) <= MAX_CHARS:
-        result = translate_text(text, lang_code)
-        time.sleep(REQUEST_DELAY)
-        return result
+# ── Translation ───────────────────────────────────────────────
 
-    # Split by sentence endings to keep meaning intact
-    sentences = text.replace(". ", ".|").replace("! ", "!|").replace("? ", "?|").split("|")
-    translated_parts = []
-    current_chunk    = ""
+def translate_texts(texts: list, lang_name: str) -> list:
+    """Send a batch of texts to Mistral and get translations back."""
+    if not texts:
+        return []
 
-    for sentence in sentences:
-        if len(current_chunk) + len(sentence) < MAX_CHARS:
-            current_chunk += sentence + " "
-        else:
-            if current_chunk.strip():
-                translated_parts.append(translate_text(current_chunk.strip(), lang_code))
-                time.sleep(REQUEST_DELAY)
-            current_chunk = sentence + " "
+    preserve = ", ".join(PRESERVE_WORDS)
+    prompt   = f"""You are a professional travel website translator.
+Translate the following English texts to {lang_name}.
 
-    if current_chunk.strip():
-        translated_parts.append(translate_text(current_chunk.strip(), lang_code))
-        time.sleep(REQUEST_DELAY)
+Rules:
+- Return ONLY a valid JSON array with translations in the exact same order as input
+- Preserve proper nouns: {preserve}
+- Preserve numbers, package codes (INBOUND-01, FIT-INBOUND-07 etc.)
+- No markdown, no explanation — only the JSON array
 
-    return " ".join(translated_parts)
+Input:
+{json.dumps(texts, ensure_ascii=False)}
+
+Output (JSON array only):"""
+
+    response = client.chat.complete(
+        model    = MODEL,
+        messages = [{"role": "user", "content": prompt}],
+    )
+
+    raw = response.choices[0].message.content.strip()
+
+    # Strip markdown fences if present
+    if raw.startswith("```"):
+        raw = raw.split("\n", 1)[1].rsplit("\n", 1)[0]
+        if raw.startswith("json"):
+            raw = raw[4:]
+
+    translated = json.loads(raw.strip())
+
+    if len(translated) != len(texts):
+        raise ValueError(f"Expected {len(texts)} translations, got {len(translated)}")
+
+    return translated
 
 
 # ── HTML translation ──────────────────────────────────────────
 
 def should_preserve(text: str) -> bool:
-    """Return True if text should not be translated."""
     text = text.strip()
     if len(text) < 2:
         return True
-    # Pure numbers, codes, or package IDs
     if text.isdigit():
         return True
-    if any(text.startswith(code) for code in ["INBOUND-", "FIT-INBOUND-"]):
+    if any(text.startswith(c) for c in ["INBOUND-", "FIT-INBOUND-"]):
         return True
     return False
 
 
-def translate_html(html: str, lang_code: str) -> str:
-    """Translate all visible text in HTML, leaving images/scripts/links untouched."""
+def translate_html(html: str, lang_name: str, batch_size: int = 30) -> str:
+    """Translate all visible text nodes in HTML — images untouched."""
     soup  = BeautifulSoup(html, "html.parser")
     nodes = []
 
@@ -118,18 +101,22 @@ def translate_html(html: str, lang_code: str) -> str:
 
     print(f"      Translating {len(nodes)} text nodes...")
 
-    for i, node in enumerate(nodes):
-        original    = node.strip()
-        translated  = translate_chunks(original, lang_code)
-        node.replace_with(NavigableString(translated))
+    for i in range(0, len(nodes), batch_size):
+        batch     = nodes[i : i + batch_size]
+        originals = [str(n).strip() for n in batch]
 
-        if (i + 1) % 10 == 0:
-            print(f"      {i+1}/{len(nodes)} nodes done")
+        try:
+            translated = translate_texts(originals, lang_name)
+            for node, tr in zip(batch, translated):
+                node.replace_with(NavigableString(tr))
+            print(f"      {min(i+batch_size, len(nodes))}/{len(nodes)} done")
+        except Exception as exc:
+            print(f"      ✗ batch failed: {exc} — keeping English")
 
     return str(soup)
 
 
-# ── File-level operations ─────────────────────────────────────
+# ── File operations ───────────────────────────────────────────
 
 def translate_file(eng_path: str, lang_code: str):
     """Translate one HTML file and write to INT/{lang_code}/."""
@@ -142,7 +129,7 @@ def translate_file(eng_path: str, lang_code: str):
         html = fh.read()
 
     print(f"\n    [{lang_code}] {rel_path}")
-    translated_html = translate_html(html, lang_code)
+    translated_html = translate_html(html, LANGUAGES[lang_code])
 
     with open(out_path, "w", encoding="utf-8") as fh:
         fh.write(translated_html)

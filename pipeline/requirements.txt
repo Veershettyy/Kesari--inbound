@@ -1,7 +1,7 @@
 requests==2.32.3
 beautifulsoup4==4.12.3
 lxml==5.2.2
-google-generativeai==0.7.2
+mistralai>=2.0.0
 python-dotenv==1.0.1
 jupyter==1.0.0
 notebook==7.2.1
