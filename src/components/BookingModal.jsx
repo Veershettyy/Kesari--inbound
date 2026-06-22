@@ -1,18 +1,48 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 
-export default function BookingModal({ pkgName, onClose }) {
-  const { t } = useTranslation(['tours','common']);
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3001';
+
+export default function BookingModal({ pkgName, pkgCode, onClose }) {
+  const { t, i18n } = useTranslation(['tours','common']);
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const formRef = useRef(null);
   const f = t('tours:modal.form', { returnObjects: true });
 
   useEffect(() => setSubmitted(false), [pkgName]);
 
   if (!pkgName) return null;
 
-  function handleSubmit(e) {
+  async function handleSubmit(e) {
     e.preventDefault();
-    setSubmitted(true);
+    const data = new FormData(formRef.current);
+    const body = {
+      packageCode: pkgCode || '',
+      packageName: pkgName,
+      language:    i18n.language === 'es-ES' ? 'es' : i18n.language,
+      fullName:    data.get('fullName'),
+      email:       data.get('email'),
+      phone:       data.get('phone'),
+      nationality: data.get('nationality'),
+      travelDate:  data.get('travelDate'),
+      travellers:  data.get('travellers'),
+      duration:    data.get('duration'),
+      budget:      data.get('budget'),
+      message:     data.get('message'),
+    };
+    setSubmitting(true);
+    try {
+      await fetch(`${API_URL}/api/enquiry`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(body),
+      });
+      setSubmitted(true);
+    } catch {
+      alert('Submission failed. Please try again.');
+    }
+    setSubmitting(false);
   }
 
   return (
@@ -28,55 +58,55 @@ export default function BookingModal({ pkgName, onClose }) {
         <div className="modal-body">
           <div className="modal-pkg">📦 {pkgName}</div>
           {!submitted ? (
-            <form className="m-form-grid" onSubmit={handleSubmit}>
+            <form ref={formRef} className="m-form-grid" onSubmit={handleSubmit}>
               <div className="m-fg">
                 <label>{f.fullName}</label>
-                <input type="text" placeholder={f.fullNamePlaceholder} required />
+                <input name="fullName" type="text" placeholder={f.fullNamePlaceholder} required />
               </div>
               <div className="m-fg">
                 <label>{f.email}</label>
-                <input type="email" placeholder={f.emailPlaceholder} required />
+                <input name="email" type="email" placeholder={f.emailPlaceholder} required />
               </div>
               <div className="m-fg">
                 <label>{f.phone}</label>
-                <input type="tel" placeholder={f.phonePlaceholder} required />
+                <input name="phone" type="tel" placeholder={f.phonePlaceholder} required />
               </div>
               <div className="m-fg">
                 <label>{f.nationality}</label>
-                <input type="text" placeholder={f.nationalityPlaceholder} />
+                <input name="nationality" type="text" placeholder={f.nationalityPlaceholder} />
               </div>
               <div className="m-fg">
                 <label>{f.travelDate}</label>
-                <input type="date" />
+                <input name="travelDate" type="date" />
               </div>
               <div className="m-fg">
                 <label>{f.travellers}</label>
-                <select>
+                <select name="travellers">
                   <option value="">{f.travellersDefault}</option>
                   {['1','2','3','4','5','6','7-10','10+'].map(o => <option key={o}>{o}</option>)}
                 </select>
               </div>
               <div className="m-fg">
                 <label>{f.duration}</label>
-                <select>
+                <select name="duration">
                   <option value="">{f.durationDefault}</option>
                   {f.durationOptions.map(o => <option key={o}>{o}</option>)}
                 </select>
               </div>
               <div className="m-fg">
                 <label>{f.budget}</label>
-                <select>
+                <select name="budget">
                   <option value="">{f.budgetDefault}</option>
                   {f.budgetOptions.map(o => <option key={o}>{o}</option>)}
                 </select>
               </div>
               <div className="m-fg full">
                 <label>{f.message}</label>
-                <textarea placeholder={f.messagePlaceholder} />
+                <textarea name="message" placeholder={f.messagePlaceholder} />
               </div>
               <div className="m-fg full">
-                <button className="modal-submit" type="submit">
-                  {t('common:buttons.submitBooking')}
+                <button className="modal-submit" type="submit" disabled={submitting}>
+                  {submitting ? '...' : t('common:buttons.submitBooking')}
                 </button>
               </div>
             </form>

@@ -25,3 +25,6 @@ dist-ssr
 pipeline/.env
 pipeline/__pycache__/
 pipeline/hashes.json
+backend/.env
+.env
+.env.production
