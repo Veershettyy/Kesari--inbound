@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+pipeline/.env
+pipeline/__pycache__/
+pipeline/hashes.json

@@ -41,5 +41,17 @@ PRESERVE_WORDS = [
     "Himachal", "Gujarat", "Maharashtra", "Karnataka", "Tamil Nadu",
 ]
 
-# ── Gemini model ──────────────────────────────────────────────
-GEMINI_MODEL = "gemini-1.5-flash"   # fast and free tier eligible
+# ── MyMemory API ─────────────────────────────────────────────
+# Free, no key needed, 5000 words/day
+# Language codes for MyMemory (en|target format)
+MYMEMORY_LANG_CODES = {
+    "es": "es",
+    "fr": "fr",
+    "hi": "hi",
+    "de": "de",
+    "ja": "ja",
+    "pt": "pt",
+    "it": "it",
+    "zh": "zh-CN",
+    "ar": "ar",
+}
