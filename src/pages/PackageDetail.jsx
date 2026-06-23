@@ -7,6 +7,62 @@ import Footer from '../components/Footer';
 import BookingModal from '../components/BookingModal';
 import LanguageSwitcher from '../components/LanguageSwitcher';
 
+function ItinerarySection({ code }) {
+  const { t } = useTranslation('tours');
+  const [openDay, setOpenDay] = useState(0);
+
+  const itin = t(`tours:itineraries.${code}`, { returnObjects: true });
+  if (!itin || typeof itin !== 'object' || !itin.days) return null;
+
+  return (
+    <div style={{ marginTop: 36 }}>
+      <h3 style={{ color: 'var(--navy)', fontSize: 20, marginBottom: 8 }}>
+        {t('tours:detail.dayByDay')}
+      </h3>
+      <p style={{ color: '#666', fontSize: 13, marginBottom: 20, lineHeight: 1.6 }}>
+        {itin.overview}
+      </p>
+      <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
+        {itin.days.map((day, i) => (
+          <div key={i} style={{ border: '1px solid #e8e8e8', borderRadius: 8, overflow: 'hidden', boxShadow: '0 1px 4px rgba(0,0,0,.05)' }}>
+            <button
+              onClick={() => setOpenDay(openDay === i ? -1 : i)}
+              style={{
+                width: '100%', display: 'flex', alignItems: 'center', gap: 14,
+                padding: '14px 18px', background: openDay === i ? 'var(--navy)' : '#fff',
+                border: 'none', cursor: 'pointer', textAlign: 'left', transition: 'background .2s'
+              }}
+            >
+              <span style={{
+                minWidth: 36, height: 36, borderRadius: '50%', display: 'flex',
+                alignItems: 'center', justifyContent: 'center', fontWeight: 900,
+                fontSize: 13, background: openDay === i ? 'var(--red)' : 'var(--navy)',
+                color: '#fff', flexShrink: 0
+              }}>
+                {day.day}
+              </span>
+              <span style={{
+                fontWeight: 700, fontSize: 14,
+                color: openDay === i ? '#fff' : 'var(--navy)', flex: 1
+              }}>
+                {day.title}
+              </span>
+              <span style={{ color: openDay === i ? 'rgba(255,255,255,.6)' : '#aaa', fontSize: 18 }}>
+                {openDay === i ? '▲' : '▼'}
+              </span>
+            </button>
+            {openDay === i && (
+              <div style={{ padding: '16px 20px 18px 68px', background: '#fafafa', borderTop: '1px solid #eee' }}>
+                <p style={{ color: '#444', fontSize: 13, lineHeight: 1.75 }}>{day.description}</p>
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
 export default function PackageDetail() {
   const { code } = useParams();
   const navigate = useNavigate();
@@ -115,6 +171,8 @@ export default function PackageDetail() {
               <li>{t('tours:detail.highlights.entry')}</li>
               <li>{t('tours:detail.highlights.support')}</li>
             </ul>
+
+            <ItinerarySection code={pkg.code} />
           </div>
 
           <div className="pd-right">
