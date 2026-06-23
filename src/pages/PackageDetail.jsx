@@ -5,7 +5,6 @@ import { PACKAGES } from '../data/packages';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import BookingModal from '../components/BookingModal';
-import LanguageSwitcher from '../components/LanguageSwitcher';
 
 function ItinerarySection({ code }) {
   const { t } = useTranslation('tours');
@@ -103,7 +102,6 @@ export default function PackageDetail() {
   return (
     <>
       <Navbar onEnquire={openEnquiry} />
-      <LanguageSwitcher />
 
       {/* Hero */}
       <div className="pd-hero" style={{ backgroundImage: `url('${pkg.img}')` }}>

@@ -17,7 +17,6 @@ import LocalizationWorkflow from './components/LocalizationWorkflow';
 import EnquiryForm from './components/EnquiryForm';
 import Footer from './components/Footer';
 import BookingModal from './components/BookingModal';
-import LanguageSwitcher from './components/LanguageSwitcher';
 import PackageDetail from './pages/PackageDetail';
 
 function HomePage() {
@@ -48,7 +47,6 @@ function HomePage() {
       <LocalizationWorkflow />
       <EnquiryForm />
       <Footer />
-      <LanguageSwitcher />
       {modalPkg && <BookingModal pkgName={modalPkg} onClose={() => setModalPkg(null)} />}
     </>
   );

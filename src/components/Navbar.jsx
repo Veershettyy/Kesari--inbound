@@ -45,6 +45,7 @@ export default function Navbar({ onEnquire, onSearchNav }) {
               <span className="fb-for">{t('header.forForeignNationals')}</span>
             </div>
           </div>
+          <LanguageSwitcher />
           <a className="phone" href="tel:+912266666666">{t('header.phone')}</a>
           <button className="btn-red" onClick={onEnquire}>{t('header.enquireNow')}</button>
         </div>
