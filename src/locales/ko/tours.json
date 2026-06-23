@@ -98,9 +98,9 @@
     "FIT-INBOUND-03": "인도의 부족 문화 체험",
     "FIT-INBOUND-04": "카노스티 아유르베다 & 웰니스",
     "FIT-INBOUND-06": "네팔 Best of",
-    "FIT-INBOUND-11": "네팔 Best of – 럭셔리",
-    "FIT-INBOUND-12": "스리랑카 Best of",
-    "FIT-INBOUND-13": "인도의 심장 – 마디아프라데시",
+    "FIT-INBOUND-11": "네팔 베스트",
+    "FIT-INBOUND-12": "스리랑카 베스트",
+    "FIT-INBOUND-13": "인도 하트 - 마디아프라데시",
     "FIT-INBOUND-14": "인도 북동부",
     "FIT-INBOUND-15": "우타르프라데시 엿보기",
     "FIT-INBOUND-16": "부탄 Best of",
@@ -111,7 +111,7 @@
     "INBOUND-010": "남부 오디세이",
     "INBOUND-011": "야생 사파리",
     "INBOUND-012": "야생 휴양",
-    "INBOUND-013": "라다크 파노라마",
+    "INBOUND-013": "파노라마 Leh Ladakh",
     "INBOUND-014": "레와라드 Ладакх의 매력",
     "INBOUND-015": "북동부 입문",
     "INBOUND-016": "북동부 인도 투어",
@@ -122,34 +122,34 @@
     "INBOUND-07": "로열 오디세이",
     "Inbound-09": "평온한 케랄라",
     "INBOUND-12": "아유르베다 & 스파",
-    "INBOUND-13": "문화 트레일 – Palace on Wheels",
-    "INBOUND-15": "안다만 니코바르 제도",
+    "INBOUND-13": "문화의 길 - 팔레스 온 휠스",
+    "INBOUND-15": "페닌슐라 - 앤드만 니코바르 제도 - 10일",
     "INBOUND-17": "울림 있는 라자스탄",
     "INBOUND-18": "왕가의 라자스탄",
     "INBOUND-19": "장엄한 우타라칸드",
     "INBOUND-20": "즐거운 우타라칸드",
     "INBOUND-22": "제왕의 구자라트",
     "INBOUND-25": "고귀한 카르나타카",
-    "INBOUND-28": "라크샤드위프 7일 섬 여행",
+    "INBOUND-28": "이스렛 - 락샤드위프 7일",
     "INBOUND-29": "라크샤드위프 10일 섬 여행",
     "INBOUND-30": "아름다운 푸두체리 7일",
     "INBOUND-33": "푸두체리의 해안 매력",
     "INBOUND-35": "고아의 매력",
     "INBOUND-37": "고아의 재생",
     "INBOUND-38": "카슈미르 낙원 10일",
-    "INBOUND-39": "카슈미르 즐거운 7일",
-    "INBOUND-40": "마하라자의 엑스프레스",
+    "INBOUND-39": "즐거운- 잠무 카슈미르 7일",
+    "INBOUND-40": "마하라자 익스프레스",
     "INBOUND-41": "남부의 보석",
     "INBOUND-43": "인도의 오디세이 여정",
     "INBOUND-45": "마디아프라데시 8일",
-    "INBOUND-47": "마하라슈트라 스플렌더 – 데칸 오디세이",
+    "INBOUND-47": "마하라슈트라 스플렌더 - 데칸 오디세이",
     "INBOUND-48": "마디아프라데시의 중심부",
-    "INBOUND-49": "인도의 소journ – 데칸 오디세이",
+    "INBOUND-49": "인도 소journ - 데칸 오디세이",
     "INBOUND-50": "매력적인 히마찰프라데시",
     "INBOUND-51": "마하라슈트라 야생 트레일 여정",
-    "INBOUND-55": "문화 오디세이 – 데칸 오디세이",
-    "INBOUND-56": "유산 오디세이 – 데칸 오디세이",
-    "INBOUND-65": "산호초 – 안다만 니코바르",
+    "INBOUND-55": "문화 오디세이 - 데칸 오디세이",
+    "INBOUND-56": "헤리티지 오디세이 - 데칸 오디세이",
+    "INBOUND-65": "코랄 리프 - 안다만 니코바르 제도",
     "INBOUND-66": "메갈라야의 풍경",
     "INBOUND-68": "구름의 안식처",
     "INBOUND-70": "히마찰프라데시의 풍경",
@@ -157,6 +157,34 @@
     "INBOUND-TEST-02": "골든 트라이앵글",
     "INBOUND-TEST-03": "부처의 발자취",
     "INBOUND-TEST-32": "인도의 요새와 궁전",
-    "INBOUND-TEST-37": "오디샤 사원 & 부족 투어"
+    "INBOUND-TEST-37": "오디샤 템플 앤 트라이벌 투어",
+    "FIT-INBOUND-18": "쿠ಂಭ 멜라 스페셜 2027"
+  },
+  "itineraries": {
+    "FIT-INBOUND-18": {
+      "overview": "나시크에서 열리는 2027년 쿠ంభ 멜라 스페셜(Kumbh Mela Special 2027)을 위한 영적 여행으로, 신성한 의식, 문화 체험 및 신성한 모임이 포함됩니다.",
+      "days": [
+        {
+          "day": 1,
+          "title": "나시크 도착 및 저녁 아티(Aarti)",
+          "description": "나시크에 도착하여 지정된 숙소에 체크인합니다. Godavari Ghat에서 저녁 강가 아티(Ganga Aarti)에 참석하고 문화 환영 만찬을 즐깁니다."
+        },
+        {
+          "day": 2,
+          "title": "쿠ambah 멜라 다르샨 & 신성한 목욕",
+          "description": "쿠ambah 멜라会場에서 이른 아침 샤히 스나안(왕실 목욕, Shahi Snan)에 참여합니다. 영적 부스들을 탐방하고 성인들의 강연에 참석하며 활기찬 축제 분위기를 즐깁니다."
+        },
+        {
+          "day": 3,
+          "title": "영적 탐험 & 문화 공연",
+          "description": "나시크의 시타 구파(Sita Gufa), 카필라 무니 사원(Kapila Muni Temple) 등 신성한 장소들을 방문합니다. 저녁에는 쿠ambah 멜라에서 전통 민속 공연과 찬송 음악을 감상합니다."
+        },
+        {
+          "day": 4,
+          "title": "출발 및 마지막 축복",
+          "description": "아침에 트림바크슈와르 죠티를 Linga(Trimbakeshwar Jyotirlinga)를 방문하여 마지막 기도를 드립니다. 점심 식사 후 공항/기차역으로 출발합니다."
+        }
+      ]
+    }
   }
 }

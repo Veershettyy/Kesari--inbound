@@ -98,9 +98,9 @@
     "FIT-INBOUND-03": "Wycieczka Plemienna po Indiach",
     "FIT-INBOUND-04": "Carnoustie Ayurveda & Wellness",
     "FIT-INBOUND-06": "Poznaj Nepal",
-    "FIT-INBOUND-11": "Poznaj Nepal – Luksus",
-    "FIT-INBOUND-12": "Poznaj Sri Lankę",
-    "FIT-INBOUND-13": "Serce Indii – Madhya Pradesh",
+    "FIT-INBOUND-11": "NAJLEPSZE Z NEPALU",
+    "FIT-INBOUND-12": "NAJLEPSZE Z CEJLONU",
+    "FIT-INBOUND-13": "Serce Indii - Madhya Pradesh",
     "FIT-INBOUND-14": "Północno-Wschodnie Indie",
     "FIT-INBOUND-15": "Wgląd w Uttar Pradesh",
     "FIT-INBOUND-16": "Poznaj Bhutan",
@@ -111,7 +111,7 @@
     "INBOUND-010": "Południowa Odyseja",
     "INBOUND-011": "Safari Dzikiej Przyrody",
     "INBOUND-012": "Dziki Odpoczynek",
-    "INBOUND-013": "Panoramiczny Leh i Ladakh",
+    "INBOUND-013": "Panoramiczny Leh Ladakh",
     "INBOUND-014": "Wciągające Leh i Ladakh",
     "INBOUND-015": "Brama do Północnego Wschodu",
     "INBOUND-016": "Wycieczka po Północno-Wschodnich Indiach",
@@ -122,34 +122,34 @@
     "INBOUND-07": "Królewska Odyseja",
     "Inbound-09": "Sielska Kerala",
     "INBOUND-12": "Ajurweda i Spa",
-    "INBOUND-13": "Śladami Kultury – Palace on Wheels",
-    "INBOUND-15": "Wyspy Andamańskie i Nikobarskie",
+    "INBOUND-13": "Kulturowe Szlaki - Palace On Wheels",
+    "INBOUND-15": "Półwysep - Andaman i Nikobary - 10 dni",
     "INBOUND-17": "Rezonujący Radżastan",
     "INBOUND-18": "Książęcy Radżastan",
     "INBOUND-19": "Wspaniały Uttarakhand",
     "INBOUND-20": "Urokliwy Uttarakhand",
     "INBOUND-22": "Imperialny Gujarat",
     "INBOUND-25": "Wzniesiona Karnataka",
-    "INBOUND-28": "Wyspa – Lakszadiwy 7-Dniowy",
+    "INBOUND-28": "Wyspa - Lakshadweep 7-dniowy",
     "INBOUND-29": "Wyspy Lakszadiwów 10-Dniowy",
     "INBOUND-30": "Piękny Pondicherry 7-Dniowy",
     "INBOUND-33": "Urok Wybrzeża Pondicherry",
     "INBOUND-35": "Urokliwe Goa",
     "INBOUND-37": "Reformujące Goa",
     "INBOUND-38": "Raj Jammu i Kaszmir 10-Dniowy",
-    "INBOUND-39": "Urokliwy Jammu i Kaszmir 7-Dniowy",
-    "INBOUND-40": "Maharadża Express",
+    "INBOUND-39": "Urokliwy - Dżammu i Kaszmir 7-dniowy",
+    "INBOUND-40": "Ekspres Maharadży",
     "INBOUND-41": "Klejnoty Południa",
     "INBOUND-43": "Indyjska Podróż Odyseja",
     "INBOUND-45": "Madhya Pradesh 8-Dniowy",
-    "INBOUND-47": "Splendor Maharashtry – Deccan Odyssey",
+    "INBOUND-47": "Maharashtra Splendor - Deccan Odyssey",
     "INBOUND-48": "Serce Madhya Pradesh",
-    "INBOUND-49": "Indyjski Pobyt – Deccan Odyssey",
+    "INBOUND-49": "Indyjska Podróż - Dekan Odyseja",
     "INBOUND-50": "Urokliwy Himachal Pradesh",
     "INBOUND-51": "Dzika Ścieżka Maharashtry",
-    "INBOUND-55": "Kulturalna Odyseja – Deccan Odyssey",
-    "INBOUND-56": "Dziedzictwo Odysei – Deccan Odyssey",
-    "INBOUND-65": "Rafy Koralowe – Andamany i Nikobary",
+    "INBOUND-55": "Kulturalna Odyseja - Deccan Odyssey",
+    "INBOUND-56": "Dziedzictwo Odyseja - Deccan Odyssey",
+    "INBOUND-65": "Rafy koralowe - Andaman i Nikobary",
     "INBOUND-66": "Malownicze Piękno Meghalayi",
     "INBOUND-68": "Schronienie Chmur",
     "INBOUND-70": "Pokaz Himachal Pradesh",
@@ -157,6 +157,34 @@
     "INBOUND-TEST-02": "Złoty Trójkąt",
     "INBOUND-TEST-03": "Ślady Buddy",
     "INBOUND-TEST-32": "Twierdze i Pałace Indii",
-    "INBOUND-TEST-37": "Wycieczka po Świątyniach i Plemionach Orisy"
+    "INBOUND-TEST-37": "Objazd świątynny i plemienny w Odisha",
+    "FIT-INBOUND-18": "KUMBHA MELA SPECJAL 2027"
+  },
+  "itineraries": {
+    "FIT-INBOUND-18": {
+      "overview": "Duchowa podróż do Kumbh Meli Specjalnej 2027 w Nashik, obejmująca święte rytuały, doświadczenia kulturowe i boskie zgromadzenia.",
+      "days": [
+        {
+          "day": 1,
+          "title": "Przyjazd do Nashik i Wieczorna Aarti",
+          "description": "Przyjazd do Nashik, zameldowanie w wyznaczonym miejscu zakwaterowania. Udział w wieczornej Ganga Aarti przy Godavari Ghat, a następnie uroczysta kolacja powitalna."
+        },
+        {
+          "day": 2,
+          "title": "Darshan Kumbh Meli i Święta Kąpiel",
+          "description": "Udział w porannym Shahi Snan (Królewskiej Kąpieli) na terenie Kumbh Meli. Zwiedzanie stoisk duchowych, uczestnictwo w dyskursach świętych i cieszenie się żywą atmosferą festiwalu."
+        },
+        {
+          "day": 3,
+          "title": "Duchowe Odkrywanie i Występy Kulturalne",
+          "description": "Odwiedzenie Sita Gufa, Kapila Muni Temple i innych świętych miejsc w Nashik. Wieczorem, obejrzenie tradycyjnych występów ludowych i muzyki dewocyjnej na Kumbh Meli."
+        },
+        {
+          "day": 4,
+          "title": "Odjazd i Ostatnie Błogosławieństwa",
+          "description": "Poranna wizyta w Trimbakeshwar Jyotirlinga w celu ostatnich modlitw. Po obiedzie, udanie się na lotnisko/stację kolejową w celu odjazdu."
+        }
+      ]
+    }
   }
 }

@@ -98,9 +98,9 @@
     "FIT-INBOUND-03": "印度部落文化之旅",
     "FIT-INBOUND-04": "卡努斯提阿瑜伽与养生之旅",
     "FIT-INBOUND-06": "最佳尼泊尔之旅",
-    "FIT-INBOUND-11": "最佳尼泊尔之旅 – 豪华版",
-    "FIT-INBOUND-12": "最佳斯里兰卡之旅",
-    "FIT-INBOUND-13": "印度之心 – 中央邦",
+    "FIT-INBOUND-11": "尼泊尔精华之旅",
+    "FIT-INBOUND-12": "斯里兰卡精华之旅",
+    "FIT-INBOUND-13": "印度之心 - Madhya Pradesh",
     "FIT-INBOUND-14": "印度东北之旅",
     "FIT-INBOUND-15": "北方邦精华巡游",
     "FIT-INBOUND-16": "最佳不丹之旅",
@@ -111,7 +111,7 @@
     "INBOUND-010": "南印度奥德赛之旅",
     "INBOUND-011": "野生动物探险之旅",
     "INBOUND-012": "野外静养之旅",
-    "INBOUND-013": "列城与拉达克全景之旅",
+    "INBOUND-013": "全景列城拉达克",
     "INBOUND-014": "列城与拉达克深度体验之旅",
     "INBOUND-015": "印度东北之门",
     "INBOUND-016": "印度东北之旅",
@@ -122,34 +122,34 @@
     "INBOUND-07": "皇家奥德赛之旅",
     "Inbound-09": "宁静喀拉拉邦",
     "INBOUND-12": "瑜伽与水疗之旅",
-    "INBOUND-13": "文化足迹之旅 – 皇家车队号",
-    "INBOUND-15": "安达曼与尼科巴群岛之旅",
+    "INBOUND-13": "文化之旅 - 宫殿列车",
+    "INBOUND-15": "半岛-安达曼和尼科巴群岛-10天",
     "INBOUND-17": "恢宏拉贾斯坦邦之旅",
     "INBOUND-18": "拉贾斯坦邦王公贵族之旅",
     "INBOUND-19": "壮丽北阿坎德邦之旅",
     "INBOUND-20": "怡人北阿坎德邦之旅",
     "INBOUND-22": "帝王古吉拉特邦之旅",
     "INBOUND-25": "高雅卡纳塔克邦之旅",
-    "INBOUND-28": "拉克沙群岛七日小岛之旅",
+    "INBOUND-28": "拉克代夫群岛 - Lakshadweep 7日游",
     "INBOUND-29": "拉克沙群岛十日群岛之旅",
     "INBOUND-30": "美丽本地治里七日之旅",
     "INBOUND-33": "本地治里海岸魅力之旅",
     "INBOUND-35": "活力果阿之旅",
     "INBOUND-37": "改善身心之果阿之旅",
     "INBOUND-38": "天堂查谟和克什米尔十日之旅",
-    "INBOUND-39": "怡人查谟和克什米尔七日之旅",
+    "INBOUND-39": "七日欢愉之查谟-克什米尔",
     "INBOUND-40": "马哈拉贾快车",
     "INBOUND-41": "南印度瑰宝之旅",
     "INBOUND-43": "印度奥德赛之旅",
     "INBOUND-45": "中央邦八日之旅",
-    "INBOUND-47": "马哈拉施特拉邦辉煌之旅 – 德干奥德赛号",
+    "INBOUND-47": "马哈拉施特拉壮丽之旅 - 德干王国",
     "INBOUND-48": "中央邦核心之旅",
-    "INBOUND-49": "印度漫游之旅 – 德干奥德赛号",
+    "INBOUND-49": "印度之旅 - 德干漫游",
     "INBOUND-50": "迷人喜马偕尔邦之旅",
     "INBOUND-51": "马哈拉施特拉邦野生之旅之旅",
-    "INBOUND-55": "文化奥德赛之旅 – 德干奥德赛号",
-    "INBOUND-56": "文化遗产奥德赛之旅 – 德干奥德赛号",
-    "INBOUND-65": "珊瑚礁之旅 – 安达曼与尼科巴群岛",
+    "INBOUND-55": "文化之旅 - 德干半岛探索之旅",
+    "INBOUND-56": "德干遗产之旅 - 德干纵览之旅",
+    "INBOUND-65": "珊瑚礁 - 安达曼和尼科巴群岛",
     "INBOUND-66": "梅加拉亚壮丽景观之旅",
     "INBOUND-68": "云之家园",
     "INBOUND-70": "喜马偕尔邦风光展示之旅",
@@ -157,6 +157,34 @@
     "INBOUND-TEST-02": "金三角之旅",
     "INBOUND-TEST-03": "佛陀足迹之旅",
     "INBOUND-TEST-32": "印度堡垒与宫殿之旅",
-    "INBOUND-TEST-37": "奥里萨邦寺庙与部落之旅"
+    "INBOUND-TEST-37": "奥里萨庙宇与部落之旅",
+    "FIT-INBOUND-18": "库姆布梅拉专项 2027"
+  },
+  "itineraries": {
+    "FIT-INBOUND-18": {
+      "overview": "一次前往 Nashik Kumbh Mela Special 2027 的精神之旅，包含神圣仪式、文化体验和神圣聚会。",
+      "days": [
+        {
+          "day": 1,
+          "title": "抵达 Nashik 与晚间阿提",
+          "description": "抵达 Nashik，入住指定住宿。参加 Godavari Ghat 的晚间恒河阿提，随后享用文化欢迎晚宴。"
+        },
+        {
+          "day": 2,
+          "title": "Kumbh Mela 朝圣与圣浴",
+          "description": "清晨参与 Kumbh Mela 皇家沐浴（Shahi Snan）。探索灵性摊位，聆听圣人讲经，感受节日热烈氛围。"
+        },
+        {
+          "day": 3,
+          "title": "灵性探索与文化演出",
+          "description": "参观 Nashik 的 Sita Gufa、Kapila Muni Temple 等圣地。傍晚在 Kumbh Mela 现场观赏传统民间表演和敬神音乐。"
+        },
+        {
+          "day": 4,
+          "title": "启程与最后祝福",
+          "description": "上午前往 Trimbakeshwar Jyotirlinga 进行最后祈祷。午餐后前往机场/火车站启程。"
+        }
+      ]
+    }
   }
 }

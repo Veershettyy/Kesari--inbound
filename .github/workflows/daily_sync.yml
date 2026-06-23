@@ -1,0 +1,56 @@
+name: Daily KESARi Sync
+
+on:
+  schedule:
+    - cron: '0 2 * * *'   # 2 AM UTC = 7:30 AM IST daily
+  workflow_dispatch:        # Allow manual trigger from GitHub Actions tab
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write       # Needed to push commits
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Python dependencies
+        run: |
+          pip install -q mistralai python-dotenv
+
+      - name: Run package sync
+        env:
+          MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
+        run: |
+          cd pipeline
+          python sync_packages.py 2>&1 | tee /tmp/sync_output.txt
+          echo "EXIT_CODE=${PIPESTATUS[0]}" >> $GITHUB_ENV
+
+      - name: Check for file changes
+        id: git_status
+        run: |
+          git add src/data/packages.js src/locales/
+          if git diff --cached --quiet; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+            git diff --cached --stat
+          fi
+
+      - name: Commit and push if changed
+        if: steps.git_status.outputs.changed == 'true'
+        run: |
+          git config user.name  "KESARi Sync Bot"
+          git config user.email "bot@kesariinbound.com"
+          git commit -m "Auto-sync: update packages from kesariselect.com [$(date +'%Y-%m-%d')]"
+          git push
+
+      - name: No changes
+        if: steps.git_status.outputs.changed == 'false'
+        run: echo "✔ No package changes detected — nothing to commit"

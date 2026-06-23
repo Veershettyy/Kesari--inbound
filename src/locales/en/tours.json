@@ -99,9 +99,9 @@
     "FIT-INBOUND-03": "Tribal Tour of India",
     "FIT-INBOUND-04": "Carnoustie Ayurveda & Wellness",
     "FIT-INBOUND-06": "Best of Nepal",
-    "FIT-INBOUND-11": "Best of Nepal – Luxury",
-    "FIT-INBOUND-12": "Best of Sri Lanka",
-    "FIT-INBOUND-13": "Heart of India – Madhya Pradesh",
+    "FIT-INBOUND-11": "BEST OF NEPAL",
+    "FIT-INBOUND-12": "BEST OF SRILANKA",
+    "FIT-INBOUND-13": "HEART OF INDIA  - Madhya Pradesh",
     "FIT-INBOUND-14": "North East India",
     "FIT-INBOUND-15": "Glimpses of Uttar Pradesh",
     "FIT-INBOUND-16": "Best of Bhutan",
@@ -112,7 +112,7 @@
     "INBOUND-010": "Southern Odyssey",
     "INBOUND-011": "Wildlife Safaris",
     "INBOUND-012": "Wild Retreat",
-    "INBOUND-013": "Panoramic Leh Ladakh",
+    "INBOUND-013": "Panaromic Leh Ladakh",
     "INBOUND-014": "Engaging Leh & Ladakh",
     "INBOUND-015": "Gateway to North East",
     "INBOUND-016": "North East India Tour",
@@ -123,34 +123,34 @@
     "INBOUND-07": "Royal Odyssey",
     "Inbound-09": "Serene Kerala",
     "INBOUND-12": "Ayurveda and Spa",
-    "INBOUND-13": "Cultural Trails – Palace On Wheels",
-    "INBOUND-15": "Andaman & Nicobar Islands",
+    "INBOUND-13": "Cultural Trails - Palace On Wheels",
+    "INBOUND-15": "Peninsula-  Andaman and Nicobar Islands -10  days",
     "INBOUND-17": "Resounding Rajasthan",
     "INBOUND-18": "Princely Rajasthan",
     "INBOUND-19": "Splendid Uttarakhand",
     "INBOUND-20": "Delightful Uttarakhand",
     "INBOUND-22": "Imperial Gujarat",
     "INBOUND-25": "Elevated Karnataka",
-    "INBOUND-28": "Islet – Lakshadweep 7-Day",
+    "INBOUND-28": "Islet - Lakshadweep 7-Day",
     "INBOUND-29": "Islands of Lakshadweep 10-Day",
     "INBOUND-30": "Beautiful Pondicherry 7-Day",
     "INBOUND-33": "Coastal Charm of Pondicherry",
     "INBOUND-35": "Animating Goa",
     "INBOUND-37": "Reformative Goa",
     "INBOUND-38": "Paradise Jammu & Kashmir 10-Day",
-    "INBOUND-39": "Delightful Jammu & Kashmir 7-Day",
+    "INBOUND-39": "Delightful- Jammu & Kashmir 7-Day",
     "INBOUND-40": "Maharaja's Express",
     "INBOUND-41": "Jewels of South",
     "INBOUND-43": "Indian Odyssey Journey",
     "INBOUND-45": "Madhya Pradesh 8-Day",
-    "INBOUND-47": "Maharashtra Splendour – Deccan Odyssey",
+    "INBOUND-47": "Maharashtra Splendour - Deccan Odyssey",
     "INBOUND-48": "Epicentre of Madhya Pradesh",
-    "INBOUND-49": "Indian Sojourn – Deccan Odyssey",
+    "INBOUND-49": "Indian Sojourn - Deccan Odyssey",
     "INBOUND-50": "Charming Himachal Pradesh",
     "INBOUND-51": "Maharashtra Wild Trail Journey",
-    "INBOUND-55": "Cultural Odyssey – Deccan Odyssey",
-    "INBOUND-56": "Heritage Odyssey – Deccan Odyssey",
-    "INBOUND-65": "Coral Reef – Andaman & Nicobar",
+    "INBOUND-55": "Cultural Odyssey - Deccan Odyssey",
+    "INBOUND-56": "Heritage Odyssey - Deccan Odyssey",
+    "INBOUND-65": "Coral reef - Andaman and Nicobar Islands",
     "INBOUND-66": "Scenic Beauty of Meghalaya",
     "INBOUND-68": "Abode of Clouds",
     "INBOUND-70": "Showcase of Himachal Pradesh",
@@ -158,7 +158,8 @@
     "INBOUND-TEST-02": "Golden Triangle",
     "INBOUND-TEST-03": "Foot Steps of Buddha",
     "INBOUND-TEST-32": "Forts and Palaces of India",
-    "INBOUND-TEST-37": "Odisha Temple & Tribal Tour"
+    "INBOUND-TEST-37": "Odisha Temple And Tribal Tour",
+    "FIT-INBOUND-18": "KUMBHA MELA SPECIAL 2027"
   },
   "itineraries": {
     "FIT-INBOUND-01": {
@@ -3553,6 +3554,31 @@
           "day": 12,
           "title": "Departure from Visakhapatnam",
           "description": "After breakfast, transfer to the airport for your onward journey. Bid farewell to Odisha’s rich cultural tapestry."
+        }
+      ]
+    },
+    "FIT-INBOUND-18": {
+      "overview": "A spiritual journey to the Kumbh Mela Special 2027 in Nashik, featuring sacred rituals, cultural experiences, and divine gatherings.",
+      "days": [
+        {
+          "day": 1,
+          "title": "Arrival in Nashik & Evening Aarti",
+          "description": "Arrive in Nashik, check-in at the designated accommodation. Attend the evening Ganga Aarti at the Godavari Ghat, followed by a cultural welcome dinner."
+        },
+        {
+          "day": 2,
+          "title": "Kumbh Mela Darshan & Sacred Bath",
+          "description": "Participate in the early morning Shahi Snan (Royal Bath) at the Kumbh Mela grounds. Explore the spiritual stalls, attend discourses by saints, and enjoy the vibrant festival atmosphere."
+        },
+        {
+          "day": 3,
+          "title": "Spiritual Exploration & Cultural Performances",
+          "description": "Visit the Sita Gufa, Kapila Muni Temple, and other sacred sites in Nashik. In the evening, witness traditional folk performances and devotional music at the Kumbh Mela."
+        },
+        {
+          "day": 4,
+          "title": "Departure & Final Blessings",
+          "description": "Morning visit to Trimbakeshwar Jyotirlinga for final prayers. Post-lunch, proceed to the airport/railway station for departure."
         }
       ]
     }
