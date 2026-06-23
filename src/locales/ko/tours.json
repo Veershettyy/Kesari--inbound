@@ -2543,42 +2543,42 @@
       ]
     },
     "INBOUND-40": {
-      "overview": "인도의 Royal Heritage와 문화적 보물을 Maharaja's Express를 타고 경험하세요. 7일간의 여정은 역사적인 요새, 야생 보호구역, 그리고 영적 도시들을 탐험하며 화려함과 진정한 경험을 결합합니다.",
+      "overview": "인도의 웅장한 Royalty를 Maharaja's Express를 타고 경험하세요. 역사적인 도시, 야생 보호구역, 문화적 랜드마크를 여행하는 호화로운 7일간의 일정입니다. 이 일정은ラー자스탄의 웅장함, Agra의 건축적 경이로움, Varanasi의 영적 본질, Delhi의 영원한 유산을 보여줍니다.",
       "days": [
         {
           "day": 1,
-          "title": "자이푸르 도착",
-          "description": "핑크시티에 도착하여 Maharaja's Express로 이동하세요. 환영 음료와 오리엔테이션을 즐긴 후 호텔과 그 유산 건축물을 가볍게 둘러보세요."
+          "title": "Jaipur 도착",
+          "description": "핑크시티 Jaipur에 도착하여 Maharaja's Express에 탑승하세요. 환영 음료를 즐기고 럭셔리한 객실로 자리를 잡으세요. 이후 Amber Fort, Hawa Mahal, Jantar Mantar 등 Jaipur의 iconic 랜드마크를 탐험하세요. 호텔에서 전통 Rajasthani 저녁 식사를 즐기세요."
         },
         {
           "day": 2,
-          "title": "자이푸르 – Royal Palaces",
-          "description": "정교한 조각과 코끼리 승마가 가능한 웅장한 Amber Fort를 방문하세요. City Palace와 유네스코 등재 천문관측소 Jantar Mantar를 탐험하세요."
+          "title": "Jaipur에서 Ranthambore로",
+          "description": "아침에 Ranthambore National Park로 출발하세요. Bengal 호랑이, 표범 및 기타 야생 동물을 스팟하는 사파리를 즐기세요. 사파리 후 Ranthambore Fort를 방문하세요. 기차로 돌아와 럭셔리 점심 식사를 즐기세요. 저녁에는 onboard에서 문화 공연과 고급 저녁 식사를 즐기세요."
         },
         {
           "day": 3,
-          "title": "란탐보르 – Wildlife Safari",
-          "description": "Ranthambore National Park로 이동하여 흥미진진한 ти거 사파리를 즐기세요. 역사적인 요새로 둘러싸인 이 보호구역에서 벵골 ти거, 표범, 다양한 조류를 관찰하세요."
+          "title": "Ranthambore에서 Agra로",
+          "description": "아침에 Agra에 도착하세요. 일출과 함께 iconic Taj Mahal을 방문하고, Agra Fort와 Fatehpur Sikri를 둘러보세요. 현지 별미가 포함된 Mughlai 점심 식사를 즐기세요. 저녁에는 기차에 탑승하여 라이브 음악과 함께 Royal 저녁 식사를 즐기세요."
         },
         {
           "day": 4,
-          "title": "아그라 – Taj Mahal Wonder",
-          "description": "일출時に Taj Mahal의 장관을 감상하고 Agra Fort를 방문하세요. 이 유네스코 도시에서 정교한 대리석 작품과 무굴 제국의 역사를 탐험하세요."
+          "title": "Agra에서 Orchha로",
+          "description": "아침에 Madhya Pradesh의 숨은 보석 Orchha로 출발하세요. 역사적인 Orchha Fort complex, Jahangir Mahal, Ram Raja Temple을 탐험하세요. 전통 Bundelkhandi 점심 식사를 즐기세요. 기차로 돌아와 아름다운 풍경의 저녁 onboard 엔터테인먼트를 즐기세요."
         },
         {
           "day": 5,
-          "title": "오르차 – Medieval Splendor",
-          "description": "덜 알려진 오르차의 웅장한 Jahangir Mahal과 Ram Raja Temple을 발견하세요. 강변 마을과 역사적인 Chhatris를 산책하며 즐기세요."
+          "title": "Orchha에서 Varanasi로",
+          "description": "아침에 인도 영적 심장 Varanasi에 도착하세요. 갠지스강 가의 Ghats를 방문하고, Dashashwamedh Ghat에서 Ganga Aarti에 참석하며, old city의 좁은 골목을 탐험하세요. 일몰 boat ride를 즐기세요. 기차로 돌아와 호화로운 저녁 식사와 야간 여행을 즐기세요."
         },
         {
           "day": 6,
-          "title": "바라나시 – Spiritual Ganges",
-          "description": "Dashashwamedh Ghat에서 성스러운 Ganga Aarti를 목격하고 고대 도시의 미로 같은 골목을 탐험하세요. 바라나시 Ghats의 영원한 의식들을 경험하세요."
+          "title": "Varanasi에서 Delhi로",
+          "description": "아침에 Delhi에 도착하세요. 역사적인 Red Fort, Jama Masjid, Chandni Chowk을 방문하세요. Mughlai 점심 식사를 즐기세요. 오후에 Humayun's Tomb과 Qutub Minar를 관광하세요. 기차로 돌아와 farewell 저녁 식사와 문화 공연을 즐기세요."
         },
         {
           "day": 7,
-          "title": "델리 출발",
-          "description": "onward journey를 위해 델리로 돌아가세요. 공항으로 이동하기 전 호텔에서 환송 브런치를 즐기세요."
+          "title": "Delhi 출발",
+          "description": "아침에 Delhi에서 하차하세요. 공항으로 이동하여 다음 여정을 준비하세요. Royal 인도 오디세이의 소중한 기억과 함께 Maharaja's Express와 작별 인사를 하세요."
         }
       ]
     },
