@@ -2543,42 +2543,42 @@
       ]
     },
     "INBOUND-40": {
-      "overview": "乘坐豪华列车 Maharaja's Express，体验印度的皇家气派，穿越历史名城、野生动物保护区与文化地标。为期7天的行程将展现拉贾斯坦邦的壮丽、阿格拉的建筑奇迹、瓦拉纳西的精神内涵以及德里的永恒遗产。",
+      "overview": "体验印度皇家遗产，乘坐豪华的Maharaja's Express列车。为期7天的旅程带您游览历史名城Jaipur、Ranthambore、Agra、Orchha、Varanasi和Delhi，融合文化、野生动物与建筑奇观。",
       "days": [
         {
           "day": 1,
-          "title": "抵达斋浦尔",
-          "description": "抵达粉红之城斋浦尔，登上 Maharaja's Express。享用欢迎饮品并入住豪华包厢。随后参观该市标志性地标，包括 Amber Fort、Hawa Mahal 和 Jantar Mantar。在酒店享用传统拉贾斯坦晚餐。"
+          "title": "抵达Jaipur",
+          "description": "抵达Pink City——Jaipur，并登上Maharaja's Express列车。享用欢迎饮品，入住豪华包厢。随后乘坐大象参观Amber Fort，接着欣赏文化表演并在车上享用晚餐。"
         },
         {
           "day": 2,
-          "title": "斋浦尔至兰塔姆伯尔",
-          "description": "上午启程前往兰塔姆伯尔国家公园。享受狩猎之旅，寻找孟加拉虎、豹等野生动物。狩猎后参观兰塔姆伯尔堡。返回列车享用丰盛午餐。傍晚享受列车上的文化表演与美食晚餐。"
+          "title": "Jaipur至Ranthambore",
+          "description": "上午自由活动，探索当地市场或在车上放松。下午启程前往Ranthambore。傍晚在Ranthambore国家公园进行吉普车野生动物 safari（以孟加拉虎闻名）。返回列车享用晚餐并过夜。"
         },
         {
           "day": 3,
-          "title": "兰塔姆伯尔至阿格拉",
-          "description": "上午抵达阿格拉。日出时分参观标志性泰姬陵，随后游览阿格拉堡与法特赫普尔西克里。享用穆格莱午餐，品尝当地美食。傍晚登车，享用配有现场音乐的皇家晚餐。"
+          "title": "Ranthambore至Agra",
+          "description": "上午自由活动或选择村庄safari。下午启程前往Agra。傍晚在日落时分参观标志性泰姬陵，随后在车上享用晚餐。"
         },
         {
           "day": 4,
-          "title": "阿格拉至奥尔查",
-          "description": "上午启程前往中央邦的隐世珍宝奥尔查。探索历史悠久的奥尔查堡建筑群、贾汉吉尔宫与罗摩王庙。享用传统 Bundelkhandi 午餐。返回列车，欣赏沿途风景并在车上享受娱乐活动。"
+          "title": "Agra至Orchha",
+          "description": "上午参观Agra Fort。下午启程前往Orchha。傍晚探索历史悠久的Orchha Fort建筑群及Jahangir Mahal。在车上享用晚餐并过夜。"
         },
         {
           "day": 5,
-          "title": "奥尔查至瓦拉纳西",
-          "description": "上午抵达印度精神核心瓦拉纳西。参观恒河沿岸的河滨平台，在达沙斯瓦梅德哈河滨平台观赏恒河仪式，探索老城区的狭窄街道。日落时分乘船游览。登车享用丰盛晚餐，开启 overnight 之旅。"
+          "title": "Orchha至Varanasi",
+          "description": "上午自由活动或参观当地寺庙。下午启程前往Varanasi。傍晚在Dashashwamedh Ghat举行Ganga Aarti仪式，随后乘船游恒河。在车上享用晚餐并过夜。"
         },
         {
           "day": 6,
-          "title": "瓦拉纳西至德里",
-          "description": "上午抵达德里。参观历史悠久的红堡、杰玛清真寺与 Chandni Chowk。享用穆格莱午餐。下午游览胡马雍陵与库特卜塔。登车享用告别晚餐与文化表演。"
+          "title": "Varanasi至Delhi",
+          "description": "上午游览Varanasi，包括Kashi Vishwanath寺庙和Sarnath。下午启程前往Delhi。傍晚自由活动或选择当地观光。在车上举办告别晚宴。"
         },
         {
           "day": 7,
-          "title": "德里离境",
-          "description": "上午在德里下车。转往机场继续行程。带着对 Maharaja's Express 皇家印度之旅的美好回忆告别。"
+          "title": "从Delhi出发",
+          "description": "上午在Delhi下车。转往机场，继续您的行程。"
         }
       ]
     },
