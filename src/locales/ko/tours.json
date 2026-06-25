@@ -2543,42 +2543,42 @@
       ]
     },
     "INBOUND-40": {
-      "overview": "인도의 왕실 유산을 Maharaja's Express 호를 타고 경험하세요. Jaipur, Ranthambore, Agra, Orchha, Varanasi, Delhi의 역사적인 도시를 거쳐 문화, 야생, 건축의 경이로움을 만끽하는 7일간의 여정입니다.",
+      "overview": "럭셔리 7일간의 여정 Maharaja's Express를 타고 인도의 Royal Heritage, 야생, 그리고 영적 보물을 탐험하세요. 이 여행 일정은 Pink City인 Jaipur에서부터 Ranthambore의 야생 천국, Agra의 iconic Taj Mahal, 역사적인 Orchha, 영적 도시 Varanasi를 거쳐 수도 Delhi에서 마무리됩니다.",
       "days": [
         {
           "day": 1,
-          "title": "Jaipur 도착",
-          "description": "핑크시티 Jaipur에 도착하여 Maharaja's Express에 탑승합니다. 환영 음료를 즐기고 럭셔리한 객실에 settling하세요. 이후 Amber Fort를 코끼리 타고 방문하고, 문화 공연과 onboard 저녁 식사를 즐기세요."
+          "title": "Arrival in Jaipur",
+          "description": "Jaipur, Rajasthan의 수도에 도착하여 Maharaja's Express로 이동하세요. 환영 음료와 가벼운 다과를 즐긴 후 Amber Fort, Hawa Mahal, City Palace를 포함한 도시 주요 관광지를 가이드와 함께 둘러보세요. 저녁은 자유 시간입니다."
         },
         {
           "day": 2,
-          "title": "Jaipur에서 Ranthambore로",
-          "description": "오전은 자유 시간을 보내며 local markets를 탐방하거나 onboard에서 휴식을 취하세요. 오후에 Ranthambore로 출발합니다. 저녁에는 Bengal tigers로 유명한 Ranthambore National Park에서 지프 사파리를 즐기고, onboard 저녁 식사와 함께 하룻밤을 지내세요."
+          "title": "Jaipur to Ranthambore",
+          "description": "아침에 Ranthambore National Park로 출발하세요. Bengal tiger와 풍부한 생물 다양성으로 유명한 공원에서 사파리를 즐기세요. 점심은 열차에서 먹고 오후는 자유 시간입니다. 저녁은 자유 시간입니다."
         },
         {
           "day": 3,
-          "title": "Ranthambore에서 Agra로",
-          "description": "오전은 자유 시간 또는 optional village safari를 즐기세요. 오후에 Agra로 출발합니다. 저녁에는 iconic Taj Mahal을 일몰과 함께 방문하고, onboard 저녁 식사를 즐기세요."
+          "title": "Ranthambore to Agra",
+          "description": "아침에 Agra로 출발하세요. 일출時に Taj Mahal을 방문하고 Agra Fort 및 지역 시장을 둘러보세요. 점심은 열차에서 먹고 오후는 자유 시간입니다. 저녁은 자유 시간입니다."
         },
         {
           "day": 4,
-          "title": "Agra에서 Orchha로",
-          "description": "오전에는 Agra Fort를 방문합니다. 오후에 Orchha로 출발합니다. 저녁에는 역사적인 Orchha Fort complex와 Jahangir Mahal을 탐방하세요. onboard 저녁 식사와 함께 하룻밤을 지내세요."
+          "title": "Agra to Orchha",
+          "description": "아침에 Madhya Pradesh의 역사적인 도시 Orchha로 출발하세요. Orchha Fort Complex, Jahangir Mahal, Ram Raja Temple을 탐험하세요. 점심은 열차에서 먹고 오후는 자유 시간입니다. 저녁은 자유 시간입니다."
         },
         {
           "day": 5,
-          "title": "Orchha에서 Varanasi로",
-          "description": "오전은 자유 시간 또는 local temples을 방문하세요. 오후에 Varanasi로 출발합니다. 저녁에는 Dashashwamedh Ghat에서 Ganga Aarti를 즐기고, Ganges 강에서 보트 라이드를 하세요. onboard 저녁 식사와 함께 하룻밤을 지내세요."
+          "title": "Orchha to Varanasi",
+          "description": "아침에 인도 영적 수도 Varanasi로 출발하세요. Dashashwamedh Ghat에서 Ganga Aarti를 보고 Ganges 강에서 보트 투어를 즐기세요. 저녁 식사는 열차에서 먹고 야간을 보내세요."
         },
         {
           "day": 6,
-          "title": "Varanasi에서 Delhi로",
-          "description": "오전에는 Kashi Vishwanath Temple과 Sarnath를 포함한 Varanasi city tour을 즐기세요. 오후에 Delhi로 출발합니다. 저녁은 자유 시간 또는 optional local sightseeing을 즐기세요. onboard에서 farewell dinner을 즐기세요."
+          "title": "Varanasi to Delhi",
+          "description": "아침에 Delhi로 출발하세요. Qutub Minar, Humayun's Tomb, 분주한 Chandni Chowk 시장을 방문하세요. 점심은 열차에서 먹고 오후는 자유 시간입니다. 저녁은 자유 시간입니다."
         },
         {
           "day": 7,
-          "title": "Delhi 출발",
-          "description": "오전 Delhi에서 하차합니다. 공항으로 transfer하여 onward journey를 준비하세요."
+          "title": "Departure from Delhi",
+          "description": "아침에 공항으로 이동하여 출발하세요."
         }
       ]
     },

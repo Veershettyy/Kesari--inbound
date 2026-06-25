@@ -2543,42 +2543,42 @@
       ]
     },
     "INBOUND-40": {
-      "overview": "Experimente o patrimônio real da Índia a bordo do luxuoso Maharaja's Express. Esta viagem de 7 dias leva você pelas cidades históricas de Jaipur, Ranthambore, Agra, Orchha, Varanasi e Delhi, oferecendo uma mistura de cultura, vida selvagem e maravilhas arquitetônicas.",
+      "overview": "Embarque em uma viagem luxuosa de 7 dias a bordo do Maharaja's Express, explorando o patrimônio real da Índia, a vida selvagem e os tesouros espirituais. Este itinerário leva você da Cidade Rosa de Jaipur ao refúgio de vida selvagem de Ranthambore, ao icônico Taj Mahal em Agra, à histórica Orchha, à cidade espiritual de Varanasi e conclui na agitada capital de Delhi.",
       "days": [
         {
           "day": 1,
           "title": "Chegada em Jaipur",
-          "description": "Chegue em Jaipur, a Cidade Rosa, e embarque no Maharaja's Express. Desfrute de uma bebida de boas-vindas e acomode-se em sua cabine luxuosa. Mais tarde, visite o Forte Amber com passeio de elefante, seguido de uma apresentação cultural e jantar a bordo."
+          "description": "Chegue em Jaipur, capital de Rajastão, e transfira-se para o Maharaja's Express. Desfrute de uma bebida de boas-vindas e lanches leves antes de um passeio guiado pelos destaques da cidade, incluindo o Forte Amber, Hawa Mahal e Palácio da Cidade. Tarde livre."
         },
         {
           "day": 2,
           "title": "Jaipur para Ranthambore",
-          "description": "Manhã livre para explorar mercados locais ou relaxar a bordo. Partida para Ranthambore à tarde. Safári noturno de jipe no Parque Nacional de Ranthambore, conhecido por seus tigres-de-bengala. Retorno ao trem para jantar e pernoite."
+          "description": "Partida matinal para o Parque Nacional de Ranthambore. Desfrute de um safári no parque, conhecido por seus tigres-de-bengala e rica biodiversidade. Retorne ao trem para almoço e tarde livre. Tarde livre."
         },
         {
           "day": 3,
           "title": "Ranthambore para Agra",
-          "description": "Manhã livre ou safári opcional na vila. Partida para Agra à tarde. Visita noturna ao icônico Taj Mahal ao pôr do sol, seguida de jantar a bordo."
+          "description": "Partida matinal para Agra. Visite o icônico Taj Mahal ao nascer do sol, seguido de um passeio pelo Forte de Agra e pelos mercados locais. Retorne ao trem para almoço e tarde livre. Tarde livre."
         },
         {
           "day": 4,
           "title": "Agra para Orchha",
-          "description": "Visita matinal ao Forte de Agra. Partida para Orchha à tarde. À noite, explore o complexo histórico do Forte de Orchha e o Jahangir Mahal. Jantar e pernoite a bordo."
+          "description": "Partida matinal para Orchha, uma cidade histórica em Madhya Pradesh. Explore o Complexo do Forte de Orchha, incluindo Jahangir Mahal e Ram Raja Temple. Retorne ao trem para almoço e tarde livre. Tarde livre."
         },
         {
           "day": 5,
           "title": "Orchha para Varanasi",
-          "description": "Manhã livre ou visita a templos locais. Partida para Varanasi à tarde. À noite, Ganga Aarti no Dashashwamedh Ghat, seguida de passeio de barco no Ganges. Jantar e pernoite a bordo."
+          "description": "Partida matinal para Varanasi, a capital espiritual da Índia. Ganga Aarti noturna no Dashashwamedh Ghat, seguida de passeio de barco no Ganges. Retorne ao trem para jantar e pernoite."
         },
         {
           "day": 6,
           "title": "Varanasi para Delhi",
-          "description": "Tour matinal pela cidade de Varanasi, incluindo o Templo Kashi Vishwanath e Sarnath. Partida para Delhi à tarde. Noite livre ou passeio local opcional. Jantar de despedida a bordo."
+          "description": "Partida matinal para Delhi. Visite o Qutub Minar, o Túmulo de Humayun e o movimentado mercado de Chandni Chowk. Retorne ao trem para almoço e tarde livre. Tarde livre."
         },
         {
           "day": 7,
           "title": "Partida de Delhi",
-          "description": "Desembarque matinal em Delhi. Transferência para o aeroporto para sua viagem de continuação."
+          "description": "Transfer matinal para o aeroporto para a partida."
         }
       ]
     },

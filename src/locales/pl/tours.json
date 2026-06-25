@@ -2543,42 +2543,42 @@
       ]
     },
     "INBOUND-40": {
-      "overview": "Doświadcz dziedzictwa królewskich Indii na pokładzie luksusowego Maharaja's Express. Ta 7-dniowa podróż zabierze Cię przez historyczne miasta Jaipur, Ranthambore, Agra, Orchha, Varanasi i Delhi, oferując połączenie kultury, dzikiej przyrody i cudów architektury.",
+      "overview": "Wyrusza się w luksusową 7-dniową podróż pokładem Maharaja's Express, odkrywając dziedzictwo królewskie Indii, dziką przyrodę i duchowe skarby. Ten plan podróży zabiera Cię z Różowego Miasta Jaipur do raju dzikiej przyrody Ranthambore, ikonicznego Tadź Mahal w Agrze, historycznego Orchha, duchowego miasta Varanasi i kończy się w tętniącej życiem stolicy Delhi.",
       "days": [
         {
           "day": 1,
           "title": "Przylot do Jaipur",
-          "description": "Przybądź do Jaipur, Różowego Miasta, i wsiądź na pokład Maharaja's Express. Skosztuj drinka powitalnego i rozgość się w luksusowej kabinie. Następnie odwiedź Fort Amber z przejażdżką na słoniu, po której odbędzie się występ kulturalny i kolacja na pokładzie."
+          "description": "Przylot do Jaipur, stolicy Radżastanu, i transfer do Maharaja's Express. Powitanie drinkiem i lekkimi przekąskami przed przewodnikową wycieczką po głównych atrakcjach miasta, w tym Fortecy Amber, Pałacu Wiatrów (Hawa Mahal) i Pałacu Miejskiego (City Palace). Wieczór wolny."
         },
         {
           "day": 2,
           "title": "Jaipur do Ranthambore",
-          "description": "Ranek wolny na zwiedzanie lokalnych targów lub relaks na pokładzie. Popołudniowy odjazd do Ranthambore. Wieczorna wycieczka samochodem terenowym w Parku Narodowym Ranthambore, znanym z tygrysów bengalskich. Powrót do pociągu na kolację i nocleg."
+          "description": "Poranny odjazd do Parku Narodowego Ranthambore. Safari w parku, znanym z tygrysów bengalskich i bogatej bioróżnorodności. Powrót do pociągu na lunch i popołudnie wolne. Wieczór wolny."
         },
         {
           "day": 3,
           "title": "Ranthambore do Agra",
-          "description": "Ranek wolny lub opcjonalna wycieczka do wsi. Popołudniowy odjazd do Agra. Wieczorne zwiedzanie ikonicznego Tadź Mahal o zachodzie słońca, po którym odbędzie się kolacja na pokładzie."
+          "description": "Poranny odjazd do Agra. Zwiedzanie ikonicznego Tadź Mahal o wschodzie słońca, następnie wizyta w Forcie Agra i lokalnych targach. Powrót do pociągu na lunch i popołudnie wolne. Wieczór wolny."
         },
         {
           "day": 4,
           "title": "Agra do Orchha",
-          "description": "Ranek na zwiedzanie Fortu Agra. Popołudniowy odjazd do Orchha. Wieczorne zwiedzanie historycznego kompleksu Fortu Orchha i Pałacu Jahangira. Kolacja i nocleg na pokładzie."
+          "description": "Poranny odjazd do Orchha, historyjnego miasta w Madhya Pradesh. Zwiedzanie kompleksu fortecznego Orchha, w tym Pałacu Dżahangira i Świątyni Ram Raja. Powrót do pociągu na lunch i popołudnie wolne. Wieczór wolny."
         },
         {
           "day": 5,
           "title": "Orchha do Varanasi",
-          "description": "Ranek wolny lub wizyta w lokalnych świątyniach. Popołudniowy odjazd do Varanasi. Wieczorna ceremonia Ganga Aarti przy Ghacie Dashashwamedh, po której odbędzie się rejs łodzią po Gangesie. Kolacja i nocleg na pokładzie."
+          "description": "Poranny odjazd do Varanasi, duchowej stolicy Indii. Wieczorna ceremonia Ganga Aarti przy Ghat Dashashwamedh, następnie rejs łodzią po Gangesie. Powrót do pociągu na kolację i nocleg."
         },
         {
           "day": 6,
           "title": "Varanasi do Delhi",
-          "description": "Ranek na zwiedzanie miasta Varanasi, w tym Świątyni Kashi Vishwanath i Sarnath. Popołudniowy odjazd do Delhi. Wieczór wolny lub opcjonalne lokalne zwiedzanie. Kolacja pożegnalna na pokładzie."
+          "description": "Poranny odjazd do Delhi. Zwiedzanie Kutub Minar, Grobowca Humajuna i tętniącego życiem targu Chandni Chowk. Powrót do pociągu na lunch i popołudnie wolne. Wieczór wolny."
         },
         {
           "day": 7,
-          "title": "Odjazd z Delhi",
-          "description": "Ranek wysiadka w Delhi. Transfer na lotnisko w celu kontynuowania podróży."
+          "title": "Odlot z Delhi",
+          "description": "Poranny transfer na lotnisko w celu odlotu."
         }
       ]
     },
