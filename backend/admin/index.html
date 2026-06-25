@@ -1,343 +1,690 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
 <title>KESARi Inbound — Admin</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 <style>
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f0f2f5; color: #222; }
-  .login-wrap { display: flex; align-items: center; justify-content: center; min-height: 100vh; }
-  .login-box { background: #fff; padding: 40px; border-radius: 12px; width: 360px; box-shadow: 0 4px 20px rgba(0,0,0,.1); }
-  .login-box h2 { color: #1a1a4e; margin-bottom: 24px; text-align: center; }
-  input, select, textarea { width: 100%; padding: 10px 14px; border: 1px solid #ddd; border-radius: 8px; font-size: 14px; margin-bottom: 14px; }
-  .btn { background: #1a1a4e; color: #fff; border: none; padding: 11px 20px; border-radius: 8px; cursor: pointer; font-size: 14px; font-weight: 600; }
-  .btn:hover { background: #2a2a6e; }
-  .btn-red { background: #e53e3e; }
-  .btn-green { background: #276749; }
-  .btn-sm { padding: 5px 12px; font-size: 12px; }
-  #app { display: none; }
-  .sidebar { position: fixed; top: 0; left: 0; bottom: 0; width: 220px; background: #1a1a4e; color: #fff; padding: 24px 0; }
-  .sidebar h3 { padding: 0 20px 20px; font-size: 16px; border-bottom: 1px solid rgba(255,255,255,.1); }
-  .sidebar a { display: block; padding: 12px 20px; color: rgba(255,255,255,.8); text-decoration: none; font-size: 14px; cursor: pointer; }
-  .sidebar a:hover, .sidebar a.active { background: rgba(255,255,255,.1); color: #fff; }
-  .main { margin-left: 220px; padding: 24px; }
-  .topbar { display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; }
-  .topbar h2 { font-size: 22px; color: #1a1a4e; }
-  .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 28px; }
-  .stat-card { background: #fff; border-radius: 10px; padding: 20px; box-shadow: 0 1px 4px rgba(0,0,0,.08); }
-  .stat-card .num { font-size: 32px; font-weight: 700; color: #1a1a4e; }
-  .stat-card .label { font-size: 13px; color: #888; margin-top: 4px; }
-  .card { background: #fff; border-radius: 10px; padding: 20px; box-shadow: 0 1px 4px rgba(0,0,0,.08); margin-bottom: 20px; }
-  .card h3 { margin-bottom: 16px; font-size: 16px; color: #1a1a4e; }
-  table { width: 100%; border-collapse: collapse; font-size: 13px; }
-  th { text-align: left; padding: 10px 12px; background: #f7f7f7; color: #555; font-weight: 600; }
-  td { padding: 10px 12px; border-bottom: 1px solid #f0f0f0; vertical-align: top; }
-  tr:hover td { background: #fafafa; }
-  .badge { display: inline-block; padding: 2px 8px; border-radius: 20px; font-size: 11px; font-weight: 600; }
-  .badge-new { background: #ebf8ff; color: #2b6cb0; }
-  .badge-contacted { background: #fefcbf; color: #744210; }
-  .badge-converted { background: #f0fff4; color: #276749; }
-  .badge-closed { background: #fff5f5; color: #c53030; }
-  .lang-flag { display: inline-block; font-size: 13px; padding: 2px 8px; background: #f0f0f0; border-radius: 4px; }
-  .tab-bar { display: flex; gap: 8px; margin-bottom: 20px; flex-wrap: wrap; }
-  .tab { padding: 7px 16px; border-radius: 6px; border: 1px solid #ddd; background: #fff; cursor: pointer; font-size: 13px; }
-  .tab.active { background: #1a1a4e; color: #fff; border-color: #1a1a4e; }
-  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
-  .form-group label { display: block; font-size: 13px; color: #555; margin-bottom: 6px; font-weight: 500; }
-  .hidden { display: none; }
-  #toast { position: fixed; bottom: 24px; right: 24px; background: #276749; color: #fff; padding: 12px 20px; border-radius: 8px; font-size: 14px; display: none; z-index: 9999; }
+  *{box-sizing:border-box;margin:0;padding:0}
+  :root{--navy:#1a2d5a;--red:#c0392b;--bg:#f4f6fb;--card:#fff;--border:#e2e8f0;--text:#1e293b;--muted:#64748b}
+  body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:var(--bg);color:var(--text);min-height:100vh}
+
+  /* ── LOGIN ── */
+  #login-screen{display:flex;align-items:center;justify-content:center;min-height:100vh;padding:20px}
+  .login-box{background:#fff;border-radius:16px;padding:40px;width:100%;max-width:380px;box-shadow:0 20px 60px rgba(0,0,0,.12)}
+  .login-logo{text-align:center;margin-bottom:28px}
+  .login-logo .globe{font-size:40px;line-height:1}
+  .login-logo h1{font-size:22px;color:var(--navy);margin-top:10px;font-weight:800}
+  .login-logo p{color:var(--muted);font-size:13px;margin-top:3px}
+  .form-group{margin-bottom:16px}
+  .form-group label{display:block;font-size:11px;font-weight:700;color:var(--muted);margin-bottom:6px;text-transform:uppercase;letter-spacing:.6px}
+  .form-group input,.form-group select,.form-group textarea{width:100%;padding:11px 14px;border:1.5px solid var(--border);border-radius:8px;font-size:14px;transition:border .2s;outline:none;font-family:inherit}
+  .form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:var(--navy)}
+  .btn-primary{width:100%;padding:12px;background:var(--navy);color:#fff;border:none;border-radius:8px;font-size:14px;font-weight:700;cursor:pointer;transition:background .2s}
+  .btn-primary:hover{background:#243d75}
+  .err-msg{color:var(--red);font-size:13px;margin-top:8px;text-align:center;min-height:18px}
+
+  /* ── LAYOUT ── */
+  #app{display:none}
+  .sidebar{width:220px;background:var(--navy);position:fixed;top:0;left:0;bottom:0;display:flex;flex-direction:column;z-index:100}
+  .sidebar-logo{padding:22px 20px 18px;border-bottom:1px solid rgba(255,255,255,.1)}
+  .sidebar-logo h2{color:#fff;font-size:15px;font-weight:800}
+  .sidebar-logo p{color:rgba(255,255,255,.45);font-size:11px;margin-top:2px}
+  .nav-item{display:flex;align-items:center;gap:10px;padding:12px 20px;color:rgba(255,255,255,.6);cursor:pointer;font-size:13px;font-weight:500;transition:all .2s;border-left:3px solid transparent;user-select:none}
+  .nav-item:hover{color:#fff;background:rgba(255,255,255,.06)}
+  .nav-item.active{color:#fff;background:rgba(255,255,255,.1);border-left-color:var(--red)}
+  .nav-item .icon{font-size:15px;width:20px;text-align:center;flex-shrink:0}
+  .sidebar-footer{margin-top:auto;padding:16px 20px;border-top:1px solid rgba(255,255,255,.1)}
+  .logout-btn{color:rgba(255,255,255,.5);cursor:pointer;font-size:12px;display:flex;align-items:center;gap:6px;padding:6px 0}
+  .logout-btn:hover{color:#fff}
+  .main{margin-left:220px;padding:28px;min-height:100vh}
+  .page{display:none}.page.active{display:block}
+  .page-title{font-size:21px;font-weight:800;color:var(--navy)}
+  .page-sub{color:var(--muted);font-size:13px;margin-top:3px}
+  .topbar{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:24px;gap:12px}
+  .topbar-right{display:flex;gap:10px;flex-shrink:0}
+
+  /* ── STAT CARDS ── */
+  .stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:22px}
+  .stat-card{background:var(--card);border-radius:12px;padding:20px 20px 16px;border:1px solid var(--border);position:relative;overflow:hidden}
+  .stat-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;border-radius:2px 2px 0 0}
+  .stat-card.c-blue::before{background:var(--navy)}
+  .stat-card.c-red::before{background:var(--red)}
+  .stat-card.c-green::before{background:#16a34a}
+  .stat-card.c-orange::before{background:#ea580c}
+  .stat-label{font-size:11px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.8px}
+  .stat-value{font-size:34px;font-weight:900;color:var(--navy);margin:6px 0 2px;line-height:1}
+  .stat-sub{font-size:12px;color:var(--muted);display:flex;align-items:center;gap:6px}
+  .growth-badge{display:inline-flex;align-items:center;padding:2px 7px;border-radius:20px;font-size:11px;font-weight:700}
+  .g-up{background:#dcfce7;color:#16a34a}
+  .g-down{background:#fee2e2;color:#dc2626}
+
+  /* ── CHARTS ── */
+  .charts-row{display:grid;gap:16px;margin-bottom:16px}
+  .charts-row.c2{grid-template-columns:2fr 1fr}
+  .charts-row.c22{grid-template-columns:1fr 1fr}
+  .chart-card{background:var(--card);border-radius:12px;padding:20px;border:1px solid var(--border)}
+  .chart-title{font-size:13px;font-weight:700;color:var(--navy);margin-bottom:14px}
+  .chart-wrap{position:relative;height:210px}
+
+  /* ── TABLE CARD ── */
+  .card{background:var(--card);border-radius:12px;border:1px solid var(--border);overflow:hidden;margin-bottom:16px}
+  .card-header{padding:14px 20px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--border);background:#fafafa}
+  .card-header h3{font-size:13px;font-weight:700;color:var(--navy)}
+  .filters{display:flex;gap:10px;flex-wrap:wrap;padding:12px 16px;border-bottom:1px solid var(--border)}
+  .fi{padding:8px 12px;border:1.5px solid var(--border);border-radius:8px;font-size:13px;outline:none;transition:border .2s;font-family:inherit;background:#fff}
+  .fi:focus{border-color:var(--navy)}
+  .fi-search{flex:1;min-width:180px}
+  table{width:100%;border-collapse:collapse}
+  th{padding:10px 16px;font-size:11px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.5px;text-align:left;background:#fafafa;border-bottom:1px solid var(--border);white-space:nowrap}
+  td{padding:11px 16px;font-size:13px;border-bottom:1px solid var(--border);vertical-align:middle}
+  tr:last-child td{border-bottom:none}
+  tr:hover td{background:#f8faff}
+  .badge{display:inline-block;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:700}
+  .badge-new{background:#dbeafe;color:#1d4ed8}
+  .badge-contacted{background:#fef3c7;color:#92400e}
+  .badge-converted{background:#dcfce7;color:#166534}
+  .badge-closed{background:#f1f5f9;color:#475569}
+
+  /* ── BUTTONS ── */
+  .btn{padding:8px 18px;border-radius:7px;font-size:13px;font-weight:700;cursor:pointer;border:none;transition:all .2s;display:inline-flex;align-items:center;gap:6px}
+  .btn-navy{background:var(--navy);color:#fff}
+  .btn-navy:hover{background:#243d75}
+  .btn-outline{background:#fff;color:var(--navy);border:1.5px solid var(--border)}
+  .btn-outline:hover{border-color:var(--navy)}
+  .status-sel{padding:5px 10px;border-radius:6px;border:1px solid var(--border);font-size:12px;cursor:pointer;outline:none;background:#fff}
+  .pagination{display:flex;align-items:center;gap:6px;padding:12px 16px;border-top:1px solid var(--border)}
+  .pg-btn{padding:6px 12px;border:1.5px solid var(--border);border-radius:6px;font-size:12px;cursor:pointer;background:#fff;font-weight:600;transition:all .15s}
+  .pg-btn:disabled{opacity:.35;cursor:not-allowed}
+  .pg-btn.active{background:var(--navy);color:#fff;border-color:var(--navy)}
+  .pg-info{font-size:12px;color:var(--muted);margin-left:auto}
+
+  /* ── DRAWER ── */
+  .overlay{position:fixed;inset:0;background:rgba(0,0,0,.35);z-index:200;display:none}
+  .overlay.open{display:block}
+  .drawer{position:fixed;right:0;top:0;bottom:0;width:420px;background:#fff;z-index:201;transform:translateX(100%);transition:transform .28s cubic-bezier(.4,0,.2,1);overflow-y:auto;display:flex;flex-direction:column}
+  .drawer.open{transform:translateX(0)}
+  .drawer-head{padding:18px 20px;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:space-between;flex-shrink:0}
+  .drawer-head h4{font-size:15px;font-weight:700}
+  .drawer-close{cursor:pointer;font-size:18px;opacity:.7;background:none;border:none;color:#fff;line-height:1;padding:2px 6px}
+  .drawer-close:hover{opacity:1}
+  .drawer-body{padding:20px;flex:1}
+  .info-row{display:flex;gap:14px;padding:9px 0;border-bottom:1px solid var(--border)}
+  .info-label{font-size:11px;font-weight:700;color:var(--muted);text-transform:uppercase;min-width:96px;padding-top:1px}
+  .info-val{font-size:13px;color:var(--text);font-weight:500;word-break:break-word}
+  .notes-textarea{width:100%;border:1.5px solid var(--border);border-radius:8px;padding:10px;font-size:13px;resize:vertical;min-height:80px;outline:none;font-family:inherit}
+  .notes-textarea:focus{border-color:var(--navy)}
+  .sec-label{font-size:11px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.6px;margin-bottom:8px;margin-top:18px}
+
+  /* ── TOAST ── */
+  .toast{position:fixed;bottom:24px;right:24px;background:#1e293b;color:#fff;padding:11px 18px;border-radius:10px;font-size:13px;font-weight:500;z-index:999;transform:translateY(80px);opacity:0;transition:all .3s;pointer-events:none;display:flex;align-items:center;gap:8px}
+  .toast.show{transform:translateY(0);opacity:1}
+  .toast.t-err{background:#c0392b}
+
+  /* ── MISC ── */
+  .spinner{display:inline-block;width:16px;height:16px;border:2px solid rgba(255,255,255,.3);border-top-color:#fff;border-radius:50%;animation:spin .6s linear infinite;flex-shrink:0}
+  @keyframes spin{to{transform:rotate(360deg)}}
+  .loading-cell{text-align:center;padding:40px;color:var(--muted);font-size:13px}
+  .empty-cell{text-align:center;padding:40px;color:var(--muted);font-size:13px}
+  .bar-row{margin-bottom:11px}
+  .bar-meta{display:flex;justify-content:space-between;font-size:12px;margin-bottom:4px}
+  .bar-name{font-weight:600;color:var(--navy);max-width:210px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .bar-count{color:var(--muted)}
+  .bar-track{background:#e2e8f0;border-radius:4px;height:6px}
+  .bar-fill{background:var(--red);height:6px;border-radius:4px;transition:width .4s}
+  .form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .add-card{background:var(--card);border-radius:12px;border:1px solid var(--border);padding:24px}
 </style>
 </head>
 <body>
 
-<!-- Login -->
-<div class="login-wrap" id="login">
+<!-- ── LOGIN ── -->
+<div id="login-screen">
   <div class="login-box">
-    <h2>🌏 KESARi Inbound Admin</h2>
-    <div class="form-group"><label>Email</label><input type="email" id="loginEmail" placeholder="admin@kesari.com"></div>
-    <div class="form-group"><label>Password</label><input type="password" id="loginPass" placeholder="••••••••"></div>
-    <button class="btn" style="width:100%" onclick="doLogin()">Login</button>
-    <p id="loginErr" style="color:red;font-size:13px;margin-top:10px;text-align:center"></p>
+    <div class="login-logo">
+      <div class="globe">🌏</div>
+      <h1>KESARi Inbound</h1>
+      <p>Admin Dashboard</p>
+    </div>
+    <div class="form-group">
+      <label>Email</label>
+      <input type="email" id="inp-user" placeholder="veershetty2005@gmail.com" onkeydown="if(event.key==='Enter')login()"/>
+    </div>
+    <div class="form-group">
+      <label>Password</label>
+      <input type="password" id="inp-pass" placeholder="••••••" onkeydown="if(event.key==='Enter')login()"/>
+    </div>
+    <button class="btn-primary" onclick="login()" id="login-btn">Sign In</button>
+    <p class="err-msg" id="login-err"></p>
   </div>
 </div>
 
-<!-- App -->
+<!-- ── APP ── -->
 <div id="app">
   <div class="sidebar">
-    <h3>KESARi Inbound</h3>
-    <a onclick="showPage('dashboard')" class="active" id="tab-dashboard">📊 Dashboard</a>
-    <a onclick="showPage('enquiries')" id="tab-enquiries">📩 Enquiries</a>
-    <a onclick="showPage('packages')" id="tab-packages">🗺 Packages</a>
-    <a onclick="showPage('add-package')" id="tab-add-package">➕ Add Package</a>
-    <a onclick="doLogout()" style="position:absolute;bottom:20px;left:0;right:0">🚪 Logout</a>
+    <div class="sidebar-logo">
+      <h2>KESARi Inbound</h2>
+      <p>Admin Dashboard</p>
+    </div>
+    <div class="nav-item active" data-page="dashboard" onclick="showPage('dashboard',this)">
+      <span class="icon">📊</span> Dashboard
+    </div>
+    <div class="nav-item" data-page="enquiries" onclick="showPage('enquiries',this)">
+      <span class="icon">📋</span> Enquiries
+    </div>
+    <div class="nav-item" data-page="packages" onclick="showPage('packages',this)">
+      <span class="icon">🗺️</span> Add Package
+    </div>
+    <div class="sidebar-footer">
+      <div class="logout-btn" onclick="logout()">⬅&nbsp; Logout</div>
+    </div>
   </div>
 
   <div class="main">
-    <!-- Dashboard -->
-    <div id="page-dashboard">
-      <div class="topbar"><h2>Dashboard</h2><span id="adminName" style="color:#888;font-size:14px"></span></div>
+
+    <!-- DASHBOARD -->
+    <div class="page active" id="page-dashboard">
+      <div class="topbar">
+        <div>
+          <div class="page-title">Dashboard</div>
+          <div class="page-sub">Live overview of enquiries and performance</div>
+        </div>
+        <div class="topbar-right">
+          <select class="fi" id="dash-period" onchange="loadDashboard()">
+            <option value="7">Last 7 days</option>
+            <option value="30" selected>Last 30 days</option>
+            <option value="90">Last 90 days</option>
+          </select>
+        </div>
+      </div>
+
       <div class="stats-grid">
-        <div class="stat-card"><div class="num" id="statTotal">—</div><div class="label">Total Enquiries</div></div>
-        <div class="stat-card"><div class="num" id="statNew" style="color:#2b6cb0">—</div><div class="label">New</div></div>
-        <div class="stat-card"><div class="num" id="statConverted" style="color:#276749">—</div><div class="label">Converted</div></div>
-        <div class="stat-card"><div class="num" id="statLangs">—</div><div class="label">Languages Active</div></div>
-      </div>
-      <div class="form-row">
-        <div class="card">
-          <h3>Enquiries by Language</h3>
-          <table><thead><tr><th>Language</th><th>Count</th></tr></thead>
-          <tbody id="langTable"></tbody></table>
+        <div class="stat-card c-blue">
+          <div class="stat-label">Total Enquiries</div>
+          <div class="stat-value" id="s-total">—</div>
+          <div class="stat-sub">All time</div>
         </div>
-        <div class="card">
-          <h3>Recent Enquiries</h3>
-          <table><thead><tr><th>Name</th><th>Language</th><th>Package</th></tr></thead>
-          <tbody id="recentTable"></tbody></table>
+        <div class="stat-card c-orange">
+          <div class="stat-label">This Period</div>
+          <div class="stat-value" id="s-period">—</div>
+          <div class="stat-sub" id="s-growth">vs previous period</div>
+        </div>
+        <div class="stat-card c-green">
+          <div class="stat-label">Conversion Rate</div>
+          <div class="stat-value" id="s-conv">—</div>
+          <div class="stat-sub">Enquiry → Converted</div>
+        </div>
+        <div class="stat-card c-red">
+          <div class="stat-label">Pending (New)</div>
+          <div class="stat-value" id="s-new">—</div>
+          <div class="stat-sub">Need follow-up</div>
+        </div>
+      </div>
+
+      <div class="charts-row c2">
+        <div class="chart-card">
+          <div class="chart-title">Enquiries Over Time</div>
+          <div class="chart-wrap"><canvas id="chart-trend"></canvas></div>
+        </div>
+        <div class="chart-card">
+          <div class="chart-title">By Language</div>
+          <div class="chart-wrap"><canvas id="chart-lang"></canvas></div>
+        </div>
+      </div>
+
+      <div class="charts-row c22">
+        <div class="chart-card">
+          <div class="chart-title">Status Breakdown</div>
+          <div class="chart-wrap"><canvas id="chart-status"></canvas></div>
+        </div>
+        <div class="chart-card">
+          <div class="chart-title">Top Packages</div>
+          <div id="top-packages" style="padding-top:2px"></div>
         </div>
       </div>
     </div>
 
-    <!-- Enquiries -->
-    <div id="page-enquiries" class="hidden">
-      <div class="topbar"><h2>Enquiries</h2></div>
-      <div class="tab-bar" id="statusTabs">
-        <div class="tab active" onclick="filterEnquiries('')">All</div>
-        <div class="tab" onclick="filterEnquiries('new')">New</div>
-        <div class="tab" onclick="filterEnquiries('contacted')">Contacted</div>
-        <div class="tab" onclick="filterEnquiries('converted')">Converted</div>
-        <div class="tab" onclick="filterEnquiries('closed')">Closed</div>
+    <!-- ENQUIRIES -->
+    <div class="page" id="page-enquiries">
+      <div class="topbar">
+        <div>
+          <div class="page-title">Enquiries</div>
+          <div class="page-sub">Manage all incoming enquiries</div>
+        </div>
+        <div class="topbar-right">
+          <button class="btn btn-outline" onclick="exportCSV()">⬇ Export CSV</button>
+        </div>
       </div>
       <div class="card">
-        <table>
-          <thead><tr><th>Name</th><th>Language</th><th>Package</th><th>Phone</th><th>Date</th><th>Status</th><th>Action</th></tr></thead>
-          <tbody id="enquiryTable"></tbody>
-        </table>
-        <div style="margin-top:16px;display:flex;gap:8px;align-items:center">
-          <button class="btn btn-sm" onclick="loadEnquiries(currentPage-1)">← Prev</button>
-          <span id="pageInfo" style="font-size:13px;color:#888"></span>
-          <button class="btn btn-sm" onclick="loadEnquiries(currentPage+1)">Next →</button>
+        <div class="filters">
+          <input type="text" class="fi fi-search" id="eq-search" placeholder="Search name, email, phone, package…" oninput="debounce(()=>{ eqPage=1; loadEnquiries(); },380)()"/>
+          <select class="fi" id="eq-status" onchange="eqPage=1;loadEnquiries()">
+            <option value="">All Status</option>
+            <option value="new">New</option>
+            <option value="contacted">Contacted</option>
+            <option value="converted">Converted</option>
+            <option value="closed">Closed</option>
+          </select>
+          <select class="fi" id="eq-lang" onchange="eqPage=1;loadEnquiries()">
+            <option value="">All Languages</option>
+            <option value="en">English</option>
+            <option value="de">German</option>
+            <option value="fr">French</option>
+            <option value="es">Spanish</option>
+            <option value="it">Italian</option>
+            <option value="pt">Portuguese</option>
+            <option value="hi">Hindi</option>
+            <option value="ml">Malayalam</option>
+            <option value="pl">Polish</option>
+            <option value="ar">Arabic</option>
+            <option value="zh">Chinese</option>
+            <option value="ja">Japanese</option>
+            <option value="ko">Korean</option>
+          </select>
         </div>
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th><th>Contact</th><th>Package</th>
+              <th>Lang</th><th>Date</th><th>Status</th><th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="eq-tbody"></tbody>
+        </table>
+        <div class="pagination" id="eq-pagination"></div>
       </div>
     </div>
 
-    <!-- Packages -->
-    <div id="page-packages" class="hidden">
-      <div class="topbar"><h2>Tour Packages</h2></div>
-      <div class="card">
-        <table>
-          <thead><tr><th>Code</th><th>Name (EN)</th><th>Theme</th><th>Days</th><th>Action</th></tr></thead>
-          <tbody id="packagesTable"></tbody>
-        </table>
-      </div>
-    </div>
-
-    <!-- Add Package -->
-    <div id="page-add-package" class="hidden">
-      <div class="topbar"><h2>Add New Package</h2></div>
-      <div class="card" style="max-width:680px">
-        <p style="color:#888;font-size:13px;margin-bottom:20px">
-          Enter the package details in English. The name will be <strong>automatically translated</strong> to all 12 languages using Mistral AI.
-        </p>
+    <!-- ADD PACKAGE -->
+    <div class="page" id="page-packages">
+      <div class="page-title">Add Package</div>
+      <div class="page-sub" style="margin-bottom:20px">Package name auto-translates to all 13 languages via Mistral AI</div>
+      <div class="add-card" style="max-width:680px">
         <div class="form-row">
-          <div class="form-group"><label>Package Code *</label><input id="pkgCode" placeholder="INBOUND-75"></div>
-          <div class="form-group"><label>English Name *</label><input id="pkgName" placeholder="Golden Triangle Tour"></div>
+          <div class="form-group"><label>Package Code *</label><input type="text" id="pk-code" placeholder="INBOUND-75"/></div>
+          <div class="form-group"><label>Name (English) *</label><input type="text" id="pk-name" placeholder="Golden Triangle Classic"/></div>
         </div>
         <div class="form-row">
-          <div class="form-group"><label>Days *</label><input id="pkgDays" type="number" placeholder="7"></div>
-          <div class="form-group"><label>Nights *</label><input id="pkgNights" type="number" placeholder="6"></div>
+          <div class="form-group"><label>Days *</label><input type="number" id="pk-days" placeholder="7"/></div>
+          <div class="form-group"><label>Nights *</label><input type="number" id="pk-nights" placeholder="6"/></div>
         </div>
+        <div class="form-group"><label>Places Covered *</label><input type="text" id="pk-places" placeholder="Delhi → Agra → Jaipur → Delhi"/></div>
         <div class="form-row">
           <div class="form-group">
             <label>Theme *</label>
-            <select id="pkgTheme">
-              <option value="Nature">Nature</option>
-              <option value="Historic">Historic</option>
-              <option value="Luxury Train">Luxury Train</option>
-              <option value="Ayurveda and Wellness">Ayurveda & Wellness</option>
-              <option value="First Timers">First Timers</option>
-              <option value="Spiritual">Spiritual</option>
-              <option value="Adventure">Adventure</option>
-              <option value="Luxury">Luxury</option>
+            <select id="pk-theme">
+              <option value="first-timers">First Timers</option>
+              <option value="nature">Nature</option>
+              <option value="historic">Historic</option>
+              <option value="spiritual">Spiritual</option>
+              <option value="luxury">Luxury</option>
+              <option value="adventure">Adventure</option>
+              <option value="ayurveda-and-wellness">Ayurveda &amp; Wellness</option>
+              <option value="luxury-train">Luxury Train</option>
             </select>
           </div>
-          <div class="form-group"><label>Tags</label><input id="pkgTags" placeholder="heritage, wildlife, culture"></div>
+          <div class="form-group"><label>Tags (comma separated)</label><input type="text" id="pk-tags" placeholder="Heritage, Wildlife"/></div>
         </div>
-        <div class="form-group"><label>Places / Itinerary *</label><input id="pkgPlaces" placeholder="Delhi → Agra → Jaipur → Delhi"></div>
-        <div class="form-group"><label>Image URL</label><input id="pkgImg" placeholder="https://..."></div>
-        <button class="btn btn-green" onclick="addPackage()" id="addPkgBtn">✦ Save & Auto-Translate to 12 Languages</button>
+        <div class="form-group"><label>Image URL</label><input type="text" id="pk-img" placeholder="https://…"/></div>
+        <button class="btn btn-navy" style="margin-top:4px" onclick="addPackage()" id="pk-btn">
+          Add &amp; Auto-Translate to 13 Languages
+        </button>
+        <p id="pk-msg" style="margin-top:10px;font-size:13px"></p>
       </div>
     </div>
+
+  </div><!-- /main -->
+</div><!-- /app -->
+
+<!-- ENQUIRY DETAIL DRAWER -->
+<div class="overlay" id="overlay" onclick="closeDrawer()"></div>
+<div class="drawer" id="drawer">
+  <div class="drawer-head">
+    <h4 id="drawer-title">Enquiry Detail</h4>
+    <button class="drawer-close" onclick="closeDrawer()">✕</button>
   </div>
+  <div class="drawer-body" id="drawer-body"></div>
 </div>
 
-<div id="toast"></div>
+<div class="toast" id="toast"></div>
 
 <script>
-const API = '/api';
-let token = localStorage.getItem('kesari_token');
-let currentPage = 1;
-let currentStatus = '';
+const BASE = '';          // same origin as admin
+let TOKEN = localStorage.getItem('kesari_admin_token') || '';
+let eqPage = 1;
+let charts = {};
+let _debTimer = null;
 
-const LANG_NAMES = {en:'English',es:'Spanish',fr:'French',hi:'Hindi',de:'German',ja:'Japanese',pt:'Portuguese',it:'Italian',zh:'Chinese',ar:'Arabic',ko:'Korean',ml:'Malayalam',pl:'Polish'};
-
-if (token) showApp();
-
-async function doLogin() {
-  const email = document.getElementById('loginEmail').value;
-  const pass  = document.getElementById('loginPass').value;
-  const res   = await fetch(`${API}/admin/login`, {
-    method: 'POST', headers: {'Content-Type':'application/json'},
-    body: JSON.stringify({ email, password: pass })
-  });
-  const data = await res.json();
-  if (!res.ok) { document.getElementById('loginErr').textContent = data.error; return; }
-  token = data.token;
-  localStorage.setItem('kesari_token', token);
-  document.getElementById('adminName').textContent = `Hello, ${data.name}`;
-  showApp();
+// ── Auth ──────────────────────────────────────────────────────────────────────
+async function login() {
+  const btn = document.getElementById('login-btn');
+  const err = document.getElementById('login-err');
+  err.textContent = '';
+  btn.innerHTML = '<span class="spinner"></span>';
+  try {
+    const r = await fetch(`${BASE}/api/admin/login`, {
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body: JSON.stringify({
+        email:    document.getElementById('inp-user').value,
+        password: document.getElementById('inp-pass').value,
+      })
+    });
+    const d = await r.json();
+    if (!r.ok) throw new Error(d.error || 'Login failed');
+    TOKEN = d.token;
+    localStorage.setItem('kesari_admin_token', TOKEN);
+    document.getElementById('login-screen').style.display = 'none';
+    document.getElementById('app').style.display = 'block';
+    loadDashboard();
+    loadEnquiries();
+  } catch(e) {
+    err.textContent = e.message;
+  }
+  btn.textContent = 'Sign In';
 }
 
-function doLogout() {
-  localStorage.removeItem('kesari_token');
-  token = null;
-  document.getElementById('app').style.display = 'none';
-  document.getElementById('login').style.display = 'flex';
+function logout() {
+  TOKEN = '';
+  localStorage.removeItem('kesari_admin_token');
+  location.reload();
 }
 
-function showApp() {
-  document.getElementById('login').style.display = 'none';
+// Auto-restore session
+if (TOKEN) {
+  document.getElementById('login-screen').style.display = 'none';
   document.getElementById('app').style.display = 'block';
+  loadDashboard();
+  loadEnquiries();
+}
+
+async function api(path, opts = {}) {
+  const r = await fetch(`${BASE}${path}`, {
+    ...opts,
+    headers: {'Content-Type':'application/json', Authorization:`Bearer ${TOKEN}`, ...opts.headers}
+  });
+  if (r.status === 401) { logout(); return null; }
+  return r.json();
+}
+
+// ── Navigation ────────────────────────────────────────────────────────────────
+function showPage(name, el) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
+  document.getElementById('page-' + name).classList.add('active');
+  if (el) el.classList.add('active');
+  if (name === 'dashboard') loadDashboard();
+  if (name === 'enquiries') loadEnquiries();
+}
+
+// ── Dashboard ─────────────────────────────────────────────────────────────────
+async function loadDashboard() {
+  const days = document.getElementById('dash-period').value;
+  const d = await api(`/api/analytics/overview?days=${days}`);
+  if (!d) return;
+
+  document.getElementById('s-total').textContent  = d.totals.all.toLocaleString();
+  document.getElementById('s-period').textContent = d.totals.period.toLocaleString();
+  document.getElementById('s-conv').textContent   = d.totals.conversionRate + '%';
+
+  const newCount = (d.byStatus.find(s => s._id === 'new') || {}).count || 0;
+  document.getElementById('s-new').textContent = newCount;
+
+  if (d.totals.growth !== null) {
+    const up = parseFloat(d.totals.growth) >= 0;
+    document.getElementById('s-growth').innerHTML =
+      `<span class="growth-badge ${up ? 'g-up' : 'g-down'}">${up ? '▲' : '▼'} ${Math.abs(d.totals.growth)}%</span>&nbsp;vs prev period`;
+  }
+
+  // Trend line chart
+  mkChart('chart-trend', 'line', {
+    labels: d.dailyTrend.map(x => x._id),
+    datasets: [{
+      label: 'Enquiries',
+      data: d.dailyTrend.map(x => x.count),
+      borderColor: '#1a2d5a',
+      backgroundColor: 'rgba(26,45,90,.07)',
+      fill: true, tension: 0.4, pointRadius: 3,
+    }]
+  }, {
+    plugins: { legend: { display: false } },
+    scales: { y: { beginAtZero: true, ticks: { stepSize: 1, precision: 0 } } }
+  });
+
+  // Language doughnut
+  const LC = ['#1a2d5a','#c0392b','#2563eb','#16a34a','#ea580c','#7c3aed','#0891b2','#be185d','#854d0e','#065f46','#1e3a5f','#7f1d1d','#713f12'];
+  mkChart('chart-lang', 'doughnut', {
+    labels: d.byLanguage.map(x => (x._id || 'EN').toUpperCase()),
+    datasets: [{ data: d.byLanguage.map(x => x.count), backgroundColor: LC }]
+  }, {
+    plugins: { legend: { position: 'right', labels: { boxWidth: 11, font: { size: 11 } } } }
+  });
+
+  // Status bar chart
+  const SC = { new:'#3b82f6', contacted:'#f59e0b', converted:'#22c55e', closed:'#94a3b8' };
+  mkChart('chart-status', 'bar', {
+    labels: d.byStatus.map(x => x._id),
+    datasets: [{ data: d.byStatus.map(x => x.count),
+      backgroundColor: d.byStatus.map(x => SC[x._id] || '#888') }]
+  }, {
+    plugins: { legend: { display: false } },
+    scales: { y: { beginAtZero: true, ticks: { stepSize: 1, precision: 0 } } }
+  });
+
+  // Top packages bar
+  const tp = document.getElementById('top-packages');
+  if (!d.byPackage.length) {
+    tp.innerHTML = '<p style="color:var(--muted);font-size:13px;padding-top:4px">No package data yet</p>';
+    return;
+  }
+  const max = Math.max(...d.byPackage.map(x => x.count), 1);
+  tp.innerHTML = d.byPackage.map(p => `
+    <div class="bar-row">
+      <div class="bar-meta">
+        <span class="bar-name">${p.name || p._id}</span>
+        <span class="bar-count">${p.count}</span>
+      </div>
+      <div class="bar-track"><div class="bar-fill" style="width:${(p.count/max*100).toFixed(0)}%"></div></div>
+    </div>`).join('');
+}
+
+function mkChart(id, type, data, options = {}) {
+  const ctx = document.getElementById(id);
+  if (!ctx) return;
+  if (charts[id]) charts[id].destroy();
+  charts[id] = new Chart(ctx, {
+    type, data,
+    options: { responsive: true, maintainAspectRatio: false, ...options }
+  });
+}
+
+// ── Enquiries ──────────────────────────────────────────────────────────────────
+async function loadEnquiries() {
+  const search = document.getElementById('eq-search').value;
+  const status = document.getElementById('eq-status').value;
+  const lang   = document.getElementById('eq-lang').value;
+  const tbody  = document.getElementById('eq-tbody');
+
+  tbody.innerHTML = `<tr><td colspan="7" class="loading-cell">Loading…</td></tr>`;
+
+  const qs = new URLSearchParams({
+    page: eqPage, limit: 15,
+    ...(search && { search }),
+    ...(status && { status }),
+    ...(lang   && { language: lang }),
+  });
+
+  const d = await api(`/api/enquiries?${qs}`);
+  if (!d) return;
+
+  if (!d.enquiries.length) {
+    tbody.innerHTML = `<tr><td colspan="7" class="empty-cell">No enquiries found</td></tr>`;
+  } else {
+    tbody.innerHTML = d.enquiries.map(e => `
+      <tr style="cursor:pointer" onclick="openDrawer('${e._id}',${JSON.stringify(e).replace(/"/g,'&quot;')})">
+        <td><strong>${esc(e.fullName)}</strong></td>
+        <td>
+          <div style="font-size:12px">${esc(e.email)}</div>
+          <div style="font-size:12px;color:var(--muted)">${esc(e.phone)}</div>
+        </td>
+        <td style="max-width:150px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:12px">${esc(e.packageName||'—')}</td>
+        <td style="font-size:12px;font-weight:600">${(e.language||'en').toUpperCase()}</td>
+        <td style="white-space:nowrap;font-size:12px">${new Date(e.createdAt).toLocaleDateString('en-IN')}</td>
+        <td><span class="badge badge-${e.status}">${e.status}</span></td>
+        <td onclick="event.stopPropagation()">
+          <select class="status-sel" onchange="changeStatus('${e._id}',this.value)">
+            ${['new','contacted','converted','closed'].map(s =>
+              `<option value="${s}"${e.status===s?' selected':''}>${s}</option>`).join('')}
+          </select>
+        </td>
+      </tr>`).join('');
+  }
+
+  // Pagination
+  const pages = d.pages || 1;
+  let pg = '';
+  pg += `<button class="pg-btn" onclick="goPage(${eqPage-1})" ${eqPage<=1?'disabled':''}>← Prev</button>`;
+  const start = Math.max(1, eqPage-2), end = Math.min(pages, eqPage+2);
+  for (let i = start; i <= end; i++)
+    pg += `<button class="pg-btn ${i===eqPage?'active':''}" onclick="goPage(${i})">${i}</button>`;
+  pg += `<button class="pg-btn" onclick="goPage(${eqPage+1})" ${eqPage>=pages?'disabled':''}>Next →</button>`;
+  pg += `<span class="pg-info">${d.total.toLocaleString()} total</span>`;
+  document.getElementById('eq-pagination').innerHTML = pg;
+}
+
+function goPage(p) {
+  const d = document.getElementById('eq-pagination');
+  const totalBtn = d.querySelectorAll('.pg-btn:not(:disabled)');
+  // rough check: if p is valid
+  if (p < 1) return;
+  eqPage = p;
+  loadEnquiries();
+}
+
+async function changeStatus(id, status) {
+  await api(`/api/enquiries/${id}`, { method:'PATCH', body: JSON.stringify({ status }) });
+  toast('Status updated');
+  loadEnquiries();
   loadDashboard();
 }
 
-function showPage(page) {
-  document.querySelectorAll('[id^="page-"]').forEach(el => el.classList.add('hidden'));
-  document.querySelectorAll('.sidebar a').forEach(el => el.classList.remove('active'));
-  document.getElementById(`page-${page}`).classList.remove('hidden');
-  document.getElementById(`tab-${page}`)?.classList.add('active');
-  if (page === 'dashboard') loadDashboard();
-  if (page === 'enquiries') loadEnquiries(1);
-  if (page === 'packages')  loadPackages();
+// ── Enquiry Drawer ────────────────────────────────────────────────────────────
+function openDrawer(id, e) {
+  document.getElementById('drawer-title').textContent = e.fullName;
+  document.getElementById('drawer-body').innerHTML = `
+    <div style="margin-bottom:14px">
+      <span class="badge badge-${e.status}" style="font-size:13px;padding:4px 14px">${e.status}</span>
+    </div>
+    ${ir('Full Name', e.fullName)}
+    ${ir('Email', e.email ? `<a href="mailto:${esc(e.email)}" style="color:var(--navy)">${esc(e.email)}</a>` : '')}
+    ${ir('Phone', e.phone ? `<a href="tel:${esc(e.phone)}" style="color:var(--navy)">${esc(e.phone)}</a>` : '')}
+    ${ir('Nationality', e.nationality)}
+    ${ir('Package', e.packageName || e.packageCode)}
+    ${ir('Travel Date', e.travelDate)}
+    ${ir('Travellers', e.travellers)}
+    ${ir('Duration', e.duration)}
+    ${ir('Budget', e.budget)}
+    ${ir('Language', (e.language||'en').toUpperCase())}
+    ${ir('Submitted', new Date(e.createdAt).toLocaleString('en-IN',{timeZone:'Asia/Kolkata'}))}
+    ${e.message ? `<div class="info-row"><div class="info-label">Message</div><div class="info-val" style="white-space:pre-wrap">${esc(e.message)}</div></div>` : ''}
+
+    <div class="sec-label">Update Status</div>
+    <div style="display:flex;gap:8px;flex-wrap:wrap">
+      ${['new','contacted','converted','closed'].map(s => `
+        <button class="btn ${s===e.status?'btn-navy':'btn-outline'}" style="padding:6px 14px;font-size:12px"
+          onclick="changeStatus('${e._id}','${s}');closeDrawer()">${s}</button>`).join('')}
+    </div>
+
+    <div class="sec-label">Notes</div>
+    <textarea class="notes-textarea" id="drawer-notes">${esc(e.notes||'')}</textarea>
+    <button class="btn btn-navy" style="margin-top:8px;font-size:12px" onclick="saveNotes('${e._id}')">Save Notes</button>`;
+
+  document.getElementById('drawer').classList.add('open');
+  document.getElementById('overlay').classList.add('open');
 }
 
-async function apiFetch(path, opts = {}) {
-  return fetch(`${API}${path}`, {
-    ...opts,
-    headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${token}`, ...opts.headers }
-  }).then(r => r.json());
+function ir(label, val) {
+  if (!val) return '';
+  return `<div class="info-row"><div class="info-label">${label}</div><div class="info-val">${val}</div></div>`;
 }
 
-async function loadDashboard() {
-  const stats = await apiFetch('/enquiries/stats');
-  const total = stats.byStatus.reduce((s, x) => s + x.count, 0);
-  const newC  = stats.byStatus.find(x => x._id === 'new')?.count || 0;
-  const conv  = stats.byStatus.find(x => x._id === 'converted')?.count || 0;
-  document.getElementById('statTotal').textContent = total;
-  document.getElementById('statNew').textContent = newC;
-  document.getElementById('statConverted').textContent = conv;
-  document.getElementById('statLangs').textContent = stats.byLanguage.length;
-
-  document.getElementById('langTable').innerHTML = stats.byLanguage.map(l =>
-    `<tr><td><span class="lang-flag">${LANG_NAMES[l._id] || l._id}</span></td><td><strong>${l.count}</strong></td></tr>`
-  ).join('');
-
-  document.getElementById('recentTable').innerHTML = stats.recent.map(e =>
-    `<tr><td>${e.fullName}</td><td><span class="lang-flag">${LANG_NAMES[e.language] || e.language}</span></td><td>${e.packageName || '—'}</td></tr>`
-  ).join('');
+function closeDrawer() {
+  document.getElementById('drawer').classList.remove('open');
+  document.getElementById('overlay').classList.remove('open');
 }
 
-async function loadEnquiries(page = 1) {
-  if (page < 1) return;
-  currentPage = page;
-  const data = await apiFetch(`/enquiries?page=${page}&limit=15${currentStatus ? '&status='+currentStatus : ''}`);
-  document.getElementById('pageInfo').textContent = `Page ${data.page} of ${data.pages} (${data.total} total)`;
-  document.getElementById('enquiryTable').innerHTML = data.enquiries.map(e => `
-    <tr>
-      <td><strong>${e.fullName}</strong><br><small style="color:#888">${e.email}</small></td>
-      <td><span class="lang-flag">${LANG_NAMES[e.language] || e.language}</span></td>
-      <td style="font-size:12px">${e.packageName || 'General'}</td>
-      <td>${e.phone}</td>
-      <td style="font-size:12px;color:#888">${new Date(e.createdAt).toLocaleDateString('en-IN')}</td>
-      <td><span class="badge badge-${e.status}">${e.status}</span></td>
-      <td>
-        <select onchange="updateStatus('${e._id}', this.value)" style="font-size:12px;padding:4px">
-          <option value="">Change...</option>
-          <option value="new">New</option>
-          <option value="contacted">Contacted</option>
-          <option value="converted">Converted</option>
-          <option value="closed">Closed</option>
-        </select>
-      </td>
-    </tr>
-  `).join('');
+async function saveNotes(id) {
+  const notes = document.getElementById('drawer-notes').value;
+  await api(`/api/enquiries/${id}`, { method:'PATCH', body: JSON.stringify({ notes }) });
+  toast('Notes saved');
+  loadEnquiries();
 }
 
-function filterEnquiries(status) {
-  currentStatus = status;
-  document.querySelectorAll('.tab-bar .tab').forEach(t => t.classList.remove('active'));
-  event.target.classList.add('active');
-  loadEnquiries(1);
+// ── Export ─────────────────────────────────────────────────────────────────────
+function exportCSV() {
+  const status = document.getElementById('eq-status').value;
+  const lang   = document.getElementById('eq-lang').value;
+  const qs = new URLSearchParams({ ...(status && { status }), ...(lang && { language: lang }) });
+  window.location.href = `/api/enquiries/export?${qs}&token=${TOKEN}`;
 }
 
-async function updateStatus(id, status) {
-  if (!status) return;
-  await apiFetch(`/enquiries/${id}`, { method: 'PATCH', body: JSON.stringify({ status }) });
-  showToast('Status updated!');
-  loadEnquiries(currentPage);
-}
-
-async function loadPackages() {
-  const pkgs = await apiFetch('/packages?lang=en');
-  document.getElementById('packagesTable').innerHTML = pkgs.map(p => `
-    <tr>
-      <td style="font-size:12px;color:#888">${p.code}</td>
-      <td><strong>${p.name}</strong></td>
-      <td>${p.theme}</td>
-      <td>${p.days}D/${p.nights}N</td>
-      <td><button class="btn btn-red btn-sm" onclick="deletePackage('${p.code}')">Archive</button></td>
-    </tr>
-  `).join('');
-}
-
+// ── Add Package ────────────────────────────────────────────────────────────────
 async function addPackage() {
-  const btn = document.getElementById('addPkgBtn');
-  btn.textContent = '⏳ Translating to 12 languages...';
+  const btn = document.getElementById('pk-btn');
+  const msg = document.getElementById('pk-msg');
+  btn.innerHTML = '<span class="spinner"></span> Translating…';
   btn.disabled = true;
+  msg.textContent = 'Calling Mistral AI for all 12 language translations…';
+  msg.style.color = 'var(--muted)';
   try {
-    const body = {
-      code: document.getElementById('pkgCode').value,
-      nameEn: document.getElementById('pkgName').value,
-      days: +document.getElementById('pkgDays').value,
-      nights: +document.getElementById('pkgNights').value,
-      theme: document.getElementById('pkgTheme').value,
-      places: document.getElementById('pkgPlaces').value,
-      tags: document.getElementById('pkgTags').value,
-      img: document.getElementById('pkgImg').value,
-    };
-    const res = await apiFetch('/packages', { method: 'POST', body: JSON.stringify(body) });
-    if (res.error) throw new Error(res.error);
-    showToast('✔ Package added and translated to 12 languages!');
-    ['pkgCode','pkgName','pkgDays','pkgNights','pkgPlaces','pkgTags','pkgImg'].forEach(id => document.getElementById(id).value = '');
-  } catch (err) {
-    showToast('Error: ' + err.message, true);
+    const r = await api('/api/packages', {
+      method: 'POST',
+      body: JSON.stringify({
+        code:   document.getElementById('pk-code').value.trim(),
+        name:   document.getElementById('pk-name').value.trim(),
+        days:   +document.getElementById('pk-days').value,
+        nights: +document.getElementById('pk-nights').value,
+        places: document.getElementById('pk-places').value.trim(),
+        theme:  document.getElementById('pk-theme').value,
+        tags:   document.getElementById('pk-tags').value.trim(),
+        img:    document.getElementById('pk-img').value.trim(),
+      })
+    });
+    if (r.error) throw new Error(r.error);
+    msg.style.color = '#16a34a';
+    msg.textContent = '✔ Package added and translated to all 13 languages!';
+    ['pk-code','pk-name','pk-days','pk-nights','pk-places','pk-tags','pk-img']
+      .forEach(id => document.getElementById(id).value = '');
+    toast('Package added!');
+  } catch(e) {
+    msg.style.color = 'var(--red)';
+    msg.textContent = '✗ ' + e.message;
+    toast(e.message, true);
   }
-  btn.textContent = '✦ Save & Auto-Translate to 12 Languages';
+  btn.textContent = 'Add & Auto-Translate to 13 Languages';
   btn.disabled = false;
 }
 
-async function deletePackage(code) {
-  if (!confirm(`Archive package ${code}?`)) return;
-  await apiFetch(`/packages/${code}`, { method: 'DELETE' });
-  showToast('Package archived');
-  loadPackages();
+// ── Helpers ────────────────────────────────────────────────────────────────────
+function esc(str) {
+  if (!str) return '';
+  return String(str).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 }
 
-function showToast(msg, err = false) {
+function toast(msg, err = false) {
   const t = document.getElementById('toast');
   t.textContent = msg;
-  t.style.background = err ? '#c53030' : '#276749';
-  t.style.display = 'block';
-  setTimeout(() => t.style.display = 'none', 3000);
+  t.className = 'toast show' + (err ? ' t-err' : '');
+  clearTimeout(t._t);
+  t._t = setTimeout(() => t.classList.remove('show'), 2600);
+}
+
+function debounce(fn, ms) {
+  return function() {
+    clearTimeout(_debTimer);
+    _debTimer = setTimeout(fn, ms);
+  };
 }
 </script>
 </body>
