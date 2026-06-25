@@ -8,7 +8,7 @@ const LANGUAGES = [
   { code: 'fr',    slug: 'fr', flag: '🇫🇷', label: 'Français'   },
   { code: 'es-ES', slug: 'es', flag: '🇪🇸', label: 'Español'    },
   { code: 'it',    slug: 'it', flag: '🇮🇹', label: 'Italiano'   },
-  { code: 'pt',    slug: 'pt', flag: '🇧🇷', label: 'Português'  },
+  { code: 'pt',    slug: 'pt', flag: '🇵🇹', label: 'Português'  },
   { code: 'pl',    slug: 'pl', flag: '🇵🇱', label: 'Polski'     },
   { code: 'hi',    slug: 'hi', flag: '🇮🇳', label: 'हिन्दी'      },
   { code: 'ml',    slug: 'ml', flag: '🇮🇳', label: 'മലയാളം'    },

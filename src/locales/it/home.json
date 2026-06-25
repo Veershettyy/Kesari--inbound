@@ -44,218 +44,266 @@
     "pkgs": {
       "Jan": [
         {
-          "title": "Tour Regale del Rajasthan",
-          "info": "Picco dell'inverno — perfetto per fortezze e palazzi"
+          "title": "Rajasthan Royal Tour",
+          "info": "Picco dell'inverno — perfetto per fortezze e palazzi",
+          "theme": ""
         },
         {
           "title": "Backwaters del Kerala",
-          "info": "Tempo gradevole nella Terra di Dio"
+          "info": "Tempo piacevole nel Paese di Dio",
+          "theme": ""
         },
         {
-          "title": "Vacanza in spiaggia a Goa",
-          "info": "Miglior stagione per spiagge e vita notturna"
+          "title": "Vacanza balneare a Goa",
+          "info": "Miglior stagione per spiagge e vita notturna",
+          "theme": ""
         },
         {
           "title": "Triangolo d'Oro",
-          "info": "Inverno secco ideale per Delhi-Agra-Jaipur"
+          "info": "Inverno secco ideale per Delhi-Agra-Jaipur",
+          "theme": ""
         }
       ],
       "Feb": [
         {
-          "title": "Mathura – Festa di Holi",
-          "info": "Celebrazioni di Holi a Mathura e Vrindavan"
+          "title": "Mathura – Festival di Holi",
+          "info": "Celebrazioni di Holi a Mathura e Vrindavan",
+          "theme": ""
         },
         {
           "title": "Festival del Deserto del Rajasthan",
-          "info": "Festival del Deserto di Jaisalmer in pieno svolgimento"
+          "info": "Festival del Deserto di Jaisalmer in pieno svolgimento",
+          "theme": ""
         },
         {
-          "title": "Pellegrinaggio ai templi dell'India meridionale",
-          "info": "Fresco e confortevole per i templi del Tamil Nadu"
+          "title": "Pellegrinaggio dei templi dell'India meridionale",
+          "info": "Fresco e confortevole per i templi del Tamil Nadu",
+          "theme": ""
         },
         {
-          "title": "Ayurveda e Benessere in Kerala",
-          "info": "Stagione perfetta per i ritiri benessere del Kerala"
+          "title": "Ayurveda e Benessere Kerala",
+          "info": "Stagione perfetta per ritiri benessere in Kerala",
+          "theme": ""
         }
       ],
       "Mar": [
         {
           "title": "Isole Andamane",
-          "info": "Acque cristalline, ideali per lo snorkeling"
+          "info": "Acque cristalline, ideali per lo snorkeling",
+          "theme": ""
         },
         {
           "title": "Isole Lakshadweep",
-          "info": "Migliore visibilità per le barriere coralline"
+          "info": "Migliore visibilità per le barriere coralline",
+          "theme": ""
         },
         {
-          "title": "Tour dei templi dell'Orissa",
-          "info": "Tempio del Sole e Konark al meglio"
+          "title": "Tour dei templi dell'Odisha",
+          "info": "Tempio del Sole e Konark al meglio",
+          "theme": ""
         },
         {
           "title": "Fascino costiero di Pondicherry",
-          "info": "Incantevole quartiere francese a marzo"
+          "info": "Incantevole quartiere francese a marzo",
+          "theme": ""
         }
       ],
       "Apr": [
         {
           "title": "Valli dell'Uttarakhand",
-          "info": "Rododendri in fiore, ottimo per il trekking"
+          "info": "Fioritura dei rododendri, ottimo per il trekking",
+          "theme": ""
         },
         {
           "title": "Himachal Pradesh",
-          "info": "La neve si scioglie, le valli diventano verdi"
+          "info": "La neve si scioglie, le valli diventano verdi",
+          "theme": ""
         },
         {
           "title": "Patrimonio del Gujarat",
-          "info": "Visita pre-estiva ad Ahmedabad e Bhuj"
+          "info": "Visita pre-estate ad Ahmedabad e Bhuj",
+          "theme": ""
         },
         {
           "title": "Passi del Buddha",
-          "info": "Tempo ideale per il circuito buddista"
+          "info": "Tempo ideale per il circuito buddista",
+          "theme": ""
         }
       ],
       "May": [
         {
           "title": "Leh e Ladakh",
-          "info": "Strade aperte, paesaggi mozzafiato in attesa"
+          "info": "Le strade si aprono, paesaggi mozzafiato in attesa",
+          "theme": ""
         },
         {
           "title": "Valle di Spiti, Himachal",
-          "info": "Il deserto di alta quota prende vita"
+          "info": "Il deserto di alta quota si risveglia",
+          "theme": ""
         },
         {
           "title": "Kashmir – Paradiso",
-          "info": "Lago Dal e giardini di tulipani in fiore"
+          "info": "Lago Dal e giardini di tulipani in fiore",
+          "theme": ""
         },
         {
-          "title": "Miglior parte del Bhutan",
-          "info": "Cieli limpidi e viste Himalayane spettacolari"
+          "title": "Il meglio del Bhutan",
+          "info": "Cieli limpidi e viste mozzafiato sull'Himalaya",
+          "theme": ""
         }
       ],
       "Jun": [
         {
-          "title": "Esplorando Leh e Ladakh",
-          "info": "Stagione di punta per Pangong e Valle di Nubra"
+          "title": "Leh e Ladakh coinvolgenti",
+          "info": "Stagione di punta per Pangong e Valle di Nubra",
+          "theme": ""
         },
         {
-          "title": "India Nord-Orientale",
-          "info": "Prima del monsone — paesaggi lussureggianti e verdi"
+          "title": "Nord Est India",
+          "info": "Prima del monsone — paesaggi lussureggianti",
+          "theme": ""
         },
         {
-          "title": "Miglior parte del Nepal",
-          "info": "Viste Himalayane pre-monsone"
+          "title": "Il meglio del Nepal",
+          "info": "Viste himalayane pre-monsone",
+          "theme": ""
         },
         {
           "title": "Bhutan",
-          "info": "Cieli limpidi e viste montuose"
+          "info": "Cieli limpidi e viste montuose",
+          "theme": ""
         }
       ],
       "Jul": [
         {
           "title": "Meghalaya – Dimora delle Nuvole",
-          "info": "Il monsone trasforma magicamente il Meghalaya"
+          "info": "Il monsone trasforma magicamente il Meghalaya",
+          "theme": ""
         },
         {
           "title": "Ayurveda e Spa del Kerala",
-          "info": "Il monsone è il meglio per i trattamenti ayurvedici"
+          "info": "Il monsone è il periodo migliore per trattamenti ayurvedici",
+          "theme": ""
         },
         {
           "title": "Carnoustie Wellness",
-          "info": "Stagione di punta del Panchakarma in Kerala"
+          "info": "Stagione di punta del Panchakarma in Kerala",
+          "theme": ""
         },
         {
-          "title": "Porta d'accesso al Nord-Est",
-          "info": "Kaziranga e Shillong al massimo del loro verde"
+          "title": "Porta d'accesso al Nord Est",
+          "info": "Kaziranga e Shillong al loro massimo verde",
+          "theme": ""
         }
       ],
       "Aug": [
         {
-          "title": "Meghalaya Scenico",
-          "info": "Cascate al loro massimo spettacolo"
+          "title": "Meghalaya scenico",
+          "info": "Cascate al loro massimo spettacolo",
+          "theme": ""
         },
         {
-          "title": "Tour dell'India Nord-Orientale",
-          "info": "Gangtok e Kaziranga — verdi e lussureggianti"
+          "title": "Tour del Nord Est India",
+          "info": "Gangtok e Kaziranga — verdi e rigogliosi",
+          "theme": ""
         },
         {
           "title": "Leh Ladakh",
-          "info": "Ultime settimane del miglior clima per Ladakh"
+          "info": "Ultime settimane della migliore stagione per Ladakh",
+          "theme": ""
         },
         {
           "title": "Valle del Kashmir",
-          "info": "Srinagar al suo massimo splendore"
+          "info": "Srinagar al suo massimo splendore",
+          "theme": ""
         }
       ],
       "Sep": [
         {
           "title": "Patrimonio del Rajasthan",
-          "info": "Verde post-monsone incontra il patrimonio regale"
+          "info": "La verzura post-monsone incontra il patrimonio reale",
+          "theme": ""
         },
         {
-          "title": "Safari nel Wildlife",
-          "info": "Gli animali si radunano vicino all'acqua — miglior stagione per il wildlife"
+          "title": "Safari nella natura",
+          "info": "Gli animali si radunano vicino all'acqua — migliore stagione per il wildlife",
+          "theme": ""
         },
         {
           "title": "Wildlife del Madhya Pradesh",
-          "info": "Riserve di Kanha e Bandhavgarh riaprono"
+          "info": "Le riserve di Kanha e Bandhavgarh riaprono",
+          "theme": ""
         },
         {
-          "title": "Karnataka Elevata",
-          "info": "Piantagioni di caffè di Coorg al loro meglio"
+          "title": "Karnataka elevato",
+          "info": "Piantagioni di caffè di Coorg al loro meglio",
+          "theme": ""
         }
       ],
       "Oct": [
         {
           "title": "Triangolo d'Oro",
-          "info": "Tempo ideale per Delhi-Agra-Jaipur"
+          "info": "Tempo ideale per Delhi-Agra-Jaipur",
+          "theme": ""
         },
         {
           "title": "Palace on Wheels",
-          "info": "Inizia la stagione del treno di lusso a ottobre"
+          "info": "Inizia la stagione del treno di lusso a ottobre",
+          "theme": ""
         },
         {
           "title": "Varanasi e Uttar Pradesh",
-          "info": "Stagione di Diwali — ghat illuminati"
+          "info": "Stagione di Diwali — ghat illuminati",
+          "theme": ""
         },
         {
           "title": "Isole Andamane",
-          "info": "Mare calmo, ideale per sport acquatici"
+          "info": "Il mare è calmo, ideale per sport acquatici",
+          "theme": ""
         }
       ],
       "Nov": [
         {
           "title": "Maharaja's Express",
-          "info": "Stagione di punta del treno di lusso in tutto il Rajasthan"
+          "info": "Stagione di punta del treno di lusso nel Rajasthan",
+          "theme": ""
         },
         {
           "title": "Cuore dell'India – MP",
-          "info": "Tempo perfetto per Khajuraho e Orchha"
+          "info": "Tempo perfetto per Khajuraho e Orchha",
+          "theme": ""
         },
         {
-          "title": "Fiera dei Cammelli di Pushkar",
-          "info": "La festa più iconica del Rajasthan"
+          "title": "Fiera del Cammello di Pushkar",
+          "info": "Il festival più iconico del Rajasthan",
+          "theme": ""
         },
         {
           "title": "Ritiro nella natura",
-          "info": "Ottimo momento per il wildlife dell'India centrale"
+          "info": "Ottimo momento per il wildlife dell'India centrale",
+          "theme": ""
         }
       ],
       "Dec": [
         {
-          "title": "Forti Gloriosi del Rajasthan",
-          "info": "Picco invernale — miglior momento per il Rajasthan"
+          "title": "Gloriosi Forti del Rajasthan",
+          "info": "Picco invernale — miglior periodo per il Rajasthan",
+          "theme": ""
         },
         {
           "title": "Kerala con CGH Earth",
-          "info": "Inverno perfetto nella Terra di Dio"
+          "info": "Inverno perfetto nel Paese di Dio",
+          "theme": ""
         },
         {
-          "title": "Goa in Festa",
-          "info": "Natale e Capodanno a Goa"
+          "title": "Goa animata",
+          "info": "Natale e Capodanno a Goa",
+          "theme": ""
         },
         {
-          "title": "Miglior parte dello Sri Lanka",
-          "info": "Miglior momento per le spiagge dello Sri Lanka"
+          "title": "Il meglio dello Sri Lanka",
+          "info": "Miglior periodo per le spiagge dello Sri Lanka",
+          "theme": ""
         }
       ]
     }
