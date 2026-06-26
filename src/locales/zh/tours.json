@@ -139,7 +139,7 @@
     "INBOUND-37": "改善身心之果阿之旅",
     "INBOUND-38": "天堂查谟和克什米尔十日之旅",
     "INBOUND-39": "七日欢愉之查谟-克什米尔",
-    "INBOUND-40": "帝王快车\"印度之旅",
+    "INBOUND-40": "王者快车\"印度之旅",
     "INBOUND-41": "南印度瑰宝之旅",
     "INBOUND-43": "印度奥德赛之旅",
     "INBOUND-45": "中央邦八日之旅",
@@ -2543,42 +2543,42 @@
       ]
     },
     "INBOUND-40": {
-      "overview": "乘坐豪华的 Maharaja's Express 号列车，开启一段为期7天的印度皇家之旅，探索印度的皇家遗产、野生动植物及精神宝藏。本行程从粉红之城 Jaipur 出发，途经野生动物天堂 Ranthambore、标志性的泰姬陵 Agra、历史名镇 Orchha、精神之城 Varanasi，最终在首都 Delhi 结束。",
+      "overview": "乘坐豪华列车 Maharaja's Express，体验印度7天的皇家遗产之旅。从粉红之城 Jaipur 到灵性之城 Varanasi，沿途探索历史古堡、野生动物保护区和标志性纪念碑，同时享受奢华住宿与美食佳肴。",
       "days": [
         {
           "day": 1,
           "title": "抵达 Jaipur",
-          "description": "抵达拉贾斯坦邦首府 Jaipur，并转乘 Maharaja's Express 号列车。享用欢迎饮品和小点心后，参观该市亮点，包括 Amber Fort、Hawa Mahal 和 City Palace。余下时间自由活动。"
+          "description": "抵达印度拉贾斯坦邦首府 Jaipur，并转往 Maharaja's Express。享用欢迎饮品并入住豪华包厢。随后乘坐大象游览 Amber Fort，参观 City Palace 和 Jantar Mantar。晚间自由活动。"
         },
         {
           "day": 2,
           "title": "Jaipur 至 Ranthambore",
-          "description": "上午启程前往 Ranthambore 国家公园。在该公园享受一次探险，这里以孟加拉虎和丰富的生物多样性闻名。返回列车享用午餐，下午自由活动。余下时间自由活动。"
+          "description": "上午出发前往 Ranthambore 国家公园。中午前抵达并入住酒店。下午在 Ranthambore 进行野生动物园之旅，寻觅孟加拉虎及其他野生动物。晚间自由活动或选择乡村游。"
         },
         {
           "day": 3,
           "title": "Ranthambore 至 Agra",
-          "description": "上午启程前往 Agra。日出时参观标志性的泰姬陵，随后游览 Agra Fort 和当地市场。返回列车享用午餐，下午自由活动。余下时间自由活动。"
+          "description": "上午出发前往 Agra。沿途参观联合国教科文组织世界遗产 Fatehpur Sikri。抵达 Agra 后入住酒店，并参观 Agra Fort。晚间自由活动或选择参观 Mehtab Bagh，欣赏泰姬陵日落美景。"
         },
         {
           "day": 4,
           "title": "Agra 至 Orchha",
-          "description": "上午启程前往中央邦的历史名镇 Orchha。探索 Orchha 要塞群，包括 Jahangir Mahal 和 Ram Raja 庙。返回列车享用午餐，下午自由活动。余下时间自由活动。"
+          "description": "上午出发前往马德雅普拉德什邦的隐世珍宝 Orchha。下午抵达并探索这座历史小镇，包括 Orchha Fort、Jahangir Mahal 和 Ram Raja Temple。晚间自由活动。"
         },
         {
           "day": 5,
           "title": "Orchha 至 Varanasi",
-          "description": "上午启程前往印度精神首都 Varanasi。在 Dashashwamedh Ghat 观看恒河仪式（Ganga Aarti），随后乘船游览恒河。返回列车享用晚餐并过夜。"
+          "description": "上午出发前往印度灵性之都 Varanasi。下午抵达并入住酒店。傍晚在 Dashashwamedh Ghat 观看恒河仪式（Ganga Aarti），随后乘船游恒河。在瓦拉纳西过夜。"
         },
         {
           "day": 6,
-          "title": "Varanasi 至 Delhi",
-          "description": "上午启程前往 Delhi。游览 Qutub Minar、Humayun's Tomb 和繁华的 Chandni Chowk 市场。返回列车享用午餐，下午自由活动。余下时间自由活动。"
+          "title": "瓦拉纳西观光",
+          "description": "上午参观佛教朝圣地 Sarnath。下午探索瓦拉纳西的狭窄街巷，参观 Kashi Vishwanath Temple，并欣赏文化表演。晚间自由活动。"
         },
         {
           "day": 7,
-          "title": "从 Delhi 出发",
-          "description": "上午转乘前往机场，启程回国。"
+          "title": "从德里出发",
+          "description": "上午转往德里机场。根据航班时间安排，可参观德里城市景点，包括 Qutub Minar、Humayun's Tomb 和 India Gate。随后前往机场出发。"
         }
       ]
     },
