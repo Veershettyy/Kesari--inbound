@@ -88,7 +88,7 @@ const TourPackages = forwardRef(function TourPackages({ onEnquire }, ref) {
               <div className="pkg-body">
                 <div className="pkg-theme">{t(`tours:themes.${p.theme}`, { defaultValue: p.theme })}</div>
                 <div className="pkg-title">{t(`tours:pkgNames.${p.code}`, { defaultValue: p.name })}</div>
-                <div className="pkg-places">📍 {p.places}</div>
+                <div className="pkg-places">📍 {t(`tours:pkgPlaces.${p.code}`, { defaultValue: p.places })}</div>
                 <div className="pkg-tags">
                   {p.tags.split(',').map(tag => (
                     <span key={tag} className="pkg-tag">{tag.trim()}</span>
