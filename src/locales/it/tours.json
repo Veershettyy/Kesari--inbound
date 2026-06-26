@@ -158,7 +158,8 @@
     "INBOUND-TEST-02": "Triangolo d'oro",
     "INBOUND-TEST-03": "Passi del Buddha",
     "INBOUND-TEST-32": "Forti e palazzi dell'India",
-    "INBOUND-TEST-37": "Tour dell'Orissa Templi e Tribù"
+    "INBOUND-TEST-37": "Tour dell'Orissa Templi e Tribù",
+    "FIT-INBOUND-18": "KUMBHA MELA SPECIALE 2027"
   },
   "itineraries": {
     "FIT-INBOUND-01": {
@@ -3553,6 +3554,31 @@
           "day": 12,
           "title": "Partenza da Visakhapatnam",
           "description": "Dopo la colazione, trasferimento in aeroporto per la prosecuzione del viaggio. Un arrivederci al ricco arazzo culturale dell'Odisha."
+        }
+      ]
+    },
+    "FIT-INBOUND-18": {
+      "overview": "Un viaggio spirituale al Kumbh Mela Special 2027 a Nashik, con rituali sacri, esperienze culturali e raduni divini.",
+      "days": [
+        {
+          "day": 1,
+          "title": "Arrivo a Nashik & Aarti serale",
+          "description": "Arrivo a Nashik, check-in presso l'alloggio designato. Partecipazione alla Ganga Aarti serale al Godavari Ghat, seguita da una cena di benvenuto culturale."
+        },
+        {
+          "day": 2,
+          "title": "Kumbh Mela Darshan & Bagno Sacro",
+          "description": "Partecipa al Royal Bath (Shahi Snan) all'alba presso i Kumbh Mela grounds. Esplora le bancarelle spirituali, partecipa a discorsi da parte dei santi e goditi l'atmosfera vibrante del festival."
+        },
+        {
+          "day": 3,
+          "title": "Esplorazione Spirituale & Performance Culturali",
+          "description": "Visita la Sita Gufa, il Kapila Muni Temple e altri siti sacri a Nashik. La sera, assisti a spettacoli folcloristici tradizionali e a musica devozionale al Kumbh Mela."
+        },
+        {
+          "day": 4,
+          "title": "Partenza e Benedizioni Finali",
+          "description": "Visita mattutina a Trimbakeshwar Jyotirlinga per le preghiere finali. Dopo pranzo, procedere verso l'aeroporto/stazione ferroviaria per la partenza."
         }
       ]
     }

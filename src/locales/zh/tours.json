@@ -159,7 +159,7 @@
     "INBOUND-TEST-03": "佛陀足迹之旅",
     "INBOUND-TEST-32": "印度堡垒与宫殿之旅",
     "INBOUND-TEST-37": "奥里萨邦寺庙与部落之旅",
-    "FIT-INBOUND-18": "库姆布梅拉专项 2027"
+    "FIT-INBOUND-18": "坎布梅拉特别节 2027"
   },
   "itineraries": {
     "FIT-INBOUND-01": {
@@ -3554,6 +3554,31 @@
           "day": 12,
           "title": "从维沙卡帕特南（Visakhapatnam）离开",
           "description": "早餐后前往机场，继续您的旅程。向奥里萨邦丰富的文化画卷告别。"
+        }
+      ]
+    },
+    "FIT-INBOUND-18": {
+      "overview": "精神之旅前往2027年在纳西克举办的库姆布梅拉特别活动，汇聚神圣仪式、文化体验与神圣聚会。",
+      "days": [
+        {
+          "day": 1,
+          "title": "到达纳西克并参加晚间阿尔提",
+          "description": "到达纳西克，入住指定住宿。参加晚上在戈达瓦里·格特举行的恒河祈祷仪式，随后出席文化欢迎晚宴。"
+        },
+        {
+          "day": 2,
+          "title": "坎布·梅拉瞻礼与圣浴",
+          "description": "在库姆布梅拉（Kumbh Mela）会场参加清晨的沙希沐浴（Shahi Snan）。探索灵性摊位，聆听圣人讲经，感受节日热烈的氛围。"
+        },
+        {
+          "day": 3,
+          "title": "精神探索与文化表演",
+          "description": "参观锡塔古法（Sita Gufa）、迦毗罗仙人庙（Kapila Muni Temple）和纳西克（Nashik）的其他圣地。傍晚时分，在昆梅拉（Kumbh Mela）见证传统民间表演和敬神音乐。"
+        },
+        {
+          "day": 4,
+          "title": "出发与最后的祝福",
+          "description": "早上前往特里姆巴克什沃尔焦特林伽（Trimbakeshwar Jyotirlinga）进行最后的祈祷。午餐后，前往机场/火车站出发。"
         }
       ]
     }
