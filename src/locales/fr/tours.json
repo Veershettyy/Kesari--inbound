@@ -139,7 +139,7 @@
     "INBOUND-37": "Goa réformateur",
     "INBOUND-38": "Paradis du Jammu-et-Cachemire 10 jours",
     "INBOUND-39": "Séjour enchanteur - Jammu & Kashmir 7 jours",
-    "INBOUND-40": "Le Maharaja's Express",
+    "INBOUND-40": "Forfait \"Maharaja's Express",
     "INBOUND-41": "Joyaux du Sud",
     "INBOUND-43": "Voyage odyssée de l'Inde",
     "INBOUND-45": "Madhya Pradesh 8 jours",
@@ -2543,42 +2543,42 @@
       ]
     },
     "INBOUND-40": {
-      "overview": "Découvrez l'héritage royal de l'Inde à bord du Maharaja's Express lors de ce voyage de 7 jours. De la Cité rose de Jaipur à la ville spirituelle de Varanasi, traversez des forts historiques, des réserves naturelles et des monuments emblématiques, le tout dans un cadre luxueux et une gastronomie raffinée.",
+      "overview": "Découvrez l'héritage royal de l'Inde à bord du Maharaja's Express, un voyage luxueux à travers les villes historiques, les réserves naturelles et les sites spirituels. Cet itinéraire de 7 jours met en valeur la grandeur du Rajasthan, la majesté du Taj Mahal, les ghats sereins de Varanasi et la richesse culturelle d'Orchha et de Delhi.",
       "days": [
         {
           "day": 1,
           "title": "Arrivée à Jaipur",
-          "description": "Arrivée à Jaipur, capitale du Rajasthan, et transfert au Maharaja's Express. Profitez d'une boisson de bienvenue et installez-vous dans votre cabine luxueuse. Plus tard, explorez le Fort d'Amber avec une promenade à dos d'éléphant et visitez le City Palace et le Jantar Mantar. Soirée libre."
+          "description": "Arrivée à Jaipur, la Ville rose, et transfert vers le Maharaja's Express. Profitez d'une boisson de bienvenue et de rafraîchissements légers. Plus tard, embarquez pour une visite guidée de Jaipur, incluant le Fort d'Amber, le Hawa Mahal et le City Palace. Soirée libre pour explorer les marchés locaux ou se détendre à bord du train."
         },
         {
           "day": 2,
           "title": "Jaipur à Ranthambore",
-          "description": "Départ le matin pour le parc national de Ranthambore. Arrivée vers midi et installation à l'hôtel. Safari l'après-midi à Ranthambore pour observer les tigres du Bengale et d'autres animaux sauvages. Soirée libre ou visite optionnelle du village."
+          "description": "Transfert matinal vers le parc national de Ranthambore. Profitez d'un safari en jeep passionnant pour observer les tigres du Bengale et d'autres animaux sauvages. Après le safari, visitez le Fort historique de Ranthambore. Retour au train pour une soirée paisible à bord."
         },
         {
           "day": 3,
           "title": "Ranthambore à Agra",
-          "description": "Départ le matin pour Agra. En chemin, visitez Fatehpur Sikri, site du patrimoine mondial de l'UNESCO. Arrivée à Agra, installation à l'hôtel et visite du Fort d'Agra. Soirée libre ou visite optionnelle du Mehtab Bagh pour admirer le coucher de soleil sur le Taj Mahal."
+          "description": "Transfert matinal vers Agra. Visitez le célèbre Taj Mahal au lever du soleil, suivi du Fort d'Agra et de Fatehpur Sikri. Dégustez un déjeuner Mughlai avant de monter à bord du train en direction d'Orchha. Soirée libre à bord."
         },
         {
           "day": 4,
           "title": "Agra à Orchha",
-          "description": "Départ le matin pour Orchha, joyau caché du Madhya Pradesh. Arrivée dans l'après-midi et exploration de la ville historique, incluant le Fort d'Orchha, le Jahangir Mahal et le Temple Ram Raja. Soirée libre."
+          "description": "Arrivée matinale à Orchha, un joyau caché de l'Inde médiévale. Explorez le complexe du Fort d'Orchha, incluant le Jahangir Mahal et le Temple de Ram Raja. Après-midi libre pour une promenade le long de la rivière Betwa ou une visite des marchés locaux. Soirée à bord."
         },
         {
           "day": 5,
           "title": "Orchha à Varanasi",
-          "description": "Départ le matin pour Varanasi, cœur spirituel de l'Inde. Arrivée dans l'après-midi et installation à l'hôtel. Cérémonie du Ganga Aarti au Ghat Dashashwamedh, suivie d'une promenade en bateau sur le Gange. Nuit à Varanasi."
+          "description": "Transfert matinal vers Varanasi, le cœur spirituel de l'Inde. Visitez les ghats le long du fleuve Gange, incluant le Dashashwamedh Ghat et le Manikarnika Ghat. Profitez d'une balade en bateau au coucher du soleil et assistez à la cérémonie du Ganga Aarti. Retour au train pour le dîner."
         },
         {
           "day": 6,
-          "title": "Visite de Varanasi",
-          "description": "Visite le matin de Sarnath, site de pèlerinage bouddhiste important. L'après-midi, explorez les ruelles étroites de Varanasi, visitez le Temple Kashi Vishwanath et assistez à une performance culturelle. Soirée libre."
+          "title": "Varanasi à Delhi",
+          "description": "Matinée libre pour explorer les ruelles de Varanasi ou visiter Sarnath. Transfert dans l'après-midi vers Delhi. Visitez le Qutub Minar et le tombeau de Humayun. Soirée à bord avec un dîner d'adieu."
         },
         {
           "day": 7,
           "title": "Départ de Delhi",
-          "description": "Transfert le matin vers l'aéroport de Delhi. Selon votre horaire de vol, profitez d'une visite de Delhi, incluant le Qutub Minar, le Tombeau de Humayun et la Porte de l'Inde. Transfert à l'aéroport pour le départ."
+          "description": "Transfert matinal vers l'aéroport pour le départ. Prenez congé du Maharaja's Express après un voyage inoubliable à travers l'héritage royal et spirituel de l'Inde."
         }
       ]
     },
