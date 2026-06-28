@@ -139,7 +139,7 @@
     "INBOUND-37": "Goa riformatore",
     "INBOUND-38": "Paradiso del Jammu e Kashmir 10 giorni",
     "INBOUND-39": "Jammu e Kashmir delizioso 7 giorni",
-    "INBOUND-40": "Espresso del Maharaja",
+    "INBOUND-40": "Espresso dell'Imperatore",
     "INBOUND-41": "Gioielli del Sud",
     "INBOUND-43": "Viaggio odissea indiano",
     "INBOUND-45": "Madhya Pradesh 8 giorni",
@@ -2543,42 +2543,42 @@
       ]
     },
     "INBOUND-40": {
-      "overview": "Esplora il patrimonio reale dell'India a bordo del Maharaja's Express, un viaggio lussuoso attraverso città storiche, riserve naturali e siti spirituali. Questo itinerario di 7 giorni mette in mostra la grandezza del Rajasthan, la maestosità del Taj Mahal, i sereni ghat di Varanasi e la ricchezza culturale di Orchha e Delhi.",
+      "overview": "Experience the royal splendor of India aboard the Maharaja's Express on this 7-day journey through iconic destinations. From the pink city of Jaipur to the spiritual heart of Varanasi, indulge in luxury, heritage, and adventure while exploring India's majestic past and vibrant culture.",
       "days": [
         {
           "day": 1,
-          "title": "Arrivo a Jaipur",
-          "description": "Arriva a Jaipur, la Città Rosa, e trasferisciti al Maharaja's Express. Goditi un drink di benvenuto e spuntini leggeri. Successivamente, intraprendi un tour guidato di Jaipur, visitando il Forte Amber, Hawa Mahal e il City Palace. Sera libera per esplorare i mercati locali o rilassarti a bordo del treno."
+          "title": "Arrival in Jaipur",
+          "description": "Arrive in Jaipur, the capital of Rajasthan, and transfer to the Maharaja's Express. Enjoy a welcome drink and light refreshments onboard. Later, explore the Amber Fort with an elephant ride (optional) and visit the City Palace and Jantar Mantar. Dinner and overnight stay on the train."
         },
         {
           "day": 2,
-          "title": "Jaipur a Ranthambore",
-          "description": "Trasferimento mattutino al Parco Nazionale di Ranthambore. Goditi un emozionante safari in jeep per avvistare tigri del Bengala e altre specie selvatiche. Dopo il safari, visita il storico Forte di Ranthambore. Rientro al treno per una serata tranquilla a bordo."
+          "title": "Jaipur to Ranthambore",
+          "description": "Morning at leisure on the train. Afternoon arrival in Ranthambore. Embark on a safari in Ranthambore National Park, known for its Bengal tigers. Return to the train for dinner and overnight stay."
         },
         {
           "day": 3,
-          "title": "Ranthambore ad Agra",
-          "description": "Trasferimento mattutino ad Agra. Visita il iconico Taj Mahal all'alba, seguito dal Forte di Agra e Fatehpur Sikri. Goditi un pranzo Mughlai prima di salire sul treno per Orchha. Sera libera a bordo."
+          "title": "Ranthambore to Agra",
+          "description": "Morning at leisure on the train. Afternoon arrival in Agra. Visit the iconic Taj Mahal at sunset and explore the Agra Fort. Dinner and overnight stay on the train."
         },
         {
           "day": 4,
-          "title": "Agra a Orchha",
-          "description": "Arrivo mattutino a Orchha, una gemma nascosta dell'India medievale. Esplora il Complesso del Forte di Orchha, inclusi Jahangir Mahal e il Tempio Ram Raja. Pomeriggio libero per passeggiare lungo il fiume Betwa o visitare i mercati locali. Sera a bordo."
+          "title": "Agra to Orchha",
+          "description": "Morning at leisure on the train. Afternoon arrival in Orchha. Explore the historic Orchha Fort complex, including Jahangir Mahal and Ram Raja Temple. Enjoy a cultural performance onboard the train in the evening."
         },
         {
           "day": 5,
-          "title": "Orchha a Varanasi",
-          "description": "Trasferimento mattutino a Varanasi, il cuore spirituale dell'India. Visita i ghat lungo il fiume Gange, inclusi Dashashwamedh Ghat e Manikarnika Ghat. Goditi un giro in barca al tramonto e partecipa alla cerimonia di Ganga Aarti. Rientro al treno per cena."
+          "title": "Orchha to Varanasi",
+          "description": "Morning at leisure on the train. Afternoon arrival in Varanasi. Evening Ganga Aarti at Dashashwamedh Ghat, followed by a boat ride on the Ganges. Dinner and overnight stay on the train."
         },
         {
           "day": 6,
-          "title": "Varanasi a Delhi",
-          "description": "Mattinata libera per esplorare i vicoli di Varanasi o visitare Sarnath. Trasferimento pomeridiano a Delhi. Visita il Qutub Minar e la Tomba di Humayun. Sera a bordo con cena di arrivederci."
+          "title": "Varanasi to Delhi",
+          "description": "Morning at leisure on the train. Afternoon arrival in Delhi. Visit the Qutub Minar and Humayun's Tomb. Enjoy a farewell dinner onboard the train."
         },
         {
           "day": 7,
-          "title": "Partenza da Delhi",
-          "description": "Trasferimento mattutino all'aeroporto per la partenza. Saluta il Maharaja's Express dopo un viaggio indimenticabile attraverso il patrimonio reale e spirituale dell'India."
+          "title": "Departure from Delhi",
+          "description": "Morning transfer to the airport for departure."
         }
       ]
     },

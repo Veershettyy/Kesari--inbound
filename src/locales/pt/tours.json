@@ -2543,42 +2543,42 @@
       ]
     },
     "INBOUND-40": {
-      "overview": "Experimente o patrimônio real da Índia a bordo do Maharaja's Express, uma viagem luxuosa através de cidades históricas, santuários de vida selvagem e locais espirituais. Este itinerário de 7 dias apresenta a grandiosidade do Rajastão, a majestade do Taj Mahal, os serenos ghats de Varanasi e a riqueza cultural de Orchha e Delhi.",
+      "overview": "Experimente o esplendor real da Índia a bordo do Maharaja's Express nesta viagem de 7 dias através de destinos icônicos. Da cidade rosa de Jaipur ao coração espiritual de Varanasi, desfrute de luxo, herança e aventura enquanto explora o passado majestoso e a cultura vibrante da Índia.",
       "days": [
         {
           "day": 1,
           "title": "Chegada em Jaipur",
-          "description": "Chegue em Jaipur, a Cidade Rosa, e transfira-se para o Maharaja's Express. Desfrute de uma bebida de boas-vindas e de lanches leves. Posteriormente, embarque em um tour guiado por Jaipur, visitando o Forte Amber, o Hawa Mahal e o Palácio da Cidade. Tarde livre para explorar os mercados locais ou relaxar no trem."
+          "description": "Chegue a Jaipur, capital de Rajasthan, e transfira-se para o Maharaja's Express. Desfrute de uma bebida de boas-vindas e lanches leves a bordo. Mais tarde, explore o Forte Amber com passeio de elefante (opcional) e visite o Palácio da Cidade e Jantar Mantar. Jantar e pernoite no trem."
         },
         {
           "day": 2,
           "title": "Jaipur para Ranthambore",
-          "description": "Transferência matinal para o Parque Nacional de Ranthambore. Desfrute de um emocionante safári de jipe para avistar tigres-de-bengala e outros animais selvagens. Após o safári, visite o histórico Forte de Ranthambore. Retorne ao trem para uma noite tranquila a bordo."
+          "description": "Manhã livre no trem. Chegada em Ranthambore à tarde. Embarque em um safári no Parque Nacional de Ranthambore, conhecido por seus tigres-de-bengala. Retorne ao trem para jantar e pernoite."
         },
         {
           "day": 3,
           "title": "Ranthambore para Agra",
-          "description": "Transferência matinal para Agra. Visite o icônico Taj Mahal ao nascer do sol, seguido do Forte de Agra e Fatehpur Sikri. Desfrute de um almoço Mughlai antes de embarcar no trem com destino a Orchha. Tarde livre a bordo."
+          "description": "Manhã livre no trem. Chegada em Agra à tarde. Visite o icônico Taj Mahal ao pôr do sol e explore o Forte de Agra. Jantar e pernoite no trem."
         },
         {
           "day": 4,
           "title": "Agra para Orchha",
-          "description": "Chegada matinal em Orchha, uma joia escondida da Índia medieval. Explore o Complexo do Forte de Orchha, incluindo o Jahangir Mahal e o Templo Ram Raja. Tarde livre para passear às margens do Rio Betwa ou visitar mercados locais. Noite a bordo."
+          "description": "Manhã livre no trem. Chegada em Orchha à tarde. Explore o complexo histórico do Forte de Orchha, incluindo Jahangir Mahal e Ram Raja Temple. Desfrute de uma apresentação cultural a bordo do trem à noite."
         },
         {
           "day": 5,
           "title": "Orchha para Varanasi",
-          "description": "Transferência matinal para Varanasi, o coração espiritual da Índia. Visite os ghats ao longo do Rio Ganges, incluindo o Dashashwamedh Ghat e o Manikarnika Ghat. Desfrute de um passeio de barco ao pôr do sol e participe da cerimônia de Ganga Aarti. Retorne ao trem para o jantar."
+          "description": "Manhã livre no trem. Chegada em Varanasi à tarde. Ganga Aarti à noite no Dashashwamedh Ghat, seguida de passeio de barco no Ganges. Jantar e pernoite no trem."
         },
         {
           "day": 6,
           "title": "Varanasi para Delhi",
-          "description": "Manhã livre para explorar as vielas de Varanasi ou visitar Sarnath. Transferência à tarde para Delhi. Visite o Qutub Minar e o Túmulo de Humayun. Noite a bordo com um jantar de despedida."
+          "description": "Manhã livre no trem. Chegada em Delhi à tarde. Visite o Qutub Minar e o Túmulo de Humayun. Desfrute de um jantar de despedida a bordo do trem."
         },
         {
           "day": 7,
           "title": "Partida de Delhi",
-          "description": "Transferência matinal para o aeroporto para a partida. Despeça-se do Maharaja's Express após uma viagem inesquecível através do patrimônio real e espiritual da Índia."
+          "description": "Transferência matinal para o aeroporto para a partida."
         }
       ]
     },
