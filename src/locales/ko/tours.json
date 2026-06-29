@@ -2543,42 +2543,42 @@
       ]
     },
     "INBOUND-40": {
-      "overview": "마하라자 익스프레스(Maharaja's Express)를 타고 인도의 웅장한 과거와 활기찬 문화를 경험하는 7일간의Royal Splendor 여행. 핑크시티 자이푸르(Jipur)에서 시작해 인도 문화의 영적 심장 바라나시(Varanasi)까지, 호화로운 여정과 유산을 즐기며 인도의 웅장한 과거를 탐험합니다.",
+      "overview": "마하라자 익스프레스(Maharaja's Express)를 타고 인도의 왕실 유산을 7일간 체험하세요. 핑크시티 자이푸르(Jipur)에서 영적 도시 바라나시(Varanasi)까지, 이 일정은 야생, 역사, 문화, 그리고 럭스를 결합합니다.",
       "days": [
         {
           "day": 1,
           "title": "자이푸르 도착",
-          "description": "라자스탄(Rajasthan) 주도의 자이푸르(Jipur)에 도착하여 Maharaja's Express로 이동합니다. 기차 onboard에서 환영 음료와 가벼운 간식을 즐깁니다. 이후 Amber Fort(암버 요새) 방문(선택사항: 코끼리 타고), City Palace(시티 팔레스)와 Jantar Mantar(잔타르 만타르) 관광. 저녁 식사와 기차에서 숙박."
+          "description": "라자스탄 주의 수도인 자이푸르에 도착하세요. 마하라자 익스프레스에 탑승하여 환영 음료와 간단한 브리핑을 즐기세요. 이후 암베르 포트(Amber Fort), 하와 마할(Hawa Mahal), 시티 팰리스(City Palace)를 포함한 시티 투어를 진행합니다. 기차에서 로얄 디너를 즐기세요."
         },
         {
           "day": 2,
-          "title": "자이푸르에서 란탐보르(Ranthambore)까지",
-          "description": "기차에서 여유로운 아침 시간을 보낸 후, 오후에 란탐보르(Ranthambore)에 도착합니다. 벵골호랑이로 유명한 Ranthambore National Park(란탐보르 국립공원)에서 사파리 체험. 저녁 식사와 기차에서 숙박."
+          "title": "자이푸르에서 란탐보르까지",
+          "description": "오전 란탐보르 국립공원(Morning safari in Ranthambore National Park)에서 벵골 호랑이를 만나보세요. 오후는 자유 시간입니다. 저녁에 기차에서 문화 공연을 감상하세요."
         },
         {
           "day": 3,
-          "title": "란탐보르(Ranthambore)에서 아그라(Agra)까지",
-          "description": "기차에서 여유로운 아침 시간을 보낸 후, 오후에 아그라(Agra)에 도착합니다. 일몰-time Taj Mahal(타지마할) 관광과 Agra Fort(아그라 요새) 탐험. 저녁 식사와 기차에서 숙박."
+          "title": "란탐보르에서 아그라까지",
+          "description": "오전 란탐보르 포트(Ranthambore Fort)를 방문하세요. 오후 아그라(Agra)로 이동합니다. 저녁 타지 마할(Taj Mahal)을 일몰과 함께 방문하고, 기차로 돌아와 디너를 즐기세요."
         },
         {
           "day": 4,
-          "title": "아그라(Agra)에서 오르차(Orchha)까지",
-          "description": "기차에서 여유로운 아침 시간을 보낸 후, 오후에 오르차(Orchha)에 도착합니다. 역사적인 Orchha Fort complex(오르차 요새 단지), Jahangir Mahal(자한기르 마할)과 Ram Raja Temple(람 라자 사원) 탐험. 저녁 onboard에서 문화 공연 관람."
+          "title": "아그라에서 오르차까지",
+          "description": "오전 아그라 포트(Agra Fort)와 Fatehpur Sikri를 방문하세요. 오후 오르차(Orchha)로 이동합니다. 저녁 오르차의 역사적 사원과 궁전을 둘러보세요. 기내 숙박."
         },
         {
           "day": 5,
-          "title": "오르차(Orchha)에서 바라나시(Varanasi)까지",
-          "description": "기차에서 여유로운 아침 시간을 보낸 후, 오후에 바라나시(Varanasi)에 도착합니다. Dashashwamedh Ghat(다샤슈와메드하 갓)에서 Ganga Aarti(강가 아티) 관람과 갠지스강 보트 투어. 저녁 식사와 기차에서 숙박."
+          "title": "오르차에서 바라나시까지",
+          "description": "오전 Hansi Fort를 방문하세요. 오후 바라나시(Varanasi)로 이동합니다. 저녁 Dashashwamedh Ghat에서 갠지스 아arti를 감상하세요. 기내 숙박."
         },
         {
           "day": 6,
-          "title": "바라나시(Varanasi)에서 델리(Delhi)까지",
-          "description": "기차에서 여유로운 아침 시간을 보낸 후, 오후에 델리(Delhi)에 도착합니다. Qutub Minar(쿠트브 미나르)와 Humayun's Tomb(후마윤의 무덤) 관광. onboard에서 환송 만찬."
+          "title": "바라나시 관광",
+          "description": "오전 갠지스 강 보트 투어와 사르나트(Sarnath), 카시 비슈와나트 사원(Kashi Vishwanath Temple)을 방문하세요. 오후는 자유 시간입니다. 저녁 기차에서 문화 쇼를 감상하세요."
         },
         {
           "day": 7,
-          "title": "델리(Delhi) 출발",
-          "description": "오전 공항으로 이동하여 출발합니다."
+          "title": "델리 출발",
+          "description": "오전 델리(Delhi)로 이동하여 쿠트브 미나르(Qutub Minar)와 후마윤의 묘(Humayun's Tomb)를 방문하세요. 오후는 자유 시간입니다. 저녁 델리 출발."
         }
       ]
     },

@@ -2554,42 +2554,42 @@
       ]
     },
     "INBOUND-40": {
-      "overview": "Experimente el esplendor real de India a bordo del Maharaja's Express en este viaje de 7 días a través de destinos icónicos. Desde la ciudad rosa de Jaipur hasta el corazón espiritual de Varanasi, disfrute de lujo, herencia y aventura mientras explora el majestuoso pasado y la vibrante cultura de India.",
+      "overview": "Experimente el patrimonio real de India a bordo del Maharaja's Express con un viaje de 7 días a través de destinos icónicos. Desde la Ciudad Rosa de Jaipur hasta la ciudad espiritual de Varanasi, este itinerario combina vida silvestre, historia, cultura y lujo.",
       "days": [
         {
           "day": 1,
           "title": "Llegada a Jaipur",
-          "description": "Llegue a Jaipur, la capital de Rajastán, y trasládese al Maharaja's Express. Disfrute de una bebida de bienvenida y refrigerios ligeros a bordo. Más tarde, explore el Fuerte Amber con un paseo en elefante (opcional) y visite el City Palace y Jantar Mantar. Cena y pernoctación en el tren."
+          "description": "Llegue a Jaipur, la capital de Rajasthan. Aborde el Maharaja's Express y disfrute de una bebida de bienvenida y una breve sesión informativa. Más tarde, proceda a un tour por la ciudad que incluye el Fuerte Amber, Hawa Mahal y el Palacio de la Ciudad. Disfrute de una cena real a bordo."
         },
         {
           "day": 2,
           "title": "Jaipur a Ranthambore",
-          "description": "Mañana libre a bordo del tren. Llegada por la tarde a Ranthambore. Embárquese en un safari en el Parque Nacional Ranthambore, conocido por sus tigres de Bengala. Regreso al tren para la cena y pernoctación."
+          "description": "Safari matutino en el Parque Nacional Ranthambore, famoso por sus tigres de Bengala. Tarde libre. Presentación cultural a bordo del tren por la noche."
         },
         {
           "day": 3,
           "title": "Ranthambore a Agra",
-          "description": "Mañana libre a bordo del tren. Llegada por la tarde a Agra. Visite el icónico Taj Mahal al atardecer y explore el Fuerte de Agra. Cena y pernoctación en el tren."
+          "description": "Visita matutina al Fuerte Ranthambore. Tarde de traslado a Agra. Visita al Taj Mahal al atardecer. Regreso al tren para cenar."
         },
         {
           "day": 4,
           "title": "Agra a Orchha",
-          "description": "Mañana libre a bordo del tren. Llegada por la tarde a Orchha. Explore el histórico complejo del Fuerte de Orchha, incluyendo el Jahangir Mahal y el Templo Ram Raja. Disfrute de una actuación cultural a bordo del tren por la tarde."
+          "description": "Visita matutina al Fuerte de Agra y Fatehpur Sikri. Tarde de traslado a Orchha. Paseo nocturno por los templos y palacios históricos de Orchha. Noche a bordo."
         },
         {
           "day": 5,
           "title": "Orchha a Varanasi",
-          "description": "Mañana libre a bordo del tren. Llegada por la tarde a Varanasi. Ceremonia de Ganga Aarti en el Dashashwamedh Ghat al atardecer, seguida de un paseo en barco por el Ganges. Cena y pernoctación en el tren."
+          "description": "Visita matutina al Fuerte de Jhansi. Tarde de traslado a Varanasi. Ceremonia de Ganga Aarti en el Dashashwamedh Ghat por la noche. Noche a bordo."
         },
         {
           "day": 6,
-          "title": "Varanasi a Delhi",
-          "description": "Mañana libre a bordo del tren. Llegada por la tarde a Delhi. Visite el Qutub Minar y la Tumba de Humayun. Disfrute de una cena de despedida a bordo del tren."
+          "title": "Tour por Varanasi",
+          "description": "Paseo matutino en barco por el Ganges. Visita a Sarnath y al Templo Kashi Vishwanath. Tarde libre. Espectáculo cultural a bordo por la noche."
         },
         {
           "day": 7,
           "title": "Salida desde Delhi",
-          "description": "Traslado matutino al aeropuerto para la salida."
+          "description": "Traslado matutino a Delhi. Visita al Qutub Minar y al Humayun's Tomb. Tarde libre. Salida por la noche desde Delhi."
         }
       ]
     },
