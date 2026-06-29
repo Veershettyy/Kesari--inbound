@@ -13,7 +13,6 @@ import WhyIndia from './components/WhyIndia';
 import Destinations from './components/Destinations';
 import TourPackages from './components/TourPackages';
 import Reviews from './components/Reviews';
-import LocalizationWorkflow from './components/LocalizationWorkflow';
 import EnquiryForm from './components/EnquiryForm';
 import Footer from './components/Footer';
 import BookingModal from './components/BookingModal';
@@ -44,7 +43,6 @@ function HomePage() {
       <Destinations />
       <TourPackages ref={pkgRef} onEnquire={name => setModalPkg(name)} />
       <Reviews />
-      <LocalizationWorkflow />
       <EnquiryForm />
       <Footer />
       {modalPkg && <BookingModal pkgName={modalPkg} onClose={() => setModalPkg(null)} />}
