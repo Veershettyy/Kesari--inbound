@@ -4,6 +4,7 @@ import { Routes, Route, useLocation } from 'react-router-dom';
 function ScrollToTopOnNav() {
   const { pathname } = useLocation();
   useEffect(() => { window.scrollTo(0, 0); }, [pathname]);
+  useScrollReveal(pathname);
   return null;
 }
 import { HelmetProvider } from 'react-helmet-async';
@@ -27,7 +28,7 @@ import AboutUs from './pages/AboutUs';
 import Blog from './pages/Blog';
 import BlogPost from './pages/BlogPost';
 
-function useScrollReveal() {
+function useScrollReveal(pathname) {
   useEffect(() => {
     const obs = new IntersectionObserver(entries => {
       entries.forEach(e => {
@@ -42,10 +43,9 @@ function useScrollReveal() {
       document.querySelectorAll('.fade-up').forEach(el => obs.observe(el));
     };
     attach();
-    // re-scan after a tick in case React renders cards after mount
     const t = setTimeout(attach, 300);
     return () => { obs.disconnect(); clearTimeout(t); };
-  }, []);
+  }, [pathname]);
 }
 
 function WhatsAppBtn() {
@@ -95,7 +95,6 @@ function ScrollToTop() {
 function HomePage() {
   const [modalPkg, setModalPkg] = useState(null);
   const pkgRef = useRef(null);
-  useScrollReveal();
 
   function openEnquiry() {
     document.querySelector('#enquiry')?.scrollIntoView({ behavior: 'smooth' });
