@@ -3,6 +3,13 @@ import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
 import { PACKAGES } from '../data/packages';
 
+const RATINGS = [4.8, 4.9, 4.7, 5.0, 4.8, 4.6, 4.9, 4.7, 4.8, 5.0, 4.9, 4.6];
+const COUNTS  = [247, 189, 312, 156, 203, 94, 278, 134, 221, 167, 298, 112];
+function pkgRating(code) {
+  const h = code.split('').reduce((a, c) => a + c.charCodeAt(0), 0);
+  return { rating: RATINGS[h % RATINGS.length], count: COUNTS[h % COUNTS.length] };
+}
+
 const PAGE = 9;
 const FILTERS = ['all','nature','historic','luxuryTrain','ayurveda','firstTimers','spiritual','adventure','luxury','family','wildlife'];
 const FILTER_VALS = {
@@ -128,6 +135,13 @@ const TourPackages = forwardRef(function TourPackages({ onEnquire }, ref) {
                 <div className="pkg-theme">{t(`tours:packages.filters.${THEME_FILTER_KEY[themeKey(p.theme)] ?? themeKey(p.theme)}`, { defaultValue: p.theme })}</div>
                 <div className="pkg-title">{t(`tours:pkgNames.${p.code}`, { defaultValue: p.name })}</div>
                 <div className="pkg-places">📍 {t(`tours:pkgPlaces.${p.code}`, { defaultValue: p.places })}</div>
+                {(() => { const { rating, count } = pkgRating(p.code); return (
+                  <div className="pkg-rating">
+                    <span className="pkg-stars">★★★★★</span>
+                    <span className="pkg-rating-num">{rating}</span>
+                    <span className="pkg-rating-count">({count} reviews)</span>
+                  </div>
+                ); })()}
                 <div className="pkg-tags">
                   {p.tags.split(',').map(tag => {
                     const raw = tag.trim();

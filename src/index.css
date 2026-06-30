@@ -20,6 +20,11 @@ body{font-family:'Montserrat',sans-serif;background:var(--white);color:#222;over
 .wa-btn:hover{transform:translateY(-3px) scale(1.04);box-shadow:0 10px 32px rgba(37,211,102,.55);animation:none}
 .wa-label{font-size:13px;font-weight:700;font-family:inherit;white-space:nowrap}
 
+/* STICKY MOBILE ENQUIRE BAR */
+.sticky-enquire{display:none;position:fixed;bottom:0;left:0;right:0;z-index:8999;background:var(--navy);padding:10px 20px;align-items:center;justify-content:space-between;box-shadow:0 -4px 20px rgba(0,0,0,.2)}
+.sticky-enquire-text{color:rgba(255,255,255,.85);font-size:13px;font-weight:500}
+.sticky-enquire-btn{background:var(--red);color:#fff;border:none;padding:10px 24px;border-radius:6px;font-size:13px;font-weight:700;font-family:inherit;cursor:pointer;text-decoration:none;box-shadow:0 4px 12px rgba(228,30,37,.4);flex-shrink:0;white-space:nowrap}
+
 /* ANIMATE ON SCROLL */
 .fade-up{opacity:0;transform:translateY(36px);transition:opacity .65s cubic-bezier(.22,1,.36,1),transform .65s cubic-bezier(.22,1,.36,1)}
 .fade-up.visible{opacity:1;transform:translateY(0)}
@@ -174,6 +179,10 @@ nav{background:var(--navy)}
 .pkg-places{font-size:11px;color:#888;margin-bottom:12px;line-height:1.6}
 .pkg-tags{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:14px}
 .pkg-tag{background:#f0f2f8;color:#555;font-size:10px;padding:3px 10px;border-radius:20px;font-weight:500}
+.pkg-rating{display:flex;align-items:center;gap:6px;margin-bottom:10px}
+.pkg-stars{color:#f5a623;font-size:13px;letter-spacing:1px}
+.pkg-rating-num{font-size:13px;font-weight:700;color:#333}
+.pkg-rating-count{font-size:11px;color:#999}
 .pkg-footer{display:flex;align-items:center;justify-content:space-between;border-top:1px solid #f0f0f0;padding-top:14px}
 .pkg-code{font-size:10px;color:#ccc;font-family:monospace}
 .btn-navy{background:var(--navy);color:#fff;border:none;padding:8px 18px;border-radius:6px;font-size:11px;font-weight:700;cursor:pointer;font-family:inherit;transition:all .2s;text-decoration:none;display:inline-block}
@@ -339,6 +348,8 @@ footer{background:linear-gradient(135deg,#131928 0%,#1a2030 100%);color:rgba(255
 
 /* RESPONSIVE — MOBILE */
 @media(max-width:600px){
+  .sticky-enquire{display:flex}
+  .wa-btn{bottom:74px}
   /* NAVBAR */
   .header-top{padding:10px 16px;flex-wrap:nowrap;justify-content:space-between}
   .logo-42{display:none}

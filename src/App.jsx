@@ -56,6 +56,18 @@ function WhatsAppBtn() {
   );
 }
 
+function StickyEnquireBar() {
+  return (
+    <div className="sticky-enquire">
+      <span className="sticky-enquire-text">✈ Planning a trip to India?</span>
+      <a href="#enquiry" className="sticky-enquire-btn" onClick={e => {
+        e.preventDefault();
+        document.querySelector('#enquiry')?.scrollIntoView({ behavior: 'smooth' });
+      }}>Enquire Now</a>
+    </div>
+  );
+}
+
 function ScrollToTop() {
   const [show, setShow] = useState(false);
   useEffect(() => {
@@ -104,6 +116,7 @@ function HomePage() {
       <Reviews />
       <EnquiryForm />
       <Footer onSearch={handleNavSearch} onViewTheme={handleThemeFilter} />
+      <StickyEnquireBar />
       <WhatsAppBtn />
       <ScrollToTop />
       {modalPkg && <BookingModal pkgName={modalPkg} onClose={() => setModalPkg(null)} />}
