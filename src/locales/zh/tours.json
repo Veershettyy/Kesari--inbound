@@ -15,8 +15,8 @@
       "spiritual": "灵性",
       "adventure": "冒险",
       "luxury": "奢华",
-      "family": "Family",
-      "wildlife": "Wildlife"
+      "family": "家庭",
+      "wildlife": "野生动物"
     },
     "daysNights": "{{days}}天 / {{nights}}晚",
     "currency": {

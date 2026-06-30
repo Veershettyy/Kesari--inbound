@@ -15,8 +15,8 @@
       "spiritual": "スピリチュアル",
       "adventure": "アドベンチャー",
       "luxury": "ラグジュアリー",
-      "family": "Family",
-      "wildlife": "Wildlife"
+      "family": "ファミリー",
+      "wildlife": "野生動物"
     },
     "daysNights": "{{days}}日 / {{nights}}泊",
     "currency": {

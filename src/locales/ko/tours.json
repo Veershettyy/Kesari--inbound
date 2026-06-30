@@ -15,8 +15,8 @@
       "spiritual": "영적",
       "adventure": "모험",
       "luxury": "럭셔리",
-      "family": "Family",
-      "wildlife": "Wildlife"
+      "family": "가족",
+      "wildlife": "야생동물"
     },
     "daysNights": "{{days}}일 / {{nights}}박",
     "currency": {

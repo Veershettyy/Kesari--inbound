@@ -15,8 +15,8 @@
       "spiritual": "Duchowe",
       "adventure": "Przygoda",
       "luxury": "Luksus",
-      "family": "Family",
-      "wildlife": "Wildlife"
+      "family": "Rodzina",
+      "wildlife": "Dzika Przyroda"
     },
     "daysNights": "{{days}}D / {{nights}}N",
     "currency": {
