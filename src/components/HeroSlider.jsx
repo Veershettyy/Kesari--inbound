@@ -22,7 +22,12 @@ export default function HeroSlider() {
   return (
     <section className="hero">
       {SLIDES.map((s, i) => (
-        <div key={s.key} className={`slide${i === cur ? ' active' : ''}`} style={{ backgroundImage: `url('${s.img}')`, backgroundPosition: s.pos }}>
+        <div key={s.key} className={`slide${i === cur ? ' active' : ''}`}>
+          <div
+            key={i === cur ? `${s.key}-on` : `${s.key}-off`}
+            className="slide-bg"
+            style={{ backgroundImage: `url('${s.img}')`, backgroundPosition: s.pos }}
+          />
           <div className="slide-content">
             <span className="slide-tag">{t(`home:hero.${s.key}.tag`)}</span>
             <h1 className="slide-title">{t(`home:hero.${s.key}.title`)}</h1>
