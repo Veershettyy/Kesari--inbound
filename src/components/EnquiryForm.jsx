@@ -56,6 +56,18 @@ export default function EnquiryForm() {
             <p>{t('home:enquiry.responseTime')} <strong>{t('home:enquiry.responseValue')}</strong></p>
             <p>{t('home:enquiry.confidential')}</p>
           </div>
+          <div className="enq-address">
+            <span className="enq-pin">📍</span>
+            <span>3105, Kohinoor Square, 31st Floor, N.C. Kelkar Marg,<br />Shivaji Park, Mumbai – 400028</span>
+          </div>
+          <iframe
+            className="enq-map"
+            src="https://maps.google.com/maps?q=Kohinoor+Square,+Shivaji+Park,+Mumbai,+Maharashtra+400028,+India&output=embed&z=16"
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            title="KeSARi Inbound Office Location"
+          />
         </div>
         <div className="enq-right">
           {done ? (

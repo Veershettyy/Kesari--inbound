@@ -209,6 +209,9 @@ nav{background:var(--navy)}
 /* ENQUIRY */
 .enq-section{padding:75px 0;background:#fff}
 .enq-inner{max-width:1200px;margin:0 auto;padding:0 48px;display:grid;grid-template-columns:1fr 1.2fr;gap:64px;align-items:start}
+.enq-address{display:flex;align-items:flex-start;gap:10px;margin-bottom:20px;font-size:13px;color:#555;line-height:1.7}
+.enq-pin{font-size:16px;margin-top:1px;flex-shrink:0}
+.enq-map{width:100%;height:240px;border:0;border-radius:12px;box-shadow:var(--shadow)}
 .enq-left .h2{font-size:32px}
 .enq-left p{font-size:14px;color:#666;line-height:1.75;margin-bottom:14px}
 .enq-left .hl{color:var(--red);font-weight:700}
