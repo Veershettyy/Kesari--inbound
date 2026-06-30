@@ -46,7 +46,7 @@ export default function Navbar({ onEnquire, onSearchNav }) {
   return (
     <header>
       <div className="header-top">
-        <a href="#" className="logo">
+        <a href={getHomePath()} className="logo" onClick={goHome}>
           <img
             className="logo-img"
             src={`${BASE}/static/media/Kesari-Inbound-Logo.3ac1e59a357e91ba7e56.png`}
