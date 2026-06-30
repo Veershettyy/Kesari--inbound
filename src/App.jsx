@@ -23,6 +23,9 @@ import Reviews from './components/Reviews';
 import Footer from './components/Footer';
 import BookingModal from './components/BookingModal';
 import PackageDetail from './pages/PackageDetail';
+import AboutUs from './pages/AboutUs';
+import Blog from './pages/Blog';
+import BlogPost from './pages/BlogPost';
 
 function useScrollReveal() {
   useEffect(() => {
@@ -166,6 +169,18 @@ export default function App() {
         {/* Legacy Spanish — /es-es/* (kept until confirmed removable) */}
         <Route path="/es-es/*"
           element={<LocaleWrapper><HomePage /></LocaleWrapper>} />
+
+        {/* About Us */}
+        <Route path="/INT/:lang/about" element={<LocaleWrapper><AboutUs /></LocaleWrapper>} />
+        <Route path="/INT/about"       element={<LocaleWrapper><AboutUs /></LocaleWrapper>} />
+
+        {/* Blog list */}
+        <Route path="/INT/:lang/blog"  element={<LocaleWrapper><Blog /></LocaleWrapper>} />
+        <Route path="/INT/blog"        element={<LocaleWrapper><Blog /></LocaleWrapper>} />
+
+        {/* Blog post */}
+        <Route path="/INT/:lang/blog/:slug" element={<LocaleWrapper><BlogPost /></LocaleWrapper>} />
+        <Route path="/INT/blog/:slug"       element={<LocaleWrapper><BlogPost /></LocaleWrapper>} />
 
         {/* Root fallback */}
         <Route path="/*"

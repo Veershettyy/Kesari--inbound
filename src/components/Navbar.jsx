@@ -141,6 +141,8 @@ export default function Navbar({ onEnquire, onSearchNav }) {
           <li className="nav-item"><a href="#destinations" className="nav-link" onClick={e => goSection(e,'#destinations')}>{t('nav.destinationsLink')}</a></li>
           <li className="nav-item"><a href="#reviews"      className="nav-link" onClick={e => goSection(e,'#reviews')}>{t('nav.reviews')}</a></li>
           <li className="nav-item"><a href="#enquiry"      className="nav-link" onClick={e => goSection(e,'#enquiry')}>{t('nav.contactUs')}</a></li>
+          <li className="nav-item"><a href={`${getHomePath()}/about`} className="nav-link" onClick={e => { e.preventDefault(); navigate(`${getHomePath()}/about`); }}>About Us</a></li>
+          <li className="nav-item"><a href={`${getHomePath()}/blog`}  className="nav-link" onClick={e => { e.preventDefault(); navigate(`${getHomePath()}/blog`); }}>Travel Guides</a></li>
           <li className="nav-item nav-search">
             <div className="nav-search-wrap">
               <input

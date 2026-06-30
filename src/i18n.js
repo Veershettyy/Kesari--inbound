@@ -109,7 +109,7 @@ i18n.use(initReactI18next).init({
   lng: initialLang,
   fallbackLng: 'en',
   defaultNS: 'common',
-  ns: ['common', 'home', 'tours', 'seo', 'footer'],
+  ns: ['common', 'home', 'tours', 'seo', 'footer', 'about', 'blog'],
   interpolation: { escapeValue: false },
   initImmediate: false,
   react: {

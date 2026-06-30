@@ -1,0 +1,139 @@
+{
+  "tag": "Travel Guides",
+  "title": "Inspiration & Travel Guides",
+  "subtitle": "Expert insights to help you plan the perfect India journey",
+  "readMore": "Read Guide",
+  "backToBlog": "Back to Guides",
+  "articles": [
+    {
+      "slug": "best-time-to-visit-india",
+      "title": "Best Time to Visit India — Month by Month Guide",
+      "category": "Planning",
+      "readTime": "5 min read",
+      "img": "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=800&h=500&auto=format&fit=crop&q=85",
+      "excerpt": "India is a year-round destination, but the experience varies dramatically by season. Here is everything you need to know to choose the perfect time for your trip.",
+      "sections": [
+        {
+          "heading": "October to March — The Golden Season",
+          "body": "This is the most popular time to visit India, and for good reason. The weather across most of the country is cool, dry, and incredibly pleasant. Rajasthan's deserts are comfortable for camel safaris, Kerala's backwaters glisten in golden light, and the Golden Triangle — Delhi, Agra, Jaipur — is at its most vibrant. December and January are peak months, so book early."
+        },
+        {
+          "heading": "April to June — Summer Heat and Hill Stations",
+          "body": "The plains of India heat up considerably, but this is the perfect time to head to the Himalayas. Ladakh opens its roads in May, offering dramatic high-altitude landscapes. Himachal Pradesh and Uttarakhand are lush and cool. Kerala's monsoon arrives in June, transforming the state into a carpet of deep green — ideal for Ayurveda retreats."
+        },
+        {
+          "heading": "July to September — Monsoon Magic",
+          "body": "India's monsoon is a spectacle in itself. Waterfalls surge across Goa, Meghalaya, and Western Ghats. Wildlife parks reopen with fresh vegetation and newborn animals. The crowds thin dramatically and prices drop — making this a great time for the seasoned traveller who doesn't mind the rain. Rajasthan and Ladakh remain mostly dry and perfect."
+        },
+        {
+          "heading": "Our Recommendation",
+          "body": "For first-time visitors, October to February offers the best all-round experience. For adventure travellers, May to September opens extraordinary routes. For those seeking spiritual India — Varanasi is magical in any season, but the Ganga Aarti at dawn in winter is truly unforgettable."
+        }
+      ]
+    },
+    {
+      "slug": "rajasthan-7-days",
+      "title": "Rajasthan in 7 Days — Forts, Palaces & Desert Sunsets",
+      "category": "Itinerary",
+      "readTime": "6 min read",
+      "img": "https://images.unsplash.com/photo-1477587458883-47145ed94245?w=800&h=500&auto=format&fit=crop&q=85",
+      "excerpt": "Rajasthan is India at its most dramatic — a land of amber forts, royal palaces, and vast Thar Desert. Here is a perfect 7-day itinerary for first-time visitors.",
+      "sections": [
+        {
+          "heading": "Days 1–2: Jaipur — The Pink City",
+          "body": "Begin in Jaipur, Rajasthan's capital and one of India's most visually striking cities. Visit the Amber Fort at sunrise before the crowds arrive — the reflection of the fort in Maota Lake at dawn is extraordinary. Spend the afternoon at the City Palace and the iconic Hawa Mahal. Jaipur's bazaars, filled with block-printed textiles and blue pottery, deserve a full evening."
+        },
+        {
+          "heading": "Days 3–4: Jodhpur & Ranakpur — The Blue City",
+          "body": "Drive to Jodhpur, where the old city is painted a vivid indigo blue — a sight visible for miles across the desert. Mehrangarh Fort looms above it all, one of India's most imposing fortresses. En route, stop at the stunning Jain temples of Ranakpur, carved entirely from white marble with over 1,400 pillars, each one unique."
+        },
+        {
+          "heading": "Days 5–6: Jaisalmer — The Golden City",
+          "body": "Jaisalmer rises from the Thar Desert like a mirage — a golden sandstone fort city that has changed little in centuries. Explore the narrow lanes of the living fort, then head into the dunes for a sunset camel safari and an overnight camp under the stars. The silence of the desert at night is something you carry home forever."
+        },
+        {
+          "heading": "Day 7: Udaipur — The City of Lakes",
+          "body": "End your journey in Udaipur, often described as the most romantic city in India. The City Palace rising over Lake Pichola is breathtaking at any hour. Take a boat ride at sunset, dine at a rooftop restaurant overlooking the water, and let Rajasthan's magic settle in fully before you depart."
+        }
+      ]
+    },
+    {
+      "slug": "kerala-complete-guide",
+      "title": "Kerala — God's Own Country Complete Travel Guide",
+      "category": "Destination",
+      "readTime": "7 min read",
+      "img": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=800&h=500&auto=format&fit=crop&q=85",
+      "excerpt": "Kerala is India's most serene corner — a state of backwaters, spice plantations, Ayurveda retreats, and ancient temple festivals. Here is your complete guide.",
+      "sections": [
+        {
+          "heading": "The Backwaters — Kerala's Most Iconic Experience",
+          "body": "The backwaters of Alleppey (Alappuzha) are a network of lakes, canals, and lagoons stretching along Kerala's coast. The best way to experience them is aboard a traditional kettuvallam — a rice barge converted into a houseboat with bedrooms, a kitchen, and an open deck. Glide through villages where life moves at the pace of the water, passing fishermen, coconut groves, and temples half-hidden by lotus ponds."
+        },
+        {
+          "heading": "Munnar — Tea Gardens in the Clouds",
+          "body": "Drive up into the Western Ghats to Munnar, where rolling hills are blanketed in manicured tea estates at an altitude of over 1,600 metres. The air is cool and fragrant, the mornings misty, and the sunsets over the green valleys deeply calming. Visit a working tea factory, trek to Eravikulam National Park to see the endangered Nilgiri Tahr, and simply breathe."
+        },
+        {
+          "heading": "Ayurveda — Healing in Its Birthplace",
+          "body": "Kerala is the home of Ayurveda — the 5,000-year-old science of life. Treatments here are far more authentic and medically rigorous than elsewhere in India. A minimum 7-day Panchakarma detox programme at a certified retreat can address everything from chronic stress to joint pain. For a first-time experience, a 3-day rejuvenation package in Mararikulam or Kovalam is the perfect introduction."
+        },
+        {
+          "heading": "Beaches, Spices & Wildlife",
+          "body": "Kerala's coast offers quieter, more cultured beach towns than Goa — Varkala's cliff-top cafés, Kovalam's lighthouse beach, and the untouched shores of Bekal in the north. Inland, Wayanad's spice plantations produce pepper, cardamom, and coffee amid dense jungle. Periyar Tiger Reserve offers boat safaris through a flooded forest where elephants come to drink at dawn."
+        }
+      ]
+    },
+    {
+      "slug": "spiritual-india-guide",
+      "title": "Spiritual India — Varanasi, Rishikesh & the Sacred Ghats",
+      "category": "Culture",
+      "readTime": "6 min read",
+      "img": "https://kesariselect.s3.ap-south-1.amazonaws.com/dsezhkUIoFmlf2Q3lq8Okv8PyOM9tOQADYIQqqwF.jpg",
+      "excerpt": "India's spiritual heartland is unlike anywhere else on earth. From the burning ghats of Varanasi to the ashrams of Rishikesh, this is a journey into the soul of an ancient civilisation.",
+      "sections": [
+        {
+          "heading": "Varanasi — The Eternal City",
+          "body": "Varanasi is one of the oldest continuously inhabited cities on earth, and the holiest city in Hinduism. Rise before dawn and take a wooden boat along the Ganges to watch the ghats slowly emerge from the mist — pilgrims bathing, priests performing rituals, smoke rising from the cremation pyres. It is raw, ancient, and profoundly moving. The evening Ganga Aarti, a ceremony of fire and devotion performed at the main ghat as darkness falls, is one of the most extraordinary spectacles in Asia."
+        },
+        {
+          "heading": "Rishikesh — Where Yoga Meets the Himalaya",
+          "body": "Set where the Ganges emerges from the Himalayas, Rishikesh is the world capital of yoga. The Beatles famously came here in 1968 to study with Maharishi Mahesh Yogi, and the city has been a magnet for spiritual seekers ever since. Spend mornings in meditation or pranayama classes, afternoons by the river or white-water rafting, and evenings at the ashram for satsang. The Ram Jhula bridge, lit up at night with the sounds of temple bells, is magical."
+        },
+        {
+          "heading": "Bodh Gaya & the Buddhist Circuit",
+          "body": "Bodh Gaya is where Siddhartha Gautama attained enlightenment under the Bodhi Tree — the most sacred site in Buddhism. The Mahabodhi Temple complex is a UNESCO World Heritage Site and a place of remarkable peace. Combine it with Sarnath (where the Buddha gave his first sermon) and Kushinagar (where he passed away) to complete the Buddhist pilgrimage circuit. Monks from Tibet, Thailand, Japan, and Sri Lanka all gather here in quiet devotion."
+        },
+        {
+          "heading": "Planning Your Spiritual Journey",
+          "body": "The best time for spiritual India is October to March, when the weather is cool and the major festivals — Diwali, Kumbh Mela, and Holi — take place. The Kumbh Mela, held every 12 years, is the largest human gathering on earth. KeSARi Inbound offers specially curated spiritual itineraries combining these destinations with authentic cultural immersion."
+        }
+      ]
+    },
+    {
+      "slug": "india-wildlife-safari",
+      "title": "India Wildlife Safari — The Complete Tiger Reserve Guide",
+      "category": "Adventure",
+      "readTime": "6 min read",
+      "img": "https://kesariselect.s3.ap-south-1.amazonaws.com/sIPGp1iNY2ej8ZuA0wHyFJYZ8XgTzEV6rlfEhjoQ.jpg",
+      "excerpt": "India is home to the world's largest population of wild tigers. With over 50 tiger reserves across the country, a wildlife safari here is a world-class experience.",
+      "sections": [
+        {
+          "heading": "Ranthambore — Rajasthan's Royal Tigers",
+          "body": "Ranthambore in Rajasthan is the most famous of India's tiger reserves — and with good reason. Tigers here have grown accustomed to safari vehicles and are frequently spotted in broad daylight, often lazing beside ancient ruins of the 10th-century Ranthambore Fort. The combination of wildlife and crumbling Mughal architecture is uniquely dramatic. October to April is the best time to visit, with February and March offering the highest tiger sighting rates."
+        },
+        {
+          "heading": "Bandhavgarh — India's Highest Tiger Density",
+          "body": "Bandhavgarh in Madhya Pradesh has the highest density of Bengal tigers of any reserve in India. The park is compact, making safari drives efficient and sightings frequent. Beyond tigers, Bandhavgarh is home to leopards, sloth bears, gaur (Indian bison), and over 250 bird species. Stay at one of the boutique forest lodges on the edge of the park for an immersive experience from dawn till dusk."
+        },
+        {
+          "heading": "Kaziranga — Rhinos and Elephants of Assam",
+          "body": "Kaziranga in Assam is a UNESCO World Heritage Site and home to two-thirds of the world's one-horned rhinoceros population. Elephant-back safaris at dawn through the tall grasslands — with rhinos, wild buffalo, and the occasional tiger emerging through the mist — are among the most extraordinary wildlife experiences in Asia. The park is at its best from November to April before the monsoon floods arrive."
+        },
+        {
+          "heading": "Planning Your Wildlife Safari",
+          "body": "Most tiger reserves are open from October to June, with March to May offering the best sightings as animals gather around water sources in the heat. Safari vehicles are strictly regulated, with limited jeeps per zone per day — early booking is essential. KeSARi Inbound's wildlife itineraries combine two or three reserves for maximum variety, with comfortable lodge stays and expert naturalist guides."
+        }
+      ]
+    }
+  ]
+}

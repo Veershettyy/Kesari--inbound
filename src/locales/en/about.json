@@ -1,0 +1,32 @@
+{
+  "hero": {
+    "tag": "About Us",
+    "title": "India's Trusted Inbound Travel Partner",
+    "subtitle": "For over four decades, KeSARi Inbound has been crafting extraordinary journeys through India for travellers from around the world."
+  },
+  "story": {
+    "tag": "Our Story",
+    "title": "42 Years of Crafting India Journeys",
+    "p1": "Founded in 1984, KeSARi began with a single belief: that India is one of the world's most extraordinary destinations, and every traveller deserves to experience it at its finest. What started as a small travel consultancy in Mumbai has grown into one of India's most respected inbound tourism specialists.",
+    "p2": "Over four decades, we have welcomed travellers from more than 50 countries — from solo adventurers and honeymooners to large corporate groups and school expeditions. Each journey we craft is deeply personal, rooted in local knowledge, and built around what our guests truly want to experience.",
+    "p3": "Today, KeSARi Inbound is backed by a team of over 700 travel professionals, local guides, and on-ground support staff — all dedicated to one goal: making your India journey truly unforgettable."
+  },
+  "mission": {
+    "tag": "Our Mission",
+    "title": "Beyond Tourism — Creating Connections",
+    "body": "We believe travel is more than sightseeing. It is about connecting with people, understanding cultures, and returning home changed. Every itinerary we design goes beyond the obvious landmarks to reveal the soul of India — its villages, its flavours, its ancient wisdom, and its vibrant modern life."
+  },
+  "pillars": [
+    { "icon": "🧭", "title": "Expert Local Knowledge", "desc": "Our guides and team members are deeply rooted in their regions, bringing you authentic insights no guidebook can offer." },
+    { "icon": "✏️", "title": "Tailored Itineraries", "desc": "Every trip is designed around you — your pace, your interests, your budget. No two KeSARi journeys are ever the same." },
+    { "icon": "🤝", "title": "End-to-End Service", "desc": "From the moment you enquire to the moment you return home, our team handles every detail so you can travel without worry." },
+    { "icon": "🕐", "title": "24/7 Support", "desc": "Our on-ground teams are available around the clock throughout your trip. Any question, any hour — we are here." }
+  ],
+  "contact": {
+    "tag": "Find Us",
+    "title": "Visit Our Office",
+    "address": "3105, Kohinoor Square, 31st Floor,\nN.C. Kelkar Marg, Shivaji Park,\nMumbai – 400028, India",
+    "phone": "+91 22 6666 6666",
+    "email": "inbound@kesari.in"
+  }
+}
