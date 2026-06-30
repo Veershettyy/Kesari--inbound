@@ -18,6 +18,34 @@ import Footer from './components/Footer';
 import BookingModal from './components/BookingModal';
 import PackageDetail from './pages/PackageDetail';
 
+const BASE = 'https://inbound.kesariselect.com';
+
+function SplashScreen({ onDone }) {
+  useEffect(() => {
+    const t = setTimeout(onDone, 1800);
+    return () => clearTimeout(t);
+  }, [onDone]);
+
+  return (
+    <div className="splash">
+      <div className="splash-inner">
+        <img
+          src={`${BASE}/static/media/Kesari-Inbound-Logo.3ac1e59a357e91ba7e56.png`}
+          alt="KeSARi Inbound"
+          className="splash-logo"
+        />
+        <img
+          src={`${BASE}/static/media/42-years-logo.f22252fd3e46195a961b.png`}
+          alt="42 Years"
+          className="splash-42"
+        />
+        <div className="splash-tagline">Crafting Extraordinary India Journeys</div>
+        <div className="splash-bar"><div className="splash-progress" /></div>
+      </div>
+    </div>
+  );
+}
+
 function useScrollReveal() {
   useEffect(() => {
     const obs = new IntersectionObserver(entries => {
@@ -125,8 +153,16 @@ function HomePage() {
 }
 
 export default function App() {
+  const [splash, setSplash] = useState(!sessionStorage.getItem('splashSeen'));
+
+  function onSplashDone() {
+    sessionStorage.setItem('splashSeen', '1');
+    setSplash(false);
+  }
+
   return (
     <HelmetProvider>
+      {splash && <SplashScreen onDone={onSplashDone} />}
       <Routes>
         {/* Package detail — /INT/es/explore/product-details/:code */}
         <Route path="/INT/es/explore/product-details/:code"
