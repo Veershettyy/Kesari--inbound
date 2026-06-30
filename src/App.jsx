@@ -150,6 +150,18 @@ export default function App() {
         <Route path="/es-es/explore/product-details/:code"
           element={<LocaleWrapper><PackageDetail /></LocaleWrapper>} />
 
+        {/* About Us */}
+        <Route path="/INT/:lang/about" element={<LocaleWrapper><AboutUs /></LocaleWrapper>} />
+        <Route path="/INT/about"       element={<LocaleWrapper><AboutUs /></LocaleWrapper>} />
+
+        {/* Blog post — must be before blog list */}
+        <Route path="/INT/:lang/blog/:slug" element={<LocaleWrapper><BlogPost /></LocaleWrapper>} />
+        <Route path="/INT/blog/:slug"       element={<LocaleWrapper><BlogPost /></LocaleWrapper>} />
+
+        {/* Blog list */}
+        <Route path="/INT/:lang/blog"  element={<LocaleWrapper><Blog /></LocaleWrapper>} />
+        <Route path="/INT/blog"        element={<LocaleWrapper><Blog /></LocaleWrapper>} />
+
         {/* Spanish homepage — /INT/es/* */}
         <Route path="/INT/es/*"
           element={<LocaleWrapper><HomePage /></LocaleWrapper>} />
@@ -169,18 +181,6 @@ export default function App() {
         {/* Legacy Spanish — /es-es/* (kept until confirmed removable) */}
         <Route path="/es-es/*"
           element={<LocaleWrapper><HomePage /></LocaleWrapper>} />
-
-        {/* About Us */}
-        <Route path="/INT/:lang/about" element={<LocaleWrapper><AboutUs /></LocaleWrapper>} />
-        <Route path="/INT/about"       element={<LocaleWrapper><AboutUs /></LocaleWrapper>} />
-
-        {/* Blog list */}
-        <Route path="/INT/:lang/blog"  element={<LocaleWrapper><Blog /></LocaleWrapper>} />
-        <Route path="/INT/blog"        element={<LocaleWrapper><Blog /></LocaleWrapper>} />
-
-        {/* Blog post */}
-        <Route path="/INT/:lang/blog/:slug" element={<LocaleWrapper><BlogPost /></LocaleWrapper>} />
-        <Route path="/INT/blog/:slug"       element={<LocaleWrapper><BlogPost /></LocaleWrapper>} />
 
         {/* Root fallback */}
         <Route path="/*"
