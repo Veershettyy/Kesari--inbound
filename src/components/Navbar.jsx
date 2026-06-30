@@ -23,7 +23,13 @@ export default function Navbar({ onEnquire, onSearchNav }) {
 
   function goHome(e) {
     e.preventDefault();
-    navigate(getHomePath());
+    const home = getHomePath();
+    const isHome = location.pathname === home || location.pathname === home + '/';
+    if (isHome) {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+      navigate(home);
+    }
   }
 
   function goSection(e, hash) {
