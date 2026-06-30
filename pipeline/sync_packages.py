@@ -196,7 +196,14 @@ def update_locale_for_packages(packages: list):
 
     for pkg in packages:
         code = pkg["code"]
-        name_en = pkg["name"]
+        raw_name = pkg["name"]
+        # Clean scraped name: title-case if ALL-CAPS, remove brand names
+        name_en = raw_name.title() if raw_name == raw_name.upper() else raw_name
+        name_en = (name_en
+                   .replace("Cgh Earth Hotels", "Boutique Luxury Hotels")
+                   .replace("CGH Earth Hotels", "Boutique Luxury Hotels")
+                   .replace("CGH EARTH HOTELS", "Boutique Luxury Hotels")
+                   .replace("  ", " ").strip(" -"))
         print(f"\n  [{code}] {name_en}")
 
         # English locale
