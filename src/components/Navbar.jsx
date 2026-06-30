@@ -1,15 +1,41 @@
 import { useTranslation } from 'react-i18next';
 import { useRef, useState } from 'react';
+import { useNavigate, useLocation } from 'react-router-dom';
 import LanguageSwitcher from './LanguageSwitcher';
 import useLocalizedUrl from '../hooks/useLocalizedUrl';
 
 const BASE = 'https://inbound.kesariselect.com';
+const LANG_SLUGS = ['de','fr','es','it','pt','pl','hi','ml','ar','zh','ja','ko'];
 
 export default function Navbar({ onEnquire, onSearchNav }) {
   const { t } = useTranslation('common');
   const [search, setSearch] = useState('');
   const searchRef = useRef(null);
   const localizeUrl = useLocalizedUrl();
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  function getHomePath() {
+    const m = location.pathname.match(/^\/INT\/([^/]+)/);
+    if (m && LANG_SLUGS.includes(m[1])) return `/INT/${m[1]}`;
+    return '/INT';
+  }
+
+  function goHome(e) {
+    e.preventDefault();
+    navigate(getHomePath());
+  }
+
+  function goSection(e, hash) {
+    e.preventDefault();
+    const home = getHomePath();
+    const isHome = location.pathname === home || location.pathname === home + '/';
+    if (isHome) {
+      document.querySelector(hash)?.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      navigate(home + hash);
+    }
+  }
 
   function handleSearch(e) {
     if (e.key === 'Enter' || e.type === 'input') {
@@ -52,9 +78,9 @@ export default function Navbar({ onEnquire, onSearchNav }) {
       </div>
       <nav>
         <ul className="nav-list">
-          <li className="nav-item"><a href="#" className="nav-link">{t('nav.home')}</a></li>
+          <li className="nav-item"><a href={getHomePath()} className="nav-link" onClick={goHome}>{t('nav.home')}</a></li>
           <li className="nav-item">
-            <a href="#" className="nav-link">{t('nav.destinations')}</a>
+            <a href="#destinations" className="nav-link" onClick={e => goSection(e, '#destinations')}>{t('nav.destinations')}</a>
             <div className="mega">
               <div>
                 <h4>{t('mega.northIndia')}</h4>
@@ -90,11 +116,11 @@ export default function Navbar({ onEnquire, onSearchNav }) {
               </div>
             </div>
           </li>
-          <li className="nav-item"><a href="#packages" className="nav-link">{t('nav.tourPackages')}</a></li>
-          <li className="nav-item"><a href="#why" className="nav-link">{t('nav.exploreIndia')}</a></li>
-          <li className="nav-item"><a href="#destinations" className="nav-link">{t('nav.destinationsLink')}</a></li>
-          <li className="nav-item"><a href="#reviews" className="nav-link">{t('nav.reviews')}</a></li>
-          <li className="nav-item"><a href="#enquiry" className="nav-link">{t('nav.contactUs')}</a></li>
+          <li className="nav-item"><a href="#packages"     className="nav-link" onClick={e => goSection(e,'#packages')}>{t('nav.tourPackages')}</a></li>
+          <li className="nav-item"><a href="#why"          className="nav-link" onClick={e => goSection(e,'#why')}>{t('nav.exploreIndia')}</a></li>
+          <li className="nav-item"><a href="#destinations" className="nav-link" onClick={e => goSection(e,'#destinations')}>{t('nav.destinationsLink')}</a></li>
+          <li className="nav-item"><a href="#reviews"      className="nav-link" onClick={e => goSection(e,'#reviews')}>{t('nav.reviews')}</a></li>
+          <li className="nav-item"><a href="#enquiry"      className="nav-link" onClick={e => goSection(e,'#enquiry')}>{t('nav.contactUs')}</a></li>
           <li className="nav-item nav-search">
             <div className="nav-search-wrap">
               <input
