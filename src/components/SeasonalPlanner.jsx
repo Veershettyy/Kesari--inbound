@@ -3,6 +3,9 @@ import { useTranslation } from 'react-i18next';
 import { SEASON_DATA, THEME_SLUGS } from '../data/packages';
 import useLocalizedUrl from '../hooks/useLocalizedUrl';
 
+const THEME_FILTER_KEY = {'first-timers':'firstTimers','historic':'historic','family':'family','nature':'nature','luxury-train':'luxuryTrain','ayurveda-and-wellness':'ayurveda','spiritual':'spiritual','adventure':'adventure','luxury':'luxury','wildlife':'wildlife'};
+function themeKey(raw) { return raw.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/-+/g,'-').replace(/^-|-$/g,''); }
+
 const MONTHS = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
 const BASE = 'https://inbound.kesariselect.com';
 
@@ -41,7 +44,8 @@ export default function SeasonalPlanner({ onEnquire }) {
             const tr = (Array.isArray(translatedPkgs) && translatedPkgs[i]) || {};
             const title = tr.title || d.title;
             const info  = tr.info  || d.info;
-            const theme = t(`tours:themes.${d.theme}`, { defaultValue: d.theme });
+            const tk = themeKey(d.theme);
+            const theme = t(`tours:packages.filters.${THEME_FILTER_KEY[tk] ?? tk}`, { defaultValue: d.theme });
             return (
               <div key={i} className="season-card" style={{ cursor: 'pointer' }} onClick={() => openTheme(d.theme)}>
                 <img
