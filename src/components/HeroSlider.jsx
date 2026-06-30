@@ -3,8 +3,8 @@ import { useTranslation } from 'react-i18next';
 
 const SLIDES = [
   { img: 'https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=1600&auto=format&fit=crop', key: 'slide1', btn: 'exploreWithUs', pos: 'center 60%' },
-  { img: 'https://images.unsplash.com/photo-1561361513-2d000a50f0dc?w=1600&auto=format&fit=crop',    key: 'slide2', btn: 'bookTheTrip',   pos: 'center 40%' },
-  { img: 'https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=1600&auto=format&fit=crop', key: 'slide3', btn: 'planYourTrip',  pos: 'center 50%' },
+  { img: 'https://tap.kesariselect.com/public/cms/bannerslider/1729859361.png',                       key: 'slide2', btn: 'bookTheTrip',   pos: 'center 50%' },
+  { img: 'https://tap.kesariselect.com/public/cms/bannerslider/1729859371.png',                       key: 'slide3', btn: 'planYourTrip',  pos: 'center 50%' },
 ];
 
 export default function HeroSlider() {
