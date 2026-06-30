@@ -2,7 +2,6 @@ import { useTranslation } from 'react-i18next';
 import { useRef, useState } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import LanguageSwitcher from './LanguageSwitcher';
-import useLocalizedUrl from '../hooks/useLocalizedUrl';
 
 const BASE = 'https://inbound.kesariselect.com';
 const LANG_SLUGS = ['de','fr','es','it','pt','pl','hi','ml','ar','zh','ja','ko'];
@@ -11,7 +10,6 @@ export default function Navbar({ onEnquire, onSearchNav }) {
   const { t } = useTranslation('common');
   const [search, setSearch] = useState('');
   const searchRef = useRef(null);
-  const localizeUrl = useLocalizedUrl();
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -29,6 +27,22 @@ export default function Navbar({ onEnquire, onSearchNav }) {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     } else {
       navigate(home);
+    }
+  }
+
+  function goSearch(e, term) {
+    e.preventDefault();
+    const home = getHomePath();
+    const isHome = location.pathname === home || location.pathname === home + '/';
+    if (isHome) {
+      onSearchNav && onSearchNav(term);
+      document.querySelector('#packages')?.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      navigate(home);
+      setTimeout(() => {
+        onSearchNav && onSearchNav(term);
+        document.querySelector('#packages')?.scrollIntoView({ behavior: 'smooth' });
+      }, 400);
     }
   }
 
@@ -90,35 +104,35 @@ export default function Navbar({ onEnquire, onSearchNav }) {
             <div className="mega">
               <div>
                 <h4>{t('mega.northIndia')}</h4>
-                <a href={localizeUrl(`${BASE}/explore/india/north-india/rajasthan`)} target="_blank" rel="noreferrer">Rajasthan</a>
-                <a href={localizeUrl(`${BASE}/explore/india/north-india/uttarakhand`)} target="_blank" rel="noreferrer">Uttarakhand</a>
-                <a href={localizeUrl(`${BASE}/explore/india/north-india/himachal-pradesh`)} target="_blank" rel="noreferrer">Himachal Pradesh</a>
-                <a href={localizeUrl(`${BASE}/explore/india/north-india/jammu-and-kashmir`)} target="_blank" rel="noreferrer">Jammu &amp; Kashmir</a>
-                <a href={localizeUrl(`${BASE}/explore/india/north-india/leh-and-ladakh`)} target="_blank" rel="noreferrer">Leh &amp; Ladakh</a>
-                <a href={localizeUrl(`${BASE}/explore/india/north-india/delhi`)} target="_blank" rel="noreferrer">Delhi</a>
-                <a href={localizeUrl(`${BASE}/explore/india/north-india/madhya-pradesh`)} target="_blank" rel="noreferrer">Madhya Pradesh</a>
+                <a href="#packages" onClick={e => goSearch(e, 'Rajasthan')}>Rajasthan</a>
+                <a href="#packages" onClick={e => goSearch(e, 'Uttarakhand')}>Uttarakhand</a>
+                <a href="#packages" onClick={e => goSearch(e, 'Himachal Pradesh')}>Himachal Pradesh</a>
+                <a href="#packages" onClick={e => goSearch(e, 'Kashmir')}>Jammu &amp; Kashmir</a>
+                <a href="#packages" onClick={e => goSearch(e, 'Ladakh')}>Leh &amp; Ladakh</a>
+                <a href="#packages" onClick={e => goSearch(e, 'Delhi')}>Delhi</a>
+                <a href="#packages" onClick={e => goSearch(e, 'Madhya Pradesh')}>Madhya Pradesh</a>
               </div>
               <div>
                 <h4>{t('mega.westIndia')}</h4>
-                <a href={localizeUrl(`${BASE}/explore/india/west-india/gujarat`)} target="_blank" rel="noreferrer">Gujarat</a>
-                <a href={localizeUrl(`${BASE}/explore/india/west-india/maharashtra`)} target="_blank" rel="noreferrer">Maharashtra</a>
-                <a href={localizeUrl(`${BASE}/explore/india/west-india/goa`)} target="_blank" rel="noreferrer">Goa</a>
+                <a href="#packages" onClick={e => goSearch(e, 'Gujarat')}>Gujarat</a>
+                <a href="#packages" onClick={e => goSearch(e, 'Maharashtra')}>Maharashtra</a>
+                <a href="#packages" onClick={e => goSearch(e, 'Goa')}>Goa</a>
               </div>
               <div>
                 <h4>{t('mega.southIndia')}</h4>
-                <a href={localizeUrl(`${BASE}/explore/india/south-india/kerala`)} target="_blank" rel="noreferrer">Kerala</a>
-                <a href={localizeUrl(`${BASE}/explore/india/south-india/tamil-nadu`)} target="_blank" rel="noreferrer">Tamil Nadu</a>
-                <a href={localizeUrl(`${BASE}/explore/india/south-india/andhra-pradesh`)} target="_blank" rel="noreferrer">Andhra Pradesh</a>
-                <a href={localizeUrl(`${BASE}/explore/india/south-india/karnataka`)} target="_blank" rel="noreferrer">Karnataka</a>
-                <a href={localizeUrl(`${BASE}/explore/india/south-india/pondicherry`)} target="_blank" rel="noreferrer">Pondicherry</a>
-                <a href={localizeUrl(`${BASE}/explore/india/south-india/lakshadweep`)} target="_blank" rel="noreferrer">Lakshadweep</a>
-                <a href={localizeUrl(`${BASE}/explore/india/south-india/andaman-and-nicobar-islands`)} target="_blank" rel="noreferrer">Andaman &amp; Nicobar</a>
+                <a href="#packages" onClick={e => goSearch(e, 'Kerala')}>Kerala</a>
+                <a href="#packages" onClick={e => goSearch(e, 'Tamil Nadu')}>Tamil Nadu</a>
+                <a href="#packages" onClick={e => goSearch(e, 'Andhra Pradesh')}>Andhra Pradesh</a>
+                <a href="#packages" onClick={e => goSearch(e, 'Karnataka')}>Karnataka</a>
+                <a href="#packages" onClick={e => goSearch(e, 'Pondicherry')}>Pondicherry</a>
+                <a href="#packages" onClick={e => goSearch(e, 'Lakshadweep')}>Lakshadweep</a>
+                <a href="#packages" onClick={e => goSearch(e, 'Andaman')}>Andaman &amp; Nicobar</a>
               </div>
               <div>
                 <h4>{t('mega.eastIndia')}</h4>
-                <a href={localizeUrl(`${BASE}/explore/india/east-india/odisha`)} target="_blank" rel="noreferrer">Odisha</a>
-                <a href={localizeUrl(`${BASE}/explore/india/east-india/north-east`)} target="_blank" rel="noreferrer">North East</a>
-                <a href={localizeUrl(`${BASE}/explore/india/east-india/west-bengal`)} target="_blank" rel="noreferrer">West Bengal</a>
+                <a href="#packages" onClick={e => goSearch(e, 'Odisha')}>Odisha</a>
+                <a href="#packages" onClick={e => goSearch(e, 'North East')}>North East</a>
+                <a href="#packages" onClick={e => goSearch(e, 'West Bengal')}>West Bengal</a>
               </div>
             </div>
           </li>
