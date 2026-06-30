@@ -7,7 +7,7 @@ const PAGE = 9;
 const FILTERS = ['all','nature','historic','luxuryTrain','ayurveda','firstTimers','spiritual','adventure','luxury','family','wildlife'];
 const FILTER_VALS = {
   all: 'All', nature: 'nature', historic: 'historic', luxuryTrain: 'luxury-train',
-  ayurveda: 'ayurveda', firstTimers: 'first-timers',
+  ayurveda: 'ayurveda-and-wellness', firstTimers: 'first-timers',
   spiritual: 'spiritual', adventure: 'adventure', luxury: 'luxury',
   family: 'family', wildlife: 'wildlife',
 };
