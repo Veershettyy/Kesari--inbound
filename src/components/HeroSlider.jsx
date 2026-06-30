@@ -15,7 +15,7 @@ export default function HeroSlider() {
   const go = useCallback(n => setCur(c => ((c + n) + SLIDES.length) % SLIDES.length), []);
 
   useEffect(() => {
-    const timer = setInterval(() => go(1), 5500);
+    const timer = setInterval(() => go(1), 3000);
     return () => clearInterval(timer);
   }, [go]);
 
