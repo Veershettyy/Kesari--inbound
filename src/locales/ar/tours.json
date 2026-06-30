@@ -3652,5 +3652,14 @@
     "FIT-INBOUND-03": "بهوبنيسوار → غوبالپور → رايغادا → جيبور",
     "FIT-INBOUND-02": "ناشيك → أورنج آباد",
     "FIT-INBOUND-01": "دلهي → باندافغار → كانها → بنش → تادوبا → مومباي"
+  },
+  "tags": {
+    "weekendBreak": "عطلة نهاية الأسبوع",
+    "luxuryHolidays": "إجازة فاخرة",
+    "family": "عائلة",
+    "honeymoon": "شهر العسل",
+    "adventure": "مغامرة",
+    "wildlifeHolidays": "سفاري",
+    "wellnessSpa": "سبا وعافية"
   }
 }

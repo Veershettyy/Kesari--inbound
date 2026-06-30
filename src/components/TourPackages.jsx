@@ -16,6 +16,17 @@ function themeKey(raw) {
   return raw.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '');
 }
 
+const TAG_KEYS = {
+  'weekend break':      'weekendBreak',
+  'luxury holidays':    'luxuryHolidays',
+  'family':             'family',
+  'honeymoon':          'honeymoon',
+  'adventure':          'adventure',
+  'wildlife holidays':  'wildlifeHolidays',
+  'welness spa':        'wellnessSpa',
+  'wellness spa':       'wellnessSpa',
+};
+
 const TourPackages = forwardRef(function TourPackages({ onEnquire }, ref) {
   const { t, i18n } = useTranslation(['tours','common']);
   const navigate = useNavigate();
@@ -95,9 +106,11 @@ const TourPackages = forwardRef(function TourPackages({ onEnquire }, ref) {
                 <div className="pkg-title">{t(`tours:pkgNames.${p.code}`, { defaultValue: p.name })}</div>
                 <div className="pkg-places">📍 {t(`tours:pkgPlaces.${p.code}`, { defaultValue: p.places })}</div>
                 <div className="pkg-tags">
-                  {p.tags.split(',').map(tag => (
-                    <span key={tag} className="pkg-tag">{tag.trim()}</span>
-                  ))}
+                  {p.tags.split(',').map(tag => {
+                    const raw = tag.trim();
+                    const key = TAG_KEYS[raw.toLowerCase()];
+                    return <span key={raw} className="pkg-tag">{key ? t(`tours:tags.${key}`, { defaultValue: raw }) : raw}</span>;
+                  })}
                 </div>
                 <div className="pkg-footer">
                   <button

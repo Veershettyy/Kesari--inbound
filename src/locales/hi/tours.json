@@ -3652,5 +3652,14 @@
     "FIT-INBOUND-03": "भुवनेश्वर → गोपालपुर → रायगढ़ा → जयपुर",
     "FIT-INBOUND-02": "नासिक → औरंगाबाद",
     "FIT-INBOUND-01": "दिल्ली → बांधवगढ़ → कान्हा → पेंच → ताडोबा → मुंबई"
+  },
+  "tags": {
+    "weekendBreak": "वीकेंड ब्रेक",
+    "luxuryHolidays": "लग्ज़री हॉलिडे",
+    "family": "परिवार",
+    "honeymoon": "हनीमून",
+    "adventure": "साहसिक",
+    "wildlifeHolidays": "वन्यजीव यात्रा",
+    "wellnessSpa": "वेलनेस स्पा"
   }
 }

@@ -3584,5 +3584,14 @@
         }
       ]
     }
+  },
+  "tags": {
+    "weekendBreak": "Weekend Break",
+    "luxuryHolidays": "Luxury Holidays",
+    "family": "Family",
+    "honeymoon": "Honeymoon",
+    "adventure": "Adventure",
+    "wildlifeHolidays": "Wildlife Holidays",
+    "wellnessSpa": "Wellness Spa"
   }
 }

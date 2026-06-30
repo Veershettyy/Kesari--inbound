@@ -3652,5 +3652,14 @@
     "FIT-INBOUND-03": "Bhubaneswar → Gopalpur → Rayagada → Jeypore",
     "FIT-INBOUND-02": "Nashik → Aurangabad",
     "FIT-INBOUND-01": "Delhi → Bandhavgarh → Kanha → Pench → Tadoba → Mumbai"
+  },
+  "tags": {
+    "weekendBreak": "Week-end",
+    "luxuryHolidays": "Vacances de Luxe",
+    "family": "Famille",
+    "honeymoon": "Lune de Miel",
+    "adventure": "Aventure",
+    "wildlifeHolidays": "Safari Faune",
+    "wellnessSpa": "Spa Bien-être"
   }
 }

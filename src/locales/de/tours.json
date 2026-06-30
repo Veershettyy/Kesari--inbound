@@ -3652,5 +3652,14 @@
     "FIT-INBOUND-03": "Bhubaneswar → Gopalpur → Rayagada → Jeypore",
     "FIT-INBOUND-02": "Nashik → Aurangabad",
     "FIT-INBOUND-01": "Delhi → Bandhavgarh-Nationalpark → Kanha-Nationalpark → Pench-Nationalpark → Tadoba-Andhari-Tigerreservat → Mumbai"
+  },
+  "tags": {
+    "weekendBreak": "Wochenendausflug",
+    "luxuryHolidays": "Luxusurlaub",
+    "family": "Familie",
+    "honeymoon": "Flitterwochen",
+    "adventure": "Abenteuer",
+    "wildlifeHolidays": "Wildtierreise",
+    "wellnessSpa": "Wellness Spa"
   }
 }

@@ -3652,5 +3652,14 @@
     "FIT-INBOUND-03": "布巴内斯瓦尔 → 戈帕尔布尔 → 赖格达 → 杰波尔",
     "FIT-INBOUND-02": "纳西克 → 奥兰加巴德",
     "FIT-INBOUND-01": "德里 → 班达迦 → 坎哈 → 彭奇 → 塔多巴 → 孟买"
+  },
+  "tags": {
+    "weekendBreak": "周末游",
+    "luxuryHolidays": "豪华度假",
+    "family": "家庭",
+    "honeymoon": "蜜月",
+    "adventure": "探险",
+    "wildlifeHolidays": "野生动物游",
+    "wellnessSpa": "水疗养生"
   }
 }

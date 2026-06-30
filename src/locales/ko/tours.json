@@ -3652,5 +3652,14 @@
     "FIT-INBOUND-03": "브바네슈와르 → 고팔푸르 → 라이가다 → 제이푸르",
     "FIT-INBOUND-02": "나시크 → 아우랑가바드",
     "FIT-INBOUND-01": "델리 → 반다브가르 → 칸하 → 펜치 → 타도바 → 뭄바이"
+  },
+  "tags": {
+    "weekendBreak": "주말 여행",
+    "luxuryHolidays": "럭셔리 휴가",
+    "family": "가족",
+    "honeymoon": "허니문",
+    "adventure": "어드벤처",
+    "wildlifeHolidays": "야생동물 사파리",
+    "wellnessSpa": "웰니스 스파"
   }
 }

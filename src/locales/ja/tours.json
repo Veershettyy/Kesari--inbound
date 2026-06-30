@@ -3652,5 +3652,14 @@
     "FIT-INBOUND-03": "ブバネーシュワル →ゴーパルプル →ラーガダ →ジェイポール",
     "FIT-INBOUND-02": "ナシック →アウランガーバード",
     "FIT-INBOUND-01": "デリー →バンダヴガル →カーンハ →ペンチ →タドバ →ムンバイ"
+  },
+  "tags": {
+    "weekendBreak": "週末旅行",
+    "luxuryHolidays": "ラグジュアリーホリデー",
+    "family": "ファミリー",
+    "honeymoon": "ハネムーン",
+    "adventure": "アドベンチャー",
+    "wildlifeHolidays": "野生動物サファリ",
+    "wellnessSpa": "スパ＆ウェルネス"
   }
 }
