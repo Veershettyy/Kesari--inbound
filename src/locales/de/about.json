@@ -1,0 +1,48 @@
+{
+  "hero": {
+    "tag": "Über uns",
+    "title": "Indiens vertrauenswürdiger eingehender Reisepartner",
+    "subtitle": "Seit über vier Jahrzehnten gestaltet KeSARi Inbound außergewöhnliche Reisen durch Indien für Reisende aus aller Welt."
+  },
+  "story": {
+    "tag": "Unsere Geschichte",
+    "title": "42 Jahre des Gestaltens von Indien-Reisen",
+    "p1": "Gegründet 1984, begann KeSARi mit einem einzigen Glauben: dass Indien eines der außergewöhnlichsten Reiseziele der Welt ist und jeder Reisende es in seiner besten Form erleben sollte. Was als kleine Reiseberatung in Mumbai begann, ist heute einer der angesehensten Inbound-Tourismus-Spezialisten Indiens.",
+    "p2": "Über vier Jahrzehnte haben wir Reisende aus mehr als 50 Ländern willkommen geheißen — von Solo-Abenteurern und Flitterwochenpaaren bis hin zu großen Firmengruppen und Schulexpeditionen. Jede Reise, die wir gestalten, ist tief persönlich, fußt auf lokalem Wissen und wird rund um das aufgebaut, was unsere Gäste wirklich erleben möchten.",
+    "p3": "Heute wird KeSARi Inbound von einem Team von über 700 Reiseexperten, lokalen Guides und vor Ort unterstützendem Personal unterstützt — allesamt engagiert für ein Ziel: Ihre Indien-Reise wirklich unvergesslich zu machen."
+  },
+  "mission": {
+    "tag": "Unser Auftrag",
+    "title": "Jenseits des Tourismus — Schaffung von Verbindungen",
+    "body": "Wir glauben, dass Reisen mehr ist als Sightseeing. Es geht darum, mit Menschen in Kontakt zu treten, Kulturen zu verstehen und verändert nach Hause zurückzukehren. Jede von uns gestaltete Reiseroute geht über die offensichtlichen Sehenswürdigkeiten hinaus, um die Seele Indiens zu offenbaren — seine Dörfer, seine Aromen, seine uralte Weisheit und sein lebendiges modernes Leben."
+  },
+  "pillars": [
+    {
+      "icon": "🧭",
+      "title": "Lokales Fachwissen",
+      "desc": "Unsere Guides und Teammitglieder sind tief in ihren Regionen verwurzelt und bieten Ihnen authentische Einblicke, die kein Reiseführer vermitteln kann."
+    },
+    {
+      "icon": "✏️",
+      "title": "Individuell gestaltete Reiserouten",
+      "desc": "Jede Reise wird um dich herum gestaltet — dein Tempo, deine Interessen, dein Budget. Keine zwei KeSARi-Reisen sind jemals gleich."
+    },
+    {
+      "icon": "🤝",
+      "title": "End-to-End-Service",
+      "desc": "Von dem Moment an, in dem Sie sich erkundigen, bis zu dem Moment, in dem Sie nach Hause zurückkehren, kümmert sich unser Team um jedes Detail, damit Sie sorglos reisen können."
+    },
+    {
+      "icon": "🕐",
+      "title": "24/7-Support",
+      "desc": "Unsere vor-Ort-Teams sind rund um die Uhr während Ihrer gesamten Reise verfügbar. Jede Frage, jede Stunde — wir sind für Sie da."
+    }
+  ],
+  "contact": {
+    "tag": "Finden Sie uns",
+    "title": "Besuchen Sie unser Büro",
+    "address": "3105, Kohinoor Square, 31. Stock,\nN.C. Kelkar Marg, Shivaji Park,\nMumbai – 400028, Indien",
+    "phone": "+91 22 6666 6666",
+    "email": "inbound@kesari.in"
+  }
+}

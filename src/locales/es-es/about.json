@@ -1,0 +1,48 @@
+{
+  "hero": {
+    "tag": "Sobre Nosotros",
+    "title": "India's socio de confianza en viajes entrantes",
+    "subtitle": "Durante más de cuatro décadas, KeSARi Inbound ha estado creando viajes extraordinarios a través de India para viajeros de todo el mundo."
+  },
+  "story": {
+    "tag": "Nuestra Historia",
+    "title": "42 años de forjar los viajes de la India",
+    "p1": "Fundada en 1984, KeSARi comenzó con una sola creencia: que la India es uno de los destinos más extraordinarios del mundo, y cada viajero merece experimentarla en su máxima expresión. Lo que comenzó como una pequeña consultoría de viajes en Mumbai se ha convertido en uno de los especialistas en turismo receptivo más respetados de la India.",
+    "p2": "Durante más de cuatro décadas, hemos dado la bienvenida a viajeros de más de 50 países —desde aventureros solitarios y recién casados hasta grandes grupos corporativos y expediciones escolares—. Cada viaje que creamos es profundamente personal, basado en el conocimiento local y construido en torno a lo que nuestros huéspedes realmente desean experimentar.",
+    "p3": "Hoy, KeSARi Inbound está respaldado por un equipo de más de 700 profesionales de viajes, guías locales y personal de apoyo en tierra, todos dedicados a un mismo objetivo: hacer que tu viaje por India sea verdaderamente inolvidable."
+  },
+  "mission": {
+    "tag": "Nuestra Misión",
+    "title": "Más allá del turismo — Creando conexiones",
+    "body": "Creemos que viajar es más que turismo. Se trata de conectarnos con las personas, comprender las culturas y volver a casa cambiados. Cada itinerario que diseñamos va más allá de los lugares más conocidos para revelar el alma de India: sus aldeas, sus sabores, su antigua sabiduría y su vibrante vida moderna."
+  },
+  "pillars": [
+    {
+      "icon": "🧭",
+      "title": "Conocimiento Local Experto",
+      "desc": "Nuestros guías y miembros del equipo están profundamente arraigados en sus regiones, brindándote conocimientos auténticos que ningún libro de viajes puede ofrecer."
+    },
+    {
+      "icon": "✏️",
+      "title": "Itinerarios a medida",
+      "desc": "Cada viaje está diseñado para ti — tu ritmo, tus intereses, tu presupuesto. Ningún otro recorrido de KeSARi es igual."
+    },
+    {
+      "icon": "🤝",
+      "title": "Servcio de extremo a extremo",
+      "desc": "Desde el momento en que te comunicas con nosotros hasta el momento en que regresas a casa, nuestro equipo se encarga de cada detalle para que puedas viajar sin preocupaciones."
+    },
+    {
+      "icon": "🕐",
+      "title": "Soporte 24/7",
+      "desc": "Nuestros equipos en tierra están disponibles las 24 horas durante todo su viaje. Cualquier pregunta, a cualquier hora, aquí estamos."
+    }
+  ],
+  "contact": {
+    "tag": "Encuéntranos",
+    "title": "Visite nuestra oficina",
+    "address": "3105, Kohinoor Square, Piso 31,\nN.C. Kelkar Marg, Shivaji Park,\nMumbai – 400028, India",
+    "phone": "+91 22 6666 6666",
+    "email": "inbound@kesari.in"
+  }
+}

@@ -1,0 +1,139 @@
+{
+  "tag": "Guides de voyage",
+  "title": "Inspiration & Guides de voyage",
+  "subtitle": "Expert insights pour vous aider à planifier le voyage parfait en Inde",
+  "readMore": "Lisez le guide",
+  "backToBlog": "Retour aux Guides",
+  "articles": [
+    {
+      "slug": "Meilleure période pour visiter l'Inde",
+      "title": "Meilleur moment pour visiter l'Inde — Guide mensuel",
+      "category": "Planification",
+      "readTime": "5 min de lecture",
+      "img": "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=800&h=500&auto=format&fit=crop&q=85",
+      "excerpt": "L'Inde est une destination accessible toute l'année, mais l'expérience varie considérablement selon la saison. Voici tout ce que vous devez savoir pour choisir le moment idéal pour votre voyage.",
+      "sections": [
+        {
+          "heading": "D'octobre à mars — La Saison dorée",
+          "body": "C'est la période la plus populaire pour visiter l'Inde, et pour de bonnes raisons. Le temps dans la plupart du pays est frais, sec et incroyablement agréable. Les déserts du Rajasthan sont confortables pour des safaris à dos de chameau, les backwaters du Kerala scintillent sous une lumière dorée, et le Triangle d'Or — Delhi, Agra, Jaipur — est à son apogée. Décembre et janvier sont les mois de pointe, alors réservez tôt."
+        },
+        {
+          "heading": "D'avril à juin — Chaleur estivale et stations de montagne",
+          "body": "Les plaines de l'Inde chauffent considérablement, mais c'est le moment idéal pour se rendre dans l'Himalaya. Ladakh ouvre ses routes en mai, offrant des paysages spectaculaires en haute altitude. L'Himachal Pradesh et l'Uttarakhand sont luxuriants et frais. La mousson du Kerala arrive en juin, transformant l'État en un tapis de vert profond — idéal pour des retraites d'Ayurveda."
+        },
+        {
+          "heading": "Juillet à septembre — Magie de la mousson",
+          "body": "La mousson de l'Inde est un spectacle en soi. Les cascades déferlent à travers Goa, Meghalaya et les Ghâts occidentaux. Les parcs naturels rouvrent avec une végétation fraîche et des nouveau-nés animaux. Les foules s'amenuisent considérablement et les prix baissent — ce qui en fait un excellent moment pour le voyageur aguerri qui n'a pas peur de la pluie. Le Rajasthan et le Ladakh restent en grande partie secs et parfaits."
+        },
+        {
+          "heading": "Notre recommandation",
+          "body": "Pour les visiteurs pour la première fois, octobre à février offre la meilleure expérience globale. Pour les voyageurs en quête d’aventure, mai à septembre ouvre des routes extraordinaires. Pour ceux qui recherchent l’Inde spirituelle — Varanasi est magique en toute saison, mais le Ganga Aarti à l’aube en hiver est vraiment inoubliable."
+        }
+      ]
+    },
+    {
+      "slug": "Voici la traduction en français :\n\nRajasthan - 7 jours",
+      "title": "Rajasthan en 7 jours — Forts, Palais & Coucher de soleil dans le désert",
+      "category": "Itinéraire",
+      "readTime": "6 min de lecture",
+      "img": "https://images.unsplash.com/photo-1477587458883-47145ed94245?w=800&h=500&auto=format&fit=crop&q=85",
+      "excerpt": "Le Rajasthan est l'Inde à son plus dramatique — une terre de forts ambrés, de palais royaux et du vaste désert de Thar. Voici un itinéraire parfait de 7 jours pour les visiteurs pour la première fois.",
+      "sections": [
+        {
+          "heading": "Jours 1–2 : Jaipur — La Ville Rose",
+          "body": "Commencez à Jaipur, capitale du Rajasthan et l'une des villes les plus visuellement frappantes de l'Inde. Visitez le Fort d'Amber à l'aube avant l'arrivée des foules — la réflexion du fort dans le lac Maota à l'aube est extraordinaire. Passez l'après-midi au City Palace et au célèbre Hawa Mahal. Les bazars de Jaipur, remplis de textiles imprimés à la planche et de poteries bleues, méritent une soirée entière."
+        },
+        {
+          "heading": "Jours 3–4 : Jodhpur & Ranakpur — La Ville Bleue",
+          "body": "Conduisez à Jodhpur, où la vieille ville est peinte d'un bleu indigo vif — un spectacle visible sur des kilomètres à travers le désert. Le fort Mehrangarh domine le tout, l'une des forteresses les plus imposantes de l'Inde. En chemin, faites une halte aux stupéfiants temples jaïns de Ranakpur, sculptés entièrement dans du marbre blanc avec plus de 1 400 piliers, chacun unique."
+        },
+        {
+          "heading": "Jours 5–6 : Jaisalmer — La Ville Dorée",
+          "body": "Jaisalmer s'élève du désert du Thar comme une mirage — une cité fortifiée en grès doré qui a peu changé depuis des siècles. Explorez les ruelles étroites de la forteresse vivante, puis dirigez-vous vers les dunes pour un safari en chameau au coucher du soleil et un campement d'une nuit sous les étoiles. Le silence du désert la nuit est quelque chose que vous emporterez à jamais."
+        },
+        {
+          "heading": "Jour 7 : Udaipur — La Cité des Lacs",
+          "body": "Terminez votre voyage à Udaipur, souvent décrite comme la ville la plus romantique de l'Inde. Le City Palace dominant le lac Pichola est à couper le souffle à toute heure. Faites une promenade en bateau au coucher du soleil, dînez dans un restaurant sur le toit avec vue sur l'eau, et laissez la magie du Rajasthan s'installer pleinement avant votre départ."
+        }
+      ]
+    },
+    {
+      "slug": "Guide complet du Kerala",
+      "title": "Kerala — Le Pays de Dieu : Guide de voyage complet",
+      "category": "Destination",
+      "readTime": "7 min de lecture",
+      "img": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=800&h=500&auto=format&fit=crop&q=85",
+      "excerpt": "Kerala est le coin le plus serein de l'Inde — un État de lagunes, de plantations d'épices, de retraites Ayurveda et de festivals de temples anciens. Voici votre guide complet.",
+      "sections": [
+        {
+          "heading": "Les Backwaters — l'expérience la plus emblématique du Kerala",
+          "body": "Les eaux calmes d'Alleppey (Alappuzha) forment un réseau de lacs, de canaux et de lagunes s'étendant le long de la côte du Kerala. La meilleure façon de les découvrir est à bord d'un traditionnel kettuvallam — une barge à riz transformée en houseboat avec chambres, cuisine et pont ouvert. Glissez à travers des villages où la vie s'écoule au rythme de l'eau, passant devant des pêcheurs, des cocoteraies et des temples à moitié cachés par des étangs de lotus."
+        },
+        {
+          "heading": "Munnar — Jardins de thé dans les nuages",
+          "body": "Montez dans les Ghâts occidentaux jusqu'à Munnar, où les collines ondulantes sont recouvertes de plantations de thé entretenues à plus de 1 600 mètres d'altitude. L'air est frais et parfumé, les matins brumeux, et les couchers de soleil sur les vallées verdoyantes profondément apaisants. Visitez une usine de thé en activité, faites une randonnée jusqu'au parc national d'Eravikulam pour voir le Nilgiri Tahr en danger, et respirez simplement."
+        },
+        {
+          "heading": "Ayurveda — Guérison dans son berceau",
+          "body": "Le Kerala est le berceau de l'Ayurveda — la science de la vie vieille de 5 000 ans. Les traitements y sont bien plus authentiques et rigoureux sur le plan médical qu'ailleurs en Inde. Un programme de détox Panchakarma d'au moins 7 jours dans un centre certifié peut traiter tout, du stress chronique aux douleurs articulaires. Pour une première expérience, un forfait de 3 jours à Mararikulam ou Kovalam est une parfaite introduction."
+        },
+        {
+          "heading": "Plages, Épices & Faune sauvage",
+          "body": "La côte du Kerala offre des stations balnéaires plus tranquilles et plus cultivées que Goa — les cafés en haut des falaises de Varkala, la plage du phare de Kovalam, et les rivages intacts de Bekal dans le nord. À l'intérieur des terres, les plantations d'épices de Wayanad produisent du poivre, de la cardamome et du café au milieu d'une jungle dense. La réserve de tigres de Periyar propose des safaris en bateau à travers une forêt inondée où les éléphants viennent boire à l'aube."
+        }
+      ]
+    },
+    {
+      "slug": "Guide spirituel de l'Inde",
+      "title": "Spiritual India — Varanasi, Rishikesh & les Ghats sacrés",
+      "category": "Culture",
+      "readTime": "6 min de lecture",
+      "img": "https://kesariselect.s3.ap-south-1.amazonaws.com/dsezhkUIoFmlf2Q3lq8Okv8PyOM9tOQADYIQqqwF.jpg",
+      "excerpt": "Le cœur spirituel de l'Inde est incomparable à tout autre endroit sur Terre. Des ghats enflammés de Varanasi aux ashrams de Rishikesh, c'est un voyage au cœur de l'âme d'une civilisation ancienne.",
+      "sections": [
+        {
+          "heading": "Varanasi — La Ville Éternelle",
+          "body": "Varanasi est l'une des plus anciennes villes continuellement habitées sur Terre et la ville la plus sacrée de l'hindouisme. Levez-vous avant l'aube et prenez un bateau en bois sur le Gange pour voir les ghats émerger lentement de la brume — des pèlerins se baignant, des prêtres accomplissant des rituels, de la fumée s'élevant des bûchers crématoires. C'est brut, ancien et profondément émouvant. Le Ganga Aarti du soir, une cérémonie de feu et de dévotion exécutée sur le ghat principal à la tombée de la nuit, est l'un des spectacles les plus extraordinaires d'Asie."
+        },
+        {
+          "heading": "Rishikesh — Où le Yoga Rencontre l'Himalaya",
+          "body": "À l'endroit où le Gange émerge de l'Himalaya, Rishikesh est la capitale mondiale du yoga. Les Beatles sont venus ici en 1968 pour étudier avec Maharishi Mahesh Yogi, et la ville attire depuis lors des chercheurs spirituels. Passez vos matins en méditation ou en cours de pranayama, vos après-midis au bord de la rivière ou en rafting sur les eaux vives, et vos soirées à l'ashram pour le satsang. Le pont Ram Jhula, illuminé la nuit par les sons des cloches des temples, est magique."
+        },
+        {
+          "heading": "Bodh Gaya & le Circuit Bouddhiste",
+          "body": "Bodh Gaya est l'endroit où Siddhartha Gautama a atteint l'éveil sous l'arbre de la Bodhi — le site le plus sacré du bouddhisme. Le complexe du Mahabodhi est un site du patrimoine mondial de l'UNESCO et un lieu de paix remarquable. Combinez-le avec Sarnath (où le Bouddha a donné son premier sermon) et Kushinagar (où il est décédé) pour compléter le circuit de pèlerinage bouddhiste. Des moines du Tibet, de la Thaïlande, du Japon et du Sri Lanka s'y rassemblent ici dans une dévotion silencieuse."
+        },
+        {
+          "heading": "Planifier Votre Voyage Spirituel",
+          "body": "Le meilleur moment pour l'Inde spirituelle est d'octobre à mars, lorsque le temps est frais et que les principaux festivals — Diwali, Kumbh Mela et Holi — ont lieu. Le Kumbh Mela, organisé tous les 12 ans, est la plus grande concentration humaine sur terre. KeSARi Inbound propose des itinéraires spirituels spécialement conçus, combinant ces destinations avec une immersion culturelle authentique."
+        }
+      ]
+    },
+    {
+      "slug": "safari dans la nature en Inde",
+      "title": "Inde Wildlife Safari — Le Guide Complet des Réserves de Tigres",
+      "category": "Aventure",
+      "readTime": "6 min de lecture",
+      "img": "https://kesariselect.s3.ap-south-1.amazonaws.com/sIPGp1iNY2ej8ZuA0wHyFJYZ8XgTzEV6rlfEhjoQ.jpg",
+      "excerpt": "L'Inde abrite la plus grande population de tigres sauvages au monde. Avec plus de 50 réserves de tigres réparties dans le pays, un safari dans la nature ici est une expérience de classe mondiale.",
+      "sections": [
+        {
+          "heading": "Ranthambore — Les Tigres Royaux du Rajasthan",
+          "body": "Ranthambore dans le Rajasthan est la plus célèbre des réserves de tigres de l'Inde — et à juste titre. Les tigres ici se sont habitués aux véhicules de safari et sont fréquemment aperçus en plein jour, souvent paressant à côté des ruines anciennes du fort de Ranthambore du Xe siècle. La combinaison de la faune sauvage et de l'architecture moghole en ruine est particulièrement spectaculaire. Octobre à avril est la meilleure période pour visiter, avec février et mars offrant les taux les plus élevés d'observation de tigres."
+        },
+        {
+          "heading": "Bandhavgarh — la plus haute densité de tigres en Inde",
+          "body": "Bandhavgarh dans le Madhya Pradesh compte la densité la plus élevée de tigres du Bengale de toutes les réserves en Inde. Le parc est compact, ce qui rend les safaris efficaces et les observations fréquentes. En plus des tigers, Bandhavgarh abrite des léopards, des ours paresseux, des gaurs (bisons indiens) et plus de 250 espèces d'oiseaux. Résidez dans l'un des lodges forestiers de luxe en bordure du parc pour une expérience immersive du lever au coucher du soleil."
+        },
+        {
+          "heading": "Kaziranga — Rhinocéros et éléphants d'Assam",
+          "body": "Kaziranga au Assam est un site du patrimoine mondial de l'UNESCO et abrite les deux tiers de la population mondiale de rhinocéros unicornes. Les safaris à dos d'éléphant à l'aube à travers les hautes prairies — avec des rhinocéros, des buffles sauvages et le tigre occasionnel émergeant à travers la brume — comptent parmi les expériences de faune les plus extraordinaires d'Asie. Le parc est à son apogée de novembre à avril avant l'arrivée des inondations de la mousson."
+        },
+        {
+          "heading": "Planifier votre safari dans la nature à KeSARi, Inde",
+          "body": "La plupart des réserves de tigres sont ouvertes d'octobre à juin, avec les meilleures observations de mars à mai, lorsque les animaux se rassemblent autour des points d'eau en raison de la chaleur. Les véhicules de safari sont strictement réglementés, avec un nombre limité de jeeps par zone et par jour — une réservation anticipée est indispensable. Les itinéraires de safari de KeSARi Inbound combinent deux ou trois réserves pour une variété maximale, avec des séjours dans des lodges confortables et des guides naturalistes experts."
+        }
+      ]
+    }
+  ]
+}
