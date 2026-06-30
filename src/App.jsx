@@ -16,6 +16,7 @@ import Stats from './components/Stats';
 import SeasonalPlanner from './components/SeasonalPlanner';
 import AdventureThemes from './components/AdventureThemes';
 import WhyIndia from './components/WhyIndia';
+import WhyBookUs from './components/WhyBookUs';
 import Destinations from './components/Destinations';
 import TourPackages from './components/TourPackages';
 import EnquiryForm from './components/EnquiryForm';
@@ -74,6 +75,20 @@ function StickyEnquireBar() {
   );
 }
 
+function ScrollProgressBar() {
+  const [width, setWidth] = useState(0);
+  useEffect(() => {
+    const onScroll = () => {
+      const el = document.documentElement;
+      const pct = (el.scrollTop / (el.scrollHeight - el.clientHeight)) * 100;
+      setWidth(Math.min(pct, 100));
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
+  return <div className="scroll-progress" style={{ width: `${width}%` }} />;
+}
+
 function ScrollToTop() {
   const [show, setShow] = useState(false);
   useEffect(() => {
@@ -116,12 +131,14 @@ function HomePage() {
       <Stats />
       <SeasonalPlanner onEnquire={name => setModalPkg(name)} onViewTheme={handleThemeFilter} />
       <AdventureThemes onViewTheme={handleThemeFilter} />
+      <WhyBookUs />
       <WhyIndia onViewTheme={handleThemeFilter} />
       <Destinations onSearch={handleNavSearch} />
       <TourPackages ref={pkgRef} onEnquire={name => setModalPkg(name)} />
       <Reviews />
       <EnquiryForm />
       <Footer onSearch={handleNavSearch} onViewTheme={handleThemeFilter} />
+      <ScrollProgressBar />
       <StickyEnquireBar />
       <WhatsAppBtn />
       <ScrollToTop />

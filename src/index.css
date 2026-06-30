@@ -10,6 +10,22 @@ body{font-family:'Montserrat',sans-serif;background:var(--white);color:#222;over
 
 #root{width:100%;max-width:100%;margin:0;text-align:left;border:none;min-height:100svh;display:block}
 
+/* SCROLL PROGRESS BAR */
+.scroll-progress{position:fixed;top:0;left:0;height:3px;background:var(--red);z-index:99999;transition:width .1s linear;box-shadow:0 0 8px rgba(228,30,37,.6)}
+
+/* WHY BOOK WITH US */
+.wbu-section{padding:72px 0;background:var(--navy);position:relative;overflow:hidden}
+.wbu-section::before{content:'';position:absolute;inset:0;background:url('https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/World_map_-_low_resolution.svg/1200px-World_map_-_low_resolution.svg.png') center/contain no-repeat;opacity:.04}
+.wbu-section .tag{color:var(--yellow)}
+.wbu-section .h2{color:#fff}
+.wbu-section .sub{color:rgba(255,255,255,.7)}
+.wbu-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:40px}
+.wbu-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:32px 24px;text-align:center;transition:transform .3s,background .3s,box-shadow .3s}
+.wbu-card:hover{transform:translateY(-6px);background:rgba(255,255,255,.1);box-shadow:0 16px 40px rgba(0,0,0,.3)}
+.wbu-icon{font-size:40px;margin-bottom:16px;line-height:1}
+.wbu-title{font-size:16px;font-weight:800;color:#fff;margin-bottom:12px;line-height:1.3}
+.wbu-desc{font-size:13px;color:rgba(255,255,255,.7);line-height:1.75}
+
 /* SCROLL TO TOP */
 .scroll-top{position:fixed;bottom:28px;right:28px;width:46px;height:46px;background:var(--red);color:#fff;border:none;border-radius:50%;font-size:20px;cursor:pointer;z-index:9000;box-shadow:0 4px 16px rgba(228,30,37,.4);transition:transform .2s,opacity .2s;display:flex;align-items:center;justify-content:center}
 .scroll-top:hover{transform:translateY(-4px);background:#c41920}
@@ -334,6 +350,8 @@ footer{background:linear-gradient(135deg,#131928 0%,#1a2030 100%);color:rgba(255
 
 /* RESPONSIVE — TABLET */
 @media(max-width:900px){
+  .wbu-grid{grid-template-columns:repeat(2,1fr)}
+
   .header-top{padding:8px 20px;flex-wrap:wrap;gap:8px}
   .foreign-badge{display:none}
   .header-right{gap:10px}
@@ -364,6 +382,11 @@ footer{background:linear-gradient(135deg,#131928 0%,#1a2030 100%);color:rgba(255
 
 /* RESPONSIVE — MOBILE */
 @media(max-width:600px){
+  .wbu-grid{grid-template-columns:1fr 1fr;gap:14px}
+  .wbu-card{padding:20px 14px}
+  .wbu-icon{font-size:28px}
+  .wbu-title{font-size:13px}
+  .wbu-desc{font-size:11px}
   .sticky-enquire{display:flex}
   .wa-btn{bottom:74px}
   /* NAVBAR */
