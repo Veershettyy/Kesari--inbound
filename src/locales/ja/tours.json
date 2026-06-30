@@ -3661,5 +3661,17 @@
     "adventure": "アドベンチャー",
     "wildlifeHolidays": "野生動物サファリ",
     "wellnessSpa": "スパ＆ウェルネス"
+  },
+  "themes": {
+    "first-timers": "初心者向け",
+    "historic": "歴史",
+    "family": "ファミリー",
+    "nature": "自然",
+    "luxury-train": "ラグジュアリートレイン",
+    "ayurveda-and-wellness": "アーユルヴェーダ＆ウェルネス",
+    "spiritual": "スピリチュアル",
+    "adventure": "アドベンチャー",
+    "luxury": "ラグジュアリー",
+    "wildlife": "野生動物"
   }
 }

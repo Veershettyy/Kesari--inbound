@@ -3661,5 +3661,17 @@
     "adventure": "साहसिक",
     "wildlifeHolidays": "वन्यजीव यात्रा",
     "wellnessSpa": "वेलनेस स्पा"
+  },
+  "themes": {
+    "first-timers": "पहली बार यात्री",
+    "historic": "ऐतिहासिक",
+    "family": "परिवार",
+    "nature": "प्रकृति",
+    "luxury-train": "लग्ज़री ट्रेन",
+    "ayurveda-and-wellness": "आयुर्वेद और वेलनेस",
+    "spiritual": "आध्यात्मिक",
+    "adventure": "साहसिक",
+    "luxury": "लग्ज़री",
+    "wildlife": "वन्यजीव"
   }
 }

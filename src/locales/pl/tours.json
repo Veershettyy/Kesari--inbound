@@ -3661,5 +3661,17 @@
     "adventure": "Przygoda",
     "wildlifeHolidays": "Safari",
     "wellnessSpa": "Spa i Wellness"
+  },
+  "themes": {
+    "first-timers": "Pierwsza Podróż",
+    "historic": "Historyczne",
+    "family": "Rodzina",
+    "nature": "Natura",
+    "luxury-train": "Luksusowy Pociąg",
+    "ayurveda-and-wellness": "Ajurweda i Wellness",
+    "spiritual": "Duchowe",
+    "adventure": "Przygoda",
+    "luxury": "Luksus",
+    "wildlife": "Dzika Przyroda"
   }
 }

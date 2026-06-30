@@ -3661,5 +3661,17 @@
     "adventure": "സാഹസം",
     "wildlifeHolidays": "വന്യജീവി സഫാരി",
     "wellnessSpa": "വെൽനസ് സ്പാ"
+  },
+  "themes": {
+    "first-timers": "ആദ്യ സഞ്ചാരി",
+    "historic": "ചരിത്രപരം",
+    "family": "കുടുംബം",
+    "nature": "പ്രകൃതി",
+    "luxury-train": "ലക്ഷ്വറി ട്രെയിൻ",
+    "ayurveda-and-wellness": "ആയുർവേദം & വെൽനസ്",
+    "spiritual": "ആത്മീയം",
+    "adventure": "സാഹസം",
+    "luxury": "ആഡംബരം",
+    "wildlife": "വന്യജീവി"
   }
 }

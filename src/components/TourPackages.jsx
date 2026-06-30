@@ -106,11 +106,11 @@ const TourPackages = forwardRef(function TourPackages({ onEnquire }, ref) {
                   loading="lazy"
                   onError={e => { e.target.src = 'https://tap.kesariselect.com/public/cms/hiddengems/1729764681.webp'; }}
                 />
-                <div className="pkg-badge">{t(`tours:themes.${p.theme}`, { defaultValue: p.theme })}</div>
+                <div className="pkg-badge">{t(`tours:themes.${themeKey(p.theme)}`, { defaultValue: p.theme })}</div>
                 <div className="pkg-days">{p.days}D / {p.nights}N</div>
               </div>
               <div className="pkg-body">
-                <div className="pkg-theme">{t(`tours:themes.${p.theme}`, { defaultValue: p.theme })}</div>
+                <div className="pkg-theme">{t(`tours:themes.${themeKey(p.theme)}`, { defaultValue: p.theme })}</div>
                 <div className="pkg-title">{t(`tours:pkgNames.${p.code}`, { defaultValue: p.name })}</div>
                 <div className="pkg-places">📍 {t(`tours:pkgPlaces.${p.code}`, { defaultValue: p.places })}</div>
                 <div className="pkg-tags">

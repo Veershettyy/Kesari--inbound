@@ -3593,5 +3593,17 @@
     "adventure": "Adventure",
     "wildlifeHolidays": "Wildlife Holidays",
     "wellnessSpa": "Wellness Spa"
+  },
+  "themes": {
+    "first-timers": "First Timers",
+    "historic": "Historic",
+    "family": "Family",
+    "nature": "Nature",
+    "luxury-train": "Luxury Train",
+    "ayurveda-and-wellness": "Ayurveda & Wellness",
+    "spiritual": "Spiritual",
+    "adventure": "Adventure",
+    "luxury": "Luxury",
+    "wildlife": "Wildlife"
   }
 }

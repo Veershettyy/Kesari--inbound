@@ -3661,5 +3661,17 @@
     "adventure": "어드벤처",
     "wildlifeHolidays": "야생동물 사파리",
     "wellnessSpa": "웰니스 스파"
+  },
+  "themes": {
+    "first-timers": "첫 방문자",
+    "historic": "역사",
+    "family": "가족",
+    "nature": "자연",
+    "luxury-train": "럭셔리 기차",
+    "ayurveda-and-wellness": "아유르베다 & 웰니스",
+    "spiritual": "영성",
+    "adventure": "어드벤처",
+    "luxury": "럭셔리",
+    "wildlife": "야생동물"
   }
 }

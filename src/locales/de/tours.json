@@ -3661,5 +3661,17 @@
     "adventure": "Abenteuer",
     "wildlifeHolidays": "Wildtierreise",
     "wellnessSpa": "Wellness Spa"
+  },
+  "themes": {
+    "first-timers": "Erstbesucher",
+    "historic": "Historisch",
+    "family": "Familie",
+    "nature": "Natur",
+    "luxury-train": "Luxuszug",
+    "ayurveda-and-wellness": "Ayurveda & Wellness",
+    "spiritual": "Spirituell",
+    "adventure": "Abenteuer",
+    "luxury": "Luxus",
+    "wildlife": "Wildtiere"
   }
 }

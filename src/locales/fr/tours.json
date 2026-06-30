@@ -3661,5 +3661,17 @@
     "adventure": "Aventure",
     "wildlifeHolidays": "Safari Faune",
     "wellnessSpa": "Spa Bien-être"
+  },
+  "themes": {
+    "first-timers": "Premières Visites",
+    "historic": "Historique",
+    "family": "Famille",
+    "nature": "Nature",
+    "luxury-train": "Train de Luxe",
+    "ayurveda-and-wellness": "Ayurveda & Bien-être",
+    "spiritual": "Spirituel",
+    "adventure": "Aventure",
+    "luxury": "Luxe",
+    "wildlife": "Faune Sauvage"
   }
 }

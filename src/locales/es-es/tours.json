@@ -25,15 +25,16 @@
     }
   },
   "themes": {
-    "Nature": "Naturaleza",
-    "Historic": "Histórico",
-    "Luxury Train": "Tren de Lujo",
-    "Ayurveda and Wellness": "Ayurveda y Bienestar",
-    "First Timers": "Principiantes",
-    "Spiritual": "Espiritual",
-    "Adventure": "Aventura",
-    "Luxury": "Lujo",
-    "Wellness Spa": "Spa y Bienestar"
+    "first-timers": "Principiantes",
+    "historic": "Histórico",
+    "family": "Familia",
+    "nature": "Naturaleza",
+    "luxury-train": "Tren de Lujo",
+    "ayurveda-and-wellness": "Ayurveda y Bienestar",
+    "spiritual": "Espiritual",
+    "adventure": "Aventura",
+    "luxury": "Lujo",
+    "wildlife": "Vida Silvestre"
   },
   "pkgNames": {
     "FIT-INBOUND-01": "Vida salvaje de India",

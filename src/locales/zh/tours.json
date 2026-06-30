@@ -3661,5 +3661,17 @@
     "adventure": "探险",
     "wildlifeHolidays": "野生动物游",
     "wellnessSpa": "水疗养生"
+  },
+  "themes": {
+    "first-timers": "首次旅行者",
+    "historic": "历史",
+    "family": "家庭",
+    "nature": "自然",
+    "luxury-train": "豪华列车",
+    "ayurveda-and-wellness": "阿育吠陀养生",
+    "spiritual": "精神文化",
+    "adventure": "探险",
+    "luxury": "奢华",
+    "wildlife": "野生动物"
   }
 }

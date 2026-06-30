@@ -3661,5 +3661,17 @@
     "adventure": "مغامرة",
     "wildlifeHolidays": "سفاري",
     "wellnessSpa": "سبا وعافية"
+  },
+  "themes": {
+    "first-timers": "أول مرة",
+    "historic": "تاريخي",
+    "family": "عائلة",
+    "nature": "طبيعة",
+    "luxury-train": "قطار فاخر",
+    "ayurveda-and-wellness": "أيورفيدا والعافية",
+    "spiritual": "روحاني",
+    "adventure": "مغامرة",
+    "luxury": "فاخر",
+    "wildlife": "حياة برية"
   }
 }
