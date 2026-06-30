@@ -63,7 +63,7 @@ nav{background:var(--navy)}
 
 /* HERO */
 .hero{position:relative;height:580px;min-height:480px;overflow:hidden;background:#000}
-.slide{position:absolute;inset:0;opacity:0;transition:opacity 1s ease;background-size:cover;background-position:center;pointer-events:none;display:flex;align-items:flex-end}
+.slide{position:absolute;inset:0;opacity:0;transition:opacity 1s ease;background-size:cover;background-position:center top;pointer-events:none;display:flex;align-items:flex-end}
 .slide.active{opacity:1;pointer-events:auto}
 .slide::after{content:'';position:absolute;inset:0;background:linear-gradient(to right,rgba(0,0,0,.75) 0%,rgba(0,0,0,.3) 60%,transparent 100%)}
 .slide-content{position:relative;z-index:2;color:#fff;padding:0 7% 64px 7%;max-width:660px}
@@ -359,7 +359,7 @@ footer{background:linear-gradient(135deg,#131928 0%,#1a2030 100%);color:rgba(255
   .mega{display:none !important}
 
   /* HERO */
-  .hero{height:420px;min-height:360px}
+  .hero{height:480px;min-height:420px}
   .slide-content{padding:0 16px 36px 16px}
   .slide-tag{font-size:9px;padding:5px 10px;margin-bottom:10px;letter-spacing:1.5px}
   .slide-title{font-size:22px;line-height:1.2;margin-bottom:10px}
