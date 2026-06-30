@@ -44,17 +44,17 @@
     "pkgs": {
       "Jan": [
         {
-          "title": "Rajasthan Royal Tour",
+          "title": "Królewska Wycieczka po Radżastanie",
           "info": "Szczytowa zima — idealna na forty i pałace",
           "theme": ""
         },
         {
-          "title": "Kerala Backwaters",
+          "title": "Wody Śródlądowe Kerali",
           "info": "Przyjemna pogoda w Bożym Kraju",
           "theme": ""
         },
         {
-          "title": "Goa Beach Holiday",
+          "title": "Wakacje na Plaży w Goa",
           "info": "Najlepsza pora na plaże i nocne życie",
           "theme": ""
         },
@@ -71,7 +71,7 @@
           "theme": ""
         },
         {
-          "title": "Rajasthan Desert Festival",
+          "title": "Festiwal Pustynny Radżastanu",
           "info": "Jaisalmer Desert Festival w pełni",
           "theme": ""
         },
@@ -103,7 +103,7 @@
           "theme": ""
         },
         {
-          "title": "Pondicherry Coastal Charm",
+          "title": "Urok Nadmorski Pondicherry",
           "info": "Urokliwa francuska dzielnica w marcu",
           "theme": ""
         }
@@ -291,7 +291,7 @@
           "theme": ""
         },
         {
-          "title": "Kerala z CGH Earth",
+          "title": "Kerala z Hotelami Luksusowymi",
           "info": "Doskonała zima w Bożym Kraju",
           "theme": ""
         },
