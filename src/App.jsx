@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react';
+import { useRef, useState, useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
 
@@ -17,6 +17,21 @@ import EnquiryForm from './components/EnquiryForm';
 import Footer from './components/Footer';
 import BookingModal from './components/BookingModal';
 import PackageDetail from './pages/PackageDetail';
+
+function ScrollToTop() {
+  const [show, setShow] = useState(false);
+  useEffect(() => {
+    const onScroll = () => setShow(window.scrollY > 400);
+    window.addEventListener('scroll', onScroll);
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
+  if (!show) return null;
+  return (
+    <button className="scroll-top" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} aria-label="Back to top">
+      ↑
+    </button>
+  );
+}
 
 function HomePage() {
   const [modalPkg, setModalPkg] = useState(null);
@@ -45,6 +60,7 @@ function HomePage() {
       <Reviews />
       <EnquiryForm />
       <Footer />
+      <ScrollToTop />
       {modalPkg && <BookingModal pkgName={modalPkg} onClose={() => setModalPkg(null)} />}
     </>
   );
