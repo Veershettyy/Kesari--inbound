@@ -20,6 +20,19 @@ body{font-family:'Montserrat',sans-serif;background:var(--white);color:#222;over
 .wa-btn:hover{transform:translateY(-3px) scale(1.04);box-shadow:0 10px 32px rgba(37,211,102,.55);animation:none}
 .wa-label{font-size:13px;font-weight:700;font-family:inherit;white-space:nowrap}
 
+/* LIGHTBOX */
+@keyframes lbIn{from{opacity:0;transform:scale(.94)}to{opacity:1;transform:scale(1)}}
+.lb-overlay{position:fixed;inset:0;z-index:99999;background:rgba(0,0,0,.92);display:flex;align-items:center;justify-content:center;gap:16px;padding:20px}
+.lb-img-wrap{animation:lbIn .25s ease;max-width:85vw;max-height:88vh;display:flex;flex-direction:column;align-items:center;gap:12px}
+.lb-img{max-width:100%;max-height:80vh;object-fit:contain;border-radius:10px;box-shadow:0 24px 64px rgba(0,0,0,.6)}
+.lb-caption{color:rgba(255,255,255,.85);font-size:14px;font-weight:600;letter-spacing:.3px;text-align:center}
+.lb-close{position:absolute;top:20px;right:24px;background:rgba(255,255,255,.12);border:none;color:#fff;font-size:20px;width:42px;height:42px;border-radius:50%;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background .2s}
+.lb-close:hover{background:var(--red)}
+.lb-arrow{background:rgba(255,255,255,.12);border:2px solid rgba(255,255,255,.3);color:#fff;font-size:22px;width:48px;height:48px;border-radius:50%;cursor:pointer;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:all .2s}
+.lb-arrow:hover{background:var(--red);border-color:var(--red)}
+.pkg-zoom{position:absolute;top:10px;right:10px;background:rgba(0,0,0,.45);color:#fff;font-size:13px;width:30px;height:30px;border-radius:50%;display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity .2s;pointer-events:none}
+.pkg-img:hover .pkg-zoom{opacity:1}
+
 /* STICKY MOBILE ENQUIRE BAR */
 .sticky-enquire{display:none;position:fixed;bottom:0;left:0;right:0;z-index:8999;background:var(--navy);padding:10px 16px;align-items:center;justify-content:space-between;gap:10px;box-shadow:0 -4px 20px rgba(0,0,0,.2)}
 .sticky-call-btn{flex:1;text-align:center;background:rgba(255,255,255,.12);color:#fff;text-decoration:none;padding:11px 10px;border-radius:6px;font-size:13px;font-weight:700;border:1px solid rgba(255,255,255,.25);white-space:nowrap}
