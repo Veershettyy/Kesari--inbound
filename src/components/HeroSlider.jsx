@@ -2,7 +2,7 @@ import { useState, useEffect, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
 
 const SLIDES = [
-  { img: 'https://tap.kesariselect.com/public/cms/bannerslider/1729859350.png', key: 'slide1', btn: 'exploreWithUs', pos: 'center top' },
+  { img: 'https://tap.kesariselect.com/public/cms/bannerslider/1729859350.png', key: 'slide1', btn: 'exploreWithUs', pos: 'center 40%' },
   { img: 'https://tap.kesariselect.com/public/cms/bannerslider/1729859361.png', key: 'slide2', btn: 'bookTheTrip',   pos: 'center center' },
   { img: 'https://tap.kesariselect.com/public/cms/bannerslider/1729859371.png', key: 'slide3', btn: 'planYourTrip',  pos: 'center center' },
 ];
