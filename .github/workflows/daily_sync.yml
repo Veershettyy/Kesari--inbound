@@ -49,6 +49,7 @@ jobs:
           git config user.name  "KESARi Sync Bot"
           git config user.email "bot@kesariinbound.com"
           git commit -m "Auto-sync: update packages from kesariselect.com [$(date +'%Y-%m-%d')]"
+          git pull --rebase origin main
           git push
 
       - name: No changes
