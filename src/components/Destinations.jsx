@@ -38,8 +38,8 @@ export default function Destinations({ onSearch }) {
         <h2 className="h2">{t('destinations.title')}</h2>
         <p className="sub">{t('destinations.subtitle')}</p>
         <div className="dest-grid">
-          {DESTS.map(d => (
-            <a key={d.key} className="dest-card" href="#packages" onClick={e => handleClick(e, d.search)}>
+          {DESTS.map((d, i) => (
+            <a key={d.key} className="dest-card fade-up" style={{ transitionDelay: `${i * 0.07}s` }} href="#packages" onClick={e => handleClick(e, d.search)}>
               <img
                 src={d.img}
                 alt={t(`destinations.names.${d.key}`)}

@@ -14,7 +14,7 @@ export default function Reviews() {
         <p className="sub">{t('reviews.subtitle')}</p>
         <div className="rev-grid">
           {cards.map((c, i) => (
-            <div key={i} className="rev-card">
+            <div key={i} className="rev-card fade-up" style={{ transitionDelay: `${i * 0.09}s` }}>
               <div className="stars">{STARS[i] || '★★★★★'}</div>
               <div className="rev-title">{c.title}</div>
               <p className="rev-text">{c.text}</p>

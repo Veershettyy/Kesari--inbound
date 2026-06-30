@@ -40,8 +40,8 @@ export default function WhyIndia({ onViewTheme }) {
         <h2 className="h2">{t('whyIndia.title')}</h2>
         <p className="sub">{t('whyIndia.subtitle')}</p>
         <div className="why-grid">
-          {CARDS.map(c => (
-            <a key={c.key} className="why-card" href="#packages" onClick={e => handleClick(e, c.slug)}>
+          {CARDS.map((c, i) => (
+            <a key={c.key} className="why-card fade-up" style={{ transitionDelay: `${i * 0.1}s` }} href="#packages" onClick={e => handleClick(e, c.slug)}>
               <img
                 src={c.img}
                 alt={c.alt}
