@@ -18,7 +18,7 @@ const CARDS = [
   { key: 'luxury',   slug: 'luxury-train',          img: KI('1730376933.jpg'),                  alt: 'Luxury Trains' },
   { key: 'spiritual',slug: 'spiritual',              img: 'https://kesariselect.s3.ap-south-1.amazonaws.com/dsezhkUIoFmlf2Q3lq8Okv8PyOM9tOQADYIQqqwF.jpg', alt: 'Spiritual India', fallback: 'https://kesariselect.s3.ap-south-1.amazonaws.com/7iuV5ZInZUpz07PoGNthwsAeHWi63DqdMsYEbpRW.jpg' },
   { key: 'historic', slug: 'historic',               img: KI('1730266937.jpg'),                  alt: 'Historic Monuments' },
-  { key: 'nature',   slug: 'nature',                 img: U('photo-1505118380757-91f5f5632de0'), alt: 'Nature & Wildlife' },
+  { key: 'nature',   slug: 'nature',                 img: 'https://kesariselect.s3.ap-south-1.amazonaws.com/sIPGp1iNY2ej8ZuA0wHyFJYZ8XgTzEV6rlfEhjoQ.jpg', alt: 'Nature & Wildlife' },
 ];
 
 const FALLBACK = 'https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=900&h=600&auto=format&fit=crop&q=85';
