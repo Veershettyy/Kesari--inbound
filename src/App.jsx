@@ -46,13 +46,18 @@ function HomePage() {
     document.querySelector('#packages')?.scrollIntoView({ behavior: 'smooth' });
   }
 
+  function handleThemeFilter(filterKey) {
+    pkgRef.current?.setFilter(filterKey);
+    document.querySelector('#packages')?.scrollIntoView({ behavior: 'smooth' });
+  }
+
   return (
     <>
       <SeoHead />
       <Navbar onEnquire={openEnquiry} onSearchNav={handleNavSearch} />
       <HeroSlider />
       <Stats />
-      <SeasonalPlanner onEnquire={name => setModalPkg(name)} />
+      <SeasonalPlanner onEnquire={name => setModalPkg(name)} onViewTheme={handleThemeFilter} />
       <AdventureThemes />
       <WhyIndia />
       <Destinations onSearch={handleNavSearch} />

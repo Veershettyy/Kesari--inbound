@@ -1,25 +1,21 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { SEASON_DATA, THEME_SLUGS } from '../data/packages';
-import useLocalizedUrl from '../hooks/useLocalizedUrl';
-
 const THEME_FILTER_KEY = {'first-timers':'firstTimers','historic':'historic','family':'family','nature':'nature','luxury-train':'luxuryTrain','ayurveda-and-wellness':'ayurveda','spiritual':'spiritual','adventure':'adventure','luxury':'luxury','wildlife':'wildlife'};
 function themeKey(raw) { return raw.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/-+/g,'-').replace(/^-|-$/g,''); }
 
 const MONTHS = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
-const BASE = 'https://inbound.kesariselect.com';
 
-export default function SeasonalPlanner({ onEnquire }) {
+export default function SeasonalPlanner({ onEnquire, onViewTheme }) {
   const { t } = useTranslation(['home','common','tours']);
   const [active, setActive] = useState('Jan');
-  const localizeUrl = useLocalizedUrl();
 
   const rawData = SEASON_DATA[active] || [];
   const translatedPkgs = t(`home:seasonal.pkgs.${active}`, { returnObjects: true, defaultValue: [] });
 
-  function openTheme(theme) {
-    const slug = THEME_SLUGS[theme] || theme.toLowerCase().replace(/[^a-z0-9]+/g,'-');
-    window.open(localizeUrl(`${BASE}/explore/theme/${slug}`), '_blank', 'noopener');
+  function handleViewTheme(rawTheme) {
+    const filterKey = THEME_FILTER_KEY[themeKey(rawTheme)] || 'all';
+    onViewTheme?.(filterKey);
   }
 
   return (
@@ -47,7 +43,7 @@ export default function SeasonalPlanner({ onEnquire }) {
             const tk = themeKey(d.theme);
             const theme = t(`tours:packages.filters.${THEME_FILTER_KEY[tk] ?? tk}`, { defaultValue: d.theme });
             return (
-              <div key={i} className="season-card" style={{ cursor: 'pointer' }} onClick={() => openTheme(d.theme)}>
+              <div key={i} className="season-card" style={{ cursor: 'pointer' }} onClick={() => handleViewTheme(d.theme)}>
                 <img
                   src={d.img}
                   alt={title}
@@ -59,7 +55,7 @@ export default function SeasonalPlanner({ onEnquire }) {
                   <div className="season-title">{title}</div>
                   <div className="season-info">🗓 {info}</div>
                   <div style={{ display: 'flex', gap: '8px', marginTop: '4px' }}>
-                    <button className="season-btn" style={{ flex: 1 }} onClick={e => { e.stopPropagation(); openTheme(d.theme); }}>
+                    <button className="season-btn" style={{ flex: 1 }} onClick={e => { e.stopPropagation(); handleViewTheme(d.theme); }}>
                       {t('common:buttons.viewTrips')}
                     </button>
                     <button

@@ -54,7 +54,8 @@ const TourPackages = forwardRef(function TourPackages({ onEnquire }, ref) {
   const basePath = langSlug ? `/INT/${langSlug}` : '/INT';
 
   useImperativeHandle(ref, () => ({
-    setSearch: (q) => { setSearch(q); setVisible(PAGE); }
+    setSearch: (q) => { setSearch(q); setFilter('all'); setVisible(PAGE); },
+    setFilter: (f) => { setFilter(f); setSearch(''); setVisible(PAGE); },
   }));
 
   const filtered = PACKAGES.filter(p => {
