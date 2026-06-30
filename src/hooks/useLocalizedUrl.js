@@ -13,6 +13,9 @@ const LANG_MAP = {
   'it':    'it',
   'zh':    'zh-CN',
   'ar':    'ar',
+  'ml':    'ml',
+  'ko':    'ko',
+  'pl':    'pl',
 };
 
 export function localizeUrl(url, lang) {
