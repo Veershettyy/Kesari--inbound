@@ -243,7 +243,8 @@ footer{background:linear-gradient(135deg,#131928 0%,#1a2030 100%);color:rgba(255
 .modal-success h3{color:var(--navy);font-size:22px;font-weight:800;margin-bottom:12px}
 .modal-success p{color:#666;font-size:14px;line-height:1.65}
 
-/* LANGUAGE SWITCHER DROPDOWN */
+/* LANGUAGE SWITCHER */
+.ls-backdrop{display:none}
 .ls-wrap{position:relative;display:flex;align-items:center}
 .ls-trigger{display:flex;align-items:center;gap:6px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.3);color:#fff;padding:7px 14px;border-radius:8px;cursor:pointer;font-size:13px;font-weight:600;font-family:inherit;transition:all .2s;white-space:nowrap}
 .ls-trigger:hover{background:rgba(255,255,255,.22);border-color:rgba(255,255,255,.5)}
@@ -251,12 +252,16 @@ footer{background:linear-gradient(135deg,#131928 0%,#1a2030 100%);color:rgba(255
 .ls-flag{font-size:16px}
 .ls-label{max-width:70px;overflow:hidden;text-overflow:ellipsis}
 .ls-arrow{font-size:9px;opacity:.7;margin-left:2px}
-.ls-dropdown{position:absolute;top:calc(100% + 10px);right:0;background:#fff;border-radius:12px;box-shadow:0 12px 40px rgba(0,0,0,.18);border:1px solid #e8e8e8;display:grid;grid-template-columns:repeat(3,1fr);gap:2px;padding:10px;z-index:9999;min-width:290px}
-.ls-option{display:flex;align-items:center;gap:8px;padding:9px 12px;border:none;background:transparent;cursor:pointer;font-size:13px;font-weight:500;color:#333;border-radius:8px;transition:background .15s;font-family:inherit;text-align:left;white-space:nowrap}
+.ls-dropdown{position:absolute;top:calc(100% + 10px);right:0;background:#fff;border-radius:14px;box-shadow:0 12px 40px rgba(0,0,0,.18);border:1px solid #e8e8e8;padding:12px;z-index:9999;min-width:300px;animation:lsDrop .18s ease}
+.ls-dropdown-header{display:none}
+.ls-close{display:none}
+.ls-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:4px}
+.ls-option{display:flex;align-items:center;gap:8px;padding:9px 12px;border:none;background:transparent;cursor:pointer;font-size:13px;font-weight:500;color:#333;border-radius:8px;transition:background .15s;font-family:inherit;text-align:left;white-space:nowrap;width:100%}
 .ls-option:hover{background:#f4f6fa}
 .ls-option.ls-active{background:var(--navy);color:#fff;font-weight:700}
-.ls-opt-flag{font-size:17px}
+.ls-opt-flag{font-size:18px}
 .ls-opt-label{flex:1}
+@keyframes lsDrop{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:translateY(0)}}
 
 /* Package Detail Page */
 .pd-hero{min-height:70vh;background-size:cover;background-position:center;position:relative;display:flex;align-items:flex-end}
@@ -334,11 +339,19 @@ footer{background:linear-gradient(135deg,#131928 0%,#1a2030 100%);color:rgba(255
   .header-right{gap:8px}
   .btn-red{padding:8px 14px;font-size:12px}
   .ls-label{display:none}
-  .ls-trigger{padding:6px 10px;gap:4px}
-  .ls-dropdown{position:fixed;top:auto;bottom:0;left:0;right:0;border-radius:20px 20px 0 0;min-width:unset;width:100%;grid-template-columns:repeat(3,1fr);padding:16px 12px 32px;box-shadow:0 -8px 40px rgba(0,0,0,.2);z-index:99999}
-  .ls-option{padding:12px 8px;font-size:12px;gap:6px}
-  .ls-opt-flag{font-size:20px}
-  .ls-opt-label{font-size:11px}
+  .ls-label{display:none}
+  .ls-trigger{padding:7px 10px;gap:4px}
+  .ls-backdrop{display:block;position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:99998;backdrop-filter:blur(2px)}
+  .ls-dropdown{position:fixed;top:auto;bottom:0;left:0;right:0;border-radius:24px 24px 0 0;min-width:unset;width:100%;padding:0 0 32px;box-shadow:0 -8px 40px rgba(0,0,0,.25);z-index:99999;animation:lsUp .25s ease}
+  .ls-dropdown-header{display:flex;align-items:center;justify-content:space-between;padding:16px 16px 12px;border-bottom:1px solid #f0f0f0;margin-bottom:8px}
+  .ls-dropdown-title{font-size:15px;font-weight:700;color:var(--navy)}
+  .ls-close{background:none;border:none;font-size:18px;color:#999;cursor:pointer;padding:4px 8px;border-radius:6px}
+  .ls-close:hover{background:#f5f5f5;color:#333}
+  .ls-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:4px;padding:0 10px}
+  .ls-option{padding:14px 10px;font-size:13px;gap:8px;flex-direction:column;text-align:center;border-radius:12px}
+  .ls-opt-flag{font-size:24px}
+  .ls-opt-label{font-size:11px;font-weight:600}
+  @keyframes lsUp{from{transform:translateY(100%)}to{transform:translateY(0)}}
 
   /* NAV */
   .nav-list{padding:0 8px;overflow-x:auto;gap:0;-webkit-overflow-scrolling:touch}

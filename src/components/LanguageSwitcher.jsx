@@ -60,28 +60,37 @@ export default function LanguageSwitcher() {
   }
 
   return (
-    <div className="ls-wrap" ref={ref}>
-      <button className="ls-trigger" onClick={() => setOpen(o => !o)}>
-        <span className="ls-globe">🌐</span>
-        <span className="ls-flag">{currentLang.flag}</span>
-        <span className="ls-label">{currentLang.label}</span>
-        <span className="ls-arrow">{open ? '▲' : '▼'}</span>
-      </button>
+    <>
+      {open && <div className="ls-backdrop" onClick={() => setOpen(false)} />}
+      <div className="ls-wrap" ref={ref}>
+        <button className="ls-trigger" onClick={() => setOpen(o => !o)}>
+          <span className="ls-globe">🌐</span>
+          <span className="ls-flag">{currentLang.flag}</span>
+          <span className="ls-label">{currentLang.label}</span>
+          <span className="ls-arrow">{open ? '▲' : '▼'}</span>
+        </button>
 
-      {open && (
-        <div className="ls-dropdown">
-          {LANGUAGES.map(lang => (
-            <button
-              key={lang.code}
-              className={`ls-option${lang.code === currentLang.code ? ' ls-active' : ''}`}
-              onClick={() => switchLang(lang)}
-            >
-              <span className="ls-opt-flag">{lang.flag}</span>
-              <span className="ls-opt-label">{lang.label}</span>
-            </button>
-          ))}
-        </div>
-      )}
-    </div>
+        {open && (
+          <div className="ls-dropdown">
+            <div className="ls-dropdown-header">
+              <span className="ls-dropdown-title">Select Language</span>
+              <button className="ls-close" onClick={() => setOpen(false)}>✕</button>
+            </div>
+            <div className="ls-grid">
+              {LANGUAGES.map(lang => (
+                <button
+                  key={lang.code}
+                  className={`ls-option${lang.code === currentLang.code ? ' ls-active' : ''}`}
+                  onClick={() => switchLang(lang)}
+                >
+                  <span className="ls-opt-flag">{lang.flag}</span>
+                  <span className="ls-opt-label">{lang.label}</span>
+                </button>
+              ))}
+            </div>
+          </div>
+        )}
+      </div>
+    </>
   );
 }
