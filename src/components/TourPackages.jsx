@@ -117,6 +117,7 @@ const TourPackages = forwardRef(function TourPackages({ onEnquire }, ref) {
   }
 
   return (
+    <>
     <div id="packages" className="sec sec-bg">
       <div className="wrap">
         <div className="tag">{t('tours:packages.tag')}</div>
@@ -211,6 +212,7 @@ const TourPackages = forwardRef(function TourPackages({ onEnquire }, ref) {
         onClose={() => setLightbox(null)}
       />
     )}
+    </>
   );
 });
 
