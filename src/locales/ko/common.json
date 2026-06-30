@@ -39,18 +39,18 @@
   },
   "destinations": {
     "names": {
-      "rajasthan": "Rajasthan",
-      "uttarakhand": "Uttarakhand",
-      "gujarat": "Gujarat",
-      "karnataka": "Karnataka",
-      "kerala": "Kerala",
-      "meghalaya": "Meghalaya",
-      "pondicherry": "Pondicherry",
-      "northEast": "North East India",
-      "lehLadakh": "Leh & Ladakh",
-      "jammuKashmir": "Jammu & Kashmir",
-      "delhi": "Delhi",
-      "madhyaPradesh": "Madhya Pradesh"
+      "rajasthan": "라자스탄",
+      "uttarakhand": "우타라칸드",
+      "gujarat": "구자라트",
+      "karnataka": "카르나타카",
+      "kerala": "케랄라",
+      "meghalaya": "메갈라야",
+      "pondicherry": "폰디체리",
+      "northEast": "인도 북동부",
+      "lehLadakh": "레 & 라다크",
+      "jammuKashmir": "잠무 & 카슈미르",
+      "delhi": "델리",
+      "madhyaPradesh": "마디아프라데시"
     }
   }
 }
