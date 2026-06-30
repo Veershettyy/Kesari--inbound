@@ -113,7 +113,7 @@ export default function PackageDetail() {
           <h1 className="pd-title">{name}</h1>
           <div className="pd-meta">
             <span>📅 {pkg.days} {t('tours:detail.days')} / {pkg.nights} {t('tours:detail.nights')}</span>
-            <span>📍 {pkg.places}</span>
+            <span>📍 {t(`tours:pkgPlaces.${pkg.code}`, { defaultValue: pkg.places })}</span>
           </div>
           <div className="pd-actions">
             <button className="btn-red" onClick={openEnquiry}>
@@ -153,7 +153,7 @@ export default function PackageDetail() {
             <h2>{t('tours:detail.tourOverview')}</h2>
             <p className="pd-places">
               <strong>{t('tours:detail.placesCovered')}</strong><br />
-              {pkg.places}
+              {t(`tours:pkgPlaces.${pkg.code}`, { defaultValue: pkg.places })}
             </p>
             <div className="pd-tags-list">
               {tags.map(tag => (
