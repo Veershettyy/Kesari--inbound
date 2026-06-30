@@ -55,7 +55,7 @@ function HomePage() {
       <SeasonalPlanner onEnquire={name => setModalPkg(name)} />
       <AdventureThemes />
       <WhyIndia />
-      <Destinations />
+      <Destinations onSearch={handleNavSearch} />
       <TourPackages ref={pkgRef} onEnquire={name => setModalPkg(name)} />
       <Reviews />
       <EnquiryForm />

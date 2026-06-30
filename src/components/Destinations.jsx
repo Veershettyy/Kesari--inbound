@@ -1,25 +1,29 @@
 import { useTranslation } from 'react-i18next';
-import useLocalizedUrl from '../hooks/useLocalizedUrl';
 
-const BASE = 'https://inbound.kesariselect.com';
 const DESTS = [
-  { key: 'rajasthan',     url: '/explore/india/west-india/rajasthan',            img: 'https://tap.kesariselect.com/public/cms/hiddengems/1729764560.webp' },
-  { key: 'uttarakhand',   url: '/explore/india/north-india/uttarakhand',          img: 'https://tap.kesariselect.com/public/cms/hiddengems/1729764609.webp' },
-  { key: 'gujarat',       url: '/explore/india/west-india/gujarat',               img: 'https://tap.kesariselect.com/public/cms/hiddengems/1729764629.webp' },
-  { key: 'karnataka',     url: '/explore/india/south-india/karnataka',            img: 'https://tap.kesariselect.com/public/cms/hiddengems/1729764662.webp' },
-  { key: 'kerala',        url: '/explore/india/south-india/kerala',               img: 'https://tap.kesariselect.com/public/cms/hiddengems/1729764681.webp' },
-  { key: 'meghalaya',     url: '/explore/india/west-india/meghalaya',             img: 'https://tap.kesariselect.com/public/cms/hiddengems/1729764696.webp' },
-  { key: 'pondicherry',   url: '/explore/india/south-india/pondicherry',          img: 'https://tap.kesariselect.com/public/cms/hiddengems/1729764712.webp' },
-  { key: 'northEast',     url: '/explore/india/east-india/north-east',            img: 'https://tap.kesariselect.com/public/cms/hiddengems/1729764729.webp' },
-  { key: 'lehLadakh',     url: '/explore/india/north-india/leh-and-ladakh',       img: 'https://tap.kesariselect.com/public/cms/hiddengems/1729764744.webp' },
-  { key: 'jammuKashmir',  url: '/explore/india/north-india/jammu-and-kashmir',    img: 'https://tap.kesariselect.com/public/cms/hiddengems/1729764784.webp' },
-  { key: 'delhi',         url: '/explore/india/north-india/delhi',                img: 'https://tap.kesariselect.com/public/cms/hiddengems/1729764644.webp' },
-  { key: 'madhyaPradesh', url: '/explore/india/north-india/madhya-pradesh',       img: 'https://tap.kesariselect.com/public/cms/hiddengems/1729764799.webp' },
+  { key: 'rajasthan',     search: 'Rajasthan',      img: 'https://tap.kesariselect.com/public/cms/hiddengems/1729764560.webp' },
+  { key: 'uttarakhand',   search: 'Uttarakhand',    img: 'https://tap.kesariselect.com/public/cms/hiddengems/1729764609.webp' },
+  { key: 'gujarat',       search: 'Gujarat',        img: 'https://tap.kesariselect.com/public/cms/hiddengems/1729764629.webp' },
+  { key: 'karnataka',     search: 'Karnataka',      img: 'https://tap.kesariselect.com/public/cms/hiddengems/1729764662.webp' },
+  { key: 'kerala',        search: 'Kerala',         img: 'https://tap.kesariselect.com/public/cms/hiddengems/1729764681.webp' },
+  { key: 'meghalaya',     search: 'Meghalaya',      img: 'https://tap.kesariselect.com/public/cms/hiddengems/1729764696.webp' },
+  { key: 'pondicherry',   search: 'Pondicherry',    img: 'https://tap.kesariselect.com/public/cms/hiddengems/1729764712.webp' },
+  { key: 'northEast',     search: 'North East',     img: 'https://tap.kesariselect.com/public/cms/hiddengems/1729764729.webp' },
+  { key: 'lehLadakh',     search: 'Ladakh',         img: 'https://tap.kesariselect.com/public/cms/hiddengems/1729764744.webp' },
+  { key: 'jammuKashmir',  search: 'Kashmir',        img: 'https://tap.kesariselect.com/public/cms/hiddengems/1729764784.webp' },
+  { key: 'delhi',         search: 'Delhi',          img: 'https://tap.kesariselect.com/public/cms/hiddengems/1729764644.webp' },
+  { key: 'madhyaPradesh', search: 'Madhya Pradesh', img: 'https://tap.kesariselect.com/public/cms/hiddengems/1729764799.webp' },
 ];
 
-export default function Destinations() {
+export default function Destinations({ onSearch }) {
   const { t } = useTranslation('home');
-  const localizeUrl = useLocalizedUrl();
+
+  function handleClick(e, search) {
+    e.preventDefault();
+    if (onSearch) onSearch(search);
+    document.querySelector('#packages')?.scrollIntoView({ behavior: 'smooth' });
+  }
+
   return (
     <div id="destinations" className="sec">
       <div className="wrap">
@@ -28,7 +32,7 @@ export default function Destinations() {
         <p className="sub">{t('destinations.subtitle')}</p>
         <div className="dest-grid">
           {DESTS.map(d => (
-            <a key={d.key} className="dest-card" href={localizeUrl(BASE + d.url)} target="_blank" rel="noreferrer">
+            <a key={d.key} className="dest-card" href="#packages" onClick={e => handleClick(e, d.search)}>
               <img src={d.img} alt={t(`destinations.names.${d.key}`)} loading="lazy" />
               <div className="dest-name">{t(`destinations.names.${d.key}`)}</div>
             </a>
