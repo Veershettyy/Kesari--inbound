@@ -293,43 +293,103 @@ footer{background:linear-gradient(135deg,#131928 0%,#1a2030 100%);color:rgba(255
 .pd-success h4{font-size:21px;margin:10px 0}
 .pd-success p{color:#666;font-size:14px}
 
-/* RESPONSIVE */
+/* RESPONSIVE — TABLET */
 @media(max-width:900px){
-  .header-top{padding:8px 20px}
+  .header-top{padding:8px 20px;flex-wrap:wrap;gap:8px}
+  .foreign-badge{display:none}
+  .header-right{gap:10px}
   .why-grid{grid-template-columns:repeat(2,1fr)}
   .why-card:nth-child(n){grid-column:span 1}
-  .adv-grid{grid-template-columns:repeat(2,1fr)}
+  .why-card{height:260px}
+  .adv-grid{grid-template-columns:repeat(3,1fr)}
   .pkg-grid{grid-template-columns:repeat(2,1fr)}
   .dest-grid{grid-template-columns:repeat(2,1fr)}
   .rev-grid{grid-template-columns:1fr}
-  .enq-inner{grid-template-columns:1fr}
-  .ft-grid{grid-template-columns:1fr 1fr}
+  .enq-inner{grid-template-columns:1fr;gap:32px}
+  .ft-grid{grid-template-columns:1fr 1fr;gap:28px}
   .season-grid{grid-template-columns:repeat(2,1fr)}
   .slide-title{font-size:32px}
-  .slide-tag{margin-bottom:16px}
-  .slide-content{padding:0 5% 48px 5%}
+  .slide-tag{margin-bottom:14px}
+  .slide-content{padding:0 5% 44px 5%}
   .wrap{padding:0 20px}
   .season-wrap{padding:0 20px}
   .pd-grid{grid-template-columns:1fr}
   .pd-strip{grid-template-columns:repeat(2,1fr)}
-  .pd-title{font-size:30px}
-  .pd-hero-overlay{padding:40px 20px 28px}
+  .pd-title{font-size:28px}
+  .pd-hero-overlay{padding:36px 20px 24px}
+  .stats-row{flex-wrap:wrap}
+  .stat{flex:0 0 33.33%;border-right:none;border-bottom:1px solid rgba(255,255,255,.15);padding:16px 10px}
+  .stat:nth-child(3n){border-right:none}
+  .hero{height:500px}
 }
+
+/* RESPONSIVE — MOBILE */
 @media(max-width:600px){
-  .header-top{padding:8px 16px}
-  .wrap{padding:0 16px}
-  .nav-list{padding:0 16px;overflow-x:auto}
+  /* NAVBAR */
+  .header-top{padding:10px 16px;flex-wrap:nowrap;justify-content:space-between}
+  .logo-42{display:none}
+  .logo-img{height:40px}
+  .foreign-badge{display:none}
+  .phone{display:none}
+  .header-right{gap:8px}
+  .btn-red{padding:8px 14px;font-size:12px}
+  .ls-label{display:none}
+  .ls-trigger{padding:6px 10px;gap:4px}
+
+  /* NAV */
+  .nav-list{padding:0 8px;overflow-x:auto;gap:0;-webkit-overflow-scrolling:touch}
+  .nav-link{padding:12px 12px;font-size:12px}
+  .mega{display:none !important}
+
+  /* HERO */
+  .hero{height:420px;min-height:360px}
+  .slide-content{padding:0 16px 36px 16px}
+  .slide-tag{font-size:9px;padding:5px 10px;margin-bottom:10px;letter-spacing:1.5px}
+  .slide-title{font-size:22px;line-height:1.2;margin-bottom:10px}
+  .slide-desc{font-size:12px;margin-bottom:18px;-webkit-line-clamp:2}
+  .btn-hero{padding:10px 20px;font-size:12px}
+  .s-arrows{bottom:12px;right:3%}
+  .s-arrows button{width:36px;height:36px;font-size:15px}
+  .s-dots{bottom:12px}
+
+  /* STATS */
+  .stats-row{flex-wrap:wrap;padding:16px 0}
+  .stat{flex:0 0 50%;border-right:none;border-bottom:1px solid rgba(255,255,255,.15);padding:14px 8px}
+  .stat:nth-child(odd){border-right:1px solid rgba(255,255,255,.15)}
+  .stat:last-child{flex:0 0 100%;border-bottom:none}
+  .stat-n{font-size:36px}
+  .stat-l{font-size:12px}
+
+  /* SECTIONS */
+  .wrap{padding:0 14px}
+  .season-wrap{padding:0 14px}
+  .sec{padding:48px 0}
+  .h2{font-size:24px}
+  .sub{font-size:13px;margin-bottom:28px}
+
+  /* GRIDS */
   .pkg-grid{grid-template-columns:1fr}
-  .ft-grid{grid-template-columns:1fr}
   .season-grid{grid-template-columns:1fr}
-  .adv-grid{grid-template-columns:repeat(3,1fr)}
-  .slide-title{font-size:24px}
-  .slide-tag{margin-bottom:12px;padding:6px 12px;font-size:10px}
-  .slide-desc{font-size:13px}
-  .slide-content{padding:0 4% 40px 4%}
-  .btn-hero{padding:11px 24px;font-size:13px}
-  .h2{font-size:28px}
-  .stat-n{font-size:42px}
+  .ft-grid{grid-template-columns:1fr;gap:24px}
+  .adv-grid{grid-template-columns:repeat(2,1fr);gap:10px}
+  .dest-grid{grid-template-columns:1fr 1fr;gap:10px}
+  .why-grid{grid-template-columns:1fr 1fr;gap:12px}
+  .why-card{height:200px}
+  .rev-grid{grid-template-columns:1fr}
+
+  /* ENQUIRY */
+  .enq-inner{padding:0 14px;gap:24px}
+  .form-grid{grid-template-columns:1fr}
+  .fg.full{grid-column:1}
+
+  /* FOOTER */
+  footer{padding:36px 16px 20px}
+  .ft-bottom{font-size:10px;padding-top:16px}
+
+  /* PACKAGE DETAIL */
   .pd-strip{grid-template-columns:1fr 1fr}
-  .footer{padding:40px 20px 20px}
+  .pd-title{font-size:22px}
+  .pd-hero-overlay{padding:28px 14px 20px}
+  .pd-body{padding-top:36px;padding-bottom:36px}
+  .scroll-top{bottom:16px;right:16px;width:40px;height:40px;font-size:17px}
 }
