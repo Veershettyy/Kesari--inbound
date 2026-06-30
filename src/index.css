@@ -10,18 +10,6 @@ body{font-family:'Montserrat',sans-serif;background:var(--white);color:#222;over
 
 #root{width:100%;max-width:100%;margin:0;text-align:left;border:none;min-height:100svh;display:block}
 
-/* SPLASH SCREEN */
-@keyframes splashFadeIn{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
-@keyframes splashFadeOut{0%{opacity:1}80%{opacity:1}100%{opacity:0;pointer-events:none}}
-@keyframes splashFill{from{width:0}to{width:100%}}
-.splash{position:fixed;inset:0;z-index:99999;background:var(--navy);display:flex;align-items:center;justify-content:center;animation:splashFadeOut 2s ease forwards;animation-delay:.8s}
-.splash-inner{display:flex;flex-direction:column;align-items:center;gap:20px;animation:splashFadeIn .6s ease forwards}
-.splash-logo{height:72px;width:auto;object-fit:contain;filter:brightness(0) invert(1)}
-.splash-42{height:56px;width:auto;object-fit:contain;filter:brightness(0) invert(1);opacity:.85}
-.splash-tagline{color:rgba(255,255,255,.75);font-size:13px;font-weight:500;letter-spacing:2.5px;text-transform:uppercase;margin-top:4px}
-.splash-bar{width:160px;height:3px;background:rgba(255,255,255,.15);border-radius:99px;overflow:hidden;margin-top:8px}
-.splash-progress{height:100%;background:var(--red);border-radius:99px;animation:splashFill 1.6s ease forwards}
-
 /* SCROLL TO TOP */
 .scroll-top{position:fixed;bottom:28px;right:28px;width:46px;height:46px;background:var(--red);color:#fff;border:none;border-radius:50%;font-size:20px;cursor:pointer;z-index:9000;box-shadow:0 4px 16px rgba(228,30,37,.4);transition:transform .2s,opacity .2s;display:flex;align-items:center;justify-content:center}
 .scroll-top:hover{transform:translateY(-4px);background:#c41920}
