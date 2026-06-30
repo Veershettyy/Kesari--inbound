@@ -1,5 +1,11 @@
 import { useRef, useState, useEffect } from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
+
+function ScrollToTopOnNav() {
+  const { pathname } = useLocation();
+  useEffect(() => { window.scrollTo(0, 0); }, [pathname]);
+  return null;
+}
 import { HelmetProvider } from 'react-helmet-async';
 
 import LocaleWrapper from './components/LocaleWrapper';
@@ -127,6 +133,7 @@ function HomePage() {
 export default function App() {
   return (
     <HelmetProvider>
+      <ScrollToTopOnNav />
       <Routes>
         {/* Package detail — /INT/es/explore/product-details/:code */}
         <Route path="/INT/es/explore/product-details/:code"
