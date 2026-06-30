@@ -10,7 +10,7 @@
       "nature": "Natur",
       "historic": "Historisch",
       "luxuryTrain": "Luxuszug",
-      "ayurveda": "Ayurveda",
+      "ayurveda": "Ayurveda & Wellness",
       "firstTimers": "Erstbesucher",
       "spiritual": "Spirituell",
       "adventure": "Abenteuer",
@@ -99,9 +99,9 @@
     "FIT-INBOUND-01": "Wildtiere Indiens",
     "FIT-INBOUND-02": "Höhlen von Maharashtra",
     "FIT-INBOUND-03": "Stämme-Tour von Indien",
-    "FIT-INBOUND-04": "Carnoustie Ayurveda & Wellness",
+    "FIT-INBOUND-04": "Carnoustie Ayurveda und Wohlbefinden",
     "FIT-INBOUND-06": "Bestes von Nepal",
-    "FIT-INBOUND-11": "BEST OF NEPAL",
+    "FIT-INBOUND-11": "Das Beste von Nepal",
     "FIT-INBOUND-12": "BEST OF SRI LANKA",
     "FIT-INBOUND-13": "Herz Indiens - Madhya Pradesh",
     "FIT-INBOUND-14": "Nordost-Indien",
@@ -145,7 +145,7 @@
     "INBOUND-41": "Juwelen des Südens",
     "INBOUND-43": "Indische Odyssee-Reise",
     "INBOUND-45": "Madhya Pradesh 8-Tage",
-    "INBOUND-47": "Maharashtra Splendour - Deccan Odyssey",
+    "INBOUND-47": "Maharashtras Pracht – Deccan Odyssee",
     "INBOUND-48": "Epizentrum Madhya Pradeshs",
     "INBOUND-49": "Indische Reise - Deccan Odyssey",
     "INBOUND-50": "Bezauberndes Himachal Pradesh",
@@ -3660,7 +3660,7 @@
     "honeymoon": "Flitterwochen",
     "adventure": "Abenteuer",
     "wildlifeHolidays": "Wildtierreise",
-    "wellnessSpa": "Wellness Spa"
+    "wellnessSpa": "Wellness & Spa"
   },
   "themes": {
     "first-timers": "Erstbesucher",
