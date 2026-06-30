@@ -58,8 +58,11 @@ export default function BlogPost() {
           ))}
           <div className="post-cta">
             <h3>Ready to Experience India?</h3>
-            <p>Let KeSARi Inbound craft your perfect journey.</p>
-            <a href={`${base}/#enquiry`} className="btn-hero">Plan My Trip</a>
+            <p>Let Kesari Inbound craft your perfect journey.</p>
+            <button className="btn-hero" onClick={() => {
+              navigate(base);
+              setTimeout(() => document.querySelector('#enquiry')?.scrollIntoView({ behavior: 'smooth' }), 400);
+            }}>Plan My Trip</button>
           </div>
         </div>
       </div>
