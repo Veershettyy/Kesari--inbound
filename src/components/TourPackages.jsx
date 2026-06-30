@@ -47,7 +47,15 @@ const TourPackages = forwardRef(function TourPackages({ onEnquire }, ref) {
     const val = FILTER_VALS[filter];
     const matchTheme = val === 'All' || themeKey(p.theme) === val;
     const q = search.toLowerCase();
-    const matchSearch = !q || p.name.toLowerCase().includes(q) || p.places.toLowerCase().includes(q) || p.theme.toLowerCase().includes(q);
+    if (!q) return matchTheme;
+    const tName   = t(`tours:pkgNames.${p.code}`,   { defaultValue: p.name });
+    const tPlaces = t(`tours:pkgPlaces.${p.code}`,  { defaultValue: p.places });
+    const matchSearch =
+      p.name.toLowerCase().includes(q) ||
+      p.places.toLowerCase().includes(q) ||
+      p.theme.toLowerCase().includes(q) ||
+      tName.toLowerCase().includes(q) ||
+      tPlaces.toLowerCase().includes(q);
     return matchTheme && matchSearch;
   });
 

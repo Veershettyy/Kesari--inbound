@@ -89,7 +89,7 @@ nav{background:var(--navy)}
 
 /* SECTIONS */
 .wrap{max-width:1200px;margin:0 auto;padding:0 48px}
-.sec{padding:75px 0}
+.sec{padding:75px 0;scroll-margin-top:88px}
 .sec-bg{background:var(--bg)}
 .tag{color:var(--red);font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:10px;display:block}
 .h2{font-size:36px;font-weight:900;color:var(--navy);margin-bottom:12px;line-height:1.2}
