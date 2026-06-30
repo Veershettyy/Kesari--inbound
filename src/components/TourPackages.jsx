@@ -12,6 +12,20 @@ const FILTER_VALS = {
   family: 'family', wildlife: 'wildlife',
 };
 
+// Maps kebab theme → filter key so badge reuses the filter translations (already verified working)
+const THEME_FILTER_KEY = {
+  'first-timers':        'firstTimers',
+  'historic':            'historic',
+  'family':              'family',
+  'nature':              'nature',
+  'luxury-train':        'luxuryTrain',
+  'ayurveda-and-wellness': 'ayurveda',
+  'spiritual':           'spiritual',
+  'adventure':           'adventure',
+  'luxury':              'luxury',
+  'wildlife':            'wildlife',
+};
+
 function themeKey(raw) {
   return raw.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '');
 }
@@ -106,11 +120,11 @@ const TourPackages = forwardRef(function TourPackages({ onEnquire }, ref) {
                   loading="lazy"
                   onError={e => { e.target.src = 'https://tap.kesariselect.com/public/cms/hiddengems/1729764681.webp'; }}
                 />
-                <div className="pkg-badge">{t(`tours:themes.${themeKey(p.theme)}`, { defaultValue: p.theme })}</div>
+                <div className="pkg-badge">{t(`tours:packages.filters.${THEME_FILTER_KEY[themeKey(p.theme)] ?? themeKey(p.theme)}`, { defaultValue: p.theme })}</div>
                 <div className="pkg-days">{p.days}D / {p.nights}N</div>
               </div>
               <div className="pkg-body">
-                <div className="pkg-theme">{t(`tours:themes.${themeKey(p.theme)}`, { defaultValue: p.theme })}</div>
+                <div className="pkg-theme">{t(`tours:packages.filters.${THEME_FILTER_KEY[themeKey(p.theme)] ?? themeKey(p.theme)}`, { defaultValue: p.theme })}</div>
                 <div className="pkg-title">{t(`tours:pkgNames.${p.code}`, { defaultValue: p.name })}</div>
                 <div className="pkg-places">📍 {t(`tours:pkgPlaces.${p.code}`, { defaultValue: p.places })}</div>
                 <div className="pkg-tags">

@@ -96,7 +96,9 @@ export default function PackageDetail() {
   }
 
   const name  = t(`tours:pkgNames.${pkg.code}`, { defaultValue: pkg.name });
-  const theme = t(`tours:themes.${pkg.theme}`, { defaultValue: pkg.theme });
+  const THEME_FILTER_KEY = {'first-timers':'firstTimers','historic':'historic','family':'family','nature':'nature','luxury-train':'luxuryTrain','ayurveda-and-wellness':'ayurveda','spiritual':'spiritual','adventure':'adventure','luxury':'luxury','wildlife':'wildlife'};
+  const themeKey = (raw) => raw.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/-+/g,'-').replace(/^-|-$/g,'');
+  const theme = t(`tours:packages.filters.${THEME_FILTER_KEY[themeKey(pkg.theme)] ?? themeKey(pkg.theme)}`, { defaultValue: pkg.theme });
   const tags  = pkg.tags.split(',').map(s => s.trim());
 
   return (
