@@ -335,6 +335,10 @@ footer{background:linear-gradient(135deg,#131928 0%,#1a2030 100%);color:rgba(255
   .btn-red{padding:8px 14px;font-size:12px}
   .ls-label{display:none}
   .ls-trigger{padding:6px 10px;gap:4px}
+  .ls-dropdown{position:fixed;top:auto;bottom:0;left:0;right:0;border-radius:20px 20px 0 0;min-width:unset;width:100%;grid-template-columns:repeat(3,1fr);padding:16px 12px 32px;box-shadow:0 -8px 40px rgba(0,0,0,.2);z-index:99999}
+  .ls-option{padding:12px 8px;font-size:12px;gap:6px}
+  .ls-opt-flag{font-size:20px}
+  .ls-opt-label{font-size:11px}
 
   /* NAV */
   .nav-list{padding:0 8px;overflow-x:auto;gap:0;-webkit-overflow-scrolling:touch}
