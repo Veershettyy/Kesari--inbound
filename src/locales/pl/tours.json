@@ -2545,42 +2545,42 @@
       ]
     },
     "INBOUND-40": {
-      "overview": "Doświadcz dziedzictwa królewskich Indii na pokładzie Maharaja's Express podczas 7-dniowej podróży przez ikoniczne destynacje. Od Różowego Miasta Jaipur po duchowe miasto Waranasi, ten plan podróży łączy dziką przyrodę, historię, kulturę i luksus.",
+      "overview": "Wyrusza się w luksusową 7-dniową podróż pociągiem Maharaja's Express, odkrywając dziedzictwo królewskie Indii, dziką przyrodę i duchowe skarby. Od Różowego Miasta Jaipur po duchowe brzegi Waranasi, ten plan podróży łączy przepych z głębokim zanurzeniem w kulturze.",
       "days": [
         {
           "day": 1,
           "title": "Przylot do Jaipur",
-          "description": "Przyleć do Jaipur, stolicy Radżastanu. Wsiądź na pokład Maharaja's Express i ciesz się powitalnym drinkiem oraz briefingiem. Następnie udaj się na zwiedzanie miasta, obejmujące Fort Amber, Hawa Mahal i Pałac Miejski. Wieczorem zjedz kolację na pokładzie pociągu."
+          "description": "Przyleć do Jaipur, stolicy Radżastanu, i przejdź do Maharaja's Express. Skosztuj powitalnego drinka i lekkich przekąsek przed przewodnicką wycieczką po Różowym Mieście, obejmującą Fort Amber, Hawa Mahal i Pałac Miejski. Wieczór wolny."
         },
         {
           "day": 2,
           "title": "Jaipur do Ranthambore",
-          "description": "Poranny safari w Parku Narodowym Ranthambore, słynącym z tygrysów bengalskich. Popołudnie wolne. Wieczorem występ kulturalny na pokładzie pociągu."
+          "description": "Poranny odjazd do Parku Narodowego Ranthambore. Przybycie w południe i udział w safari w parku, znanym z tygrysów bengalskich. Po safari zwiedzanie historycznego Fortu Ranthambore. Powrót do pociągu na kolację i nocną podróż do Agry."
         },
         {
           "day": 3,
-          "title": "Ranthambore do Agra",
-          "description": "Poranna wizyta w Forcie Ranthambore. Popołudniowy transfer do Agra. Wieczorem zwiedzanie Tadź Mahal o zachodzie słońca. Powrót do pociągu na kolację."
+          "title": "Przyjazd do Agry",
+          "description": "Przybycie do Agry i zwiedzanie ikonicznego Tadź Mahal o wschodzie słońca. Odwiedzenie Fortu Agry oraz spokojnego Mehtab Bagh, skąd rozpościera się widok na Tadź Mahal. Popołudnie wolne na relaks w pociągu. Wieczorny odjazd do Orchhy."
         },
         {
           "day": 4,
-          "title": "Agra do Orchha",
-          "description": "Poranna wizyta w Forcie Agra i Fatehpur Sikri. Popołudniowy transfer do Orchha. Wieczorne zwiedzanie historycznych świątyń i pałaców Orchha. Nocleg na pokładzie."
+          "title": "Odkrywanie Orchhy",
+          "description": "Przybycie do Orchhy, ukrytego klejnotu średniowiejnych Indii. Zwiedzanie kompleksu fortecznego Orchha, obejmującego Pałac Dżahangira i Świątynię Ram Raja. Wieczorem występ kulturalny na pokładzie pociągu."
         },
         {
           "day": 5,
           "title": "Orchha do Waranasi",
-          "description": "Poranna wizyta w Forcie Jhansi. Popołudniowy transfer do Waranasi. Wieczorna aarti Gangi przy Ghacie Dashashwamedh. Nocleg na pokładzie."
+          "description": "Poranny odjazd do Waranasi, duchowego serca Indii. Przybycie po południu i rejs łodzią po rzece Ganges o zachodzie słońca. Zwiedzanie ghats i uczestnictwo w wieczornej ceremonii Aarti. Nocleg w pociągu."
         },
         {
           "day": 6,
-          "title": "Zwiedzanie Waranasi",
-          "description": "Poranny rejs łodzią po Gangesie. Wizyta w Sarnath i Świątyni Kashi Vishwanath. Popołudnie wolne. Wieczorny pokaz kulturalny na pokładzie."
+          "title": "Odkrywanie Waranasi",
+          "description": "Poranna wycieczka piesza wąskimi uliczkami Waranasi, obejmująca Świątynię Kashi Vishwanath i dzielnicę tkacką jedwabiu. Popołudnie wolne na zwiedzanie lokalnych targów. Wieczorny odjazd do Delhi."
         },
         {
           "day": 7,
           "title": "Odlot z Delhi",
-          "description": "Poranny transfer do Delhi. Wizyta w Minarecie Kutub Minar i Grobowcu Humajuna. Popołudnie wolne. Wieczorny odlot z Delhi."
+          "description": "Przybycie do Delhi i transfer na lotnisko w celu odlotu. Alternatywnie, przedłuż pobyt, aby zwiedzić historyczne zabytki Delhi, takie jak Czerwony Fort lub Grób Humajuna."
         }
       ]
     },

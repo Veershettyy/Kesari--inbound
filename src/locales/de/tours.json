@@ -2545,42 +2545,42 @@
       ]
     },
     "INBOUND-40": {
-      "overview": "Erleben Sie das königliche Erbe Indiens an Bord des Maharaja's Express mit einer 7-tägigen Reise durch ikonische Reiseziele. Von der Pink City Jaipur bis zur spirituellen Stadt Varanasi verbindet diese Reiseroute Wildtiere, Geschichte, Kultur und Luxus.",
+      "overview": "Begeben Sie sich auf eine luxuriöse 7-tägige Reise an Bord des Maharaja's Express und erkunden Sie das königliche Erbe, die Tierwelt und die spirituellen Schätze Indiens. Von der Pink City Jaipur bis zu den spirituellen Ufern Varanasis kombiniert diese Reiseroute Opulenz mit kultureller Immersion.",
       "days": [
         {
           "day": 1,
           "title": "Ankunft in Jaipur",
-          "description": "Ankunft in Jaipur, der Hauptstadt von Rajasthan. Besteigen Sie den Maharaja's Express und genießen Sie ein Willkommensgetränk und eine Einweisung. Später unternehmen Sie eine Stadttour einschließlich Amber Fort, Hawa Mahal und City Palace. Genießen Sie ein königliches Abendessen an Bord."
+          "description": "Ankunft in Jaipur, der Hauptstadt von Rajasthan, und Transfer zum Maharaja's Express. Genießen Sie ein Begrüßungsgetränk und leichte Erfrischungen, bevor eine geführte Tour durch die Pink City folgt, einschließlich Amber Fort, Hawa Mahal und City Palace. Abend zur freien Verfügung."
         },
         {
           "day": 2,
           "title": "Jaipur nach Ranthambore",
-          "description": "Morgens Safaris im Ranthambore Nationalpark, berühmt für seine Bengal-Tiger. Nachmittag zur freien Verfügung. Abendliche Kulturperformance an Bord des Zuges."
+          "description": "Morgens Abreise nach Ranthambore Nationalpark. Ankunft gegen Mittag und Genuss einer Safari im Park, bekannt für seine Bengal-Tiger. Nach der Safari Besuch der historischen Ranthambore-Festung. Rückkehr zum Zug zum Abendessen und Übernachtungsfahrt nach Agra."
         },
         {
           "day": 3,
-          "title": "Ranthambore nach Agra",
-          "description": "Morgens Besuch des Ranthambore Forts. Nachmittags Transfer nach Agra. Abends Besuch des Taj Mahal bei Sonnenuntergang. Rückkehr zum Zug zum Abendessen."
+          "title": "Ankunft in Agra",
+          "description": "Ankunft in Agra und Besuch des ikonischen Taj Mahal bei Sonnenaufgang. Erkundung der Agra-Festung und des ruhigen Mehtab Bagh für eine Aussicht auf den Taj. Nachmittag zur freien Verfügung, um sich auf dem Zug zu entspannen. Abendliche Abreise nach Orchha."
         },
         {
           "day": 4,
-          "title": "Agra nach Orchha",
-          "description": "Morgens Besuch des Agra Forts und Fatehpur Sikri. Nachmittags Transfer nach Orchha. Abends Besichtigung der historischen Tempel und Paläste von Orchha. Übernachtung an Bord."
+          "title": "Erkundung von Orchha",
+          "description": "Ankunft in Orchha, einem versteckten Juwel des mittelalterlichen Indiens. Besuch des Orchha-Fortkomplexes, einschließlich Jahangir Mahal und Ram Raja Tempel. Genuss einer kulturellen Vorstellung an Bord des Zuges am Abend."
         },
         {
           "day": 5,
           "title": "Orchha nach Varanasi",
-          "description": "Morgens Besuch des Jhansi Forts. Nachmittags Transfer nach Varanasi. Abends Ganga Aarti am Dashashwamedh Ghat. Übernachtung an Bord."
+          "description": "Morgens Abreise nach Varanasi, dem spirituellen Herzen Indiens. Ankunft am Nachmittag und Bootsfahrt entlang des Ganges bei Sonnenuntergang. Besuch der Ghats und Zeuge der abendlichen Aarti-Zeremonie. Übernachtung im Zug."
         },
         {
           "day": 6,
-          "title": "Besichtigungen in Varanasi",
-          "description": "Morgens Bootsfahrt auf dem Ganges. Besuch von Sarnath und dem Kashi Vishwanath Tempel. Nachmittag zur freien Verfügung. Abendliche Kulturveranstaltung an Bord."
+          "title": "Erkundung von Varanasi",
+          "description": "Morgens geführte Wanderung durch die engen Gassen Varanasis, einschließlich Kashi Vishwanath Tempel und dem Seidenwebereiviertel. Nachmittag zur freien Verfügung, um lokale Märkte zu erkunden. Abendliche Abreise nach Delhi."
         },
         {
           "day": 7,
           "title": "Abreise aus Delhi",
-          "description": "Morgens Transfer nach Delhi. Besuch des Qutub Minar und Humayun's Grab. Nachmittag zur freien Verfügung. Abendliche Abreise aus Delhi."
+          "description": "Ankunft in Delhi und Transfer zum Flughafen für die Abreise. Alternativ können Sie Ihren Aufenthalt verlängern, um die historischen Stätten Delhis wie das Rote Fort oder Humayuns Grab zu erkunden."
         }
       ]
     },
