@@ -1,7 +1,13 @@
 import { useTranslation } from 'react-i18next';
-import useLocalizedUrl from '../hooks/useLocalizedUrl';
 
-const BASE = 'https://inbound.kesariselect.com';
+const SLUG_TO_FILTER = {
+  'ayurveda-and-wellness': 'ayurveda',
+  'luxury-train':          'luxuryTrain',
+  'spiritual':             'spiritual',
+  'historic':              'historic',
+  'nature':                'nature',
+};
+
 const CARDS = [
   { key: 'ayurveda', slug: 'ayurveda-and-wellness', img: 'https://tap.kesariselect.com/public/cms/whyindia/1730266924.jpg', alt: 'Ayurveda' },
   { key: 'luxury',   slug: 'luxury-train',          img: 'https://tap.kesariselect.com/public/cms/whyindia/1730376933.jpg', alt: 'Luxury Trains' },
@@ -10,9 +16,16 @@ const CARDS = [
   { key: 'nature',   slug: 'nature',                 img: 'https://tap.kesariselect.com/public/cms/whyindia/1730808195.jpg', alt: 'Nature' },
 ];
 
-export default function WhyIndia() {
+export default function WhyIndia({ onViewTheme }) {
   const { t } = useTranslation('home');
-  const localizeUrl = useLocalizedUrl();
+
+  function handleClick(e, slug) {
+    e.preventDefault();
+    const filterKey = SLUG_TO_FILTER[slug] || 'all';
+    onViewTheme?.(filterKey);
+    document.querySelector('#packages')?.scrollIntoView({ behavior: 'smooth' });
+  }
+
   return (
     <div className="sec sec-bg">
       <div className="wrap">
@@ -21,7 +34,7 @@ export default function WhyIndia() {
         <p className="sub">{t('whyIndia.subtitle')}</p>
         <div className="why-grid">
           {CARDS.map(c => (
-            <a key={c.key} className="why-card" href={localizeUrl(`${BASE}/explore/theme/${c.slug}`)} target="_blank" rel="noreferrer">
+            <a key={c.key} className="why-card" href="#packages" onClick={e => handleClick(e, c.slug)}>
               <img src={c.img} alt={c.alt} />
               <div className="why-body">
                 <span className="why-tag">{t(`whyIndia.cards.${c.key}.tag`)}</span>

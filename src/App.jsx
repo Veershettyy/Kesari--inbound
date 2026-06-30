@@ -58,13 +58,13 @@ function HomePage() {
       <HeroSlider />
       <Stats />
       <SeasonalPlanner onEnquire={name => setModalPkg(name)} onViewTheme={handleThemeFilter} />
-      <AdventureThemes />
-      <WhyIndia />
+      <AdventureThemes onViewTheme={handleThemeFilter} />
+      <WhyIndia onViewTheme={handleThemeFilter} />
       <Destinations onSearch={handleNavSearch} />
       <TourPackages ref={pkgRef} onEnquire={name => setModalPkg(name)} />
       <Reviews />
       <EnquiryForm />
-      <Footer />
+      <Footer onSearch={handleNavSearch} onViewTheme={handleThemeFilter} />
       <ScrollToTop />
       {modalPkg && <BookingModal pkgName={modalPkg} onClose={() => setModalPkg(null)} />}
     </>

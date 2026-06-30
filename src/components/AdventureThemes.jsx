@@ -1,19 +1,31 @@
 import { useTranslation } from 'react-i18next';
-import useLocalizedUrl from '../hooks/useLocalizedUrl';
 
-const BASE = 'https://inbound.kesariselect.com';
+const SLUG_TO_FILTER = {
+  'ayurveda-and-wellness': 'ayurveda',
+  'spiritual':             'spiritual',
+  'historic':              'historic',
+  'luxury-train':          'luxuryTrain',
+  'nature':                'nature',
+};
 
 const THEMES = [
-  { icon: '🌿', key: 'ayurveda', slug: 'ayurveda-and-wellness' },
-  { icon: '🕌', key: 'spiritual', slug: 'spiritual' },
-  { icon: '🏯', key: 'historic', slug: 'historic' },
+  { icon: '🌿', key: 'ayurveda',    slug: 'ayurveda-and-wellness' },
+  { icon: '🕌', key: 'spiritual',   slug: 'spiritual' },
+  { icon: '🏯', key: 'historic',    slug: 'historic' },
   { icon: '🚂', key: 'luxuryTrain', slug: 'luxury-train' },
-  { icon: '🌿', key: 'nature', slug: 'nature' },
+  { icon: '🌿', key: 'nature',      slug: 'nature' },
 ];
 
-export default function AdventureThemes() {
+export default function AdventureThemes({ onViewTheme }) {
   const { t } = useTranslation('home');
-  const localizeUrl = useLocalizedUrl();
+
+  function handleClick(e, slug) {
+    e.preventDefault();
+    const filterKey = SLUG_TO_FILTER[slug] || 'all';
+    onViewTheme?.(filterKey);
+    document.querySelector('#packages')?.scrollIntoView({ behavior: 'smooth' });
+  }
+
   return (
     <div id="why">
       <div className="sec">
@@ -23,7 +35,7 @@ export default function AdventureThemes() {
           <p className="sub">{t('themes.subtitle')}</p>
           <div className="adv-grid">
             {THEMES.map(th => (
-              <a key={th.key} className="adv-card" href={localizeUrl(`${BASE}/explore/theme/${th.slug}`)} target="_blank" rel="noreferrer">
+              <a key={th.key} className="adv-card" href="#packages" onClick={e => handleClick(e, th.slug)}>
                 <div className="adv-icon">{th.icon}</div>
                 <div className="adv-label">{t(`themes.items.${th.key}`)}</div>
               </a>

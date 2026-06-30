@@ -1,30 +1,32 @@
 import { useTranslation } from 'react-i18next';
-import useLocalizedUrl from '../hooks/useLocalizedUrl';
 
-const BASE = 'https://inbound.kesariselect.com';
-const DEST_URLS = [
-  '/explore/india/north-india/rajasthan',
-  '/explore/india/south-india/kerala',
-  '/explore/india/north-india/himachal-pradesh',
-  '/explore/india/west-india/goa',
-  '/explore/india/north-india/leh-and-ladakh',
-  '/explore/india/east-india/north-east',
+const DEST_SEARCHES = ['Rajasthan', 'Kerala', 'Himachal Pradesh', 'Goa', 'Ladakh', 'North East'];
+const THEME_FILTERS = ['wildlife', 'historic', 'spiritual', 'luxuryTrain', 'ayurveda'];
+const COMPANY_URLS  = [
+  'https://inbound.kesariselect.com',
+  '#enquiry',
+  'https://inbound.kesariselect.com/privacy-policy',
+  'https://inbound.kesariselect.com/terms-and-conditions',
+  'https://kesariselect.com',
 ];
-const THEME_URLS = [
-  '/explore/theme/nature',
-  '/explore/theme/historic',
-  '/explore/theme/spiritual',
-  '/explore/theme/luxury-train',
-  '/explore/theme/ayurveda-and-wellness',
-];
-const COMPANY_URLS = [BASE, '#enquiry', BASE, BASE, 'https://kesariselect.com'];
 
-export default function Footer() {
+export default function Footer({ onSearch, onViewTheme }) {
   const { t } = useTranslation('footer');
-  const localizeUrl = useLocalizedUrl();
-  const destLinks = t('destinations.links', { returnObjects: true });
-  const themeLinks = t('themes.links', { returnObjects: true });
-  const companyLinks = t('company.links', { returnObjects: true });
+  const destLinks    = t('destinations.links', { returnObjects: true });
+  const themeLinks   = t('themes.links',       { returnObjects: true });
+  const companyLinks = t('company.links',      { returnObjects: true });
+
+  function handleDest(e, term) {
+    e.preventDefault();
+    onSearch?.(term);
+    document.querySelector('#packages')?.scrollIntoView({ behavior: 'smooth' });
+  }
+
+  function handleTheme(e, filterKey) {
+    e.preventDefault();
+    onViewTheme?.(filterKey);
+    document.querySelector('#packages')?.scrollIntoView({ behavior: 'smooth' });
+  }
 
   return (
     <footer>
@@ -36,19 +38,19 @@ export default function Footer() {
         <div className="ft-col">
           <h4>{t('destinations.heading')}</h4>
           {destLinks.map((l, i) => (
-            <a key={i} href={localizeUrl(BASE + DEST_URLS[i])} target="_blank" rel="noreferrer">{l}</a>
+            <a key={i} href="#packages" onClick={e => handleDest(e, DEST_SEARCHES[i])}>{l}</a>
           ))}
         </div>
         <div className="ft-col">
           <h4>{t('themes.heading')}</h4>
           {themeLinks.map((l, i) => (
-            <a key={i} href={localizeUrl(BASE + THEME_URLS[i])} target="_blank" rel="noreferrer">{l}</a>
+            <a key={i} href="#packages" onClick={e => handleTheme(e, THEME_FILTERS[i])}>{l}</a>
           ))}
         </div>
         <div className="ft-col">
           <h4>{t('company.heading')}</h4>
           {companyLinks.map((l, i) => (
-            <a key={i} href={localizeUrl(COMPANY_URLS[i])} target={COMPANY_URLS[i].startsWith('http') ? '_blank' : undefined} rel="noreferrer">{l}</a>
+            <a key={i} href={COMPANY_URLS[i]} target={COMPANY_URLS[i].startsWith('http') ? '_blank' : undefined} rel="noreferrer">{l}</a>
           ))}
         </div>
       </div>
