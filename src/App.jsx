@@ -13,6 +13,7 @@ import WhyIndia from './components/WhyIndia';
 import Destinations from './components/Destinations';
 import TourPackages from './components/TourPackages';
 import EnquiryForm from './components/EnquiryForm';
+import Reviews from './components/Reviews';
 import Footer from './components/Footer';
 import BookingModal from './components/BookingModal';
 import PackageDetail from './pages/PackageDetail';
@@ -112,6 +113,7 @@ function HomePage() {
       <WhyIndia onViewTheme={handleThemeFilter} />
       <Destinations onSearch={handleNavSearch} />
       <TourPackages ref={pkgRef} onEnquire={name => setModalPkg(name)} />
+      <Reviews />
       <EnquiryForm />
       <Footer onSearch={handleNavSearch} onViewTheme={handleThemeFilter} />
       <StickyEnquireBar />

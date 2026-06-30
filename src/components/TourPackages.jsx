@@ -135,14 +135,7 @@ const TourPackages = forwardRef(function TourPackages({ onEnquire }, ref) {
                 <div className="pkg-theme">{t(`tours:packages.filters.${THEME_FILTER_KEY[themeKey(p.theme)] ?? themeKey(p.theme)}`, { defaultValue: p.theme })}</div>
                 <div className="pkg-title">{t(`tours:pkgNames.${p.code}`, { defaultValue: p.name })}</div>
                 <div className="pkg-places">📍 {t(`tours:pkgPlaces.${p.code}`, { defaultValue: p.places })}</div>
-                {(() => { const { rating, count } = pkgRating(p.code); return (
-                  <div className="pkg-rating">
-                    <span className="pkg-stars">★★★★★</span>
-                    <span className="pkg-rating-num">{rating}</span>
-                    <span className="pkg-rating-count">({count} reviews)</span>
-                  </div>
-                ); })()}
-                <div className="pkg-tags">
+<div className="pkg-tags">
                   {p.tags.split(',').map(tag => {
                     const raw = tag.trim();
                     const key = TAG_KEYS[raw.toLowerCase()];
