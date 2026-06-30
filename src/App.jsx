@@ -59,7 +59,7 @@ function WhatsAppBtn() {
 function StickyEnquireBar() {
   return (
     <div className="sticky-enquire">
-      <span className="sticky-enquire-text">✈ Planning a trip to India?</span>
+      <a href="tel:+912266666666" className="sticky-call-btn">📞 Call Us</a>
       <a href="#enquiry" className="sticky-enquire-btn" onClick={e => {
         e.preventDefault();
         document.querySelector('#enquiry')?.scrollIntoView({ behavior: 'smooth' });

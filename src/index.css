@@ -21,9 +21,9 @@ body{font-family:'Montserrat',sans-serif;background:var(--white);color:#222;over
 .wa-label{font-size:13px;font-weight:700;font-family:inherit;white-space:nowrap}
 
 /* STICKY MOBILE ENQUIRE BAR */
-.sticky-enquire{display:none;position:fixed;bottom:0;left:0;right:0;z-index:8999;background:var(--navy);padding:10px 20px;align-items:center;justify-content:space-between;box-shadow:0 -4px 20px rgba(0,0,0,.2)}
-.sticky-enquire-text{color:rgba(255,255,255,.85);font-size:13px;font-weight:500}
-.sticky-enquire-btn{background:var(--red);color:#fff;border:none;padding:10px 24px;border-radius:6px;font-size:13px;font-weight:700;font-family:inherit;cursor:pointer;text-decoration:none;box-shadow:0 4px 12px rgba(228,30,37,.4);flex-shrink:0;white-space:nowrap}
+.sticky-enquire{display:none;position:fixed;bottom:0;left:0;right:0;z-index:8999;background:var(--navy);padding:10px 16px;align-items:center;justify-content:space-between;gap:10px;box-shadow:0 -4px 20px rgba(0,0,0,.2)}
+.sticky-call-btn{flex:1;text-align:center;background:rgba(255,255,255,.12);color:#fff;text-decoration:none;padding:11px 10px;border-radius:6px;font-size:13px;font-weight:700;border:1px solid rgba(255,255,255,.25);white-space:nowrap}
+.sticky-enquire-btn{flex:1;text-align:center;background:var(--red);color:#fff;border:none;padding:11px 10px;border-radius:6px;font-size:13px;font-weight:700;font-family:inherit;cursor:pointer;text-decoration:none;box-shadow:0 4px 12px rgba(228,30,37,.4);white-space:nowrap}
 
 /* ANIMATE ON SCROLL */
 .fade-up{opacity:0;transform:translateY(36px);transition:opacity .65s cubic-bezier(.22,1,.36,1),transform .65s cubic-bezier(.22,1,.36,1)}
