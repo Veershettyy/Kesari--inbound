@@ -14,7 +14,9 @@
       "firstTimers": "पहली बार यात्री",
       "spiritual": "आध्यात्मिक",
       "adventure": "साहसिक",
-      "luxury": "लक्ज़री"
+      "luxury": "लक्ज़री",
+      "family": "Family",
+      "wildlife": "Wildlife"
     },
     "daysNights": "{{days}}D / {{nights}}N",
     "currency": {

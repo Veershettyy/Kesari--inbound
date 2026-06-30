@@ -14,7 +14,9 @@
       "firstTimers": "初心者向け",
       "spiritual": "スピリチュアル",
       "adventure": "アドベンチャー",
-      "luxury": "ラグジュアリー"
+      "luxury": "ラグジュアリー",
+      "family": "Family",
+      "wildlife": "Wildlife"
     },
     "daysNights": "{{days}}日 / {{nights}}泊",
     "currency": {

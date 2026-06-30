@@ -14,7 +14,9 @@
       "firstTimers": "First Timers",
       "spiritual": "Spiritual",
       "adventure": "Adventure",
-      "luxury": "Luxury"
+      "luxury": "Luxury",
+      "family": "Family",
+      "wildlife": "Wildlife"
     },
     "daysNights": "{{days}}D / {{nights}}N",
     "currency": {

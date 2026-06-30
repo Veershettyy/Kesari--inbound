@@ -14,7 +14,9 @@
       "firstTimers": "첫 방문자",
       "spiritual": "영적",
       "adventure": "모험",
-      "luxury": "럭셔리"
+      "luxury": "럭셔리",
+      "family": "Family",
+      "wildlife": "Wildlife"
     },
     "daysNights": "{{days}}일 / {{nights}}박",
     "currency": {

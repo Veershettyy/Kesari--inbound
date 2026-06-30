@@ -14,7 +14,9 @@
       "firstTimers": "首次旅行者",
       "spiritual": "灵性",
       "adventure": "冒险",
-      "luxury": "奢华"
+      "luxury": "奢华",
+      "family": "Family",
+      "wildlife": "Wildlife"
     },
     "daysNights": "{{days}}天 / {{nights}}晚",
     "currency": {

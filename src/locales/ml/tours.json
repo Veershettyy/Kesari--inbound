@@ -14,7 +14,9 @@
       "firstTimers": "ആദ്യമായി",
       "spiritual": "ആത്മീയ",
       "adventure": "സാഹസിക",
-      "luxury": "ലക്സറി"
+      "luxury": "ലക്സറി",
+      "family": "Family",
+      "wildlife": "Wildlife"
     },
     "daysNights": "{{days}}D / {{nights}}N",
     "currency": {

@@ -14,7 +14,9 @@
       "firstTimers": "أول مرة",
       "spiritual": "روحي",
       "adventure": "مغامرة",
-      "luxury": "فخامة"
+      "luxury": "فخامة",
+      "family": "Family",
+      "wildlife": "Wildlife"
     },
     "daysNights": "{{days}} يوم / {{nights}} ليلة",
     "currency": {

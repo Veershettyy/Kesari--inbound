@@ -14,7 +14,9 @@
       "firstTimers": "Primi Viaggiatori",
       "spiritual": "Spirituale",
       "adventure": "Avventura",
-      "luxury": "Lusso"
+      "luxury": "Lusso",
+      "family": "Family",
+      "wildlife": "Wildlife"
     },
     "daysNights": "{{days}}G / {{nights}}N",
     "currency": {

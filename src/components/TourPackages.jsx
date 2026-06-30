@@ -4,12 +4,17 @@ import { useNavigate } from 'react-router-dom';
 import { PACKAGES } from '../data/packages';
 
 const PAGE = 9;
-const FILTERS = ['all','nature','historic','luxuryTrain','ayurveda','firstTimers','spiritual','adventure','luxury'];
+const FILTERS = ['all','nature','historic','luxuryTrain','ayurveda','firstTimers','spiritual','adventure','luxury','family','wildlife'];
 const FILTER_VALS = {
-  all: 'All', nature: 'Nature', historic: 'Historic', luxuryTrain: 'Luxury Train',
-  ayurveda: 'Ayurveda and Wellness', firstTimers: 'First Timers',
-  spiritual: 'Spiritual', adventure: 'Adventure', luxury: 'Luxury',
+  all: 'All', nature: 'nature', historic: 'historic', luxuryTrain: 'luxury-train',
+  ayurveda: 'ayurveda', firstTimers: 'first-timers',
+  spiritual: 'spiritual', adventure: 'adventure', luxury: 'luxury',
+  family: 'family', wildlife: 'wildlife',
 };
+
+function themeKey(raw) {
+  return raw.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '');
+}
 
 const TourPackages = forwardRef(function TourPackages({ onEnquire }, ref) {
   const { t, i18n } = useTranslation(['tours','common']);
@@ -29,7 +34,7 @@ const TourPackages = forwardRef(function TourPackages({ onEnquire }, ref) {
 
   const filtered = PACKAGES.filter(p => {
     const val = FILTER_VALS[filter];
-    const matchTheme = val === 'All' || p.theme.toLowerCase().includes(val.toLowerCase());
+    const matchTheme = val === 'All' || themeKey(p.theme) === val;
     const q = search.toLowerCase();
     const matchSearch = !q || p.name.toLowerCase().includes(q) || p.places.toLowerCase().includes(q) || p.theme.toLowerCase().includes(q);
     return matchTheme && matchSearch;
