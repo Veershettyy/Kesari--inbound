@@ -16,7 +16,7 @@ const REGIONS = [
   { id: 'delhi',     label: 'Delhi & Agra',       emoji: '🏛️', cx: 172, cy: 152, search: 'delhi',     color: '#C44B00', desc: 'The Golden Triangle' },
   { id: 'rajasthan', label: 'Rajasthan',           emoji: '🏯', cx: 96,  cy: 184, search: 'rajasthan', color: '#E07B1A', desc: 'Forts & desert sunsets' },
   { id: 'northeast', label: 'North East India',    emoji: '🌿', cx: 320, cy: 174, search: 'meghalaya', color: '#2D6A4F', desc: 'Abode of clouds' },
-  { id: 'goa',       label: 'Goa & Maharashtra',  emoji: '⛵', cx: 86,  cy: 276, search: 'goa',       color: '#E85D04', desc: 'Beaches & heritage' },
+  { id: 'goa',       label: 'Goa & Maharashtra',  emoji: '⛵', cx: 118, cy: 278, search: 'goa',       color: '#E85D04', desc: 'Beaches & heritage' },
   { id: 'mp',        label: 'Central India',       emoji: '🐯', cx: 196, cy: 248, search: 'madhya',    color: '#6B4226', desc: 'Tigers & temples' },
   { id: 'kerala',    label: 'Kerala',              emoji: '🌴', cx: 168, cy: 415, search: 'kerala',    color: '#40916C', desc: "God's Own Country" },
   { id: 'south',     label: 'South India',         emoji: '🛕', cx: 196, cy: 384, search: 'mysore',    color: '#7B2D8B', desc: 'Temples & spice trails' },
