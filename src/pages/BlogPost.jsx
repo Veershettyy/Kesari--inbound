@@ -59,7 +59,7 @@ export default function BlogPost() {
             <h3>Ready to Experience India?</h3>
             <p>Let Kesari Inbound craft your perfect journey.</p>
             <button className="btn-hero" onClick={() => {
-              navigate(base, { state: { scrollTo: 'enquiry' } });
+              navigate(`${base}#enquiry`);
             }}>Plan My Trip</button>
           </div>
         </div>
