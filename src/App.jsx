@@ -37,6 +37,7 @@ import EnquiryForm from './components/EnquiryForm';
 import Reviews from './components/Reviews';
 import Footer from './components/Footer';
 import BookingModal from './components/BookingModal';
+import TripQuiz from './components/TripQuiz';
 import PackageDetail from './pages/PackageDetail';
 import AboutUs from './pages/AboutUs';
 import Blog from './pages/Blog';
@@ -130,6 +131,7 @@ function HomePage() {
       <Navbar onEnquire={openEnquiry} onSearchNav={handleNavSearch} />
       <HeroSlider />
       <Stats />
+      <TripQuiz onEnquire={name => setModalPkg(name)} />
       <SeasonalPlanner onEnquire={name => setModalPkg(name)} onViewTheme={handleThemeFilter} />
       <AdventureThemes onViewTheme={handleThemeFilter} />
       <WhyIndia onViewTheme={handleThemeFilter} />
