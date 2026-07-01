@@ -67,7 +67,7 @@ function useScrollReveal(pathname) {
 function WhatsAppBtn() {
   return (
     <a
-      href="https://wa.me/912266666666"
+      href="https://wa.me/919920305678"
       target="_blank"
       rel="noopener noreferrer"
       className="wa-btn"
