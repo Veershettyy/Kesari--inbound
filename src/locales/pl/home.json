@@ -547,5 +547,44 @@
         "10+"
       ]
     }
+  },
+  "map": {
+    "tag": "Odkryj według regionu",
+    "title": "Dokąd woła Cię Indie?",
+    "subtitle": "Kliknij dowolny region na mapie lub liście, aby odkryć pasujące pakiety",
+    "regions": {
+      "kashmir": {
+        "label": "Ladakh i Kaszmir",
+        "desc": "Dramat na dużej wysokości"
+      },
+      "delhi": {
+        "label": "Delhi i Agra",
+        "desc": "Złoty Trójkąt"
+      },
+      "rajasthan": {
+        "label": "Radżastan",
+        "desc": "Forty i pustynne zachody słońca"
+      },
+      "northeast": {
+        "label": "Północno-wschodnie Indie",
+        "desc": "Siedziba chmur"
+      },
+      "goa": {
+        "label": "Goa i Maharasztra",
+        "desc": "Plaże i dziedzictwo"
+      },
+      "mp": {
+        "label": "Środkowe Indie",
+        "desc": "Tygrysy i świątynie"
+      },
+      "kerala": {
+        "label": "Kerala",
+        "desc": "Kraina Boga"
+      },
+      "south": {
+        "label": "Południowe Indie",
+        "desc": "Świątynie i szlaki przypraw"
+      }
+    }
   }
 }

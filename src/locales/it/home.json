@@ -547,5 +547,44 @@
         "10+"
       ]
     }
+  },
+  "map": {
+    "tag": "Esplora per regione",
+    "title": "Dove ti chiama l'India?",
+    "subtitle": "Clicca su qualsiasi regione sulla mappa o nell'elenco per scoprire i pacchetti corrispondenti",
+    "regions": {
+      "kashmir": {
+        "label": "Ladakh e Kashmir",
+        "desc": "Dramma ad alta quota"
+      },
+      "delhi": {
+        "label": "Delhi e Agra",
+        "desc": "Il Triangolo d'Oro"
+      },
+      "rajasthan": {
+        "label": "Rajasthan",
+        "desc": "Forti e tramonti nel deserto"
+      },
+      "northeast": {
+        "label": "India nord-orientale",
+        "desc": "Dimora delle nuvole"
+      },
+      "goa": {
+        "label": "Goa e Maharashtra",
+        "desc": "Spiagge e patrimonio"
+      },
+      "mp": {
+        "label": "India centrale",
+        "desc": "Tigri e templi"
+      },
+      "kerala": {
+        "label": "Kerala",
+        "desc": "La terra di Dio"
+      },
+      "south": {
+        "label": "India meridionale",
+        "desc": "Templi e vie delle spezie"
+      }
+    }
   }
 }

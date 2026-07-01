@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 // Simplified India outline — viewBox 0 0 400 490
 const INDIA_PATH =
@@ -24,6 +25,7 @@ const REGIONS = [
 
 export default function IndiaMap({ onSearch }) {
   const [hovered, setHovered] = useState(null);
+  const { t } = useTranslation('home');
 
   function handleClick(r) {
     onSearch(r.search);
@@ -33,9 +35,9 @@ export default function IndiaMap({ onSearch }) {
   return (
     <section className="india-map-sec">
       <div className="wrap">
-        <div className="tag">Explore by Region</div>
-        <h2 className="h2">Where Does India Call You?</h2>
-        <p className="sub">Click any region on the map or list to discover matching packages</p>
+        <div className="tag">{t('map.tag')}</div>
+        <h2 className="h2">{t('map.title')}</h2>
+        <p className="sub">{t('map.subtitle')}</p>
 
         <div className="india-map-layout">
           {/* SVG Map */}
@@ -89,13 +91,13 @@ export default function IndiaMap({ onSearch }) {
                           y={r.cy - 8}
                           textAnchor="middle" fontSize={9} fill="#fff" fontWeight="bold"
                           style={{ pointerEvents: 'none', userSelect: 'none' }}
-                        >{r.label}</text>
+                        >{t(`map.regions.${r.id}.label`, { defaultValue: r.label })}</text>
                         <text
                           x={tipLeft ? r.cx + 64 : r.cx - 64}
                           y={r.cy + 4}
                           textAnchor="middle" fontSize={8} fill="rgba(255,255,255,0.82)"
                           style={{ pointerEvents: 'none', userSelect: 'none' }}
-                        >{r.desc}</text>
+                        >{t(`map.regions.${r.id}.desc`, { defaultValue: r.desc })}</text>
                       </>
                     )}
                   </g>
@@ -117,8 +119,8 @@ export default function IndiaMap({ onSearch }) {
               >
                 <span className="irb-icon">{r.emoji}</span>
                 <div className="irb-text">
-                  <div className="irb-label">{r.label}</div>
-                  <div className="irb-sub">{r.desc}</div>
+                  <div className="irb-label">{t(`map.regions.${r.id}.label`, { defaultValue: r.label })}</div>
+                  <div className="irb-sub">{t(`map.regions.${r.id}.desc`, { defaultValue: r.desc })}</div>
                 </div>
                 <span className="irb-arrow">→</span>
               </button>

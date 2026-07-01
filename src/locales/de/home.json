@@ -549,5 +549,44 @@
         "10+"
       ]
     }
+  },
+  "map": {
+    "tag": "Nach Region erkunden",
+    "title": "Wohin ruft Sie Indien?",
+    "subtitle": "Klicken Sie auf eine Region auf der Karte oder der Liste, um passende Pakete zu entdecken",
+    "regions": {
+      "kashmir": {
+        "label": "Ladakh & Kaschmir",
+        "desc": "Dramatische Hochgebirgslandschaft"
+      },
+      "delhi": {
+        "label": "Delhi & Agra",
+        "desc": "Das Goldene Dreieck"
+      },
+      "rajasthan": {
+        "label": "Rajasthan",
+        "desc": "Festungen & Wüstensonnenuntergänge"
+      },
+      "northeast": {
+        "label": "Nordostindien",
+        "desc": "Heimat der Wolken"
+      },
+      "goa": {
+        "label": "Goa & Maharashtra",
+        "desc": "Strände & Kulturerbe"
+      },
+      "mp": {
+        "label": "Zentralindien",
+        "desc": "Tiger & Tempel"
+      },
+      "kerala": {
+        "label": "Kerala",
+        "desc": "Gottes eigenes Land"
+      },
+      "south": {
+        "label": "Südindien",
+        "desc": "Tempel & Gewürzstraßen"
+      }
+    }
   }
 }

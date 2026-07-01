@@ -547,5 +547,44 @@
         "10+"
       ]
     }
+  },
+  "map": {
+    "tag": "Explorer par région",
+    "title": "Où l'Inde vous appelle-t-elle ?",
+    "subtitle": "Cliquez sur une région sur la carte ou la liste pour découvrir les forfaits correspondants",
+    "regions": {
+      "kashmir": {
+        "label": "Ladakh & Cachemire",
+        "desc": "Drame de haute altitude"
+      },
+      "delhi": {
+        "label": "Delhi & Agra",
+        "desc": "Le Triangle d'Or"
+      },
+      "rajasthan": {
+        "label": "Rajasthan",
+        "desc": "Forts & couchers de soleil désertiques"
+      },
+      "northeast": {
+        "label": "Nord-Est de l'Inde",
+        "desc": "Demeure des nuages"
+      },
+      "goa": {
+        "label": "Goa & Maharashtra",
+        "desc": "Plages & patrimoine"
+      },
+      "mp": {
+        "label": "Inde centrale",
+        "desc": "Tigres & temples"
+      },
+      "kerala": {
+        "label": "Kerala",
+        "desc": "Le pays de Dieu"
+      },
+      "south": {
+        "label": "Inde du Sud",
+        "desc": "Temples & routes des épices"
+      }
+    }
   }
 }

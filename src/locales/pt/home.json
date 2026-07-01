@@ -547,5 +547,44 @@
         "10+"
       ]
     }
+  },
+  "map": {
+    "tag": "Explorar por região",
+    "title": "Para onde a Índia te chama?",
+    "subtitle": "Clique em qualquer região no mapa ou na lista para descobrir pacotes correspondentes",
+    "regions": {
+      "kashmir": {
+        "label": "Ladakh e Caxemira",
+        "desc": "Drama de alta altitude"
+      },
+      "delhi": {
+        "label": "Delhi e Agra",
+        "desc": "O Triângulo Dourado"
+      },
+      "rajasthan": {
+        "label": "Rajasthan",
+        "desc": "Fortes e pores do sol no deserto"
+      },
+      "northeast": {
+        "label": "Nordeste da Índia",
+        "desc": "Morada das nuvens"
+      },
+      "goa": {
+        "label": "Goa e Maharashtra",
+        "desc": "Praias e patrimônio"
+      },
+      "mp": {
+        "label": "Índia Central",
+        "desc": "Tigres e templos"
+      },
+      "kerala": {
+        "label": "Kerala",
+        "desc": "A terra de Deus"
+      },
+      "south": {
+        "label": "Sul da Índia",
+        "desc": "Templos e rotas das especiarias"
+      }
+    }
   }
 }

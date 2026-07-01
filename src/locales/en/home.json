@@ -499,5 +499,44 @@
         "10+"
       ]
     }
+  },
+  "map": {
+    "tag": "Explore by Region",
+    "title": "Where Does India Call You?",
+    "subtitle": "Click any region on the map or list to discover matching packages",
+    "regions": {
+      "kashmir": {
+        "label": "Ladakh & Kashmir",
+        "desc": "High-altitude drama"
+      },
+      "delhi": {
+        "label": "Delhi & Agra",
+        "desc": "The Golden Triangle"
+      },
+      "rajasthan": {
+        "label": "Rajasthan",
+        "desc": "Forts & desert sunsets"
+      },
+      "northeast": {
+        "label": "North East India",
+        "desc": "Abode of clouds"
+      },
+      "goa": {
+        "label": "Goa & Maharashtra",
+        "desc": "Beaches & heritage"
+      },
+      "mp": {
+        "label": "Central India",
+        "desc": "Tigers & temples"
+      },
+      "kerala": {
+        "label": "Kerala",
+        "desc": "God's Own Country"
+      },
+      "south": {
+        "label": "South India",
+        "desc": "Temples & spice trails"
+      }
+    }
   }
 }
