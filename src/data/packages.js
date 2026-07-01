@@ -625,9 +625,9 @@ export const PACKAGES = [
     name: 'Carnoustie Ayurveda & Wellness',
     days: 8,
     nights: 7,
-    places: 'Mararikulam → Alleppey → Kochi',
-    theme: 'ayurveda-and-wellness',
-    tags: 'Wellness Spa',
+    places: 'Kerala',
+    theme: 'first-timers',
+    tags: 'Welness Spa',
     img: 'https://kesariselect.s3.ap-south-1.amazonaws.com/fdrp2Wb4Fdm1r4Y3y7wUUyynNWelLK5FdMNq4RHB.jpg',
   },
   {
