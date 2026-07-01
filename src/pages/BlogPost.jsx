@@ -59,8 +59,7 @@ export default function BlogPost() {
             <h3>Ready to Experience India?</h3>
             <p>Let Kesari Inbound craft your perfect journey.</p>
             <button className="btn-hero" onClick={() => {
-              navigate(base);
-              setTimeout(() => document.querySelector('#enquiry')?.scrollIntoView({ behavior: 'smooth' }), 400);
+              navigate(base, { state: { scrollTo: 'enquiry' } });
             }}>Plan My Trip</button>
           </div>
         </div>

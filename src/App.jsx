@@ -2,8 +2,16 @@ import { useRef, useState, useEffect } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
 
 function ScrollToTopOnNav() {
-  const { pathname } = useLocation();
-  useEffect(() => { window.scrollTo(0, 0); }, [pathname]);
+  const { pathname, state } = useLocation();
+  useEffect(() => {
+    if (state?.scrollTo) {
+      const t = setTimeout(() => {
+        document.getElementById(state.scrollTo)?.scrollIntoView({ behavior: 'smooth' });
+      }, 400);
+      return () => clearTimeout(t);
+    }
+    window.scrollTo(0, 0);
+  }, [pathname, state]);
   useScrollReveal(pathname);
   return null;
 }
