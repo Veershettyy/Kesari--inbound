@@ -38,6 +38,7 @@ import Reviews from './components/Reviews';
 import Footer from './components/Footer';
 import BookingModal from './components/BookingModal';
 import TripQuiz from './components/TripQuiz';
+import IndiaMap from './components/IndiaMap';
 import PackageDetail from './pages/PackageDetail';
 import AboutUs from './pages/AboutUs';
 import Blog from './pages/Blog';
@@ -136,6 +137,7 @@ function HomePage() {
       <AdventureThemes onViewTheme={handleThemeFilter} />
       <WhyIndia onViewTheme={handleThemeFilter} />
       <Destinations onSearch={handleNavSearch} />
+      <IndiaMap onSearch={handleNavSearch} />
       <TourPackages ref={pkgRef} onEnquire={name => setModalPkg(name)} />
       <Reviews />
       <EnquiryForm />

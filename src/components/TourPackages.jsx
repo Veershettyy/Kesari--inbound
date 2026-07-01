@@ -83,6 +83,17 @@ const TourPackages = forwardRef(function TourPackages({ onEnquire }, ref) {
   const [search, setSearch] = useState('');
   const [visible, setVisible] = useState(PAGE);
   const [lightbox, setLightbox] = useState(null);
+  const [compareList, setCompareList] = useState([]);
+  const [showCompare, setShowCompare] = useState(false);
+
+  function toggleCompare(pkg) {
+    setCompareList(prev => {
+      if (prev.find(p => p.code === pkg.code)) return prev.filter(p => p.code !== pkg.code);
+      if (prev.length >= 3) return prev;
+      return [...prev, pkg];
+    });
+  }
+  function isCompared(code) { return !!compareList.find(p => p.code === code); }
 
   // Build the correct base path for any language
   const lang = i18n.language;
@@ -163,6 +174,14 @@ const TourPackages = forwardRef(function TourPackages({ onEnquire }, ref) {
                 <div className="pkg-badge">{t(`tours:packages.filters.${THEME_FILTER_KEY[themeKey(p.theme)] ?? themeKey(p.theme)}`, { defaultValue: p.theme })}</div>
                 <div className="pkg-days">{p.days}D / {p.nights}N</div>
                 <div className="pkg-zoom">🔍</div>
+                <button
+                  className={`pkg-compare-toggle${isCompared(p.code) ? ' on' : ''}`}
+                  onClick={e => { e.stopPropagation(); toggleCompare(p); }}
+                  title={isCompared(p.code) ? 'Remove from compare' : compareList.length >= 3 ? 'Max 3 packages' : 'Add to compare'}
+                  disabled={!isCompared(p.code) && compareList.length >= 3}
+                >
+                  {isCompared(p.code) ? '✓' : '+'}
+                </button>
               </div>
               <div className="pkg-body">
                 <div className="pkg-theme">{t(`tours:packages.filters.${THEME_FILTER_KEY[themeKey(p.theme)] ?? themeKey(p.theme)}`, { defaultValue: p.theme })}</div>
@@ -211,6 +230,64 @@ const TourPackages = forwardRef(function TourPackages({ onEnquire }, ref) {
         index={lightbox}
         onClose={() => setLightbox(null)}
       />
+    )}
+
+    {/* Compare floating bar */}
+    {compareList.length > 0 && (
+      <div className="compare-bar">
+        <div className="compare-bar-slots">
+          {compareList.map(p => (
+            <div key={p.code} className="compare-slot">
+              <img src={p.img} alt={p.name} />
+              <span>{t(`tours:pkgNames.${p.code}`, { defaultValue: p.name })}</span>
+              <button onClick={() => toggleCompare(p)}>✕</button>
+            </div>
+          ))}
+          {Array.from({ length: 3 - compareList.length }).map((_, i) => (
+            <div key={i} className="compare-slot empty">+ Add package</div>
+          ))}
+        </div>
+        <div className="compare-bar-actions">
+          <button
+            className="compare-bar-btn"
+            disabled={compareList.length < 2}
+            onClick={() => setShowCompare(true)}
+          >
+            Compare {compareList.length} Packages
+          </button>
+          <button className="compare-bar-clear" onClick={() => setCompareList([])}>Clear</button>
+        </div>
+      </div>
+    )}
+
+    {/* Compare modal */}
+    {showCompare && (
+      <div className="compare-overlay" onClick={() => setShowCompare(false)}>
+        <div className="compare-modal" onClick={e => e.stopPropagation()}>
+          <div className="compare-modal-head">
+            <h3>Package Comparison</h3>
+            <button className="compare-modal-close" onClick={() => setShowCompare(false)}>✕</button>
+          </div>
+          <div className="compare-cols" style={{ gridTemplateColumns: `repeat(${compareList.length}, 1fr)` }}>
+            {compareList.map(p => {
+              const { rating } = pkgRating(p.code);
+              return (
+                <div key={p.code} className="compare-col">
+                  <img src={p.img} alt={p.name} onError={e => { e.target.src = 'https://tap.kesariselect.com/public/cms/hiddengems/1729764681.webp'; }} />
+                  <div className="compare-col-name">{t(`tours:pkgNames.${p.code}`, { defaultValue: p.name })}</div>
+                  <div className="compare-row"><span className="cr-label">Duration</span><span className="cr-val">{p.days} Days / {p.nights} Nights</span></div>
+                  <div className="compare-row"><span className="cr-label">Theme</span><span className="cr-val">{t(`tours:packages.filters.${THEME_FILTER_KEY[themeKey(p.theme)] ?? themeKey(p.theme)}`, { defaultValue: p.theme })}</span></div>
+                  <div className="compare-row"><span className="cr-label">Places</span><span className="cr-val">{t(`tours:pkgPlaces.${p.code}`, { defaultValue: p.places })}</span></div>
+                  <div className="compare-row"><span className="cr-label">Type</span><span className="cr-val">{p.tags}</span></div>
+                  <div className="compare-row"><span className="cr-label">Rating</span><span className="cr-val">⭐ {rating}</span></div>
+                  <button className="btn-hero" style={{ width: '100%', marginTop: 16 }} onClick={() => { setShowCompare(false); goToPackage(p.code); }}>View Package</button>
+                  <button className="btn-navy" style={{ width: '100%', marginTop: 8 }} onClick={() => { setShowCompare(false); onEnquire(p.name); }}>Enquire Now</button>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </div>
     )}
     </>
   );
