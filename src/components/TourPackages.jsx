@@ -147,7 +147,7 @@ const TourPackages = forwardRef(function TourPackages({ onEnquire }, ref) {
               <button
                 key={f}
                 className={`f-btn${filter === f ? ' active' : ''}`}
-                onClick={() => { setFilter(f); setVisible(PAGE); }}
+                onClick={() => { setFilter(f); setSearch(''); setVisible(PAGE); }}
               >
                 {t(`tours:packages.filters.${f}`)}
               </button>
