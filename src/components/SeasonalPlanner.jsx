@@ -6,7 +6,7 @@ const THEME_FILTER_KEY = {'first-timers':'firstTimers','historic':'historic','fa
 function themeKey(raw) { return raw.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/-+/g,'-').replace(/^-|-$/g,''); }
 
 const MONTHS = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
-const LANG_SLUGS = ['de','fr','es','it','pt','pl','hi','ml','ar','zh','ja','ko'];
+const LANG_SLUGS = ['de','fr','es','it','pt','pl','hi','ml','mr','ar','zh','ja','ko'];
 
 export default function SeasonalPlanner({ onEnquire, onViewTheme }) {
   const { t, i18n } = useTranslation(['home','common','tours']);

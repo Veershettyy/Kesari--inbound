@@ -105,13 +105,21 @@ import plFooter from './locales/pl/footer.json';
 import plAbout from './locales/pl/about.json';
 import plBlog from './locales/pl/blog.json';
 
+import mrCommon from './locales/mr/common.json';
+import mrHome from './locales/mr/home.json';
+import mrTours from './locales/mr/tours.json';
+import mrSeo from './locales/mr/seo.json';
+import mrFooter from './locales/mr/footer.json';
+import mrAbout from './locales/mr/about.json';
+import mrBlog from './locales/mr/blog.json';
+
 const p = window.location.pathname;
 const m = p.match(/^\/INT\/([^/]+)/);
 const seg = m ? m[1].toLowerCase() : '';
 const PATH_SEGS = new Set(['explore', 'destinations', 'packages', 'search', 'product-details', 'about', 'blog']);
 const rawLang = (m && !PATH_SEGS.has(seg)) ? m[1].toLowerCase() : null;
 
-const langMap = { es: 'es-ES', 'es-es': 'es-ES', fr: 'fr', hi: 'hi', de: 'de', ja: 'ja', pt: 'pt', it: 'it', zh: 'zh', ar: 'ar', ko: 'ko', ml: 'ml', pl: 'pl' };
+const langMap = { es: 'es-ES', 'es-es': 'es-ES', fr: 'fr', hi: 'hi', de: 'de', ja: 'ja', pt: 'pt', it: 'it', zh: 'zh', ar: 'ar', ko: 'ko', ml: 'ml', pl: 'pl', mr: 'mr' };
 const initialLang = (p.startsWith('/INT/es') || p.startsWith('/es-es'))
   ? 'es-ES'
   : (rawLang && langMap[rawLang]) || 'en';
@@ -131,6 +139,7 @@ i18n.use(initReactI18next).init({
     ko:      { common: koCommon, home: koHome, tours: koTours, seo: koSeo, footer: koFooter, about: koAbout, blog: koBlog },
     ml:      { common: mlCommon, home: mlHome, tours: mlTours, seo: mlSeo, footer: mlFooter, about: mlAbout, blog: mlBlog },
     pl:      { common: plCommon, home: plHome, tours: plTours, seo: plSeo, footer: plFooter, about: plAbout, blog: plBlog },
+    mr:      { common: mrCommon, home: mrHome, tours: mrTours, seo: mrSeo, footer: mrFooter, about: mrAbout, blog: mrBlog },
   },
   lng: initialLang,
   fallbackLng: 'en',

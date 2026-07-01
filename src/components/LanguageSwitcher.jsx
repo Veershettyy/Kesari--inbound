@@ -12,6 +12,7 @@ const LANGUAGES = [
   { code: 'pl',    slug: 'pl', flag: '🇵🇱', label: 'Polski'     },
   { code: 'hi',    slug: 'hi', flag: '🇮🇳', label: 'हिन्दी'      },
   { code: 'ml',    slug: 'ml', flag: '🇮🇳', label: 'മലയാളം'    },
+  { code: 'mr',    slug: 'mr', flag: '🇮🇳', label: 'मराठी'      },
   { code: 'ar',    slug: 'ar', flag: '🇸🇦', label: 'العربية'    },
   { code: 'zh',    slug: 'zh', flag: '🇨🇳', label: '中文'        },
   { code: 'ja',    slug: 'ja', flag: '🇯🇵', label: '日本語'      },
