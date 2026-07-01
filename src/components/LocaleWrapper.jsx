@@ -17,7 +17,7 @@ const BUNDLED = {
   es: 'es-ES', 'es-es': 'es-ES',
   fr: 'fr', hi: 'hi', de: 'de', ja: 'ja',
   pt: 'pt', it: 'it', zh: 'zh', ar: 'ar',
-  ko: 'ko', ml: 'ml', pl: 'pl',
+  ko: 'ko', ml: 'ml', pl: 'pl', mr: 'mr',
 };
 
 const PATH_SEGMENTS = new Set(['explore', 'destinations', 'packages', 'search', 'product-details']);
