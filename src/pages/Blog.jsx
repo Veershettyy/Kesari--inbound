@@ -50,7 +50,6 @@ export default function Blog() {
                   >{a.category}</span>
                 </div>
                 <div className="blog-card-body">
-                  <div className="blog-meta">{a.readTime}</div>
                   <h2 className="blog-card-title">{a.title}</h2>
                   <p className="blog-card-excerpt">{a.excerpt}</p>
                   <span className="blog-read-more">{t('readMore')} →</span>

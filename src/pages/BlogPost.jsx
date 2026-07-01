@@ -43,7 +43,6 @@ export default function BlogPost() {
           </button>
           <span className="post-cat">{article.category}</span>
           <h1 className="post-title">{article.title}</h1>
-          <div className="post-meta">{article.readTime}</div>
         </div>
       </div>
 
